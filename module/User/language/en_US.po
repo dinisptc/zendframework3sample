@@ -1,0 +1,367 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-14 14:26+0000\n"
+"PO-Revision-Date: 2017-02-14 14:26+0000\n"
+"Last-Translator: Evan Coury <me@evancoury.com>\n"
+"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../src/Controller/UserController.php:246
+msgid "Sorry, the old password is incorrect. Could not set the new password."
+msgstr ""
+
+#: ../src/Controller/UserController.php:249
+#: ../src/Controller/UserController.php:789
+msgid "Changed the password successfully."
+msgstr ""
+
+#: ../src/Form/LoginForm.php:46 ../src/Form/PasswordResetForm.php:38
+msgid "Your E-mail"
+msgstr ""
+
+#: ../src/Form/LoginForm.php:55 ../src/Form/RegisterForm.php:84
+#: ../src/Form/UserForm.php:84 ../view/user/auth/login.phtml:18
+msgid "Password"
+msgstr ""
+
+#: ../src/Form/LoginForm.php:64 ../view/user/auth/login.phtml:43
+msgid "Remember me"
+msgstr ""
+
+#: ../src/Form/LoginForm.php:90 ../view/user/auth/login.phtml:48
+msgid "Sign in"
+msgstr ""
+
+#: ../src/Form/PasswordChangeForm.php:48
+msgid "Old Password"
+msgstr ""
+
+#: ../src/Form/PasswordChangeForm.php:58
+msgid "New Password"
+msgstr ""
+
+#: ../src/Form/PasswordChangeForm.php:67
+msgid "Confirm new password"
+msgstr ""
+
+#: ../src/Form/PasswordChangeForm.php:87
+#: ../view/user/user/change-password.phtml:2
+#: ../view/user/user/change-password.phtml:9
+#: ../view/user/user/change-passwordadmin.phtml:2
+#: ../view/user/user/change-passwordadmin.phtml:9
+#: ../view/user/user/index.phtml:54 ../view/user/user/set-password.phtml:9
+#: ../view/user/user/view.phtml:65
+msgid "Change Password"
+msgstr ""
+
+#: ../src/Form/PasswordResetForm.php:108 ../view/user/user/message.phtml:7
+#: ../view/user/user/reset-password.phtml:20
+msgid "Reset Password"
+msgstr ""
+
+#: ../src/Form/RegisterForm.php:64 ../src/Form/UserForm.php:64
+#: ../view/user/user/index.phtml:25
+msgid "E-mail"
+msgstr ""
+
+#: ../src/Form/RegisterForm.php:73 ../src/Form/UserForm.php:73
+#: ../view/user/user/index.phtml:26
+msgid "Full Name"
+msgstr ""
+
+#: ../src/Form/RegisterForm.php:93 ../src/Form/UserForm.php:93
+msgid "Confirm password"
+msgstr ""
+
+#: ../src/Form/UserForm.php:106 ../view/user/user/index.phtml:28
+msgid "Status"
+msgstr ""
+
+#: ../src/Form/UserForm.php:108
+msgid "Active"
+msgstr ""
+
+#: ../src/Form/UserForm.php:109
+msgid "Retired"
+msgstr ""
+
+#: ../src/Form/UserForm.php:119 ../view/user/user/index.phtml:29
+msgid "Profile"
+msgstr ""
+
+#: ../src/Form/UserForm.php:121
+msgid "Member"
+msgstr ""
+
+#: ../src/Form/UserForm.php:122
+msgid "Admin"
+msgstr ""
+
+#: ../src/Form/UserForm.php:123
+msgid "Professional"
+msgstr ""
+
+#: ../view/user/auth/login.phtml:8 ../view/user/user/reset-password.phtml:6
+msgid "Email address"
+msgstr ""
+
+#: ../view/user/auth/login.phtml:29
+msgid "Please sign in"
+msgstr ""
+
+#: ../view/user/auth/login.phtml:32
+msgid " Incorrect login and/or password. "
+msgstr ""
+
+#: ../view/user/auth/login.phtml:34
+msgid "Forgot password?"
+msgstr ""
+
+#: ../view/user/user/add.phtml:7 ../view/user/user/change-password.phtml:7
+#: ../view/user/user/change-passwordadmin.phtml:7
+#: ../view/user/user/edit.phtml:7 ../view/user/user/index.phtml:7
+#: ../view/user/user/register.phtml:7 ../view/user/user/set-password.phtml:7
+#: ../view/user/user/view.phtml:7
+msgid "Home"
+msgstr ""
+
+#: ../view/user/user/add.phtml:8 ../view/user/user/change-password.phtml:8
+#: ../view/user/user/change-passwordadmin.phtml:8
+#: ../view/user/user/edit.phtml:8 ../view/user/user/index.phtml:8
+#: ../view/user/user/index.phtml:12 ../view/user/user/set-password.phtml:8
+#: ../view/user/user/view.phtml:8
+msgid "Manage Users"
+msgstr ""
+
+#: ../view/user/user/add.phtml:9 ../view/user/user/add.phtml:43
+#: ../view/user/user/register.phtml:39
+msgid "Add User"
+msgstr ""
+
+#: ../view/user/user/add.phtml:14 ../view/user/user/edit.phtml:14
+#: ../view/user/user/register.phtml:13
+msgid "name@example.com"
+msgstr ""
+
+#: ../view/user/user/add.phtml:19 ../view/user/user/edit.phtml:19
+#: ../view/user/user/register.phtml:18
+msgid "John Doe"
+msgstr ""
+
+#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
+msgid "Please fill out the following form and click the"
+msgstr ""
+
+#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
+msgid "Create"
+msgstr ""
+
+#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
+msgid "button"
+msgstr ""
+
+#: ../view/user/user/change-password.phtml:14
+msgid "Enter old password"
+msgstr ""
+
+#: ../view/user/user/change-password.phtml:19
+#: ../view/user/user/change-passwordadmin.phtml:16
+#: ../view/user/user/set-password.phtml:19
+msgid "Enter new password"
+msgstr ""
+
+#: ../view/user/user/change-password.phtml:24
+#: ../view/user/user/change-passwordadmin.phtml:21
+#: ../view/user/user/set-password.phtml:24
+msgid "Re-enter new password"
+msgstr ""
+
+#: ../view/user/user/change-password.phtml:32
+#: ../view/user/user/change-passwordadmin.phtml:29
+msgid "Change Password for"
+msgstr ""
+
+#: ../view/user/user/edit.phtml:9 ../view/user/user/edit.phtml:37
+msgid "Edit User"
+msgstr ""
+
+#: ../view/user/user/edit.phtml:32
+msgid "Save"
+msgstr ""
+
+#: ../view/user/user/index.phtml:17
+msgid "New User"
+msgstr ""
+
+#: ../view/user/user/index.phtml:27
+msgid "Date Created"
+msgstr ""
+
+#: ../view/user/user/index.phtml:30
+msgid "Actions"
+msgstr ""
+
+#: ../view/user/user/index.phtml:50
+msgid "Edit"
+msgstr ""
+
+#: ../view/user/user/message.phtml:11
+msgid "A password reset link has been sent to your email address."
+msgstr ""
+
+#: ../view/user/user/message.phtml:15
+#: ../view/user/user/messageregistration.phtml:15
+msgid "There is no user with such an email."
+msgstr ""
+
+#: ../view/user/user/message.phtml:20
+msgid "Your new password has been set successfully."
+msgstr ""
+
+#: ../view/user/user/message.phtml:23
+#: ../view/user/user/messageregistration.phtml:23
+msgid "Return to"
+msgstr ""
+
+#: ../view/user/user/message.phtml:23
+#: ../view/user/user/messageregistration.phtml:23
+msgid "login page"
+msgstr ""
+
+#: ../view/user/user/message.phtml:28
+msgid "Invalid reset key or it may have expired. Please return "
+msgstr ""
+
+#: ../view/user/user/message.phtml:29
+#: ../view/user/user/messageregistration.phtml:29
+msgid "here"
+msgstr ""
+
+#: ../view/user/user/message.phtml:29
+msgid "and try reset your password again."
+msgstr ""
+
+#: ../view/user/user/messageregistration.phtml:7
+msgid "Registration"
+msgstr ""
+
+#: ../view/user/user/messageregistration.phtml:11
+msgid "A registration link has been sent to your email address."
+msgstr ""
+
+#: ../view/user/user/messageregistration.phtml:20
+msgid "You registered successfully."
+msgstr ""
+
+#: ../view/user/user/messageregistration.phtml:28
+msgid ""
+"Invalid registration key. If you allready registered and do not remember the "
+"password go "
+msgstr ""
+
+#: ../view/user/user/messageregistration.phtml:29
+msgid "and try reset your password."
+msgstr ""
+
+#: ../view/user/user/register.phtml:8
+msgid "Register"
+msgstr ""
+
+#: ../view/user/user/register.phtml:79
+msgid ""
+"Enter the letters above backwards for example if you have : 2fdr56 : do it "
+"like this : 65rdf2 : easy."
+msgstr ""
+
+#: ../view/user/user/reset-password.phtml:22
+msgid "Enter your e-mail address below to reset your password"
+msgstr ""
+
+#: ../view/user/user/reset-password.phtml:33
+msgid "Enter the letters above as you see them."
+msgstr ""
+
+#: ../view/user/user/set-register.phtml:7
+msgid "Registration Complete"
+msgstr ""
+
+#: ../view/user/user/subscribe.phtml:2 ../view/user/user/subscribe.phtml:7
+#: ../view/user/user/subscribe.phtml:21
+msgid "Subscribe"
+msgstr ""
+
+#: ../view/user/user/subscribe.phtml:20 ../view/user/user/unsubscribe.phtml:20
+msgid "Auto"
+msgstr ""
+
+#: ../view/user/user/subscribe.phtml:33
+msgid "You subscribed successfully"
+msgstr ""
+
+#: ../view/user/user/unsubscribe.phtml:2 ../view/user/user/unsubscribe.phtml:7
+#: ../view/user/user/unsubscribe.phtml:21
+msgid "Unsubscribe"
+msgstr ""
+
+#: ../view/user/user/unsubscribe.phtml:33
+msgid "You unsubscribed successfully"
+msgstr ""
+
+#: ../view/user/user/view.phtml:9 ../view/user/user/view.phtml:36
+msgid "View User"
+msgstr ""
+
+#: ../view/user/user/view.phtml:46
+msgid "E-mail:"
+msgstr ""
+
+#: ../view/user/user/view.phtml:50
+msgid "Full Name:"
+msgstr ""
+
+#: ../view/user/user/view.phtml:54
+msgid "Date Created:"
+msgstr ""
+
+#: ../view/user/user/view.phtml:58
+msgid "Status:"
+msgstr ""
+
+#: ../view/user/user/view.phtml:62
+msgid "Change Password:"
+msgstr ""
+
+#: ../view/user/user/view.phtml:68
+msgid "Profile:"
+msgstr ""
+
+#: ../view/user/user/view.phtml:73
+msgid "PRO account will expire at:"
+msgstr ""
+
+#~ msgid "All rights reserved."
+#~ msgstr "All rights reserved."
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "O site do Dinis"
+#~ msgstr "The Dinis Website"
+
+#~ msgid "Entrar"
+#~ msgstr "Login"
+
+#~ msgid "Bem-Vindo ao site do dinis"
+#~ msgstr "Welcome to the dinis website"
+
+#~ msgid "present2"
+#~ msgstr "Hello i am dinis"

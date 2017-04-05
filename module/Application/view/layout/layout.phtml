@@ -1,0 +1,172 @@
+<?= $this->doctype() ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="rating" content="general"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="google-site-verification" content="GMzJxkPVOrIZcN3_CE3eVkg8vH4KjWIcynXMOGjXc4M" />
+    
+        <meta name="norton-safeweb-site-verification" content="tsdxzj9qsv8n40xpf91ks0zk-uxt5bvpazrz907p3hy0-62h598-rl5v96--j8foijkr5tn6modtob2di-rtgwtj7hssvzt7-4my4-sa446o08ltg23wjc8kpszj8rs4" />
+        
+        <?php echo $this->headTitle('etiju.com '. $this->translate('Free ads Website',__NAMESPACE__,'en_US'))->setSeparator(' - ')->setAutoEscape(false) ?>
+  
+        
+                        <?php 
+         $this->placeholder('description')->append($this->translate('etiju.com is a free ads website you only pay if you get clients/messages for your ads'));
+        echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')         
+            ->appendName('description',$this->placeholder('description'))
+            ->appendName('keywords',$this->translate('etiju.com,motorbikes,auto,computers,stuff,phones,cellphones,agriculture,services,properties,real estate,jobs,itjobs,tecnojobs,totaljobs,jobboard'))
+            ->appendProperty('og:image','http://www.etiju.com/img/etiju.png')
+            //->appendProperty('og:url','http://www.etiju.com')
+            //->appendProperty('og:title','etiju website')
+            ->appendProperty('og:description',$this->placeholder('description'))
+            ->appendName('author','etiju.com')
+            ->setCharset('UTF-8');
+        ?>
+
+        <!-- Le styles -->
+        <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/icon.ico'])
+                        ->prependStylesheet($this->basePath('css/style.css'))
+                        ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
+                        ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+        ?>
+
+        <!-- Scripts -->
+        <?= $this->headScript()
+            ->prependFile($this->basePath('js/bootstrap.min.js'))
+            ->prependFile($this->basePath('js/jquery-2.2.4.min.js'))
+        ?>
+    </head>
+    <body>
+        
+                
+                <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57582336-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+        <div class="container">
+            <div class="row">
+                <!-- Page header -->
+                <div class="col-md-4">
+                    <div class="app-caption"><a href="<?php echo $this->url('home') ?>">etiju</a></div>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Navigation bar -->
+                    <?php
+                    // Check if the activeMenuItemId passed to layout view model
+                    // and if so, use it for setting active navbar item.
+                    if (isset($activeMenuItemId)) {
+                        $this->mainMenu()->setActiveItemId($activeMenuItemId);
+                    }
+
+                    // Render the navbar
+                    echo $this->mainMenu()->render();
+                    ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Breadcrumbs -->
+                    <?= $this->pageBreadcrumbs()->render(); ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Page content placeholder -->
+                    <?= $this->content; ?>
+                </div>
+            </div>
+            <hr>
+ <footer>
+        	<h2 class="hidden">Our footer</h2>
+
+                                           	
+            <section class="wrapper">
+            	
+          
+                <article class="column">
+               	<h4 style="color:black;"><?php echo $this->translate('Links') ?></h4>					
+                        <ul class="unstyled">
+                                <li><a href="<?php echo $this->url('home') ?>" class="navactive"><?php echo $this->translate('Home') ?></a></li>
+
+                                <li><a href="<?php echo $this->url('empregos') ?>" class="navactive"><?php echo $this->translate('Jobs') ?></a></li>
+
+                        </ul>  
+                 				
+          
+                </article>
+                <article class="column">
+               
+                    	<h4 style="color:black;"><?php echo $this->translate('Users') ?>/<?php echo $this->translate('Languages') ?></h4>					
+                        <ul class="unstyled">
+                            <li><a href="<?php echo $this->url('users') ?>"><?php echo $this->translate('Module Users') ?></a></li>
+                            <li><a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('Login'); ?></a></li>	                                 
+                            <li><a href="<?php echo $this->url('register');?>"><?php echo $this->translate('Register Free'); ?></a></li>                  
+                            <li class="active"><a href="<?php echo $this->url('application', ['action'=>'seten']) ?>"><img src=<?php echo $this->basePath() .'/img/flag_united_kingdom.png'?> alt="English"/></a></li>
+                            <li class="active"><a href="<?php echo $this->url('application', ['action'=>'setpt']) ?>"> <img src=<?php echo $this->basePath() .'/img/flag_portugal.png'?> alt="Português"/></a></li>
+                        </ul>
+
+                </article>
+                <article class="column">
+               
+                    	<h4 style="color:black;"><?php echo $this->translate('Social') ?></h4>
+                        <ul class="unstyled">
+                            <li><div class="fb-share-button" data-href="http://www.etiju.com" data-layout="button_count"></div></li>
+                            <li><script src="//platform.linkedin.com/in.js" type="text/javascript">
+                                lang: en_US
+                            </script>
+                            <script type="IN/Share" data-url="http://www.etiju.com" data-counter="right"></script>    </li>	
+                    
+                         
+                        </ul>
+
+                </article>
+
+                   
+               
+            </section>
+                
+
+        </footer>
+       
+          </div>
+    <center>
+<p>&copy; 2009 - <?php echo date('Y') ?>  <a href="http://www.dinispt.com"> by dinis.com.</a> <?php echo $this->translate('All rights reserved.') ?></p>						
+<p><a href="http://www.freepik.com/" target="_blank">Images by Freepik</a></p>	
+                <p align="center">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- footer -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-9468106265850608"
+                     data-ad-slot="5845998655"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                </p>
+    </center>
+        <?= $this->inlineScript() ?>
+    </body>
+</html>

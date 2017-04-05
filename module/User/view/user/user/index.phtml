@@ -1,0 +1,109 @@
+<?php
+$this->headTitle('Users');
+
+$this->mainMenu()->setActiveItemId('users');
+
+$this->pageBreadcrumbs()->setItems([
+             $this->translate('Home')=>$this->url('home'),
+            $this->translate('Manage Users')=>$this->url('users'),
+            ]);
+?>
+
+<h1><?php echo $this->translate('Manage Users'); ?></h1>
+
+<p>
+<a class="btn btn-default" href="
+    <?= $this->url('users', ['action'=>'add']); ?>">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <?php echo $this->translate('New User'); ?>
+</a>
+</p>
+
+<table class="table table-striped">
+
+   <tr>
+        <th>ID</th>
+        <th>ADS NUM</th>
+        <th><?php echo $this->translate('E-mail'); ?></th>
+        <th><?php echo $this->translate('Full Name'); ?></th>
+        <th><?php echo $this->translate('Date Created'); ?></th>
+        <th><?php echo $this->translate('Status'); ?></th> 
+        <th><?php echo $this->translate('Profile'); ?></th> 
+        <th><?php echo $this->translate('Actions'); ?></th>        
+    </tr>
+         
+    <?php foreach ($users as $user): ?>
+    <?php          
+    
+        $conta=0; 
+        
+        $dql = "SELECT COUNT(p) FROM Agricultura\Entity\Agricultura p where p.identidade='".$user->getId()."'";
+        $q =$entitymanager->createQuery($dql);
+        $conta = $conta + $q->getSingleScalarResult();
+            
+        $dql = "SELECT COUNT(p) FROM Auto\Entity\Auto p where p.identidade='".$user->getId()."'";
+        $q1 =$entitymanager->createQuery($dql);
+        $conta = $conta + $q1->getSingleScalarResult();   
+        
+        $dql = "SELECT COUNT(p) FROM Coisas\Entity\Coisas p where p.identidade='".$user->getId()."'";
+        $q2 =$entitymanager->createQuery($dql);
+        $conta = $conta + $q2->getSingleScalarResult();
+        
+        $dql = "SELECT COUNT(p) FROM Computadores\Entity\Computadores p where p.identidade='".$user->getId()."'";
+        $q3 =$entitymanager->createQuery($dql);
+        $conta = $conta + $q3->getSingleScalarResult(); 
+        
+        $dql = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.identidade='".$user->getId()."'";
+        $q4 =$entitymanager->createQuery($dql);
+        $conta = $conta + $q4->getSingleScalarResult();
+        
+        $dql = "SELECT COUNT(p) FROM Imoveis\Entity\Imoveis p where p.identidade='".$user->getId()."'";
+        $q5 =$entitymanager->createQuery($dql);
+        $conta = $conta + $q5->getSingleScalarResult();
+        
+        $dql = "SELECT COUNT(p) FROM Motas\Entity\Motas p where p.identidade='".$user->getId()."'";
+        $q6 =$entitymanager->createQuery($dql);
+        $conta = $conta + $q6->getSingleScalarResult();
+        
+        $dql = "SELECT COUNT(p) FROM Servicos\Entity\Servicos p where p.identidade='".$user->getId()."'";
+        $q7 =$entitymanager->createQuery($dql);
+        $conta = $conta + $q7->getSingleScalarResult();
+        
+        $dql = "SELECT COUNT(p) FROM Telemoveis\Entity\Telemoveis p where p.identidade='".$user->getId()."'";
+        $q8 =$entitymanager->createQuery($dql);
+        $conta = $conta + $q8->getSingleScalarResult();
+        
+        
+    ?>
+    <tr>
+        <td><?= $this->escapeHtml($user->getId()); ?></td>
+        <td><?= $this->escapeHtml($conta); ?></td>
+        <td>
+            <a href="<?= $this->url('users', ['action'=>'view', 'id'=>$user->getId()]); ?>">
+                <?= $this->escapeHtml($user->getEmail()); ?>
+            </a> 
+        </td>
+        <td><?= $this->escapeHtml($user->getFullName()); ?></a> 
+        </td>
+        <td><?= $this->escapeHtml($user->getDateCreated()); ?></td>        
+        <td><?= $this->escapeHtml($user->getStatusAsString()); ?></td>
+        <td><?= $this->escapeHtml($user->getPerfilAsString()); ?></td>
+        <td>
+            <a class="btn btn-info" href="<?= $this->url('users', 
+                    ['action'=>'edit', 'id'=>$user->getId()]); ?>">
+                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Edit'); ?>
+            </a>
+            <a class="btn btn-default" href="<?= $this->url('users',
+                    ['action'=>'change-passwordadmin', 'id'=>$user->getId()]); ?>">
+                <span class="glyphicon glyphicon-asterisk"></span> <?php echo $this->translate('Change Password'); ?>
+            </a>
+        </td>    
+    </tr>
+        
+    <?php endforeach; ?>   
+    
+</table>
+
+  <?= $this->paginationControl($this->users,
+            'Sliding',
+            'paginator.phtml', 
+            ['route' => 'users']); ?>

@@ -1,0 +1,90 @@
+<?php
+$this->headTitle('Add User');
+
+$this->mainMenu()->setActiveItemId('users');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Home')=>$this->url('home'),
+            $this->translate('Register')=>$this->url('users'),      
+            ]);
+
+$form->get('email')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('name@example.com')
+    ]);
+
+$form->get('full_name')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('John Doe')
+    ]);
+
+
+$form->get('password')->setAttributes([
+    'class'=>'form-control'
+    ]);
+
+$form->get('confirm_password')->setAttributes([
+    'class'=>'form-control'
+    ]);
+
+$form->get('captcha')->setAttributes([
+    'class'=>'form-control'
+    ]);
+
+$form->get('submit')->setAttributes(['class'=>'btn btn-primary']);
+
+$form->prepare();
+?>
+
+<h1><?php echo $this->translate('Add User'); ?></h1>
+
+<p>
+    <?php echo $this->translate('Please fill out the following form and click the'); ?> <i><?php echo $this->translate('Create'); ?></i> <?php echo $this->translate('button'); ?> . 
+     
+</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('email'))); ?>
+            <?= $this->formElement($form->get('email')); ?>
+            <?= $this->formElementErrors($form->get('email')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('full_name'))); ?>
+            <?= $this->formElement($form->get('full_name')); ?>
+            <?= $this->formElementErrors($form->get('full_name')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('password'))); ?>
+            <?= $this->formElement($form->get('password')); ?>
+            <?= $this->formElementErrors($form->get('password')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('confirm_password'))); ?>
+            <?= $this->formElement($form->get('confirm_password')); ?>
+            <?= $this->formElementErrors($form->get('confirm_password')); ?>                  
+        </div>
+        
+
+        
+        <div class="form-group">
+          <?= $this->formElement($form->get('captcha')); ?>
+ 
+          <p class="help-block"><?php echo $this->translate('Enter the letters above backwards for example if you have : 2fdr56 : do it like this : 65rdf2 : easy.'); ?></p>
+          
+             <?= $this->formElement($form->get('csrf')); ?>
+        </div>
+        
+        
+        <?php echo $this->translate($this->formElement($form->get('submit'))); ?>
+        
+        <?= $this->form()->closeTag(); ?>
+    </div>    
+</div>   
+

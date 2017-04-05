@@ -1,0 +1,41 @@
+<?php		
+$title = $this->translate('Unsubscribe');
+$this->headTitle($title);
+
+
+
+$des = $this->translate('Unsubscribe');
+     
+   
+$this->placeholder('description')->append($des);
+
+?>
+
+<?php
+
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Auto')=>$this->url('auto'),
+            $this->translate('Unsubscribe')=>$this->url('unsubscribe')
+            ]);
+
+
+
+?>
+
+
+<?php
+
+if($this->mensagem==1)
+{
+    echo $this->translate('You unsubscribed successfully');
+    
+}
+
+
+
+?>
+
+

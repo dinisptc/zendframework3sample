@@ -1,0 +1,94 @@
+
+<script type="text/javascript" src="/js/tinymce/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "textarea",
+    theme: "modern",
+    plugins: [
+        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        "searchreplace wordcount visualblocks visualchars code fullscreen",
+        "insertdatetime media nonbreaking save table contextmenu directionality",
+        "emoticons template paste textcolor colorpicker textpattern"
+    ],
+    toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+    toolbar2: "print preview media | forecolor backcolor emoticons",
+    image_advtab: true,
+    templates: [
+        {title: 'Test template 1', content: 'Test 1'},
+        {title: 'Test template 2', content: 'Test 2'}
+    ]
+});
+</script>
+
+<?php
+$this->headTitle('New Post');
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Jobs')=>$this->url('empregos'),
+            $this->translate('Add Post')=>$this->url('empregosposts', ['action'=>'add'])
+            ]);
+
+$form = $this->form;
+$form->get('title')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('Enter post title here')
+    ]);
+$form->get('content')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('Type content here'),
+    'rows'=>6
+    ]);
+$form->get('contact')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('Enter you email or link')
+    ]);
+$form->get('status')->setAttributes([
+    'class'=>'form-control'   
+    ]);
+$form->get('submit')->setAttributes(['class'=>'btn btn-primary']);
+$form->prepare();
+
+?>
+
+<h1><?php echo $this->translate('Add New Post'); ?></h1>
+
+<p>
+    <?php echo $this->translate('Please fill out the following form and click the '); ?>
+     <i><?php echo $this->translate('Create'); ?></i> <?php echo $this->translate('button'); ?>.
+</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('title'))); ?>
+            <?= $this->formElement($form->get('title')); ?>
+            <?= $this->formElementErrors($form->get('title')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('content'))); ?>
+            <?= $this->formElement($form->get('content')); ?>
+            <?= $this->formElementErrors($form->get('content')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('contact'))); ?>
+            <?= $this->formElement($form->get('contact')); ?>
+            <?= $this->formElementErrors($form->get('contact')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('status'))); ?>
+            <?= $this->formElement($form->get('status')); ?>
+            <?= $this->formElementErrors($form->get('status')); ?>                  
+        </div>
+        
+        <?php echo $this->translate($this->formElement($form->get('submit'))); ?>
+        
+        <?= $this->form()->closeTag(); ?>
+    </div>    
+</div>   

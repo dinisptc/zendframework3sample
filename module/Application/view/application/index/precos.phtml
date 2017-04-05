@@ -1,0 +1,62 @@
+<?php
+$this->headTitle('Location');
+
+$this->mainMenu()->setActiveItemId('about');
+
+$this->pageBreadcrumbs()->setItems([
+             $this->translate('Home')=>$this->url('home'),
+             $this->translate('Pricing')=>$this->url('precos'),
+            ]);
+?>
+
+<h2><?php echo $this->translate('Pricing'); ?></h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-striped table-bordered">
+             <tr>
+                <th><?php echo $this->translate('User Type'); ?>:</th>
+                <td><?php echo $this->translate('Member user')?></td>
+                <td><?php echo $this->translate('PRO user')?></td>
+            </tr>
+            <tr>
+                <th><?php echo $this->translate('Add new ads for free')?>:</th>
+                <td><?php echo $this->translate('YES')?></td>
+                <td><?php echo $this->translate('YES')?></td>
+            </tr>
+            <tr>
+                <th><?php echo $this->translate('Can add and see photos for free')?>:</th>
+                <td><?php echo $this->translate('YES')?></td>
+                <td><?php echo $this->translate('YES')?></td>
+            </tr>
+            <tr>
+                <th><?php echo $this->translate('Can send messages to advertisers for free')?>:</th>
+                <td><?php echo $this->translate('YES')?></td>
+                <td><?php echo $this->translate('YES')?></td>
+            </tr>
+            <tr>
+                <th><?php echo $this->translate('Can open messages from users')?>:</th>
+                <td><?php echo $this->translate('NO')?></td>
+                <td><?php echo $this->translate('YES')?></td>
+            </tr>
+            <tr>
+                <th><?php echo $this->translate('Have access to the full post/ad with emails and links')?>:</th>
+                <td><?php echo $this->translate('NO')?></td>
+                <td><?php echo $this->translate('YES')?></td>
+            </tr>
+            <tr>
+                <th><?php echo $this->translate('Price by the year')?>:</th>
+                <td><?php echo $this->translate('0 Euros')?></td>
+                <td><?php echo $this->translate('25 Euros')?></td>
+            </tr>
+            <tr>
+                <th><?php echo $this->translate('Ad Life')?>:</th>
+                <td><?php echo $this->translate('3 Months')?></td>
+                <td><?php echo $this->translate('1 Year')?></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+

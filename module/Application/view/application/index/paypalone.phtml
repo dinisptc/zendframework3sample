@@ -1,0 +1,85 @@
+
+
+
+
+<?php
+$title = $this->translate('Become PRO One Year Subscription');
+$this->headTitle($title);
+
+$this->mainMenu()->setActiveItemId('settings');
+
+$this->pageBreadcrumbs()->setItems([
+             $this->translate('Home')=>$this->url('home'),
+             $this->translate('Paypal')=>$this->url('paypalone', ['action'=>'paypalone']),
+            ]);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<br>
+
+<?php
+//$form = $this->form;
+$form->setAttribute('action', $this->url('paypalone', array('action' => 'paypalone')));
+$form->prepare();
+
+
+
+echo $this->form()->openTag($form) . PHP_EOL;
+
+
+
+
+
+
+
+
+?>
+
+<dl class="zend_form">
+
+    
+
+
+<dd><?php 
+    echo $this->formElement($form->get('submit'));
+    echo $this->formElementErrors($form->get('submit'));
+?></dd>
+
+</dl>
+<?php
+//var_dump($this->mensagemerro);
+echo $this->form()->closeTag($form) . PHP_EOL;
+
+
+if($this->mensagemerro['sucesso']!=0 && $this->mensagemerro['transacaoid']!=0)
+{
+    if($this->mensagemerro['complete']==1)
+    {
+      
+        ?><h2><?php echo $this->translate('Success'); ?></h2><br>
+        <?php echo $this->translate('Your Transaction ID : ').$this->mensagemerro['transacaoid']; ?><br><?php
+        ?><div style="color:green"><?php echo $this->translate('Payment Received! You are now a PRO User!')?></div><?php
+        
+       
+    }
+     
+    if($this->mensagemerro['pending']==1)
+    {
+      
+        ?><h2><?php echo $this->translate('Success'); ?></h2><br>
+        <?php echo $this->translate('Your Transaction ID : ').$this->mensagemerro['transacaoid']; ?><br><?php
+        ?><div style="color:green"><?php echo $this->translate('Payment Received! You are now a PRO User!')?></div><?php
+        
+       
+
+    }
+    
+}elseif($this->mensagemerro['erro']!=0)
+{
+    ?><div style="color:red"><b><?php echo $this->translate('Error : ').$this->mensagemerro['erro']; ?></b></div><br><?php
+    
+    //'<div style="color:red"><b>Error : </b>'.urldecode($httpParsedResponseAr["L_LONGMESSAGE0"]).'</div>';
+}
+
+
+
+?>

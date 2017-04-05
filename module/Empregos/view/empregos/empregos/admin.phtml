@@ -1,0 +1,88 @@
+<?php
+$this->headTitle('Manage Posts');
+
+$this->mainMenu()->setActiveItemId('admin');
+
+$this->pageBreadcrumbs()->setItems([
+            'Admin'=>$this->url('home')
+            ]);
+?>
+
+<h1><?php echo $this->translate('Manage Posts'); ?></h1>
+
+<p>
+<a class="btn btn-default" href="
+    <?= $this->url('empregosposts', ['action'=>'add']); ?>">
+    <?php echo $this->translate('New Post'); ?>
+    
+</a>
+    
+<a class="btn btn-default" href="
+    <?= $this->url('empregosposts', ['action'=>'admin']); ?>">
+    <?php echo $this->translate('Admin'); ?>
+    
+</a>
+    
+<a class="btn btn-default" href="
+    <?= $this->url('empregosposts', ['action'=>'adminaprovar']); ?>">
+    <?php echo $this->translate('Pending Approval'); ?>
+    
+</a>
+    
+<a class="btn btn-default" href="
+    <?= $this->url('empregosposts', ['action'=>'adminexpired']); ?>">
+    <?php echo $this->translate('Expired'); ?>
+    
+</a>
+</p>
+
+<table class="table table-striped">
+
+   <tr>
+        <th>ID</th>
+        <th>User ID</th>
+        <th><?php echo $this->translate('Post Title'); ?></th>
+        <th><?php echo $this->translate('Date Created'); ?></th>
+        <th><?php echo $this->translate('Status'); ?></th>        
+        <th><?php echo $this->translate('Actions'); ?></th>        
+    </tr>
+    
+    <?php foreach ($posts as $post): ?>
+    
+    <tr>
+        <td><?= $this->escapeHtml($post->getId()); ?></td>
+        <td>
+            <a href="<?= $this->url('users', ['action'=>'view', 'id'=>$post->getIdentidade()]); ?>">
+                <?= $post->getIdentidade(); ?>
+            </a> 
+        </td>
+        <td>
+            <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+                <?= $this->escapeHtml($post->getTitle()); ?>
+            </a> 
+        </td>
+        <td><?= $this->escapeHtml($post->getDateCreated()); ?></td>        
+        <td><?php echo $this->translate($this->escapeHtml($postManager->getPostStatusAsString($post))); ?></td>
+        <td>
+            <a class="btn btn-info" href="<?= $this->url('empregosposts', 
+                    ['action'=>'edit', 'id'=>$post->getId()]); ?>">
+                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Edit'); ?>
+            </a>
+                       <a class="btn btn-info" href="<?= $this->url('empregosimages', 
+                    ['action'=>'index', 'id'=>$post->getId()]); ?>">
+                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Photos'); ?>
+            </a>
+            <a class="btn btn-danger" href="<?= $this->url('empregosposts',
+                    ['action'=>'delete', 'id'=>$post->getId()]); ?>">
+                <span class="glyphicon glyphicon-remove"></span> <?php echo $this->translate('Delete'); ?>
+            </a>
+        </td>    
+    </tr>
+        
+    <?php endforeach; ?>   
+    
+</table>
+
+  <?= $this->paginationControl($this->posts,
+            'Sliding',
+            'paginator.phtml',['route'=>'empregosadmin']); ?>

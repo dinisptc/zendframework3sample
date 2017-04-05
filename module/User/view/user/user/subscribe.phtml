@@ -1,0 +1,41 @@
+<?php		
+$title = $this->translate('Subscribe');
+$this->headTitle($title);
+
+
+
+$des = $this->translate('Subscribe');
+     
+   
+$this->placeholder('description')->append($des);
+
+?>
+
+<?php
+
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Auto')=>$this->url('auto'),
+            $this->translate('Subscribe')=>$this->url('subscribe')
+            ]);
+
+
+
+?>
+
+
+<?php
+
+if($this->mensagem==1)
+{
+    echo $this->translate('You subscribed successfully');
+    
+}
+
+
+
+?>
+
+

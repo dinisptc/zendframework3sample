@@ -1,0 +1,133 @@
+
+
+<?php
+$this->headTitle('Posts');
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Jobs')=>$this->url('empregos')
+            ]);
+?>
+<p align="center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- anuncioproauto -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:100px"
+     data-ad-client="ca-pub-9468106265850608"
+     data-ad-slot="8799465059"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+<h1><?php echo $this->translate('Posts'); ?></h1>
+<?php 
+
+
+if($expirados>0){
+?>
+<p style="color:red"><?php echo $this->translate('You have :').$expirados.$this->translate(' posts expired, to prevent them from being deleted, edit each expired post and set status to pending approval'); ?></p>
+<?php } ?>
+
+
+<p>
+    <a class="btn btn-primary" href="<?= $this->url('empregosposts',
+                    ['action'=>'add']); ?>">
+                <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Add New Post'); ?>
+    </a>
+    <a class="btn btn-primary" href="<?= $this->url('empregosposts',
+                    ['action'=>'myadmin']); ?>">
+                <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Manage my Posts'); ?>
+    </a>
+        <a class="btn btn-primary" href="<?= $this->url('empregospesquisa',
+                    ['action'=>'pesquisa']); ?>">
+                <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Search'); ?>
+    </a>
+    
+
+ 
+
+</p>
+<div class="row">
+    
+    <div class="col-md-20">
+
+    <?php foreach($posts as $post): ?>
+        
+    <h3>
+        <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+            <?= $this->escapeHtml($post->getTitle()); ?>
+        </a>    
+    </h3>
+        
+     <?php    
+        $files = $imageManager->getSavedFiles($post->getId());
+        ?>  
+        
+        <p>
+   
+         <?php $conta=0; ?>
+       <?php foreach($files as $file): 
+           
+        if($conta==0){ ?>
+             <a href="<?php echo $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+            
+       <?php }
+           ?>
+    
+        
+            <img class="imagedropshadow" src="<?= $this->url('empregosimages', ['action'=>'file','id'=>$post->getId()], 
+                    ['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
+   
+          <?php    if($conta==0){ ?>
+              </a> 
+            
+       <?php }
+           ?>
+        <?php
+           if($conta==2)
+           {
+            break;
+           }
+        $conta=$conta+1;
+        endforeach; ?>
+    
+   
+
+    </p>
+    <p>
+         <?php echo $this->translate('Published:'); ?><?= $this->escapeHtml(date('d-m-Y', strtotime($post->getDateCreated()))); ?> 
+        
+        <?php if(($identidadedesteuser==$post->getIdentidade()) || ($perfil== User\Entity\User::PERFIL_ADMIN))
+        { 
+             $msg = $entityManager->createQuery("SELECT COUNT(u) FROM Empregos\Entity\Msgempregos u where u.iddoanuncioauto='".$post->getId()."' order by u.id DESC");
+             if($msg==null)
+             {
+                 $msgCnt=0;
+             }else
+             {
+                 $msgCnt = $msg->getSingleScalarResult();                 
+             }
+    
+            ?>
+        
+          <a href="<?= $this->url('empregosposts',['action'=>'seemessages', 'id'=>$post->getId()]); ?>">
+                 <?php echo $this->translate('You have ').$msgCnt.$this->translate(' Messages'); ?>
+        
+      <?php   } ?>
+    </a>
+    </p>    
+        
+
+
+    <?php endforeach; ?>
+
+    </div>
+
+  
+</div>
+
+  <?= $this->paginationControl($this->posts,
+            'Sliding',
+            'paginator.phtml', 
+            ['route' => 'empregos']); ?>

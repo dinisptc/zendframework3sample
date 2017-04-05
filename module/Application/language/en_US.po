@@ -1,0 +1,431 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-14 14:15+0000\n"
+"PO-Revision-Date: 2017-02-14 14:15+0000\n"
+"Last-Translator: Evan Coury <me@evancoury.com>\n"
+"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../src/Controller/IndexController.php:106
+msgid "Change process."
+msgstr ""
+
+#: ../src/Form/MsgForm.php:41
+msgid "Your Name"
+msgstr ""
+
+#: ../src/Form/MsgForm.php:54
+msgid "Your Message"
+msgstr ""
+
+#: ../src/Form/MsgForm.php:68
+msgid "Your Email"
+msgstr ""
+
+#: ../src/Form/MsgForm.php:79
+msgid "Send"
+msgstr ""
+
+#: ../src/Service/NavManager.php:59
+#: ../view/application/index/contactos.phtml:20
+#: ../view/application/index/localizacao.phtml:7
+#: ../view/application/index/paypalone.phtml:12
+#: ../view/application/index/precos.phtml:7
+#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:111
+msgid "Home"
+msgstr ""
+
+#: ../src/Service/NavManager.php:65
+msgid "About"
+msgstr ""
+
+#: ../src/Service/NavManager.php:72
+#: ../view/application/index/contactos.phtml:21
+msgid "Contacts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:77
+#: ../view/application/index/localizacao.phtml:8
+#: ../view/application/index/localizacao.phtml:12
+#: ../view/application/index/localizacao.phtml:18
+msgid "Location"
+msgstr ""
+
+#: ../src/Service/NavManager.php:82 ../view/application/index/precos.phtml:8
+#: ../view/application/index/precos.phtml:12
+msgid "Pricing"
+msgstr ""
+
+#: ../src/Service/NavManager.php:90
+msgid "Ads"
+msgstr ""
+
+#: ../src/Service/NavManager.php:95 ../view/application/index/index.phtml:86
+#: ../view/layout/layout.phtml:112
+msgid "Auto"
+msgstr ""
+
+#: ../src/Service/NavManager.php:101 ../view/application/index/index.phtml:117
+#: ../view/layout/layout.phtml:113
+msgid "Motorbikes"
+msgstr ""
+
+#: ../src/Service/NavManager.php:108 ../view/application/index/index.phtml:169
+#: ../view/layout/layout.phtml:115
+msgid "Computers"
+msgstr ""
+
+#: ../src/Service/NavManager.php:114 ../view/application/index/index.phtml:252
+#: ../view/layout/layout.phtml:118
+msgid "Phones"
+msgstr ""
+
+#: ../src/Service/NavManager.php:120 ../view/application/index/index.phtml:142
+#: ../view/layout/layout.phtml:114
+msgid "Properties"
+msgstr ""
+
+#: ../src/Service/NavManager.php:126 ../view/application/index/index.phtml:200
+#: ../view/layout/layout.phtml:116
+msgid "Jobs"
+msgstr ""
+
+#: ../src/Service/NavManager.php:132 ../view/application/index/index.phtml:308
+#: ../view/layout/layout.phtml:120
+msgid "Services"
+msgstr ""
+
+#: ../src/Service/NavManager.php:138 ../view/application/index/index.phtml:225
+#: ../view/layout/layout.phtml:117
+msgid "Agriculture"
+msgstr ""
+
+#: ../src/Service/NavManager.php:144 ../view/application/index/index.phtml:283
+#: ../view/layout/layout.phtml:119
+msgid "Stuff"
+msgstr ""
+
+#: ../src/Service/NavManager.php:153
+msgid "Language"
+msgstr ""
+
+#: ../src/Service/NavManager.php:158
+msgid "English"
+msgstr ""
+
+#: ../src/Service/NavManager.php:163
+msgid "Portuguese"
+msgstr ""
+
+#: ../src/Service/NavManager.php:174 ../view/layout/layout.phtml:127
+msgid "Users"
+msgstr ""
+
+#: ../src/Service/NavManager.php:179
+msgid "Sign in"
+msgstr ""
+
+#: ../src/Service/NavManager.php:184 ../view/layout/layout.phtml:131
+msgid "Register Free"
+msgstr ""
+
+#: ../src/Service/NavManager.php:198
+msgid "Admin"
+msgstr ""
+
+#: ../src/Service/NavManager.php:202
+msgid "Manage Users"
+msgstr ""
+
+#: ../src/Service/NavManager.php:207
+msgid "Manage Auto Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:212
+msgid "Manage Motorbikes Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:217
+msgid "Manage Computer Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:222
+msgid "Manage Phones Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:227
+msgid "Manage Properties Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:232
+msgid "Manage Jobs Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:237
+msgid "Manage Services Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:242
+msgid "Manage Agriculture Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:247
+msgid "Manage Stuff Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:260 ../view/application/index/settings.phtml:8
+#: ../view/application/index/settings.phtml:21
+msgid "Settings"
+msgstr ""
+
+#: ../src/Service/NavManager.php:265
+msgid "Sign out"
+msgstr ""
+
+#: ../view/application/index/contactos.phtml:2
+msgid "Contacts by email to inquire about etiju.com"
+msgstr ""
+
+#: ../view/application/index/contactos.phtml:7
+msgid "Please, Contact me trough the form i will reply in due time, thanks"
+msgstr ""
+
+#: ../view/application/index/contactos.phtml:26
+msgid "Enter your name"
+msgstr ""
+
+#: ../view/application/index/contactos.phtml:30
+msgid "Email address"
+msgstr ""
+
+#: ../view/application/index/contactos.phtml:37
+msgid "Type Message here"
+msgstr ""
+
+#: ../view/application/index/contactos.phtml:82
+msgid "Email sent successfully"
+msgstr ""
+
+#: ../view/application/index/contactos.phtml:86
+msgid "Email not sent"
+msgstr ""
+
+#: ../view/application/index/localizacao.phtml:22
+msgid "Map"
+msgstr ""
+
+#: ../view/application/index/paypalone.phtml:6
+msgid "Become PRO One Year Subscription"
+msgstr ""
+
+#: ../view/application/index/paypalone.phtml:13
+msgid "Paypal"
+msgstr ""
+
+#: ../view/application/index/paypalone.phtml:58
+#: ../view/application/index/paypalone.phtml:68
+msgid "Success"
+msgstr ""
+
+#: ../view/application/index/paypalone.phtml:59
+#: ../view/application/index/paypalone.phtml:69
+msgid "Your Transaction ID : "
+msgstr ""
+
+#: ../view/application/index/paypalone.phtml:60
+#: ../view/application/index/paypalone.phtml:70
+msgid "Payment Received! You are now a PRO User!"
+msgstr ""
+
+#: ../view/application/index/paypalone.phtml:78
+msgid "Error : "
+msgstr ""
+
+#: ../view/application/index/precos.phtml:18
+msgid "User Type"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:19
+msgid "Member user"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:20
+msgid "PRO user"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:23
+msgid "Add new ads for free"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:24
+#: ../view/application/index/precos.phtml:25
+#: ../view/application/index/precos.phtml:29
+#: ../view/application/index/precos.phtml:30
+#: ../view/application/index/precos.phtml:34
+#: ../view/application/index/precos.phtml:35
+#: ../view/application/index/precos.phtml:40
+#: ../view/application/index/precos.phtml:45
+msgid "YES"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:28
+msgid "Can add and see photos for free"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:33
+msgid "Can send messages to advertisers for free"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:38
+msgid "Can open messages from users"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:39
+#: ../view/application/index/precos.phtml:44
+msgid "NO"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:43
+msgid "Have access to the full post/ad with emails and links"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:48
+msgid "Price by the year"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:49
+msgid "0 Euros"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:50
+msgid "25 Euros"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:53
+msgid "Ad Life"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:54
+msgid "3 Months"
+msgstr ""
+
+#: ../view/application/index/precos.phtml:55
+msgid "1 Year"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:31
+msgid "E-mail"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:35
+msgid "Full Name"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:39
+msgid "Date Created"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:43
+#: ../view/application/index/settings.phtml:47
+msgid "Email Subscription"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:44
+msgid "User Unsubscribed"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:44
+msgid "User Subscribed"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:52
+msgid "Subscribe"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:59
+msgid "Unsubscribe"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:67
+msgid "Profile:"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:71
+msgid "Change Password:"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:74
+msgid "Change Password"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:80
+msgid "Become PRO for 25 Euros a Year:"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:86
+msgid "Your PRO account will expire at:"
+msgstr ""
+
+#: ../view/layout/layout.phtml:12
+msgid "Free ads Website"
+msgstr ""
+
+#: ../view/layout/layout.phtml:16
+msgid ""
+"etiju.com is a free ads website you only pay if you get clients/messages for "
+"your ads"
+msgstr ""
+
+#: ../view/layout/layout.phtml:21
+msgid ""
+"etiju.com,motorbikes,auto,computers,stuff,phones,cellphones,agriculture,"
+"services,properties,real estate,jobs,itjobs,tecnojobs,totaljobs,jobboard"
+msgstr ""
+
+#: ../view/layout/layout.phtml:109
+msgid "Links"
+msgstr ""
+
+#: ../view/layout/layout.phtml:127
+msgid "Languages"
+msgstr ""
+
+#: ../view/layout/layout.phtml:129
+msgid "Module Users"
+msgstr ""
+
+#: ../view/layout/layout.phtml:130
+msgid "Login"
+msgstr ""
+
+#: ../view/layout/layout.phtml:139
+msgid "Social"
+msgstr ""
+
+#: ../view/layout/layout.phtml:161
+msgid "All rights reserved."
+msgstr "All rights reserved."
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "O site do Dinis"
+#~ msgstr "The Dinis Website"
+
+#~ msgid "Entrar"
+#~ msgstr "Login"
+
+#~ msgid "Bem-Vindo ao site do dinis"
+#~ msgstr "Welcome to the dinis website"
+
+#~ msgid "present2"
+#~ msgstr "Hello i am dinis"

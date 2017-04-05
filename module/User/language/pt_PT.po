@@ -1,0 +1,1039 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-14 14:26+0000\n"
+"PO-Revision-Date: 2017-02-14 14:27+0000\n"
+"Last-Translator: Diogo Melo <dmelo87@gmail.com>\n"
+"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../src/Controller/UserController.php:246
+msgid "Sorry, the old password is incorrect. Could not set the new password."
+msgstr "A senha antiga está incorreta. Não é possível criar a nova senha "
+
+#: ../src/Controller/UserController.php:249
+#: ../src/Controller/UserController.php:789
+msgid "Changed the password successfully."
+msgstr "Senha alterada com sucesso"
+
+#: ../src/Form/LoginForm.php:46 ../src/Form/PasswordResetForm.php:38
+msgid "Your E-mail"
+msgstr "O teu Email"
+
+#: ../src/Form/LoginForm.php:55 ../src/Form/RegisterForm.php:84
+#: ../src/Form/UserForm.php:84 ../view/user/auth/login.phtml:18
+msgid "Password"
+msgstr "Senha"
+
+#: ../src/Form/LoginForm.php:64 ../view/user/auth/login.phtml:43
+msgid "Remember me"
+msgstr "Lembra-te de Mim"
+
+#: ../src/Form/LoginForm.php:90 ../view/user/auth/login.phtml:48
+msgid "Sign in"
+msgstr "Entrar"
+
+#: ../src/Form/PasswordChangeForm.php:48
+msgid "Old Password"
+msgstr "Senha Antiga"
+
+#: ../src/Form/PasswordChangeForm.php:58
+msgid "New Password"
+msgstr "Nova senha"
+
+#: ../src/Form/PasswordChangeForm.php:67
+msgid "Confirm new password"
+msgstr "Confirmar nova senha"
+
+#: ../src/Form/PasswordChangeForm.php:87
+#: ../view/user/user/change-password.phtml:2
+#: ../view/user/user/change-password.phtml:9
+#: ../view/user/user/change-passwordadmin.phtml:2
+#: ../view/user/user/change-passwordadmin.phtml:9
+#: ../view/user/user/index.phtml:54 ../view/user/user/set-password.phtml:9
+#: ../view/user/user/view.phtml:65
+msgid "Change Password"
+msgstr "Alterar Senha"
+
+#: ../src/Form/PasswordResetForm.php:108 ../view/user/user/message.phtml:7
+#: ../view/user/user/reset-password.phtml:20
+msgid "Reset Password"
+msgstr "Reiniciar Senha"
+
+#: ../src/Form/RegisterForm.php:64 ../src/Form/UserForm.php:64
+#: ../view/user/user/index.phtml:25
+msgid "E-mail"
+msgstr "E-mail"
+
+#: ../src/Form/RegisterForm.php:73 ../src/Form/UserForm.php:73
+#: ../view/user/user/index.phtml:26
+msgid "Full Name"
+msgstr "Nome"
+
+#: ../src/Form/RegisterForm.php:93 ../src/Form/UserForm.php:93
+msgid "Confirm password"
+msgstr "Confirmar senha "
+
+#: ../src/Form/UserForm.php:106 ../view/user/user/index.phtml:28
+msgid "Status"
+msgstr "Status"
+
+#: ../src/Form/UserForm.php:108
+msgid "Active"
+msgstr "Ativo "
+
+#: ../src/Form/UserForm.php:109
+msgid "Retired"
+msgstr "Desactivado"
+
+#: ../src/Form/UserForm.php:119 ../view/user/user/index.phtml:29
+msgid "Profile"
+msgstr "Perfil"
+
+#: ../src/Form/UserForm.php:121
+msgid "Member"
+msgstr "Membro"
+
+#: ../src/Form/UserForm.php:122
+msgid "Admin"
+msgstr "Admin"
+
+#: ../src/Form/UserForm.php:123
+msgid "Professional"
+msgstr "Profissional"
+
+#: ../view/user/auth/login.phtml:8 ../view/user/user/reset-password.phtml:6
+msgid "Email address"
+msgstr "Endereço de Email"
+
+#: ../view/user/auth/login.phtml:29
+msgid "Please sign in"
+msgstr "Por favor faça Login"
+
+#: ../view/user/auth/login.phtml:32
+msgid " Incorrect login and/or password. "
+msgstr "Login e /ou Senha Incorrectos"
+
+#: ../view/user/auth/login.phtml:34
+msgid "Forgot password?"
+msgstr "Esqueceu a senha ?"
+
+#: ../view/user/user/add.phtml:7 ../view/user/user/change-password.phtml:7
+#: ../view/user/user/change-passwordadmin.phtml:7
+#: ../view/user/user/edit.phtml:7 ../view/user/user/index.phtml:7
+#: ../view/user/user/register.phtml:7 ../view/user/user/set-password.phtml:7
+#: ../view/user/user/view.phtml:7
+msgid "Home"
+msgstr "Início"
+
+#: ../view/user/user/add.phtml:8 ../view/user/user/change-password.phtml:8
+#: ../view/user/user/change-passwordadmin.phtml:8
+#: ../view/user/user/edit.phtml:8 ../view/user/user/index.phtml:8
+#: ../view/user/user/index.phtml:12 ../view/user/user/set-password.phtml:8
+#: ../view/user/user/view.phtml:8
+msgid "Manage Users"
+msgstr "Gerir Utilizadores"
+
+#: ../view/user/user/add.phtml:9 ../view/user/user/add.phtml:43
+#: ../view/user/user/register.phtml:39
+msgid "Add User"
+msgstr "Adicionar Utilizador"
+
+#: ../view/user/user/add.phtml:14 ../view/user/user/edit.phtml:14
+#: ../view/user/user/register.phtml:13
+msgid "name@example.com"
+msgstr "nome@exemplo.com"
+
+#: ../view/user/user/add.phtml:19 ../view/user/user/edit.phtml:19
+#: ../view/user/user/register.phtml:18
+msgid "John Doe"
+msgstr "Joao Silva"
+
+#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
+msgid "Please fill out the following form and click the"
+msgstr "Preencha o formulário seguinte e clique no botão"
+
+#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
+msgid "Create"
+msgstr "Criar"
+
+#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
+msgid "button"
+msgstr " "
+
+#: ../view/user/user/change-password.phtml:14
+msgid "Enter old password"
+msgstr "Inserir senha antiga"
+
+#: ../view/user/user/change-password.phtml:19
+#: ../view/user/user/change-passwordadmin.phtml:16
+#: ../view/user/user/set-password.phtml:19
+msgid "Enter new password"
+msgstr "Inserir nova senha"
+
+#: ../view/user/user/change-password.phtml:24
+#: ../view/user/user/change-passwordadmin.phtml:21
+#: ../view/user/user/set-password.phtml:24
+msgid "Re-enter new password"
+msgstr "Voltar a inserir nova senha"
+
+#: ../view/user/user/change-password.phtml:32
+#: ../view/user/user/change-passwordadmin.phtml:29
+msgid "Change Password for"
+msgstr "Alterar a senha para"
+
+#: ../view/user/user/edit.phtml:9 ../view/user/user/edit.phtml:37
+msgid "Edit User"
+msgstr "Editar Utilizador"
+
+#: ../view/user/user/edit.phtml:32
+msgid "Save"
+msgstr "Salvar"
+
+#: ../view/user/user/index.phtml:17
+msgid "New User"
+msgstr "Novo Utilizador"
+
+#: ../view/user/user/index.phtml:27
+msgid "Date Created"
+msgstr "Data"
+
+#: ../view/user/user/index.phtml:30
+msgid "Actions"
+msgstr "Ações "
+
+#: ../view/user/user/index.phtml:50
+msgid "Edit"
+msgstr "Editar"
+
+#: ../view/user/user/message.phtml:11
+msgid "A password reset link has been sent to your email address."
+msgstr "Um link para reiniciar a senha foi enviado para o seu email."
+
+#: ../view/user/user/message.phtml:15
+#: ../view/user/user/messageregistration.phtml:15
+msgid "There is no user with such an email."
+msgstr "Não existe um utilizador com esse email"
+
+#: ../view/user/user/message.phtml:20
+msgid "Your new password has been set successfully."
+msgstr "A sua nova senha foi criada com sucesso"
+
+#: ../view/user/user/message.phtml:23
+#: ../view/user/user/messageregistration.phtml:23
+msgid "Return to"
+msgstr "Volta para"
+
+#: ../view/user/user/message.phtml:23
+#: ../view/user/user/messageregistration.phtml:23
+msgid "login page"
+msgstr "pagina de Login"
+
+#: ../view/user/user/message.phtml:28
+msgid "Invalid reset key or it may have expired. Please return "
+msgstr "Chave de reiniciar invalida ou expirada. Por favor volte atras "
+
+#: ../view/user/user/message.phtml:29
+#: ../view/user/user/messageregistration.phtml:29
+msgid "here"
+msgstr "aqui"
+
+#: ../view/user/user/message.phtml:29
+msgid "and try reset your password again."
+msgstr "e tente reiniciar a sua senha novamente"
+
+#: ../view/user/user/messageregistration.phtml:7
+msgid "Registration"
+msgstr "Registro"
+
+#: ../view/user/user/messageregistration.phtml:11
+msgid "A registration link has been sent to your email address."
+msgstr "Um link para completar o registo foi enviado para o seu email."
+
+#: ../view/user/user/messageregistration.phtml:20
+msgid "You registered successfully."
+msgstr "Registo feito com Sucesso"
+
+#: ../view/user/user/messageregistration.phtml:28
+msgid ""
+"Invalid registration key. If you allready registered and do not remember the "
+"password go "
+msgstr ""
+"Chave de registo invalida. Se fizeste o registo e não te lembras da password "
+"vai"
+
+#: ../view/user/user/messageregistration.phtml:29
+msgid "and try reset your password."
+msgstr "e reinicia a Senha"
+
+#: ../view/user/user/register.phtml:8
+msgid "Register"
+msgstr "Registar"
+
+#: ../view/user/user/register.phtml:79
+msgid ""
+"Enter the letters above backwards for example if you have : 2fdr56 : do it "
+"like this : 65rdf2 : easy."
+msgstr ""
+"Insira as letras em cima de trás para a frente por exemplo se tiveres : "
+"2fdr56 : faz assim : 65rdf2 : fácil."
+
+#: ../view/user/user/reset-password.phtml:22
+msgid "Enter your e-mail address below to reset your password"
+msgstr "Insira o sem email em baixo para reiniciar a sua senha"
+
+#: ../view/user/user/reset-password.phtml:33
+msgid "Enter the letters above as you see them."
+msgstr "Insira a letras em cima como as vê"
+
+#: ../view/user/user/set-register.phtml:7
+msgid "Registration Complete"
+msgstr "Registo Completo"
+
+#: ../view/user/user/subscribe.phtml:2 ../view/user/user/subscribe.phtml:7
+#: ../view/user/user/subscribe.phtml:21
+msgid "Subscribe"
+msgstr "Subscrever"
+
+#: ../view/user/user/subscribe.phtml:20 ../view/user/user/unsubscribe.phtml:20
+msgid "Auto"
+msgstr "Auto"
+
+#: ../view/user/user/subscribe.phtml:33
+msgid "You subscribed successfully"
+msgstr "Subscrição concluída com sucesso"
+
+#: ../view/user/user/unsubscribe.phtml:2 ../view/user/user/unsubscribe.phtml:7
+#: ../view/user/user/unsubscribe.phtml:21
+msgid "Unsubscribe"
+msgstr "Terminar Subscrição"
+
+#: ../view/user/user/unsubscribe.phtml:33
+msgid "You unsubscribed successfully"
+msgstr "Terminou a subscrição com sucesso"
+
+#: ../view/user/user/view.phtml:9 ../view/user/user/view.phtml:36
+msgid "View User"
+msgstr "Ver Utilizador"
+
+#: ../view/user/user/view.phtml:46
+msgid "E-mail:"
+msgstr "Email:"
+
+#: ../view/user/user/view.phtml:50
+msgid "Full Name:"
+msgstr "Nome:"
+
+#: ../view/user/user/view.phtml:54
+msgid "Date Created:"
+msgstr "Data de Criação"
+
+#: ../view/user/user/view.phtml:58
+msgid "Status:"
+msgstr "Status:"
+
+#: ../view/user/user/view.phtml:62
+msgid "Change Password:"
+msgstr "Alterar Senha"
+
+#: ../view/user/user/view.phtml:68
+msgid "Profile:"
+msgstr "Perfil:"
+
+#: ../view/user/user/view.phtml:73
+msgid "PRO account will expire at:"
+msgstr "A conta PRO vai expirar em:"
+
+#~ msgid "Your Name"
+#~ msgstr "O teu nome"
+
+#~ msgid "Your Message"
+#~ msgstr "A tua Mensagem"
+
+#~ msgid "Your Email"
+#~ msgstr "O teu email"
+
+#~ msgid "Send"
+#~ msgstr "Enviar"
+
+#~ msgid "Contacts by email to inquire about adamastor.dinispt.com"
+#~ msgstr "Contacto por email para saber mais sobre adamastor.dinispt.com"
+
+#~ msgid "Please, Contact me trough the form i will reply in due time, thanks"
+#~ msgstr ""
+#~ "Por favor entre em contacto através do formulário que será respondido com "
+#~ "tempo, obrigado"
+
+#~ msgid "Send message to have a Professional account"
+#~ msgstr "Envie mensagem para ter uma conta Profissional"
+
+#~ msgid "Email sent successfully"
+#~ msgstr "Mensagem enviada com sucesso"
+
+#~ msgid "Email not sent"
+#~ msgstr "Mensagem não enviada"
+
+#~ msgid "Contacts by email to inquire about dinispt.com"
+#~ msgstr "Entre em contacto por email para saber mais sobre a dinispt.com"
+
+#~ msgid ""
+#~ "This my work history after finishing my school degree in computer science"
+#~ msgstr ""
+#~ "Esta é a historia de trabalho depois de acabar o curso em engenharia "
+#~ "informatica"
+
+#~ msgid ""
+#~ "i have a 15+ experience developing applications for telecomunications, "
+#~ "public sector , industry, my main languages are C/C++,C#,PHP"
+#~ msgstr ""
+#~ "eu tenho mais 15 anos de experiencia a desenvolver aplicações para "
+#~ "telecomunicações , sector publico e industria , as tecnologias principais "
+#~ "são C/C++,C# e PHP"
+
+#~ msgid ""
+#~ "Working on imo4.com website using php7 zend framework 3 and doctrine2, "
+#~ "mariaDB,html css and javascript/jquery"
+#~ msgstr ""
+#~ "A programar para o imo4.com com php7 zend Framework 3 , Doctrine, "
+#~ "MariaDB, HTML, CSS e Javascript/Jquery"
+
+#~ msgid ""
+#~ "Working on etiju.com website using php7 zend framework 3 and doctrine2, "
+#~ "mariaDB,html css and javascript/jquery"
+#~ msgstr ""
+#~ "A programar para o etiju.com com php7 zend Framework 3 doctrine, mariaDB, "
+#~ "HTML, css e javascript"
+
+#~ msgid ""
+#~ "Developed web applications using php5,mysql and javascript for a steel "
+#~ "center company"
+#~ msgstr ""
+#~ "Desenvolvimento e aplicações web com php5, mysql e javascript para uma "
+#~ "empresa industrial"
+
+#~ msgid ""
+#~ "Working on etiju.com website using php5 zend2 and doctrine2, mysql,html "
+#~ "css and javascript/jquery"
+#~ msgstr ""
+#~ "A Programar para o site etiju.com com php5 zend2 e doctrine2, mysql,html "
+#~ "css e javascript"
+
+#~ msgid ""
+#~ "Developed website for a construction company, using php, hosting and "
+#~ "domain registration"
+#~ msgstr ""
+#~ "Site para uma construtora desenvolvido com php, e também com serviço de "
+#~ "alojamento e registo de dominio"
+
+#~ msgid ""
+#~ ".Net C#, WindowsForms application programming with SQL Server and Linq, "
+#~ "Entity Framework"
+#~ msgstr ""
+#~ "Programação em windowsforms de aplicação windows com .NET C#, SQL Server, "
+#~ "Linq e a Entity Framework"
+
+#~ msgid ""
+#~ "Windows Mobile and Android SQLite programming, for a company from Porto"
+#~ msgstr ""
+#~ "Programação para windows mobile e android SQLite para uma empresa do Porto"
+
+#~ msgid ""
+#~ "Developed web application using .NET C# webforms, with SQLServer , Linq "
+#~ "to SQL, for a company from Porto"
+#~ msgstr ""
+#~ "Desenvolvimento de intranet usando ASP.NET Webforms, C#, SQL Server, Linq "
+#~ "to SQL para uma empresa do Porto"
+
+#~ msgid ""
+#~ "Developed web application and webservice using php5 with codeigniter and "
+#~ "mysql, for a swiss company as remote worker"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web e webservice com php e codeigniter com "
+#~ "mySQL, para uma empresa Suíça, remotamente"
+
+#~ msgid ""
+#~ "Developed web application using ASP.NET C#, MVC3 Razor, SQL Server, Linq "
+#~ "to Entities"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com ASP.NET C#, MVC3 Razor, SQL Server e "
+#~ "Linq to Entities"
+
+#~ msgid ""
+#~ "Rollout of a bank , installing computers at the bank agencies, in Portugal"
+#~ msgstr "Instalação de computadores nas agencias de um banco na zona centro "
+
+#~ msgid ""
+#~ "Developed web application using ASP.NET C#, MVC2, SQL Server, Linq to "
+#~ "Entities"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com ASP.NET C#, MVC2, SQL Server, Linq "
+#~ "to Entities"
+
+#~ msgid ""
+#~ "Developed web application using PHP5 Codeigniter , MySQL, for an "
+#~ "advertising company"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com php codeigniter, mySQL, para uma "
+#~ "agência de publicidade "
+
+#~ msgid ""
+#~ "Developed web application using ASP.NET C#, Webforms, SQL Server, SQL "
+#~ "Stored Procedures"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com ASP.NET C# Webforms SQL Server e SQL "
+#~ "Stored Procedures"
+
+#~ msgid ""
+#~ "Developed web application using ASP.NET C#, Webforms, SQL Server, SQL "
+#~ "Stored Procedures, for the WMS application"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com ASP.NET C#, Webforms, SQL Server SQL "
+#~ "Stored PRocedures para uma intranet"
+
+#~ msgid "Developed, .NET C# and WCF."
+#~ msgstr "Desenvolvimento em .NET C# e WCF"
+
+#~ msgid "Developed,WindowsForms application using .NET C# on the Riposte API."
+#~ msgstr "Desenvolvimento de aplicação em windowsforms com .NET C# no Riposte"
+
+#~ msgid "Developed using HP-UX and C/C++ and PL/SQL and Oracle OCCI."
+#~ msgstr "Desenvolvimento em HP-UX , C/C++,  PL/SQL e Oracle OCCI."
+
+#~ msgid "Experience programming for Windows with .NET C# and SQL Server."
+#~ msgstr "Desenvolvimento para windows com .NET C# e SQL Server"
+
+#~ msgid "Developed source code for a ERP using Pascal, Delphi 2006."
+#~ msgstr "Desenvolvimento de código para um ERP com Pascal no Delphi"
+
+#~ msgid "MFC C++ and Directx"
+#~ msgstr "MFC C++ e  DirectX"
+
+#~ msgid ""
+#~ "Experience with C++/UML with Rhapsody using Real Time Montavista Linux."
+#~ msgstr "Programação com C++/UML no Rhapsody com o Montavista Linux"
+
+#~ msgid ""
+#~ "Worked for a large Portuguese company programming in C using HP-UX, and "
+#~ "PL/SQL with PL/SQL Developer."
+#~ msgstr "Programação em Oracle PL/SQL e C/C++, em HP-UX"
+
+#~ msgid "ELENA system maintenance, NAVE system Maintenance"
+#~ msgstr "Manutenção do ELENA e do NAVE"
+
+#~ msgid "VBSCRIPT ASP 3.0 programming"
+#~ msgstr "Programação em ASP"
+
+#~ msgid "Experience as Test Engineer programming automated tests."
+#~ msgstr "Programação de testes automatizados com o silktest"
+
+#~ msgid "Experience with C/C++ and Nucleus RTOS, Linux."
+#~ msgstr "Programação em C/C++ para Linux , com o Nucleus"
+
+#~ msgid "The index of Dinispt website"
+#~ msgstr "Este é o inicio de site da dinispt"
+
+#~ msgid "the dinispt website a digital agency base in coimbra portugal"
+#~ msgstr ""
+#~ "a dinispt é uma agencia digital com sede em Cantanhede Coimbra  Portugal"
+
+#~ msgid "Software Development"
+#~ msgstr "Desenvolvimento de Software"
+
+#~ msgid "Websites"
+#~ msgstr "Páginas de Internet"
+
+#~ msgid "Websites frontend designs, and backend development."
+#~ msgstr "Desenvolvimento de design e programação de páginas de internet"
+
+#~ msgid "Online Stores"
+#~ msgstr "Lojas Online"
+
+#~ msgid "Based on Opencart technologies."
+#~ msgstr "Tecnologia Opencart"
+
+#~ msgid "Desktop Applications"
+#~ msgstr "Aplicações para Windows"
+
+#~ msgid "Windows desktop applications, database driven."
+#~ msgstr "Aplicações Windows para PC, com bases de dados"
+
+#~ msgid "Mobile Applications"
+#~ msgstr "Aplicações Móveis"
+
+#~ msgid ""
+#~ "Android and IOS programming, with webservices REST, to synchronize with "
+#~ "your website database"
+#~ msgstr ""
+#~ "Aplicações Moveis para android e ios com webservices, para ligar a bases "
+#~ "de dados em servidores "
+
+#~ msgid "Hosting"
+#~ msgstr "Alojamento"
+
+#~ msgid "Hosting your website in our linux servers."
+#~ msgstr "Alojamento de páginas de internet nos nossos servidores Linux"
+
+#~ msgid "Email Hosting"
+#~ msgstr "Alojamento de Emails"
+
+#~ msgid "Email service secure and fast in our servers."
+#~ msgstr "Serviço de email seguro e rápido nos nossos servidores"
+
+#~ msgid "Advertising campaigns"
+#~ msgstr "Campanhas Publicitárias"
+
+#~ msgid "Campaigns on the internet (Facebook,Google Adwords,Linkedin,Others)"
+#~ msgstr "Campanhas na internet (Facebook,Google Adwords Linkedin,Others)"
+
+#~ msgid "Logos from clients and employers"
+#~ msgstr "Logotipos de clientes e empregadores"
+
+#~ msgid "Companies where Dinis worked and working for , from 2001 until now :"
+#~ msgstr "Empresas onde o Dinis trabalhou e está a trabalhar desde 2001 "
+
+#~ msgid "No Permissions to access this page(login or become professional)"
+#~ msgstr ""
+#~ "Não tem permissões para aceder a esta pagina (faça login ou torna-te "
+#~ "Profissional)"
+
+#~ msgid "Professional Plans"
+#~ msgstr "Planos Profissionais"
+
+#~ msgid ""
+#~ "To create an Professional account send email to leite.pereira@dinispt.com"
+#~ msgstr ""
+#~ "Para criar uma conta profissional envie email para leite.pereira@dinispt."
+#~ "com"
+
+#~ msgid "With professional account you can post your job offers"
+#~ msgstr "Com a conta profissional podes anunciar as tuas ofertas de emprego"
+
+#~ msgid "Unlimited ads"
+#~ msgstr "Anúncios ilimitados"
+
+#~ msgid "Each ad expires after 6 months"
+#~ msgstr "Cada anuncio expira em 6 meses "
+
+#~ msgid "The Professional account costs 200 Euros per Year taxes included"
+#~ msgstr "A conta profissional custa 200 Euros por ano impostos incluidos"
+
+#~ msgid "The payment is done by bank transfer"
+#~ msgstr "O pagamento é feito por transferência bancaria "
+
+#~ msgid "You will have a invoice and a receipt"
+#~ msgstr "Será enviada uma fatura recibo"
+
+#~ msgid "Software Development Services"
+#~ msgstr "Prestação de serviços de desenvolvimento de Software"
+
+#~ msgid "Our Team"
+#~ msgstr "A nossa equipa"
+
+#~ msgid ""
+#~ "This team is based in Coimbra,Portugal, we according to our contracts we "
+#~ "give work to freelancers, working remotely"
+#~ msgstr ""
+#~ "Esta equipa está baseada em Coimbra Portugal, e de acordo com os "
+#~ "contratos damos trabalho a freelancers."
+
+#~ msgid "Pedro"
+#~ msgstr "Pedro"
+
+#~ msgid "Join us"
+#~ msgstr "Junta-te a nós"
+
+#~ msgid "A 404 error occurred"
+#~ msgstr "Ocorreu um erro 404"
+
+#~ msgid "The requested controller was unable to dispatch the request."
+#~ msgstr "O controlador requisitado não foi capaz de despachar a requisição."
+
+#~ msgid ""
+#~ "The requested controller could not be mapped to an existing controller "
+#~ "class."
+#~ msgstr ""
+#~ "O controlador requisitados não pode ser mapeado a uma classe de "
+#~ "controlador existente."
+
+#~ msgid "The requested controller was not dispatchable."
+#~ msgstr "O controlador requisitado não foi despachado."
+
+#~ msgid "The requested URL could not be matched by routing."
+#~ msgstr "A URL requisitada não pode ser encontrada em uma rota."
+
+#~ msgid "We cannot determine at this time why a 404 was generated."
+#~ msgstr "Não foi possível determinar o motivo do 404 ter ocorrido."
+
+#~ msgid "Controller"
+#~ msgstr "Controlador"
+
+#~ msgid "resolves to %s"
+#~ msgstr "resolve como %s"
+
+#~ msgid "Additional information"
+#~ msgstr "Informação adicional"
+
+#~ msgid "File"
+#~ msgstr "Arquivo"
+
+#~ msgid "Message"
+#~ msgstr "Mensagem"
+
+#~ msgid "Stack trace"
+#~ msgstr "Pilha de execução"
+
+#~ msgid "Previous exceptions"
+#~ msgstr "Exceções anteriores"
+
+#~ msgid "No Exception available"
+#~ msgstr "Nenhuma exceção disponível"
+
+#~ msgid "An error occurred"
+#~ msgstr "Ocorreu um erro"
+
+#~ msgid "Jobs site"
+#~ msgstr "Site de Emprego"
+
+#~ msgid "The adamastor.dinispt.com is a jobs website with offers in europe"
+#~ msgstr ""
+#~ "O adamastor.dinispt.com é um site de empregos com ofertas a nível europeu"
+
+#~ msgid "Jobs,itjobs,totaljobs,jobs,empregos,empregosti,empregostic,alljobs"
+#~ msgstr "Jobs,itjobs,totaljobs,jobs,empregos,empregosti,empregostic,alljobs"
+
+#~ msgid "Contacts"
+#~ msgstr "Contactos"
+
+#~ msgid "Pricing"
+#~ msgstr "Preços"
+
+#~ msgid "Register Free"
+#~ msgstr "Registo Grátis"
+
+#~ msgid "Jobs"
+#~ msgstr "Empregos"
+
+#~ msgid "Become Pro"
+#~ msgstr "Torna-te Pro"
+
+#~ msgid "Logout"
+#~ msgstr "Sair"
+
+#~ msgid "Login"
+#~ msgstr "Entrar"
+
+#~ msgid "Search Jobs for Free"
+#~ msgstr "Pesquisa de empregos Grátis"
+
+#~ msgid ""
+#~ "The idea of adamastor jobs is to include all kind of jobs, the job seeker "
+#~ "can search jobs without having an account, for free."
+#~ msgstr ""
+#~ "A ideia do adamastor jobs é incluir todo o tipo de empregos, quem procura "
+#~ "emprego não necessita de ter conta e pode pesquisar emprego grátis "
+
+#~ msgid "Free Job Search"
+#~ msgstr "Pesquisa de empregos grátis "
+
+#~ msgid "Adamastor Jobs for recruiters and companies"
+#~ msgstr "Adamastor jobs para recrutadores e empresas"
+
+#~ msgid ""
+#~ "The recruiter will need to create an account and register. The "
+#~ "registration is free"
+#~ msgstr "O recrutador necessita de ter uma conta. O registo é grátis "
+
+#~ msgid "Professional account"
+#~ msgstr "Conta Profissional"
+
+#~ msgid ""
+#~ "This account as a price, in order adamastor jobs maintain the server and "
+#~ "keep online for a long time"
+#~ msgstr ""
+#~ "Esta conta tem um preço, para que o adamastor se consiga manter por "
+#~ "muitos anos "
+
+#~ msgid "All rights reserved."
+#~ msgstr "Todos os direitos reservados."
+
+#~ msgid "Links"
+#~ msgstr "Menu"
+
+#~ msgid "Users"
+#~ msgstr "Utilizadores"
+
+#~ msgid "Languages"
+#~ msgstr "Linguagens"
+
+#~ msgid "Module Users"
+#~ msgstr "Modulo Utilizadores"
+
+#~ msgid "Social"
+#~ msgstr "Social"
+
+#~ msgid "Digital Agency dinispt.com"
+#~ msgstr "Agência Digital dinispt.com"
+
+#~ msgid ""
+#~ "The dinispt.com is a software house based in portugal, we have experience "
+#~ "on several technologies .net to c/c++ posix to php native or mvc with "
+#~ "zend and codeigniter"
+#~ msgstr ""
+#~ "A dinispt.com é uma software house com sede em Portugal, temos "
+#~ "experiencia em varias tecnologias desde .NET a C/C++ Posix, a PHP nativo, "
+#~ "e MVC com zend 2 e codeigniter"
+
+#~ msgid ""
+#~ "Software,Developers,Freelancer,C++,C,C#,LINQ,WindowsForms,bind,apache,"
+#~ "linux,ubuntu,postfix,dns,dovecot,mysql,zend framework2,doctrine2,"
+#~ "codeigniter,webservices,php,websites,agency,digital,web marketing,digital "
+#~ "marketing,development"
+#~ msgstr ""
+#~ "Software,Programadores,Freelancer,C++,C,C#,LINQ, Windows Forms,bind,"
+#~ "apache,linux,ubuntu,postfix,dns,dovecot,mysql,zend framework2,doctrine2,"
+#~ "codeigniter,webservices,php,websites,agency,digital,web marketing,digital "
+#~ "marketing,desenvolvimento"
+
+#~ msgid ""
+#~ "This some web projects that are online we work on many other but private "
+#~ "applications"
+#~ msgstr ""
+#~ "Estas aplicações podem ser vistas online , nós trabalhamos em muitos "
+#~ "outros que são privados "
+
+#~ msgid ""
+#~ "web project currently online , we are looking to win new accounts and "
+#~ "make much more projects like these"
+#~ msgstr ""
+#~ "estes projetos estão neste momento online , estamos a procura de novas "
+#~ "contas e fazer mais projetos como estes"
+
+#~ msgid ""
+#~ "Website developed with php5 and zf2 doctrine2 and mysql, still working on "
+#~ "it started november 2014"
+#~ msgstr "Site desenvolvido como php5 , zf2 e mysql , desde novembro 2014"
+
+#~ msgid "Low cost website using php and zf2 html and css"
+#~ msgstr "Website estático de baixo custo com php e zf2, HTML e css "
+
+#~ msgid ""
+#~ "Website developed with php7 and zf3 doctrine2 and mysql, still working on "
+#~ "it started july 2016"
+#~ msgstr ""
+#~ "Site desenvolvido com php7 zf3, doctrine e MariaDB, desde julho 2016"
+
+#~ msgid "Online Store using Opencart, and Paypal Express Checkout"
+#~ msgstr "Loja online com Opencart , e pagamentos por paypal"
+
+#~ msgid "History"
+#~ msgstr "Histórico"
+
+#~ msgid "Projects"
+#~ msgstr "Projetos"
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "Store"
+#~ msgstr "Loja"
+
+#~ msgid "Welcome to dinispt.com digital agency"
+#~ msgstr "Bem-vindo á dinispt.com agência digital "
+
+#~ msgid ""
+#~ "Working on imo4.com website using php7 zend fraamework 3 and doctrine2, "
+#~ "mariaDB,html css and javascript/jquery"
+#~ msgstr "A trabalhar no imo4.com programado com php7 "
+
+#~ msgid ""
+#~ "Website developed with php5 and zf2 doctrine2 and mysql, still working "
+#~ "started november 2014"
+#~ msgstr ""
+#~ "Site desenvolvido com php5 e zf2 doctrine2 e mysql, ainda em "
+#~ "desenvolvimento que começou em novembro de 2014"
+
+#~ msgid ""
+#~ "This app was developed using php5 and codeigniter, this was a team of 4 "
+#~ "people, a very good swiss designer a ios mobile developer from porto and "
+#~ "me with the php and the webservice, and finally the boss."
+#~ msgstr ""
+#~ "Esta aplicação foi desenvolvida com php5 e codeigniter, a equipa era "
+#~ "composta por quatro elementos um designer suíço um programador mobile e "
+#~ "um programador php e o proprietário da empresa"
+
+#~ msgid ""
+#~ "This app was developed using microsoft .net framework, i only worked on "
+#~ "this project one month with a team of developers and designers, my job "
+#~ "was to fix bugs until the site went live."
+#~ msgstr ""
+#~ "Esta aplicação foi desenvolvida com tecnologias Microsoft , só trabalhei "
+#~ "um mês com esta equipa de programadores e designers o trabalho era "
+#~ "resolver erros detetados num auditoria até que o site ficou online e em "
+#~ "funcionamento"
+
+#~ msgid ""
+#~ "The dinispt.com is a software house based in portugal, we have experience "
+#~ "on several technologies since .net to c/c++ posix to php native or mvc "
+#~ "with zend and codeigniter"
+#~ msgstr ""
+#~ "A dinispt.com é uma software house com base em Portugal , temos "
+#~ "experiencia em varias tecnologias desde .net c/c++ posix e php de raiz ou "
+#~ "com mvc com zend e codeigniter"
+
+#~ msgid "etiju.com website"
+#~ msgstr "etiju.com pagina de internet"
+
+#~ msgid ""
+#~ "This website was developed using php with zend framework 2, doctrine2 and "
+#~ "mysql database.This project started in november 2014, the main goal was "
+#~ "to learn the zend framework."
+#~ msgstr ""
+#~ "Esta aplicação foi desenvolvida com php , com a zend Framework 2, "
+#~ "doctrine2 e mysql. Este projeto foi iniciado em novembro de 2014 e o "
+#~ "principal objetivo foi aprender a programar com a zend framework"
+
+#~ msgid "renovader21.com website"
+#~ msgstr "renovader21.com pagina de internet"
+
+#~ msgid ""
+#~ "This website was created for a customer, civil construction company, uses "
+#~ "also zend , but its just a presentation website,"
+#~ msgstr ""
+#~ "Esta pagina foi criada para uma empresa cliente, de construção civil, "
+#~ "também foi usada a zend Framework , mas é só uma pagina de apresentação"
+
+#~ msgid "Email sent successfuly"
+#~ msgstr "Mensagem enviada com sucesso"
+
+#~ msgid " Your Email"
+#~ msgstr "O teu Email"
+
+#~ msgid "Contacts for dinispt digital agency,Cantanhede, Coimbra, Portugal"
+#~ msgstr ""
+#~ "Estes são os contactos para a dinispt.com agencia digital, em  "
+#~ "Cantanhede, Coimbra, Portugal"
+
+#~ msgid "Contacts for dinispt digital agency, Cantanhede Coimbra, Portugal"
+#~ msgstr ""
+#~ "Estes são os contactos para a dinispt.com agencia digital, em  "
+#~ "Cantanhede, Coimbra, Portugal"
+
+#~ msgid "Welcome to Dinis Website"
+#~ msgstr "Benvindo  ao site do Dinis"
+
+#~ msgid "Web Development"
+#~ msgstr "Desenvolvimento Web"
+
+#~ msgid "Dinis is a Portuguese Software developer this is my website"
+#~ msgstr "O Dinis é um engenheiro de software Português e este é o meu site "
+
+#~ msgid "O site do Dinis"
+#~ msgstr "O site do Dinis"
+
+#~ msgid "Dinis is a Portuguese Software developer this its my website"
+#~ msgstr "O Dinis é um engenheiro de software Português"
+
+#~ msgid "Entrar"
+#~ msgstr "Entrar"
+
+#~ msgid "Bem-Vindo ao site do dinis"
+#~ msgstr "Bem-Vindo ao site do dinis"
+
+#~ msgid "present"
+#~ msgstr ""
+#~ "Este é um site de programação onde podes colocar questões, ler artigos, "
+#~ "procurar emprego na área de programação"
+
+#~ msgid "present2"
+#~ msgstr "Olá eu sou o dinis"
+
+#~ msgid "Welcome to %sZend Framework 2%s"
+#~ msgstr "Bem vindo ao %sZend Framework 2%s"
+
+#~ msgid ""
+#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
+#~ "Application%s. You are currently running Zend Framework version %s. This "
+#~ "skeleton can serve as a simple starting point for you to begin building "
+#~ "your application on ZF2."
+#~ msgstr ""
+#~ "Parabéns! Você instalou a %sAplicação Skeleton ZF2%s com sucesso. Você "
+#~ "está usando a versão %s do Zend Framework. Este esqueleto serve "
+#~ "simplesmente como um ponto de inicio na construção da sua aplicação ZF2."
+
+#~ msgid "Fork Zend Framework 2 on GitHub"
+#~ msgstr "Replique Zend Framework 2 no GitHub"
+
+#~ msgid ""
+#~ "Zend Framework 2 is under active development. If you are interested in "
+#~ "following the development of ZF2, there is a special ZF2 portal on the "
+#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
+#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
+#~ "for staying up to date with the latest developments!"
+#~ msgstr ""
+#~ "Zend Framework 2 está sob desenvolvimento ativo. Se vocês está "
+#~ "interessado em acompanhar o desenvolvimento do ZF2, tem um portal ZF2 "
+#~ "especial no site oficial do Zend Framework que possui links para ZF2 "
+#~ "%swiki%s, %sdev blog%s, %sissue tracker%s, dentre outros. Este é um "
+#~ "excelente material para se manter atualizado com os últimos "
+#~ "desenvolvimentos!"
+
+#~ msgid "ZF2 Development Portal"
+#~ msgstr "Portal de Desenvolvimento do ZF2"
+
+#~ msgid "Discover Modules"
+#~ msgstr "Descubra Módulos"
+
+#~ msgid ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
+#~ msgstr ""
+#~ "A Comunidade está trabalhando em desenvolver um site comunitário para "
+#~ "servir como repositório e galeria de módulos ZF2. O projeto estará "
+#~ "disponível %sem breve no GitHub%s. O site já está online e atualmente "
+#~ "contém uma lista de alguns dos módulos já disponíveis para ZF2."
+
+#~ msgid "Explore ZF2 Modules"
+#~ msgstr "Explore Módulos ZF2"
+
+#~ msgid "Help &amp; Support"
+#~ msgstr "Ajuda &amp; Suporte"
+
+#~ msgid ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+#~ msgstr ""
+#~ "Caso você precise de ajuda ou suporte enquanto desenvolve com ZF2, pode "
+#~ "nos encontrar pelo %s#zftalk on Freenode%s. Vamos gostar muito de ouvir "
+#~ "perguntas e opiniões que você possa ter em relação às versões beta. "
+#~ "Também, você pode se registrar e enviar perguntar para a %slista de e-mail"
+#~ "%s."
+
+#~ msgid "Ping us on IRC"
+#~ msgstr "Nos escreva no IRC"
+
+#~ msgid "congratulation"
+#~ msgstr "parabens"
+
+#~ msgid "inicio"
+#~ msgstr "inicio"
+
+#~ msgid "Skeleton Application"
+#~ msgstr "ii"
+
+#~ msgid "Auth"
+#~ msgstr "Autenticação"
+
+#~ msgid "Exception"
+#~ msgstr "Exceção"

@@ -1,0 +1,33 @@
+<?php
+$this->headTitle('Thank You');
+?>
+
+<div class="row">
+<div class="col-md-offset-4 col-md-5">
+<h1><?php echo $this->translate('Reset Password'); ?></h1>
+
+<?php if ($id=='sent'): ?>
+<p>    
+    <?php echo $this->translate('A password reset link has been sent to your email address.'); ?>
+</p>
+<?php elseif ($id=='invalid-email'): ?>
+<p>
+    <?php echo $this->translate('There is no user with such an email.'); ?>
+    
+</p>
+<?php elseif ($id=='set'): ?>
+<p>    
+    <?php echo $this->translate('Your new password has been set successfully.'); ?>
+</p>
+<p>
+    <?php echo $this->translate('Return to'); ?> <a href="<?= $this->url('login'); ?>"><?php echo $this->translate('login page'); ?></a>.
+</p>
+<?php elseif ($id=='failed'): ?>
+
+    
+    <?php echo $this->translate('Invalid reset key or it may have expired. Please return '); ?>
+    <a href="<?= $this->url('reset-password') ?>"><?php echo $this->translate('here'); ?></a> <?php echo $this->translate('and try reset your password again.'); ?>
+</p>
+<?php endif; ?>
+</div>
+</div>    

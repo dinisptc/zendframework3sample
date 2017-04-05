@@ -1,0 +1,1141 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-14 14:20+0000\n"
+"PO-Revision-Date: 2017-02-14 14:21+0000\n"
+"Last-Translator: Diogo Melo <dmelo87@gmail.com>\n"
+"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../src/Form/AutoForm.php:56 ../src/Form/PostForm.php:56
+msgid "Title"
+msgstr "Titulo "
+
+#: ../src/Form/AutoForm.php:68 ../src/Form/PostForm.php:68
+msgid "Content"
+msgstr "Conteúdo"
+
+#: ../src/Form/AutoForm.php:80
+msgid "Contact"
+msgstr "Contacto "
+
+#: ../src/Form/AutoForm.php:96 ../src/Form/AutoForm.php:116
+#: ../src/Form/PostForm.php:96 ../src/Form/PostForm.php:115
+#: ../src/Service/AutoManager.php:178 ../view/empregos/empregos/admin.phtml:22
+#: ../view/empregos/empregos/adminexpired.phtml:22
+msgid "Pending Approval"
+msgstr "Em Aprovação"
+
+#: ../src/Form/AutoForm.php:97 ../src/Form/PostForm.php:97
+#: ../src/Service/AutoManager.php:177
+msgid "Published"
+msgstr "Publicado"
+
+#: ../src/Form/AutoForm.php:98 ../src/Form/AutoForm.php:117
+#: ../src/Form/PostForm.php:98 ../src/Service/AutoManager.php:176
+msgid "Draft"
+msgstr "Rascunho"
+
+#: ../src/Form/AutoForm.php:99 ../src/Service/AutoManager.php:179
+#: ../view/empregos/empregos/admin.phtml:28
+msgid "Expired"
+msgstr "Expirado"
+
+#: ../src/Form/AutoForm.php:130 ../src/Form/PostForm.php:129
+#: ../view/empregos/empregos/add.phtml:59
+msgid "Create"
+msgstr "Criar"
+
+#: ../src/Form/CommentForm.php:42
+msgid "Author"
+msgstr "Autor"
+
+#: ../src/Form/CommentForm.php:54
+msgid "Comment"
+msgstr "Comentário "
+
+#: ../src/Form/CommentForm.php:63
+msgid "Save"
+msgstr "Salvar"
+
+#: ../src/Form/MsgForm.php:41
+msgid "Your Name"
+msgstr "O teu nome"
+
+#: ../src/Form/MsgForm.php:54
+msgid "Your Message"
+msgstr "A tua Mensagem"
+
+#: ../src/Form/MsgForm.php:68
+msgid "Your Email"
+msgstr "O teu email"
+
+#: ../src/Form/MsgForm.php:79
+msgid "Send"
+msgstr "Enviar"
+
+#: ../src/Form/PostForm.php:80
+msgid "Tags"
+msgstr "Tags"
+
+#: ../src/Form/SearchForm.php:56 ../src/Form/SearchForm.php:67
+#: ../view/empregos/index/index.phtml:44
+#: ../view/empregos/index/pesquisa.phtml:10
+#: ../view/empregos/index/pesquisa.phtml:29
+#: ../view/empregos/index/pesquisa.phtml:53
+msgid "Search"
+msgstr "Pesquisa"
+
+#: ../view/empregos/empregos/add.phtml:29
+#: ../view/empregos/empregos/contactos.phtml:20
+#: ../view/empregos/empregos/edit.phtml:29
+#: ../view/empregos/empregos/myadmin.phtml:7
+#: ../view/empregos/empregos/seemessages.phtml:7
+#: ../view/empregos/empregos/view.phtml:50
+#: ../view/empregos/empregos/viewmessage.phtml:35
+#: ../view/empregos/image/deletefile.phtml:7
+#: ../view/empregos/image/index.phtml:7 ../view/empregos/index/index.phtml:9
+#: ../view/empregos/index/pesquisa.phtml:9
+msgid "Jobs"
+msgstr "Empregos"
+
+#: ../view/empregos/empregos/add.phtml:30
+msgid "Add Post"
+msgstr "Adicionar Artigo"
+
+#: ../view/empregos/empregos/add.phtml:36
+#: ../view/empregos/empregos/edit.phtml:36
+msgid "Enter post title here"
+msgstr "Insira o titulo do artigo aqui"
+
+#: ../view/empregos/empregos/add.phtml:40
+#: ../view/empregos/empregos/edit.phtml:40
+msgid "Type content here"
+msgstr "Insira o conteúdo aqui"
+
+#: ../view/empregos/empregos/add.phtml:45
+#: ../view/empregos/empregos/edit.phtml:45
+msgid "Enter you email or link"
+msgstr "Insira o seu email ou link"
+
+#: ../view/empregos/empregos/add.phtml:55
+#: ../view/empregos/empregos/seemessages.phtml:16
+#: ../view/empregos/index/index.phtml:36
+#: ../view/empregos/index/pesquisa.phtml:20
+msgid "Add New Post"
+msgstr "Adicionar Novo Artigo"
+
+#: ../view/empregos/empregos/add.phtml:58
+#: ../view/empregos/index/pesquisa.phtml:52
+msgid "Please fill out the following form and click the "
+msgstr "Por favor preencha o formulário e clique o"
+
+#: ../view/empregos/empregos/add.phtml:59
+#: ../view/empregos/image/upload.phtml:19
+#: ../view/empregos/index/pesquisa.phtml:53
+msgid "button"
+msgstr "botão"
+
+#: ../view/empregos/empregos/admin.phtml:11
+#: ../view/empregos/empregos/adminaprovar.phtml:11
+#: ../view/empregos/empregos/adminexpired.phtml:11
+#: ../view/empregos/empregos/myadmin.phtml:12
+msgid "Manage Posts"
+msgstr "Gerir Artigos"
+
+#: ../view/empregos/empregos/admin.phtml:16
+#: ../view/empregos/empregos/adminaprovar.phtml:16
+#: ../view/empregos/empregos/adminexpired.phtml:16
+#: ../view/empregos/empregos/myadmin.phtml:17
+msgid "New Post"
+msgstr "Novo Artigo"
+
+#: ../view/empregos/empregos/admin.phtml:37
+#: ../view/empregos/empregos/adminaprovar.phtml:25
+#: ../view/empregos/empregos/adminexpired.phtml:36
+#: ../view/empregos/empregos/myadmin.phtml:26
+msgid "Post Title"
+msgstr "Titulo do Artigo"
+
+#: ../view/empregos/empregos/admin.phtml:38
+#: ../view/empregos/empregos/adminaprovar.phtml:26
+#: ../view/empregos/empregos/adminexpired.phtml:37
+#: ../view/empregos/empregos/myadmin.phtml:27
+msgid "Date Created"
+msgstr "Data de Criação"
+
+#: ../view/empregos/empregos/admin.phtml:39
+#: ../view/empregos/empregos/adminaprovar.phtml:27
+#: ../view/empregos/empregos/adminexpired.phtml:38
+#: ../view/empregos/empregos/myadmin.phtml:28
+msgid "Status"
+msgstr "Status"
+
+#: ../view/empregos/empregos/admin.phtml:40
+#: ../view/empregos/empregos/adminaprovar.phtml:28
+#: ../view/empregos/empregos/adminexpired.phtml:39
+#: ../view/empregos/empregos/myadmin.phtml:29
+#: ../view/empregos/empregos/seemessages.phtml:31
+msgid "Actions"
+msgstr "Ações "
+
+#: ../view/empregos/empregos/admin.phtml:57
+#: ../view/empregos/empregos/adminaprovar.phtml:45
+#: ../view/empregos/empregos/adminexpired.phtml:56
+#: ../view/empregos/empregos/myadmin.phtml:46
+msgid "Edit"
+msgstr "Editar"
+
+#: ../view/empregos/empregos/admin.phtml:61
+#: ../view/empregos/empregos/adminaprovar.phtml:49
+#: ../view/empregos/empregos/adminexpired.phtml:60
+#: ../view/empregos/empregos/myadmin.phtml:50
+msgid "Photos"
+msgstr "Fotos"
+
+#: ../view/empregos/empregos/admin.phtml:65
+#: ../view/empregos/empregos/adminaprovar.phtml:53
+#: ../view/empregos/empregos/adminexpired.phtml:64
+#: ../view/empregos/empregos/myadmin.phtml:55
+msgid "Delete"
+msgstr "Apagar"
+
+#: ../view/empregos/empregos/adminexpired.phtml:27
+msgid "Delete Expired"
+msgstr "Apagar Expirados"
+
+#: ../view/empregos/empregos/contactos.phtml:2
+msgid "Contacts by email to inquire about etiju.com"
+msgstr "Contactos por email para saber sobre etiju.com"
+
+#: ../view/empregos/empregos/contactos.phtml:7
+msgid "Please, Contact me trough the form i will reply in due time, thanks"
+msgstr ""
+"Por favor entre em contacto através do formulário que será respondido com "
+"tempo, obrigado"
+
+#: ../view/empregos/empregos/contactos.phtml:21
+msgid "Contacts"
+msgstr "Contactos"
+
+#: ../view/empregos/empregos/contactos.phtml:26
+msgid "Enter your name"
+msgstr "Insira o seu nome"
+
+#: ../view/empregos/empregos/contactos.phtml:30
+msgid "Email address"
+msgstr "Endereço de Email"
+
+#: ../view/empregos/empregos/contactos.phtml:37
+msgid "Type Message here"
+msgstr "Escreva a mensagem aqui"
+
+#: ../view/empregos/empregos/contactos.phtml:82
+msgid "Email sent successfully"
+msgstr "Mensagem enviada com sucesso"
+
+#: ../view/empregos/empregos/contactos.phtml:86
+msgid "Email not sent"
+msgstr "Mensagem não enviada"
+
+#: ../view/empregos/empregos/contactos.phtml:90
+msgid ""
+"Email not sent - the user is unsubscribed - become professional to see the "
+"contact"
+msgstr ""
+"Email não enviado - o utilizador não está subscrito - torna-te profissional "
+"para ter acesso ao contacto"
+
+#: ../view/empregos/empregos/edit.phtml:30
+#: ../view/empregos/empregos/edit.phtml:56
+msgid "Edit Post"
+msgstr "Editar Artigo"
+
+#: ../view/empregos/empregos/edit.phtml:59
+msgid "Please fill out the following form and click the *Save* button."
+msgstr "Por favor preencha o formulário e clique no botão *Salvar*"
+
+#: ../view/empregos/empregos/myadmin.phtml:8
+msgid "Manage My Posts"
+msgstr "Gerir os meus Artigos"
+
+#: ../view/empregos/empregos/seemessages.phtml:8
+#: ../view/empregos/empregos/viewmessage.phtml:36
+msgid "Messages"
+msgstr "Mensagens"
+
+#: ../view/empregos/empregos/seemessages.phtml:12
+#: ../view/empregos/index/index.phtml:23
+#: ../view/empregos/index/pesquisa.phtml:16
+msgid "Posts"
+msgstr "Artigos"
+
+#: ../view/empregos/empregos/seemessages.phtml:20
+#: ../view/empregos/index/index.phtml:40
+#: ../view/empregos/index/pesquisa.phtml:24
+msgid "Manage my Posts"
+msgstr "Gerir os meus anuncios"
+
+#: ../view/empregos/empregos/seemessages.phtml:30
+msgid "Email"
+msgstr "Email"
+
+#: ../view/empregos/empregos/seemessages.phtml:45
+msgid "Delete Message"
+msgstr "Apagar MEnsagem"
+
+#: ../view/empregos/empregos/view.phtml:58
+msgid "Back to list of posts"
+msgstr "Volta para a Lista de Artigos"
+
+#: ../view/empregos/empregos/view.phtml:68
+#: ../view/empregos/index/index.phtml:99
+#: ../view/empregos/index/pesquisa.phtml:129
+msgid "Published:"
+msgstr "Publicado:"
+
+#: ../view/empregos/empregos/view.phtml:76
+msgid "Visits : "
+msgstr "Visitas :"
+
+#: ../view/empregos/empregos/view.phtml:91
+msgid "You have to become PRO to this the Contact"
+msgstr "Tens de te tornar pro para ver este Contacto"
+
+#: ../view/empregos/empregos/view.phtml:96
+msgid "You have to register and become PRO to this the Contact"
+msgstr "Tens de te registar e tornar PRO para ver este Contacto"
+
+#: ../view/empregos/empregos/view.phtml:121
+#: ../view/empregos/index/index.phtml:115
+#: ../view/empregos/index/pesquisa.phtml:145
+msgid "You have "
+msgstr "Tu tens "
+
+#: ../view/empregos/empregos/view.phtml:121
+#: ../view/empregos/index/index.phtml:115
+#: ../view/empregos/index/pesquisa.phtml:145
+msgid " Messages"
+msgstr " Mensagens"
+
+#: ../view/empregos/empregos/view.phtml:128
+msgid "Free Contact"
+msgstr "Contacto Gratis "
+
+#: ../view/empregos/empregos/viewmessage.phtml:37
+msgid "View Messages"
+msgstr "Ver Mensagens"
+
+#: ../view/empregos/empregos/viewmessage.phtml:45
+msgid "Back to list of Messages"
+msgstr "Voltar para a lista de mensagens"
+
+#: ../view/empregos/image/deletefile.phtml:8
+#: ../view/empregos/image/deletefile.phtml:12
+#: ../view/empregos/image/index.phtml:8 ../view/empregos/image/index.phtml:12
+#: ../view/empregos/image/upload.phtml:8
+msgid "Image Gallery"
+msgstr "Galeria de Imagens"
+
+#: ../view/empregos/image/deletefile.phtml:16
+#: ../view/empregos/image/index.phtml:16
+msgid "This page displays the list of uploaded images."
+msgstr "Esta pagina mostra a lista de imagens que foram transferidas"
+
+#: ../view/empregos/image/deletefile.phtml:21
+#: ../view/empregos/image/index.phtml:21
+msgid "Upload More"
+msgstr "Transferir Mais"
+
+#: ../view/empregos/image/deletefile.phtml:29
+#: ../view/empregos/image/index.phtml:29
+msgid "There are no files to display."
+msgstr "Não ha ficheiros para mostrar"
+
+#: ../view/empregos/image/deletefile.phtml:49
+#: ../view/empregos/image/index.phtml:49
+msgid "Show in Natural Size"
+msgstr "Mostrar no tamanho real"
+
+#: ../view/empregos/image/deletefile.phtml:54
+#: ../view/empregos/image/index.phtml:54
+msgid "Delete File"
+msgstr "Apagar ficheiro"
+
+#: ../view/empregos/image/upload.phtml:7
+msgid "Home"
+msgstr "Início"
+
+#: ../view/empregos/image/upload.phtml:16
+msgid "Upload a New Image"
+msgstr "Transferir uma nova Imagem"
+
+#: ../view/empregos/image/upload.phtml:19
+msgid "Please fill out the following form and press the"
+msgstr "Por favor preencha o formulário seguinte e clique no "
+
+#: ../view/empregos/image/upload.phtml:19
+msgid "Upload"
+msgstr "Transferir"
+
+#: ../view/empregos/index/index.phtml:29
+msgid "You have :"
+msgstr "Tu tens :"
+
+#: ../view/empregos/index/index.phtml:29
+msgid ""
+" posts expired, to prevent them from being deleted, edit each expired post "
+"and set status to pending approval"
+msgstr ""
+"anúncios expirados, para evitar que sejam apagados, edita cada anuncio "
+"expirado e altera o status para em aprovação"
+
+#: ../view/empregos/index/pesquisa.phtml:42
+msgid "Enter you search here"
+msgstr "Insira a sua pesquisa aqui"
+
+#: ../view/empregos/index/pesquisa.phtml:171
+msgid "No results found"
+msgstr "Não foram encontrados resultados "
+
+#~ msgid "Auto"
+#~ msgstr "Auto"
+
+#~ msgid "Contacts by email to inquire about dinispt.com"
+#~ msgstr "Entre em contacto por email para saber mais sobre a dinispt.com"
+
+#~ msgid "Ads"
+#~ msgstr "Anuncios"
+
+#~ msgid "Check Messages"
+#~ msgstr "Verificar Mensagens"
+
+#~ msgid ""
+#~ "Email not sent - the user is unsubscribed - become premium to see the "
+#~ "contact"
+#~ msgstr "Email não enviado - o utilizador não está subscrito - "
+
+#~ msgid "No comments"
+#~ msgstr "Sem comentários "
+
+#~ msgid "1 comment"
+#~ msgstr "1 comentário "
+
+#~ msgid " comments"
+#~ msgstr " comentários  "
+
+#~ msgid "Tags:"
+#~ msgstr "Tags:"
+
+#~ msgid "Add new comment"
+#~ msgstr "Adicionar novo comentário"
+
+#~ msgid "Popular Tags"
+#~ msgstr "Tags Populares"
+
+#~ msgid "comma, separated, list, of, tags"
+#~ msgstr "lista, de, tags, separadas, por, virgulas "
+
+#~ msgid "Separate tags with comma."
+#~ msgstr "Separar as tags com virgulas."
+
+#~ msgid "Author's name"
+#~ msgstr "Nome do Autor"
+
+#~ msgid "Text"
+#~ msgstr "Texto"
+
+#~ msgid "Leave Reply"
+#~ msgstr "Deixa um Comentário"
+
+#~ msgid "About"
+#~ msgstr "Sobre"
+
+#~ msgid "Language"
+#~ msgstr "Linguagem"
+
+#~ msgid "English"
+#~ msgstr "Inglês"
+
+#~ msgid "Portuguese"
+#~ msgstr "Português"
+
+#~ msgid "Sign in"
+#~ msgstr "Entrar"
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "Manage Users"
+#~ msgstr "Gerir Utilizadores"
+
+#~ msgid "Settings"
+#~ msgstr "Configurações"
+
+#~ msgid "Sign out"
+#~ msgstr "Sair"
+
+#~ msgid "Digital Agency"
+#~ msgstr "Agência Digital"
+
+#~ msgid "Contacts by email to inquire about adamastor.dinispt.com"
+#~ msgstr "Contacto por email para saber mais sobre adamastor.dinispt.com"
+
+#~ msgid "Send message to have a Professional account"
+#~ msgstr "Envie mensagem para ter uma conta Profissional"
+
+#~ msgid ""
+#~ "This my work history after finishing my school degree in computer science"
+#~ msgstr ""
+#~ "Esta é a historia de trabalho depois de acabar o curso em engenharia "
+#~ "informatica"
+
+#~ msgid ""
+#~ "i have a 15+ experience developing applications for telecomunications, "
+#~ "public sector , industry, my main languages are C/C++,C#,PHP"
+#~ msgstr ""
+#~ "eu tenho mais 15 anos de experiencia a desenvolver aplicações para "
+#~ "telecomunicações , sector publico e industria , as tecnologias principais "
+#~ "são C/C++,C# e PHP"
+
+#~ msgid ""
+#~ "Working on imo4.com website using php7 zend framework 3 and doctrine2, "
+#~ "mariaDB,html css and javascript/jquery"
+#~ msgstr ""
+#~ "A programar para o imo4.com com php7 zend Framework 3 , Doctrine, "
+#~ "MariaDB, HTML, CSS e Javascript/Jquery"
+
+#~ msgid ""
+#~ "Working on etiju.com website using php7 zend framework 3 and doctrine2, "
+#~ "mariaDB,html css and javascript/jquery"
+#~ msgstr ""
+#~ "A programar para o etiju.com com php7 zend Framework 3 doctrine, mariaDB, "
+#~ "HTML, css e javascript"
+
+#~ msgid ""
+#~ "Developed web applications using php5,mysql and javascript for a steel "
+#~ "center company"
+#~ msgstr ""
+#~ "Desenvolvimento e aplicações web com php5, mysql e javascript para uma "
+#~ "empresa industrial"
+
+#~ msgid ""
+#~ "Working on etiju.com website using php5 zend2 and doctrine2, mysql,html "
+#~ "css and javascript/jquery"
+#~ msgstr ""
+#~ "A Programar para o site etiju.com com php5 zend2 e doctrine2, mysql,html "
+#~ "css e javascript"
+
+#~ msgid ""
+#~ "Developed website for a construction company, using php, hosting and "
+#~ "domain registration"
+#~ msgstr ""
+#~ "Site para uma construtora desenvolvido com php, e também com serviço de "
+#~ "alojamento e registo de dominio"
+
+#~ msgid ""
+#~ ".Net C#, WindowsForms application programming with SQL Server and Linq, "
+#~ "Entity Framework"
+#~ msgstr ""
+#~ "Programação em windowsforms de aplicação windows com .NET C#, SQL Server, "
+#~ "Linq e a Entity Framework"
+
+#~ msgid ""
+#~ "Windows Mobile and Android SQLite programming, for a company from Porto"
+#~ msgstr ""
+#~ "Programação para windows mobile e android SQLite para uma empresa do Porto"
+
+#~ msgid ""
+#~ "Developed web application using .NET C# webforms, with SQLServer , Linq "
+#~ "to SQL, for a company from Porto"
+#~ msgstr ""
+#~ "Desenvolvimento de intranet usando ASP.NET Webforms, C#, SQL Server, Linq "
+#~ "to SQL para uma empresa do Porto"
+
+#~ msgid ""
+#~ "Developed web application and webservice using php5 with codeigniter and "
+#~ "mysql, for a swiss company as remote worker"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web e webservice com php e codeigniter com "
+#~ "mySQL, para uma empresa Suíça, remotamente"
+
+#~ msgid ""
+#~ "Developed web application using ASP.NET C#, MVC3 Razor, SQL Server, Linq "
+#~ "to Entities"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com ASP.NET C#, MVC3 Razor, SQL Server e "
+#~ "Linq to Entities"
+
+#~ msgid ""
+#~ "Rollout of a bank , installing computers at the bank agencies, in Portugal"
+#~ msgstr "Instalação de computadores nas agencias de um banco na zona centro "
+
+#~ msgid ""
+#~ "Developed web application using ASP.NET C#, MVC2, SQL Server, Linq to "
+#~ "Entities"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com ASP.NET C#, MVC2, SQL Server, Linq "
+#~ "to Entities"
+
+#~ msgid ""
+#~ "Developed web application using PHP5 Codeigniter , MySQL, for an "
+#~ "advertising company"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com php codeigniter, mySQL, para uma "
+#~ "agência de publicidade "
+
+#~ msgid ""
+#~ "Developed web application using ASP.NET C#, Webforms, SQL Server, SQL "
+#~ "Stored Procedures"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com ASP.NET C# Webforms SQL Server e SQL "
+#~ "Stored Procedures"
+
+#~ msgid ""
+#~ "Developed web application using ASP.NET C#, Webforms, SQL Server, SQL "
+#~ "Stored Procedures, for the WMS application"
+#~ msgstr ""
+#~ "Desenvolvimento de aplicação web com ASP.NET C#, Webforms, SQL Server SQL "
+#~ "Stored PRocedures para uma intranet"
+
+#~ msgid "Developed, .NET C# and WCF."
+#~ msgstr "Desenvolvimento em .NET C# e WCF"
+
+#~ msgid "Developed,WindowsForms application using .NET C# on the Riposte API."
+#~ msgstr "Desenvolvimento de aplicação em windowsforms com .NET C# no Riposte"
+
+#~ msgid "Developed using HP-UX and C/C++ and PL/SQL and Oracle OCCI."
+#~ msgstr "Desenvolvimento em HP-UX , C/C++,  PL/SQL e Oracle OCCI."
+
+#~ msgid "Experience programming for Windows with .NET C# and SQL Server."
+#~ msgstr "Desenvolvimento para windows com .NET C# e SQL Server"
+
+#~ msgid "Developed source code for a ERP using Pascal, Delphi 2006."
+#~ msgstr "Desenvolvimento de código para um ERP com Pascal no Delphi"
+
+#~ msgid "MFC C++ and Directx"
+#~ msgstr "MFC C++ e  DirectX"
+
+#~ msgid ""
+#~ "Experience with C++/UML with Rhapsody using Real Time Montavista Linux."
+#~ msgstr "Programação com C++/UML no Rhapsody com o Montavista Linux"
+
+#~ msgid ""
+#~ "Worked for a large Portuguese company programming in C using HP-UX, and "
+#~ "PL/SQL with PL/SQL Developer."
+#~ msgstr "Programação em Oracle PL/SQL e C/C++, em HP-UX"
+
+#~ msgid "ELENA system maintenance, NAVE system Maintenance"
+#~ msgstr "Manutenção do ELENA e do NAVE"
+
+#~ msgid "VBSCRIPT ASP 3.0 programming"
+#~ msgstr "Programação em ASP"
+
+#~ msgid "Experience as Test Engineer programming automated tests."
+#~ msgstr "Programação de testes automatizados com o silktest"
+
+#~ msgid "Experience with C/C++ and Nucleus RTOS, Linux."
+#~ msgstr "Programação em C/C++ para Linux , com o Nucleus"
+
+#~ msgid "The index of Dinispt website"
+#~ msgstr "Este é o inicio de site da dinispt"
+
+#~ msgid "the dinispt website a digital agency base in coimbra portugal"
+#~ msgstr ""
+#~ "a dinispt é uma agencia digital com sede em Cantanhede Coimbra  Portugal"
+
+#~ msgid "Software Development"
+#~ msgstr "Desenvolvimento de Software"
+
+#~ msgid "Websites"
+#~ msgstr "Páginas de Internet"
+
+#~ msgid "Websites frontend designs, and backend development."
+#~ msgstr "Desenvolvimento de design e programação de páginas de internet"
+
+#~ msgid "Online Stores"
+#~ msgstr "Lojas Online"
+
+#~ msgid "Based on Opencart technologies."
+#~ msgstr "Tecnologia Opencart"
+
+#~ msgid "Desktop Applications"
+#~ msgstr "Aplicações para Windows"
+
+#~ msgid "Windows desktop applications, database driven."
+#~ msgstr "Aplicações Windows para PC, com bases de dados"
+
+#~ msgid "Mobile Applications"
+#~ msgstr "Aplicações Móveis"
+
+#~ msgid ""
+#~ "Android and IOS programming, with webservices REST, to synchronize with "
+#~ "your website database"
+#~ msgstr ""
+#~ "Aplicações Moveis para android e ios com webservices, para ligar a bases "
+#~ "de dados em servidores "
+
+#~ msgid "Hosting"
+#~ msgstr "Alojamento"
+
+#~ msgid "Hosting your website in our linux servers."
+#~ msgstr "Alojamento de páginas de internet nos nossos servidores Linux"
+
+#~ msgid "Email Hosting"
+#~ msgstr "Alojamento de Emails"
+
+#~ msgid "Email service secure and fast in our servers."
+#~ msgstr "Serviço de email seguro e rápido nos nossos servidores"
+
+#~ msgid "Advertising campaigns"
+#~ msgstr "Campanhas Publicitárias"
+
+#~ msgid "Campaigns on the internet (Facebook,Google Adwords,Linkedin,Others)"
+#~ msgstr "Campanhas na internet (Facebook,Google Adwords Linkedin,Others)"
+
+#~ msgid "Logos from clients and employers"
+#~ msgstr "Logotipos de clientes e empregadores"
+
+#~ msgid "Companies where Dinis worked and working for , from 2001 until now :"
+#~ msgstr "Empresas onde o Dinis trabalhou e está a trabalhar desde 2001 "
+
+#~ msgid "No Permissions to access this page(login or become professional)"
+#~ msgstr ""
+#~ "Não tem permissões para aceder a esta pagina (faça login ou torna-te "
+#~ "Profissional)"
+
+#~ msgid "Professional Plans"
+#~ msgstr "Planos Profissionais"
+
+#~ msgid ""
+#~ "To create an Professional account send email to leite.pereira@dinispt.com"
+#~ msgstr ""
+#~ "Para criar uma conta profissional envie email para leite.pereira@dinispt."
+#~ "com"
+
+#~ msgid "With professional account you can post your job offers"
+#~ msgstr "Com a conta profissional podes anunciar as tuas ofertas de emprego"
+
+#~ msgid "Unlimited ads"
+#~ msgstr "Anúncios ilimitados"
+
+#~ msgid "Each ad expires after 6 months"
+#~ msgstr "Cada anuncio expira em 6 meses "
+
+#~ msgid "The Professional account costs 200 Euros per Year taxes included"
+#~ msgstr "A conta profissional custa 200 Euros por ano impostos incluidos"
+
+#~ msgid "The payment is done by bank transfer"
+#~ msgstr "O pagamento é feito por transferência bancaria "
+
+#~ msgid "You will have a invoice and a receipt"
+#~ msgstr "Será enviada uma fatura recibo"
+
+#~ msgid "Software Development Services"
+#~ msgstr "Prestação de serviços de desenvolvimento de Software"
+
+#~ msgid "Our Team"
+#~ msgstr "A nossa equipa"
+
+#~ msgid ""
+#~ "This team is based in Coimbra,Portugal, we according to our contracts we "
+#~ "give work to freelancers, working remotely"
+#~ msgstr ""
+#~ "Esta equipa está baseada em Coimbra Portugal, e de acordo com os "
+#~ "contratos damos trabalho a freelancers."
+
+#~ msgid "Pedro"
+#~ msgstr "Pedro"
+
+#~ msgid "Join us"
+#~ msgstr "Junta-te a nós"
+
+#~ msgid "A 404 error occurred"
+#~ msgstr "Ocorreu um erro 404"
+
+#~ msgid "The requested controller was unable to dispatch the request."
+#~ msgstr "O controlador requisitado não foi capaz de despachar a requisição."
+
+#~ msgid ""
+#~ "The requested controller could not be mapped to an existing controller "
+#~ "class."
+#~ msgstr ""
+#~ "O controlador requisitados não pode ser mapeado a uma classe de "
+#~ "controlador existente."
+
+#~ msgid "The requested controller was not dispatchable."
+#~ msgstr "O controlador requisitado não foi despachado."
+
+#~ msgid "The requested URL could not be matched by routing."
+#~ msgstr "A URL requisitada não pode ser encontrada em uma rota."
+
+#~ msgid "We cannot determine at this time why a 404 was generated."
+#~ msgstr "Não foi possível determinar o motivo do 404 ter ocorrido."
+
+#~ msgid "Controller"
+#~ msgstr "Controlador"
+
+#~ msgid "resolves to %s"
+#~ msgstr "resolve como %s"
+
+#~ msgid "Additional information"
+#~ msgstr "Informação adicional"
+
+#~ msgid "File"
+#~ msgstr "Arquivo"
+
+#~ msgid "Message"
+#~ msgstr "Mensagem"
+
+#~ msgid "Stack trace"
+#~ msgstr "Pilha de execução"
+
+#~ msgid "Previous exceptions"
+#~ msgstr "Exceções anteriores"
+
+#~ msgid "No Exception available"
+#~ msgstr "Nenhuma exceção disponível"
+
+#~ msgid "An error occurred"
+#~ msgstr "Ocorreu um erro"
+
+#~ msgid "Jobs site"
+#~ msgstr "Site de Emprego"
+
+#~ msgid "The adamastor.dinispt.com is a jobs website with offers in europe"
+#~ msgstr ""
+#~ "O adamastor.dinispt.com é um site de empregos com ofertas a nível europeu"
+
+#~ msgid "Jobs,itjobs,totaljobs,jobs,empregos,empregosti,empregostic,alljobs"
+#~ msgstr "Jobs,itjobs,totaljobs,jobs,empregos,empregosti,empregostic,alljobs"
+
+#~ msgid "Pricing"
+#~ msgstr "Preços"
+
+#~ msgid "Register Free"
+#~ msgstr "Registo Grátis"
+
+#~ msgid "Become Pro"
+#~ msgstr "Torna-te Pro"
+
+#~ msgid "Logout"
+#~ msgstr "Sair"
+
+#~ msgid "Login"
+#~ msgstr "Entrar"
+
+#~ msgid "Search Jobs for Free"
+#~ msgstr "Pesquisa de empregos Grátis"
+
+#~ msgid ""
+#~ "The idea of adamastor jobs is to include all kind of jobs, the job seeker "
+#~ "can search jobs without having an account, for free."
+#~ msgstr ""
+#~ "A ideia do adamastor jobs é incluir todo o tipo de empregos, quem procura "
+#~ "emprego não necessita de ter conta e pode pesquisar emprego grátis "
+
+#~ msgid "Free Job Search"
+#~ msgstr "Pesquisa de empregos grátis "
+
+#~ msgid "Adamastor Jobs for recruiters and companies"
+#~ msgstr "Adamastor jobs para recrutadores e empresas"
+
+#~ msgid ""
+#~ "The recruiter will need to create an account and register. The "
+#~ "registration is free"
+#~ msgstr "O recrutador necessita de ter uma conta. O registo é grátis "
+
+#~ msgid "Professional account"
+#~ msgstr "Conta Profissional"
+
+#~ msgid ""
+#~ "This account as a price, in order adamastor jobs maintain the server and "
+#~ "keep online for a long time"
+#~ msgstr ""
+#~ "Esta conta tem um preço, para que o adamastor se consiga manter por "
+#~ "muitos anos "
+
+#~ msgid "All rights reserved."
+#~ msgstr "Todos os direitos reservados."
+
+#~ msgid "Links"
+#~ msgstr "Menu"
+
+#~ msgid "Users"
+#~ msgstr "Utilizadores"
+
+#~ msgid "Languages"
+#~ msgstr "Linguagens"
+
+#~ msgid "Module Users"
+#~ msgstr "Modulo Utilizadores"
+
+#~ msgid "Social"
+#~ msgstr "Social"
+
+#~ msgid "Digital Agency dinispt.com"
+#~ msgstr "Agência Digital dinispt.com"
+
+#~ msgid ""
+#~ "The dinispt.com is a software house based in portugal, we have experience "
+#~ "on several technologies .net to c/c++ posix to php native or mvc with "
+#~ "zend and codeigniter"
+#~ msgstr ""
+#~ "A dinispt.com é uma software house com sede em Portugal, temos "
+#~ "experiencia em varias tecnologias desde .NET a C/C++ Posix, a PHP nativo, "
+#~ "e MVC com zend 2 e codeigniter"
+
+#~ msgid ""
+#~ "Software,Developers,Freelancer,C++,C,C#,LINQ,WindowsForms,bind,apache,"
+#~ "linux,ubuntu,postfix,dns,dovecot,mysql,zend framework2,doctrine2,"
+#~ "codeigniter,webservices,php,websites,agency,digital,web marketing,digital "
+#~ "marketing,development"
+#~ msgstr ""
+#~ "Software,Programadores,Freelancer,C++,C,C#,LINQ, Windows Forms,bind,"
+#~ "apache,linux,ubuntu,postfix,dns,dovecot,mysql,zend framework2,doctrine2,"
+#~ "codeigniter,webservices,php,websites,agency,digital,web marketing,digital "
+#~ "marketing,desenvolvimento"
+
+#~ msgid ""
+#~ "This some web projects that are online we work on many other but private "
+#~ "applications"
+#~ msgstr ""
+#~ "Estas aplicações podem ser vistas online , nós trabalhamos em muitos "
+#~ "outros que são privados "
+
+#~ msgid ""
+#~ "web project currently online , we are looking to win new accounts and "
+#~ "make much more projects like these"
+#~ msgstr ""
+#~ "estes projetos estão neste momento online , estamos a procura de novas "
+#~ "contas e fazer mais projetos como estes"
+
+#~ msgid ""
+#~ "Website developed with php5 and zf2 doctrine2 and mysql, still working on "
+#~ "it started november 2014"
+#~ msgstr "Site desenvolvido como php5 , zf2 e mysql , desde novembro 2014"
+
+#~ msgid "Low cost website using php and zf2 html and css"
+#~ msgstr "Website estático de baixo custo com php e zf2, HTML e css "
+
+#~ msgid ""
+#~ "Website developed with php7 and zf3 doctrine2 and mysql, still working on "
+#~ "it started july 2016"
+#~ msgstr ""
+#~ "Site desenvolvido com php7 zf3, doctrine e MariaDB, desde julho 2016"
+
+#~ msgid "Online Store using Opencart, and Paypal Express Checkout"
+#~ msgstr "Loja online com Opencart , e pagamentos por paypal"
+
+#~ msgid "History"
+#~ msgstr "Histórico"
+
+#~ msgid "Projects"
+#~ msgstr "Projetos"
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "Store"
+#~ msgstr "Loja"
+
+#~ msgid "Welcome to dinispt.com digital agency"
+#~ msgstr "Bem-vindo á dinispt.com agência digital "
+
+#~ msgid ""
+#~ "Working on imo4.com website using php7 zend fraamework 3 and doctrine2, "
+#~ "mariaDB,html css and javascript/jquery"
+#~ msgstr "A trabalhar no imo4.com programado com php7 "
+
+#~ msgid ""
+#~ "Website developed with php5 and zf2 doctrine2 and mysql, still working "
+#~ "started november 2014"
+#~ msgstr ""
+#~ "Site desenvolvido com php5 e zf2 doctrine2 e mysql, ainda em "
+#~ "desenvolvimento que começou em novembro de 2014"
+
+#~ msgid ""
+#~ "This app was developed using php5 and codeigniter, this was a team of 4 "
+#~ "people, a very good swiss designer a ios mobile developer from porto and "
+#~ "me with the php and the webservice, and finally the boss."
+#~ msgstr ""
+#~ "Esta aplicação foi desenvolvida com php5 e codeigniter, a equipa era "
+#~ "composta por quatro elementos um designer suíço um programador mobile e "
+#~ "um programador php e o proprietário da empresa"
+
+#~ msgid ""
+#~ "This app was developed using microsoft .net framework, i only worked on "
+#~ "this project one month with a team of developers and designers, my job "
+#~ "was to fix bugs until the site went live."
+#~ msgstr ""
+#~ "Esta aplicação foi desenvolvida com tecnologias Microsoft , só trabalhei "
+#~ "um mês com esta equipa de programadores e designers o trabalho era "
+#~ "resolver erros detetados num auditoria até que o site ficou online e em "
+#~ "funcionamento"
+
+#~ msgid ""
+#~ "The dinispt.com is a software house based in portugal, we have experience "
+#~ "on several technologies since .net to c/c++ posix to php native or mvc "
+#~ "with zend and codeigniter"
+#~ msgstr ""
+#~ "A dinispt.com é uma software house com base em Portugal , temos "
+#~ "experiencia em varias tecnologias desde .net c/c++ posix e php de raiz ou "
+#~ "com mvc com zend e codeigniter"
+
+#~ msgid "etiju.com website"
+#~ msgstr "etiju.com pagina de internet"
+
+#~ msgid ""
+#~ "This website was developed using php with zend framework 2, doctrine2 and "
+#~ "mysql database.This project started in november 2014, the main goal was "
+#~ "to learn the zend framework."
+#~ msgstr ""
+#~ "Esta aplicação foi desenvolvida com php , com a zend Framework 2, "
+#~ "doctrine2 e mysql. Este projeto foi iniciado em novembro de 2014 e o "
+#~ "principal objetivo foi aprender a programar com a zend framework"
+
+#~ msgid "renovader21.com website"
+#~ msgstr "renovader21.com pagina de internet"
+
+#~ msgid ""
+#~ "This website was created for a customer, civil construction company, uses "
+#~ "also zend , but its just a presentation website,"
+#~ msgstr ""
+#~ "Esta pagina foi criada para uma empresa cliente, de construção civil, "
+#~ "também foi usada a zend Framework , mas é só uma pagina de apresentação"
+
+#~ msgid "Email sent successfuly"
+#~ msgstr "Mensagem enviada com sucesso"
+
+#~ msgid " Your Email"
+#~ msgstr "O teu Email"
+
+#~ msgid "Contacts for dinispt digital agency,Cantanhede, Coimbra, Portugal"
+#~ msgstr ""
+#~ "Estes são os contactos para a dinispt.com agencia digital, em  "
+#~ "Cantanhede, Coimbra, Portugal"
+
+#~ msgid "Contacts for dinispt digital agency, Cantanhede Coimbra, Portugal"
+#~ msgstr ""
+#~ "Estes são os contactos para a dinispt.com agencia digital, em  "
+#~ "Cantanhede, Coimbra, Portugal"
+
+#~ msgid "Welcome to Dinis Website"
+#~ msgstr "Benvindo  ao site do Dinis"
+
+#~ msgid "Web Development"
+#~ msgstr "Desenvolvimento Web"
+
+#~ msgid "Dinis is a Portuguese Software developer this is my website"
+#~ msgstr "O Dinis é um engenheiro de software Português e este é o meu site "
+
+#~ msgid "O site do Dinis"
+#~ msgstr "O site do Dinis"
+
+#~ msgid "Dinis is a Portuguese Software developer this its my website"
+#~ msgstr "O Dinis é um engenheiro de software Português"
+
+#~ msgid "Entrar"
+#~ msgstr "Entrar"
+
+#~ msgid "Bem-Vindo ao site do dinis"
+#~ msgstr "Bem-Vindo ao site do dinis"
+
+#~ msgid "present"
+#~ msgstr ""
+#~ "Este é um site de programação onde podes colocar questões, ler artigos, "
+#~ "procurar emprego na área de programação"
+
+#~ msgid "present2"
+#~ msgstr "Olá eu sou o dinis"
+
+#~ msgid "Welcome to %sZend Framework 2%s"
+#~ msgstr "Bem vindo ao %sZend Framework 2%s"
+
+#~ msgid ""
+#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
+#~ "Application%s. You are currently running Zend Framework version %s. This "
+#~ "skeleton can serve as a simple starting point for you to begin building "
+#~ "your application on ZF2."
+#~ msgstr ""
+#~ "Parabéns! Você instalou a %sAplicação Skeleton ZF2%s com sucesso. Você "
+#~ "está usando a versão %s do Zend Framework. Este esqueleto serve "
+#~ "simplesmente como um ponto de inicio na construção da sua aplicação ZF2."
+
+#~ msgid "Fork Zend Framework 2 on GitHub"
+#~ msgstr "Replique Zend Framework 2 no GitHub"
+
+#~ msgid ""
+#~ "Zend Framework 2 is under active development. If you are interested in "
+#~ "following the development of ZF2, there is a special ZF2 portal on the "
+#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
+#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
+#~ "for staying up to date with the latest developments!"
+#~ msgstr ""
+#~ "Zend Framework 2 está sob desenvolvimento ativo. Se vocês está "
+#~ "interessado em acompanhar o desenvolvimento do ZF2, tem um portal ZF2 "
+#~ "especial no site oficial do Zend Framework que possui links para ZF2 "
+#~ "%swiki%s, %sdev blog%s, %sissue tracker%s, dentre outros. Este é um "
+#~ "excelente material para se manter atualizado com os últimos "
+#~ "desenvolvimentos!"
+
+#~ msgid "ZF2 Development Portal"
+#~ msgstr "Portal de Desenvolvimento do ZF2"
+
+#~ msgid "Discover Modules"
+#~ msgstr "Descubra Módulos"
+
+#~ msgid ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
+#~ msgstr ""
+#~ "A Comunidade está trabalhando em desenvolver um site comunitário para "
+#~ "servir como repositório e galeria de módulos ZF2. O projeto estará "
+#~ "disponível %sem breve no GitHub%s. O site já está online e atualmente "
+#~ "contém uma lista de alguns dos módulos já disponíveis para ZF2."
+
+#~ msgid "Explore ZF2 Modules"
+#~ msgstr "Explore Módulos ZF2"
+
+#~ msgid "Help &amp; Support"
+#~ msgstr "Ajuda &amp; Suporte"
+
+#~ msgid ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+#~ msgstr ""
+#~ "Caso você precise de ajuda ou suporte enquanto desenvolve com ZF2, pode "
+#~ "nos encontrar pelo %s#zftalk on Freenode%s. Vamos gostar muito de ouvir "
+#~ "perguntas e opiniões que você possa ter em relação às versões beta. "
+#~ "Também, você pode se registrar e enviar perguntar para a %slista de e-mail"
+#~ "%s."
+
+#~ msgid "Ping us on IRC"
+#~ msgstr "Nos escreva no IRC"
+
+#~ msgid "congratulation"
+#~ msgstr "parabens"
+
+#~ msgid "inicio"
+#~ msgstr "inicio"
+
+#~ msgid "Skeleton Application"
+#~ msgstr "ii"
+
+#~ msgid "Auth"
+#~ msgstr "Autenticação"
+
+#~ msgid "Exception"
+#~ msgstr "Exceção"
