@@ -90,10 +90,19 @@ if(isset($flash))
             <tr>
                 <th>Photo </th>
            <td>
-                        <img class="imagedropshadow" src="<?= $this->url('userimages', ['action'=>'file','id'=>$user->getId()], 
-                    ['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
-                 
+           <?php
+            
+           $files = $userImageManager->getSavedFiles($user->getId());
                
+                                
+            foreach($files as $file)
+            { 
+            ?>
+              <img class="imagedropshadow" src="<?= $this->url('userimages', ['action'=>'file','id'=>$user->getId()],['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
+                 
+            <?php } ?>
+                        
+                        
             <a class="btn btn-info" href="<?= $this->url('userimages', 
                     ['action'=>'index', 'id'=>$user->getId()]); ?>">
                 <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('User Photo'); ?>
