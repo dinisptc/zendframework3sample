@@ -36,41 +36,12 @@ $this->pageBreadcrumbs()->setItems([
     
         $conta=0; 
         
-        $dql = "SELECT COUNT(p) FROM Agricultura\Entity\Agricultura p where p.identidade='".$user->getId()."'";
-        $q =$entitymanager->createQuery($dql);
-        $conta = $conta + $q->getSingleScalarResult();
-            
-        $dql = "SELECT COUNT(p) FROM Auto\Entity\Auto p where p.identidade='".$user->getId()."'";
-        $q1 =$entitymanager->createQuery($dql);
-        $conta = $conta + $q1->getSingleScalarResult();   
-        
-        $dql = "SELECT COUNT(p) FROM Coisas\Entity\Coisas p where p.identidade='".$user->getId()."'";
-        $q2 =$entitymanager->createQuery($dql);
-        $conta = $conta + $q2->getSingleScalarResult();
-        
-        $dql = "SELECT COUNT(p) FROM Computadores\Entity\Computadores p where p.identidade='".$user->getId()."'";
-        $q3 =$entitymanager->createQuery($dql);
-        $conta = $conta + $q3->getSingleScalarResult(); 
+
         
         $dql = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.identidade='".$user->getId()."'";
         $q4 =$entitymanager->createQuery($dql);
         $conta = $conta + $q4->getSingleScalarResult();
-        
-        $dql = "SELECT COUNT(p) FROM Imoveis\Entity\Imoveis p where p.identidade='".$user->getId()."'";
-        $q5 =$entitymanager->createQuery($dql);
-        $conta = $conta + $q5->getSingleScalarResult();
-        
-        $dql = "SELECT COUNT(p) FROM Motas\Entity\Motas p where p.identidade='".$user->getId()."'";
-        $q6 =$entitymanager->createQuery($dql);
-        $conta = $conta + $q6->getSingleScalarResult();
-        
-        $dql = "SELECT COUNT(p) FROM Servicos\Entity\Servicos p where p.identidade='".$user->getId()."'";
-        $q7 =$entitymanager->createQuery($dql);
-        $conta = $conta + $q7->getSingleScalarResult();
-        
-        $dql = "SELECT COUNT(p) FROM Telemoveis\Entity\Telemoveis p where p.identidade='".$user->getId()."'";
-        $q8 =$entitymanager->createQuery($dql);
-        $conta = $conta + $q8->getSingleScalarResult();
+
         
         
     ?>

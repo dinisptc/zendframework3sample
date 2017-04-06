@@ -123,7 +123,7 @@ class UserController extends AbstractActionController
     public function viewAction() 
     {
            $this->traduz();
-        $id = (int)$this->params()->fromRoute('id', -1);
+        $id = $this->params()->fromRoute('id', -1);
         if ($id<1) {
             $this->getResponse()->setStatusCode(404);
             return;
@@ -151,7 +151,7 @@ class UserController extends AbstractActionController
     public function editAction() 
     {
            $this->traduz();
-        $id = (int)$this->params()->fromRoute('id', -1);
+        $id = $this->params()->fromRoute('id', -1);
         if ($id<1) {
             $this->getResponse()->setStatusCode(404);
             return;
@@ -210,7 +210,7 @@ class UserController extends AbstractActionController
     {
         
            $this->traduz();
-        $id = (int)$this->params()->fromRoute('id', -1);
+        $id = $this->params()->fromRoute('id', -1);
         if ($id<1) {
             $this->getResponse()->setStatusCode(404);
             return;
@@ -656,7 +656,7 @@ class UserController extends AbstractActionController
     public function unsubscribeAction()
     {             
         // Get post ID.
-        $userId = (int)$this->params()->fromRoute('id', -1);
+        $userId = $this->params()->fromRoute('id', -1);
         
         $mensagem=0;
         
@@ -702,7 +702,7 @@ class UserController extends AbstractActionController
     public function subscribeAction()
     {             
         // Get post ID.
-        $userId = (int)$this->params()->fromRoute('id', -1);
+        $userId = $this->params()->fromRoute('id', -1);
         
         $mensagem=0;
         
@@ -751,7 +751,7 @@ class UserController extends AbstractActionController
     {
         
            $this->traduz();
-        $id = (int)$this->params()->fromRoute('id', -1);
+        $id = $this->params()->fromRoute('id', -1);
         if ($id<1) {
             $this->getResponse()->setStatusCode(404);
             return;
