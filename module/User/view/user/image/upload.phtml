@@ -11,6 +11,14 @@ $this->pageBreadcrumbs()->setItems([
 $form = $this->form;
 $form->get('submit')->setAttributes(['class'=>'btn btn-primary']);
 $form->prepare();
+
+if($message!='')
+{
+    
+  echo $message; 
+  return;
+    
+}
 ?>
 
 <h1><?php echo $this->translate('Upload a New Image'); ?></h1>

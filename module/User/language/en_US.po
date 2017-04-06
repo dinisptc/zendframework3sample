@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 14:26+0000\n"
-"PO-Revision-Date: 2017-02-14 14:26+0000\n"
+"POT-Creation-Date: 2017-04-06 16:18+0100\n"
+"PO-Revision-Date: 2017-04-06 16:18+0100\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: en_US\n"
@@ -12,15 +12,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../src/Controller/UserController.php:246
+#: ../src/Controller/ImageController.php:93
+msgid "Only can upload one personal picture"
+msgstr ""
+
+#: ../src/Controller/UserController.php:253
 msgid "Sorry, the old password is incorrect. Could not set the new password."
 msgstr ""
 
-#: ../src/Controller/UserController.php:249
-#: ../src/Controller/UserController.php:789
+#: ../src/Controller/UserController.php:256
+#: ../src/Controller/UserController.php:796
 msgid "Changed the password successfully."
 msgstr ""
 
@@ -58,7 +62,7 @@ msgstr ""
 #: ../view/user/user/change-password.phtml:9
 #: ../view/user/user/change-passwordadmin.phtml:2
 #: ../view/user/user/change-passwordadmin.phtml:9
-#: ../view/user/user/index.phtml:54 ../view/user/user/set-password.phtml:9
+#: ../view/user/user/index.phtml:68 ../view/user/user/set-password.phtml:9
 #: ../view/user/user/view.phtml:65
 msgid "Change Password"
 msgstr ""
@@ -69,12 +73,12 @@ msgid "Reset Password"
 msgstr ""
 
 #: ../src/Form/RegisterForm.php:64 ../src/Form/UserForm.php:64
-#: ../view/user/user/index.phtml:25
+#: ../view/user/user/index.phtml:26
 msgid "E-mail"
 msgstr ""
 
 #: ../src/Form/RegisterForm.php:73 ../src/Form/UserForm.php:73
-#: ../view/user/user/index.phtml:26
+#: ../view/user/user/index.phtml:27
 msgid "Full Name"
 msgstr ""
 
@@ -82,7 +86,7 @@ msgstr ""
 msgid "Confirm password"
 msgstr ""
 
-#: ../src/Form/UserForm.php:106 ../view/user/user/index.phtml:28
+#: ../src/Form/UserForm.php:106 ../view/user/user/index.phtml:29
 msgid "Status"
 msgstr ""
 
@@ -94,7 +98,7 @@ msgstr ""
 msgid "Retired"
 msgstr ""
 
-#: ../src/Form/UserForm.php:119 ../view/user/user/index.phtml:29
+#: ../src/Form/UserForm.php:119 ../view/user/user/index.phtml:30
 msgid "Profile"
 msgstr ""
 
@@ -126,12 +130,60 @@ msgstr ""
 msgid "Forgot password?"
 msgstr ""
 
-#: ../view/user/user/add.phtml:7 ../view/user/user/change-password.phtml:7
+#: ../view/user/image/deletefile.phtml:7 ../view/user/image/index.phtml:7
+msgid "Jobs"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:8 ../view/user/image/deletefile.phtml:12
+#: ../view/user/image/index.phtml:8 ../view/user/image/index.phtml:12
+#: ../view/user/image/upload.phtml:8
+msgid "Image Gallery"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:16 ../view/user/image/index.phtml:16
+msgid "This page displays the list of uploaded images."
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:21 ../view/user/image/index.phtml:21
+msgid "Upload More"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:29 ../view/user/image/index.phtml:29
+msgid "There are no files to display."
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:49 ../view/user/image/index.phtml:49
+msgid "Show in Natural Size"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:54 ../view/user/image/index.phtml:54
+msgid "Delete File"
+msgstr ""
+
+#: ../view/user/image/upload.phtml:7 ../view/user/user/add.phtml:7
+#: ../view/user/user/change-password.phtml:7
 #: ../view/user/user/change-passwordadmin.phtml:7
 #: ../view/user/user/edit.phtml:7 ../view/user/user/index.phtml:7
 #: ../view/user/user/register.phtml:7 ../view/user/user/set-password.phtml:7
 #: ../view/user/user/view.phtml:7
 msgid "Home"
+msgstr ""
+
+#: ../view/user/image/upload.phtml:16
+msgid "Upload a New Image"
+msgstr ""
+
+#: ../view/user/image/upload.phtml:19
+msgid "Please fill out the following form and press the"
+msgstr ""
+
+#: ../view/user/image/upload.phtml:19
+msgid "Upload"
+msgstr ""
+
+#: ../view/user/image/upload.phtml:19 ../view/user/user/add.phtml:46
+#: ../view/user/user/register.phtml:42
+msgid "button"
 msgstr ""
 
 #: ../view/user/user/add.phtml:8 ../view/user/user/change-password.phtml:8
@@ -163,10 +215,6 @@ msgstr ""
 
 #: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
 msgid "Create"
-msgstr ""
-
-#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
-msgid "button"
 msgstr ""
 
 #: ../view/user/user/change-password.phtml:14
@@ -202,15 +250,15 @@ msgstr ""
 msgid "New User"
 msgstr ""
 
-#: ../view/user/user/index.phtml:27
+#: ../view/user/user/index.phtml:28
 msgid "Date Created"
 msgstr ""
 
-#: ../view/user/user/index.phtml:30
+#: ../view/user/user/index.phtml:31
 msgid "Actions"
 msgstr ""
 
-#: ../view/user/user/index.phtml:50
+#: ../view/user/user/index.phtml:64
 msgid "Edit"
 msgstr ""
 
@@ -346,6 +394,10 @@ msgstr ""
 
 #: ../view/user/user/view.phtml:73
 msgid "PRO account will expire at:"
+msgstr ""
+
+#: ../view/user/user/view.phtml:93
+msgid "User Photo"
 msgstr ""
 
 #~ msgid "All rights reserved."

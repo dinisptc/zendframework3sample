@@ -127,8 +127,7 @@ class ImageManager
         return file_get_contents($filePath);
     }
 
-
-    /**
+   /**
      * Resizes the image, keeping its aspect ratio.
      * @param string $filePath
      * @param int $desiredWidth
@@ -143,48 +142,11 @@ class ImageManager
         $aspectRatio = $originalWidth/$originalHeight;
         // Calculate the resulting height
         $desiredHeight = $desiredWidth/$aspectRatio;
-        
-
-
 
         // Resize the image
         $resultingImage = imagecreatetruecolor($desiredWidth, $desiredHeight);
-
-        //$originalImage = imagecreatefromjpeg($filePath);
-        $originalImage = imagecreatefromstring(file_get_contents($filePath));
-        
-        $stamp = imagecreatefrompng('./public/img/water.png');
-        
-        // Set the margins for the stamp and get the height/width of the stamp image
-
-        
-        list($originalWidths, $originalHeights) = getimagesize('./public/img/water.png');
-        if($originalWidth<600){
-            $stampw = imagecreate(150, 50);
-            imagecopyresampled($stampw,$stamp, 0, 0, 0, 0, 
-                150, 50, $originalWidths, $originalHeights);
-            
-            $marge_right = 10;
-            $marge_bottom = 10;
-            $sx = imagesx($stampw);
-            $sy = imagesy($stampw);
-            imagecopy($originalImage, $stampw, imagesx($originalImage) - $sx - $marge_right, imagesy($originalImage) - $sy - $marge_bottom, 0, 0, imagesx($stampw), imagesy($stampw));
-
-        }else
-        {
-                     $stampw = imagecreate(400, 100);
-            imagecopyresampled($stampw,$stamp, 0, 0, 0, 0, 
-                400, 100, $originalWidths, $originalHeights);
-            $marge_right = 10;
-            $marge_bottom = 10;
-            $sx = imagesx($stampw);
-            $sy = imagesy($stampw);
-            imagecopy($originalImage, $stampw, imagesx($originalImage) - $sx - $marge_right, imagesy($originalImage) - $sy - $marge_bottom, 0, 0, imagesx($stampw), imagesy($stampw));
-
-        }
-
-   
-        imagecopyresampled($resultingImage,$originalImage, 0, 0, 0, 0, 
+        $originalImage = imagecreatefromjpeg($filePath);
+        imagecopyresampled($resultingImage, $originalImage, 0, 0, 0, 0, 
                 $desiredWidth, $desiredHeight, $originalWidth, $originalHeight);
 
         // Save the resized image to temporary location
@@ -194,6 +156,72 @@ class ImageManager
         // Return the path to resulting image.
         return $tmpFileName;
     }
+    /**
+     * Resizes the image, keeping its aspect ratio.
+     * @param string $filePath
+     * @param int $desiredWidth
+     * @return string Resulting file name.
+     */
+//    public  function resizeImage($filePath, $desiredWidth = 240) 
+//    {
+//        // Get original image dimensions.
+//        list($originalWidth, $originalHeight) = getimagesize($filePath);
+//
+//        // Calculate aspect ratio
+//        $aspectRatio = $originalWidth/$originalHeight;
+//        // Calculate the resulting height
+//        $desiredHeight = $desiredWidth/$aspectRatio;
+//        
+//
+//
+//
+//        // Resize the image
+//        $resultingImage = imagecreatetruecolor($desiredWidth, $desiredHeight);
+//
+//        //$originalImage = imagecreatefromjpeg($filePath);
+//        $originalImage = imagecreatefromstring(file_get_contents($filePath));
+//        
+//        $stamp = imagecreatefrompng('./public/img/water.png');
+//        
+//        // Set the margins for the stamp and get the height/width of the stamp image
+//
+//        
+//        list($originalWidths, $originalHeights) = getimagesize('./public/img/water.png');
+//        if($originalWidth<600){
+//            $stampw = imagecreate(150, 50);
+//            imagecopyresampled($stampw,$stamp, 0, 0, 0, 0, 
+//                150, 50, $originalWidths, $originalHeights);
+//            
+//            $marge_right = 10;
+//            $marge_bottom = 10;
+//            $sx = imagesx($stampw);
+//            $sy = imagesy($stampw);
+//            imagecopy($originalImage, $stampw, imagesx($originalImage) - $sx - $marge_right, imagesy($originalImage) - $sy - $marge_bottom, 0, 0, imagesx($stampw), imagesy($stampw));
+//
+//        }else
+//        {
+//                     $stampw = imagecreate(400, 100);
+//            imagecopyresampled($stampw,$stamp, 0, 0, 0, 0, 
+//                400, 100, $originalWidths, $originalHeights);
+//            $marge_right = 10;
+//            $marge_bottom = 10;
+//            $sx = imagesx($stampw);
+//            $sy = imagesy($stampw);
+//            imagecopy($originalImage, $stampw, imagesx($originalImage) - $sx - $marge_right, imagesy($originalImage) - $sy - $marge_bottom, 0, 0, imagesx($stampw), imagesy($stampw));
+//
+//        }
+//
+//   
+//        imagecopyresampled($resultingImage,$originalImage, 0, 0, 0, 0, 
+//                $desiredWidth, $desiredHeight, $originalWidth, $originalHeight);
+//
+//        // Save the resized image to temporary location
+//        $tmpFileName = tempnam("/tmp", "FOO");
+//        imagejpeg($resultingImage, $tmpFileName, 80);
+//        
+//        // Return the path to resulting image.
+//        return $tmpFileName;
+//    }
     
     
     
@@ -203,60 +231,60 @@ class ImageManager
      * @param int $desiredWidth
      * @return string Resulting file name.
      */
-    public  function watermainImage($filePath) 
-    {
-
-        // Get original image dimensions.
-        list($originalWidth, $originalHeight) = getimagesize($filePath);
-        
-        $desiredHeight=$originalHeight;
-        $desiredWidth=$originalWidth;
-      
-        // Resize the image
-        $resultingImage = imagecreatetruecolor($originalWidth, $originalHeight);
-
-        $originalImage = imagecreatefromstring(file_get_contents($filePath));
-        
-        
-        $stamp = imagecreatefrompng('./public/img/water.png');
-        
-        // Set the margins for the stamp and get the height/width of the stamp image
-
-        list($originalWidths, $originalHeights) = getimagesize('./public/img/water.png');
-        if($originalWidth<600){
-            $stampw = imagecreate(150, 50);
-            imagecopyresampled($stampw,$stamp, 0, 0, 0, 0, 
-                150, 50, $originalWidths, $originalHeights);
-            
-            $marge_right = 10;
-            $marge_bottom = 10;
-            $sx = imagesx($stampw);
-            $sy = imagesy($stampw);
-            imagecopy($originalImage, $stampw, imagesx($originalImage) - $sx - $marge_right, imagesy($originalImage) - $sy - $marge_bottom, 0, 0, imagesx($stampw), imagesy($stampw));
-
-        }else
-        {
-            $stampw = imagecreate(400, 100);
-            imagecopyresampled($stampw,$stamp, 0, 0, 0, 0, 
-                400, 100, $originalWidths, $originalHeights);
-            $marge_right = 10;
-            $marge_bottom = 10;
-            $sx = imagesx($stampw);
-            $sy = imagesy($stampw);
-            imagecopy($originalImage, $stampw, imagesx($originalImage) - $sx - $marge_right, imagesy($originalImage) - $sy - $marge_bottom, 0, 0, imagesx($stampw), imagesy($stampw));
-
-        }
-
-        imagecopyresampled($resultingImage,$originalImage, 0, 0, 0, 0, 
-                $desiredWidth, $desiredHeight, $originalWidth, $originalHeight);
-
-        // Save the resized image to temporary location
-        $tmpFileName = tempnam("/tmp", "FOO");
-        imagejpeg($resultingImage, $tmpFileName, 80);
-        
-        // Return the path to resulting image.
-        return $tmpFileName;
-    }
+//    public  function watermainImage($filePath) 
+//    {
+//
+//        // Get original image dimensions.
+//        list($originalWidth, $originalHeight) = getimagesize($filePath);
+//        
+//        $desiredHeight=$originalHeight;
+//        $desiredWidth=$originalWidth;
+//      
+//        // Resize the image
+//        $resultingImage = imagecreatetruecolor($originalWidth, $originalHeight);
+//
+//        $originalImage = imagecreatefromstring(file_get_contents($filePath));
+//        
+//        
+//        $stamp = imagecreatefrompng('./public/img/water.png');
+//        
+//        // Set the margins for the stamp and get the height/width of the stamp image
+//
+//        list($originalWidths, $originalHeights) = getimagesize('./public/img/water.png');
+//        if($originalWidth<600){
+//            $stampw = imagecreate(150, 50);
+//            imagecopyresampled($stampw,$stamp, 0, 0, 0, 0, 
+//                150, 50, $originalWidths, $originalHeights);
+//            
+//            $marge_right = 10;
+//            $marge_bottom = 10;
+//            $sx = imagesx($stampw);
+//            $sy = imagesy($stampw);
+//            imagecopy($originalImage, $stampw, imagesx($originalImage) - $sx - $marge_right, imagesy($originalImage) - $sy - $marge_bottom, 0, 0, imagesx($stampw), imagesy($stampw));
+//
+//        }else
+//        {
+//            $stampw = imagecreate(400, 100);
+//            imagecopyresampled($stampw,$stamp, 0, 0, 0, 0, 
+//                400, 100, $originalWidths, $originalHeights);
+//            $marge_right = 10;
+//            $marge_bottom = 10;
+//            $sx = imagesx($stampw);
+//            $sy = imagesy($stampw);
+//            imagecopy($originalImage, $stampw, imagesx($originalImage) - $sx - $marge_right, imagesy($originalImage) - $sy - $marge_bottom, 0, 0, imagesx($stampw), imagesy($stampw));
+//
+//        }
+//
+//        imagecopyresampled($resultingImage,$originalImage, 0, 0, 0, 0, 
+//                $desiredWidth, $desiredHeight, $originalWidth, $originalHeight);
+//
+//        // Save the resized image to temporary location
+//        $tmpFileName = tempnam("/tmp", "FOO");
+//        imagejpeg($resultingImage, $tmpFileName, 80);
+//        
+//        // Return the path to resulting image.
+//        return $tmpFileName;
+//    }
 }
 
 
