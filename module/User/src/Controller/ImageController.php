@@ -1,10 +1,10 @@
 <?php
-namespace Empregos\Controller;
+namespace User\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Empregos\Form\ImageForm;
-use Empregos\Entity\Empregos;
+use User\Form\ImageForm;
+use User\Entity\Empregos;
 /**
  * This controller is designed for managing image file uploads.
  */
