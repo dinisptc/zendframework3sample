@@ -171,6 +171,7 @@ return [
             Service\AuthManager::class => Service\Factory\AuthManagerFactory::class,
             Service\UserManager::class => Service\Factory\UserManagerFactory::class,
              \Zend\I18n\Translator\TranslatorInterface::class => \Zend\I18n\Translator\TranslatorServiceFactory::class,
+            Service\ImageManager::class => Service\Factory\ImageManagerFactory::class,
         ],
         'aliases' => [
      

@@ -10,6 +10,23 @@ namespace User\Service;
  */
 class ImageManager 
 {
+    
+        /**
+     * Doctrine entity manager.
+     * @var Doctrine\ORM\EntityManager
+     */
+    private $entityManager;  
+    
+
+    
+    /**
+     * Constructs the service.
+     */
+    public function __construct($entityManager) 
+    {
+        $this->entityManager = $entityManager;
+ 
+    }
     /**
      * The directory where we save image files.
      * @var string
