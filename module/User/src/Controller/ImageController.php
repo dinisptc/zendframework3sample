@@ -105,17 +105,17 @@ class ImageController extends AbstractActionController
                 
                           
                 // Find the existing post in the database.
-                $post = $this->entityManager->getRepository(Empregos::class)
-                ->findOneById($postId);
-                
-                
-                
-                //fazer update com aprovacao
-                  // Use post manager service update existing post.                
-                $this->autoManager->updateAprovarPost($post);
+//                $post = $this->entityManager->getRepository(User::class)
+//                ->findOneById($postId);
+//                
+//                
+//                
+//                //fazer update com aprovacao
+//                  // Use post manager service update existing post.                
+//                $this->autoManager->updateAprovarPost($post);
                 
                 // Redirect the user to "Image Gallery" page
-                return $this->redirect()->toRoute('empregosimages', ['action'=>'index', 'id'=>$postId]);
+                return $this->redirect()->toRoute('userimages', ['action'=>'index', 'id'=>$postId]);
             }                        
         } 
         

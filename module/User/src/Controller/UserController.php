@@ -40,15 +40,18 @@ class UserController extends AbstractActionController
     
     private $translator;
     
+    private $userImageManager;
+    
     /**
      * Constructor. 
      */
-    public function __construct($entityManager, $userManager, $mailtransport,$translator)
+    public function __construct($entityManager, $userManager, $mailtransport,$translator,$userImageManager)
     {
         $this->entityManager = $entityManager;
         $this->userManager = $userManager;
         $this->mailtransport = $mailtransport;
          $this->translator = $translator;
+        $this->userImageManager = $userImageManager;
     }
     
     /**
@@ -124,7 +127,7 @@ class UserController extends AbstractActionController
     {
            $this->traduz();
         $id = $this->params()->fromRoute('id', -1);
-        if ($id<1) {
+        if ($id<0) {
             $this->getResponse()->setStatusCode(404);
             return;
         }
@@ -142,6 +145,9 @@ class UserController extends AbstractActionController
         return new ViewModel([
             'user' => $user,
            'flash'=>$this->flashMessenger()->getMessages(),
+                  'userImageManager'=>$this->userImageManager,
+            
+            
         ]);
     }
     
@@ -152,7 +158,7 @@ class UserController extends AbstractActionController
     {
            $this->traduz();
         $id = $this->params()->fromRoute('id', -1);
-        if ($id<1) {
+        if ($id<0) {
             $this->getResponse()->setStatusCode(404);
             return;
         }
@@ -211,7 +217,7 @@ class UserController extends AbstractActionController
         
            $this->traduz();
         $id = $this->params()->fromRoute('id', -1);
-        if ($id<1) {
+        if ($id<0) {
             $this->getResponse()->setStatusCode(404);
             return;
         }
@@ -752,7 +758,7 @@ class UserController extends AbstractActionController
         
            $this->traduz();
         $id = $this->params()->fromRoute('id', -1);
-        if ($id<1) {
+        if ($id<0) {
             $this->getResponse()->setStatusCode(404);
             return;
         }

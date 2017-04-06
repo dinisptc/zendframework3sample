@@ -87,7 +87,7 @@ class ImageForm extends Form
                     [
                         'name' => 'FileRenameUpload',
                         'options' => [  
-                            'target'=>'./public/files/empregos/'.$postId,
+                            'target'=>'./public/files/utilizadores/'.$postId,
                             'useUploadName'=>true,
                             'useUploadExtension'=>true,
                             'overwrite'=>true,
