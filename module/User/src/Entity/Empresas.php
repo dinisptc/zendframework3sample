@@ -55,7 +55,28 @@ class Empresas
     */
     protected $endereco;
     
-        /**
+        
+    /**
+    * @ORM\Column(name="site")  
+    */
+    protected $site;
+    
+    /**
+    * @ORM\Column(name="facebook")  
+    */
+    protected $facebook;
+    
+    
+    /**
+    * @ORM\Column(name="linkedin")  
+    */
+    protected $linkedin;
+    
+    
+    
+    twitter
+    
+    /**
      * Returns user ID.
      * @return string
      */
@@ -112,7 +133,7 @@ class Empresas
     
     
     
-         /**
+     /**
      * Returns endereco.
      * @return string 
      */
@@ -129,5 +150,47 @@ class Empresas
     {
         $this->endereco = $endereco;
     }
+    
+    
+    /**
+     * Returns site.
+     * @return string 
+     */
+    public function getSite() 
+    {
+        return $this->site;
+    }
+
+    /**
+     * Sets site. 
+     * @param string $site   
+     */
+    public function setSite($site) 
+    {
+        $this->site = $site;
+    }
+   
+            
+    /**
+     * Returns linkedin.
+     * @return string 
+     */
+    public function getLinkedin() 
+    {
+        return $this->linkedin;
+    }
+
+    /**
+     * Sets linkedin. 
+     * @param string $linkedin   
+     */
+    public function setLinkedin($linkedin) 
+    {
+        $this->linkedin = $linkedin;
+    }
+    
+
+    
+    
 }
 
