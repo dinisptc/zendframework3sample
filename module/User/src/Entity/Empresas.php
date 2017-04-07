@@ -88,6 +88,13 @@ class Empresas
     */
     protected $email;
     
+    
+    /**
+    * @ORM\Column(name="fax")  
+    */
+    protected $fax;
+    
+    
     /**
      * Returns user ID.
      * @return string
@@ -258,6 +265,26 @@ class Empresas
     public function setEmail($email) 
     {
         $this->email = $email;
+    }
+    
+    
+            
+    /**
+     * Returns fax.
+     * @return string 
+     */
+    public function getFax() 
+    {
+        return $this->fax;
+    }
+
+    /**
+     * Sets fax. 
+     * @param string $fax   
+     */
+    public function setFax($fax) 
+    {
+        $this->fax = $fax;
     }
 }
 
