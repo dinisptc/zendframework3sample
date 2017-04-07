@@ -50,7 +50,10 @@ class Empresas
     */
     protected $descricao;
     
-    
+    /**
+    * @ORM\Column(name="endereco")  
+    */
+    protected $endereco;
     
         /**
      * Returns user ID.
@@ -89,13 +92,13 @@ class Empresas
     }
     
     
-                /**
+     /**
      * Returns descricao.
      * @return string 
      */
     public function getDescricao() 
     {
-        return $this->designacao;
+        return $this->descricao;
     }
 
     /**
@@ -104,7 +107,27 @@ class Empresas
      */
     public function setDescricao($descricao) 
     {
-        $this->designacao = $descricao;
+        $this->descricao = $descricao;
+    }
+    
+    
+    
+         /**
+     * Returns endereco.
+     * @return string 
+     */
+    public function getEndereco() 
+    {
+        return $this->endereco;
+    }
+
+    /**
+     * Sets endereco. 
+     * @param string $endereco    
+     */
+    public function setEndereco($endereco) 
+    {
+        $this->endereco = $endereco;
     }
 }
 
