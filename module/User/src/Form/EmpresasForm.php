@@ -27,17 +27,17 @@ class EmpresasForm extends Form
     
     /**
      * Current user.
-     * @var User\Entity\User 
+     * @var Empresas\Entity\Empresas 
      */
-    private $user = null;
+    private $empresas = null;
     
     /**
      * Constructor.     
      */
-    public function __construct($scenario = 'create', $entityManager = null, $user = null)
+    public function __construct($scenario = 'create', $entityManager = null, $empresas = null)
     {
         // Define form name
-        parent::__construct('user-form');
+        parent::__construct('empresas-form');
      
         // Set POST method for this form
         $this->setAttribute('method', 'post');
@@ -45,7 +45,7 @@ class EmpresasForm extends Form
         // Save parameters for internal use.
         $this->scenario = $scenario;
         $this->entityManager = $entityManager;
-        $this->user = $user;
+        $this->empresas = $empresas;
         
         $this->addElements();
         $this->addInputFilter();          
