@@ -82,6 +82,12 @@ class Empresas
     */
     protected $telefone;
     
+    
+    /**
+    * @ORM\Column(name="email")  
+    */
+    protected $email;
+    
     /**
      * Returns user ID.
      * @return string
@@ -214,5 +220,44 @@ class Empresas
         $this->twitter = $twitter;
     }
     
+    
+    
+    
+    /**
+     * Returns telefone.
+     * @return string 
+     */
+    public function getTelefone() 
+    {
+        return $this->telefone;
+    }
+
+    /**
+     * Sets telefone. 
+     * @param string $telefone   
+     */
+    public function setTelefone($telefone) 
+    {
+        $this->telefone = $telefone;
+    }
+    
+    
+    /**
+     * Returns email.
+     * @return string 
+     */
+    public function getEmail() 
+    {
+        return $this->email;
+    }
+
+    /**
+     * Sets email. 
+     * @param string $email   
+     */
+    public function setEmail($email) 
+    {
+        $this->email = $email;
+    }
 }
 
