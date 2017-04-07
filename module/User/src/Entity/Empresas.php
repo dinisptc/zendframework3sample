@@ -72,9 +72,11 @@ class Empresas
     */
     protected $linkedin;
     
-    
-    
-    twitter
+    /**
+    * @ORM\Column(name="twitter")  
+    */
+    protected $twitter;
+
     
     /**
      * Returns user ID.
@@ -190,7 +192,23 @@ class Empresas
     }
     
 
-    
+        /**
+     * Returns twitter.
+     * @return string 
+     */
+    public function getTwitter() 
+    {
+        return $this->twitter;
+    }
+
+    /**
+     * Sets twitter. 
+     * @param string $twitter   
+     */
+    public function setTwitter($twitter) 
+    {
+        $this->twitter = $twitter;
+    }
     
 }
 
