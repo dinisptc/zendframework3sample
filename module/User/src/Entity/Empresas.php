@@ -31,12 +31,38 @@ use Doctrine\ORM\Mapping as ORM;
 class Empresas 
 {
     
+     /**
+     * @ORM\Id
+     * @ORM\Column(name="id")
+     */
+    protected $id;
     
     
     
+    /**
+    * @ORM\Column(name="designacao")  
+    */
+    protected $designacao;
     
     
     
+        /**
+     * Returns user ID.
+     * @return string
+     */
+    public function getId() 
+    {
+        return $this->id;
+    }
+
+    /**
+     * Sets user ID. 
+     * @param string $id    
+     */
+    public function setId($id) 
+    {
+        $this->id = $id;
+    }
     
     
 }
