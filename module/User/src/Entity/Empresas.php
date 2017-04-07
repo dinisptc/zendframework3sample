@@ -76,7 +76,11 @@ class Empresas
     * @ORM\Column(name="twitter")  
     */
     protected $twitter;
-
+        
+    /**
+    * @ORM\Column(name="telefone")  
+    */
+    protected $telefone;
     
     /**
      * Returns user ID.
@@ -192,7 +196,7 @@ class Empresas
     }
     
 
-        /**
+    /**
      * Returns twitter.
      * @return string 
      */
