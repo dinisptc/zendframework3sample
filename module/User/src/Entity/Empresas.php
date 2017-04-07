@@ -45,6 +45,12 @@ class Empresas
     protected $designacao;
     
     
+    /**
+    * @ORM\Column(name="descricao")  
+    */
+    protected $descricao;
+    
+    
     
         /**
      * Returns user ID.
@@ -64,6 +70,41 @@ class Empresas
         $this->id = $id;
     }
     
+            /**
+     * Returns designacao.
+     * @return string
+     */
+    public function getDesignacao() 
+    {
+        return $this->designacao;
+    }
+
+    /**
+     * Sets designacao. 
+     * @param string $designacao    
+     */
+    public function setDesignacao($designacao) 
+    {
+        $this->designacao = $designacao;
+    }
     
+    
+                /**
+     * Returns descricao.
+     * @return string 
+     */
+    public function getDescricao() 
+    {
+        return $this->designacao;
+    }
+
+    /**
+     * Sets descricao. 
+     * @param string $descricao    
+     */
+    public function setDescricao($descricao) 
+    {
+        $this->designacao = $descricao;
+    }
 }
 
