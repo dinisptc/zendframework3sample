@@ -155,12 +155,12 @@ class EmpresasForm extends Form
         ]);
         
         //email
-        // Add "email" field
+        // Add "fax" field
         $this->add([            
             'type'  => 'text',
-            'name' => 'email',            
+            'name' => 'fax',            
             'options' => [
-                'label' => _('Company Email'),
+                'label' => _('Company Fax'),
             ],
         ]);
         
@@ -176,6 +176,124 @@ class EmpresasForm extends Form
         ]);
     }
     
-    
+    /**
+     * This method creates input filter (used for form filtering/validation).
+     */
+    private function addInputFilter() 
+    {
+        // Create main input filter
+        $inputFilter = new InputFilter();        
+        $this->setInputFilter($inputFilter);
+                
+        // Add input for "email" field
+        $inputFilter->add([
+                'name'     => 'email',
+                'required' => true,
+                'filters'  => [
+                    ['name' => 'StringTrim'],                    
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 128
+                        ],
+                    ],
+                    [
+                        'name' => 'EmailAddress',
+                        'options' => [
+                            'allow' => \Zend\Validator\Hostname::ALLOW_DNS,
+                            'useMxCheck'    => false,                            
+                        ],
+                    ],
+                    [
+                        'name' => UserExistsValidator::class,
+                        'options' => [
+                            'entityManager' => $this->entityManager,
+                            'user' => $this->user
+                        ],
+                    ],                    
+                ],
+            ]);     
+        
+        // Add input for "full_name" field
+        $inputFilter->add([
+                'name'     => 'full_name',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 512
+                        ],
+                    ],
+                ],
+            ]);
+        
+        if ($this->scenario == 'create') {
+            
+            // Add input for "password" field
+            $inputFilter->add([
+                    'name'     => 'password',
+                    'required' => true,
+                    'filters'  => [                        
+                    ],                
+                    'validators' => [
+                        [
+                            'name'    => 'StringLength',
+                            'options' => [
+                                'min' => 6,
+                                'max' => 64
+                            ],
+                        ],
+                    ],
+                ]);
+            
+            // Add input for "confirm_password" field
+            $inputFilter->add([
+                    'name'     => 'confirm_password',
+                    'required' => true,
+                    'filters'  => [                        
+                    ],                
+                    'validators' => [
+                        [
+                            'name'    => 'Identical',
+                            'options' => [
+                                'token' => 'password',                            
+                            ],
+                        ],
+                    ],
+                ]);
+        }
+        
+        // Add input for "status" field
+        $inputFilter->add([
+                'name'     => 'status',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'ToInt'],
+                ],                
+                'validators' => [
+                    ['name'=>'InArray', 'options'=>['haystack'=>[1, 2]]]
+                ],
+            ]);   
+        
+                // Add input for "status" field
+        $inputFilter->add([
+                'name'     => 'perfil',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'ToInt'],
+                ],                
+                'validators' => [
+                    ['name'=>'InArray', 'options'=>['haystack'=>[0, 1, 2]]]
+                ],
+            ]); 
+    }  
     
 }
