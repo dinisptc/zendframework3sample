@@ -52,7 +52,7 @@ class EmpresasForm extends Form
     }
     
     
-        /**
+     /**
      * This method adds elements to form (input fields and submit button).
      */
     protected function addElements() 
@@ -76,8 +76,10 @@ class EmpresasForm extends Form
         //COLLATE='utf8_general_ci'
         //ENGINE=InnoDB
         //;
-        //
-        //
+
+        
+        
+        
         // Add "email" field
         $this->add([            
             'type'  => 'text',
@@ -88,6 +90,51 @@ class EmpresasForm extends Form
         ]);
         
         
+        // Add "designacao" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'designacao',            
+            'options' => [
+                'label' => _('Company Name'),
+            ],
+        ]);
+        
+        // Add "endereco" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'endereco',            
+            'options' => [
+                'label' => _('Company Address'),
+            ],
+        ]);
+        
+        // Add "site" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'site',            
+            'options' => [
+                'label' => _('Company URL'),
+            ],
+        ]);
+        
+        // Add "facebook" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'facebook',            
+            'options' => [
+                'label' => _('Company Facebook'),
+            ],
+        ]);
+        
+        // Add the Submit button
+        $this->add([
+            'type'  => 'submit',
+            'name' => 'submit',
+          
+            'attributes' => [                
+                'value' => 'Create'
+            ],
+        ]);
     }
     
     
