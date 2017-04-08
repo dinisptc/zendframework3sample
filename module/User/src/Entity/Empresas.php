@@ -6,12 +6,13 @@
 //	`descricao` TEXT NULL,
 //	`endereco` TEXT NULL,
 //	`site` VARCHAR(1000) NOT NULL,
-//	`facebook` VARCHAR(500) NULL DEFAULT NULL,
-//	`linkedin` VARCHAR(500) NULL DEFAULT NULL,
-//	`twitter` VARCHAR(500) NULL DEFAULT NULL,
+//	`facebook` VARCHAR(1000) NULL DEFAULT NULL,
+//	`linkedin` VARCHAR(1000) NULL DEFAULT NULL,
+//	`twitter` VARCHAR(1000) NULL DEFAULT NULL,
 //	`telefone` VARCHAR(500) NULL DEFAULT NULL,
 //	`email` VARCHAR(500) NOT NULL,
 //	`fax` VARCHAR(500) NULL DEFAULT NULL,
+//	`identidade` VARCHAR(255) NOT NULL,
 //	PRIMARY KEY (`id`)
 //)
 //COLLATE='utf8_general_ci'
