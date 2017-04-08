@@ -154,6 +154,16 @@ class EmpresasForm extends Form
             ],
         ]);
         
+        //email
+        // Add "email" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'email',            
+            'options' => [
+                'label' => _('Company Email'),
+            ],
+        ]);
+        
         
         
         // Add the Submit button
