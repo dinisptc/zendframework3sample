@@ -136,6 +136,24 @@ class EmpresasForm extends Form
             ],
         ]);
         
+        // Add "twitter" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'twitter',            
+            'options' => [
+                'label' => _('Company Twitter'),
+            ],
+        ]);
+        
+        // Add "telefone" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'telefone',            
+            'options' => [
+                'label' => _('Company Telefone'),
+            ],
+        ]);
+        
         
         
         // Add the Submit button
