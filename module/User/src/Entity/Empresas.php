@@ -95,6 +95,11 @@ class Empresas
     */
     protected $fax;
     
+    /**
+    * @ORM\Column(name="identidade")  
+    */
+    protected $identidade;
+    
     
     /**
      * Returns user ID.
@@ -286,6 +291,25 @@ class Empresas
     public function setFax($fax) 
     {
         $this->fax = $fax;
+    }
+    
+            
+     /**
+     * Returns identidade.
+     * @return string 
+     */
+    public function getIdentidade() 
+    {
+        return $this->identidade;
+    }
+
+    /**
+     * Sets identidade. 
+     * @param string $identidade   
+     */
+    public function setIdentidade($identidade) 
+    {
+        $this->identidade = $identidade;
     }
 }
 
