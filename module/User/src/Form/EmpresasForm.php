@@ -126,11 +126,22 @@ class EmpresasForm extends Form
             ],
         ]);
         
+        
+        // Add "linkedin" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'linkedin',            
+            'options' => [
+                'label' => _('Company Linkedin'),
+            ],
+        ]);
+        
+        
+        
         // Add the Submit button
         $this->add([
             'type'  => 'submit',
-            'name' => 'submit',
-          
+            'name' => 'submit',          
             'attributes' => [                
                 'value' => 'Create'
             ],
