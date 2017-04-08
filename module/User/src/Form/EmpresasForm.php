@@ -52,7 +52,43 @@ class EmpresasForm extends Form
     }
     
     
-    
+        /**
+     * This method adds elements to form (input fields and submit button).
+     */
+    protected function addElements() 
+    {
+        
+        //CREATE TABLE `empresas` (
+        //	`id` VARCHAR(255) NOT NULL,
+        //	`designacao` VARCHAR(500) NOT NULL,
+        //	`descricao` TEXT NULL,
+        //	`endereco` TEXT NULL,
+        //	`site` VARCHAR(1000) NOT NULL,
+        //	`facebook` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`linkedin` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`twitter` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`telefone` VARCHAR(500) NULL DEFAULT NULL,
+        //	`email` VARCHAR(500) NOT NULL,
+        //	`fax` VARCHAR(500) NULL DEFAULT NULL,
+        //	`identidade` VARCHAR(255) NOT NULL,
+        //	PRIMARY KEY (`id`)
+        //)
+        //COLLATE='utf8_general_ci'
+        //ENGINE=InnoDB
+        //;
+        //
+        //
+        // Add "email" field
+        $this->add([            
+            'type'  => 'text',
+            'name' => 'email',
+            'options' => [
+                'label' => _('E-mail'),
+            ],
+        ]);
+        
+        
+    }
     
     
     
