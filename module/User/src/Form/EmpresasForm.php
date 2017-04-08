@@ -235,65 +235,9 @@ class EmpresasForm extends Form
                 ],
             ]);
         
-        if ($this->scenario == 'create') {
-            
-            // Add input for "password" field
-            $inputFilter->add([
-                    'name'     => 'password',
-                    'required' => true,
-                    'filters'  => [                        
-                    ],                
-                    'validators' => [
-                        [
-                            'name'    => 'StringLength',
-                            'options' => [
-                                'min' => 6,
-                                'max' => 64
-                            ],
-                        ],
-                    ],
-                ]);
-            
-            // Add input for "confirm_password" field
-            $inputFilter->add([
-                    'name'     => 'confirm_password',
-                    'required' => true,
-                    'filters'  => [                        
-                    ],                
-                    'validators' => [
-                        [
-                            'name'    => 'Identical',
-                            'options' => [
-                                'token' => 'password',                            
-                            ],
-                        ],
-                    ],
-                ]);
-        }
         
-        // Add input for "status" field
-        $inputFilter->add([
-                'name'     => 'status',
-                'required' => true,
-                'filters'  => [                    
-                    ['name' => 'ToInt'],
-                ],                
-                'validators' => [
-                    ['name'=>'InArray', 'options'=>['haystack'=>[1, 2]]]
-                ],
-            ]);   
         
-                // Add input for "status" field
-        $inputFilter->add([
-                'name'     => 'perfil',
-                'required' => true,
-                'filters'  => [                    
-                    ['name' => 'ToInt'],
-                ],                
-                'validators' => [
-                    ['name'=>'InArray', 'options'=>['haystack'=>[0, 1, 2]]]
-                ],
-            ]); 
+       
     }  
     
 }
