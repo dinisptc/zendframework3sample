@@ -319,29 +319,7 @@ class EmpresasForm extends Form
                 ],
             ]);
         
-        
-             
-                //CREATE TABLE `empresas` (
-        //	`id` VARCHAR(255) NOT NULL,
-        //	`designacao` VARCHAR(500) NOT NULL,
-        //	`descricao` TEXT NULL,
-        //	`endereco` TEXT NULL,
-        //	`site` VARCHAR(1000) NOT NULL,
-        //	`facebook` VARCHAR(1000) NULL DEFAULT NULL,
-        //	`linkedin` VARCHAR(1000) NULL DEFAULT NULL,
-        //	`twitter` VARCHAR(1000) NULL DEFAULT NULL,
-        //	`telefone` VARCHAR(500) NULL DEFAULT NULL,
-        //	`email` VARCHAR(500) NOT NULL,
-        //	`fax` VARCHAR(500) NULL DEFAULT NULL,
-        //	`identidade` VARCHAR(255) NOT NULL,
-        //	PRIMARY KEY (`id`)
-        //)
-        //COLLATE='utf8_general_ci'
-        //ENGINE=InnoDB
-        //;
-        
-        
-                
+         
                 //twitter
         // Add input for "twitter" field
         $inputFilter->add([
@@ -375,6 +353,87 @@ class EmpresasForm extends Form
                         'options' => [
                             'min' => 1,
                             'max' => 500
+                        ],
+                    ],
+                ],
+            ]);
+        
+        
+        
+                        //CREATE TABLE `empresas` (
+        //	`id` VARCHAR(255) NOT NULL,
+        //	`designacao` VARCHAR(500) NOT NULL,
+        //	`descricao` TEXT NULL,
+        //	`endereco` TEXT NULL,
+        //	`site` VARCHAR(1000) NOT NULL,
+        //	`facebook` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`linkedin` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`twitter` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`telefone` VARCHAR(500) NULL DEFAULT NULL,
+        //	`email` VARCHAR(500) NOT NULL,
+        //	`fax` VARCHAR(500) NULL DEFAULT NULL,
+        //	`identidade` VARCHAR(255) NOT NULL,
+        //	PRIMARY KEY (`id`)
+        //)
+        //COLLATE='utf8_general_ci'
+        //ENGINE=InnoDB
+        //;
+        
+        
+        //email
+        // Add input for "email" field
+        $inputFilter->add([
+                'name'     => 'email',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 500
+                        ],
+                    ],
+                ],
+            ]);
+        
+        
+                //fax
+        // Add input for "fax" field
+        $inputFilter->add([
+                'name'     => 'fax',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 500
+                        ],
+                    ],
+                ],
+            ]);
+        
+        
+                     //identidade
+        // Add input for "identidade" field
+        $inputFilter->add([
+                'name'     => 'identidade',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 255
                         ],
                     ],
                 ],
