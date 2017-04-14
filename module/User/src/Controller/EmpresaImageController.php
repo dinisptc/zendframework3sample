@@ -4,11 +4,11 @@ namespace User\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use User\Form\ImageForm;
-use User\Entity\Empregos;
+use User\Entity\Empresas;
 /**
  * This controller is designed for managing image file uploads.
  */
-class ImageController extends AbstractActionController 
+class EmpresaImageController extends AbstractActionController 
 {
     /**
      * Image manager.
