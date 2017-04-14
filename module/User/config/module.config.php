@@ -143,6 +143,8 @@ return [
             Controller\AuthController::class => Controller\Factory\AuthControllerFactory::class,
             Controller\UserController::class => Controller\Factory\UserControllerFactory::class,   
             Controller\ImageController::class => Controller\Factory\ImageControllerFactory::class,
+            Controller\EmpresaController::class => Controller\Factory\EmpresaControllerFactory::class,   
+            Controller\EmpresaImageController::class => Controller\Factory\EmpresaImageControllerFactory::class,
         ],
     ],
     // The 'access_filter' key is used by the User module to restrict or permit
