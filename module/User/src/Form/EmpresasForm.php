@@ -217,9 +217,12 @@ class EmpresasForm extends Form
                 ],
             ]);     
         
-        // Add input for "full_name" field
+        
+        
+        //designacao
+        // Add input for "designacao" field
         $inputFilter->add([
-                'name'     => 'full_name',
+                'name'     => 'designacao',
                 'required' => true,
                 'filters'  => [                    
                     ['name' => 'StringTrim'],
@@ -229,7 +232,47 @@ class EmpresasForm extends Form
                         'name'    => 'StringLength',
                         'options' => [
                             'min' => 1,
-                            'max' => 512
+                            'max' => 500
+                        ],
+                    ],
+                ],
+            ]);
+        
+        
+
+        //endereco
+        // Add input for "endereco" field
+        $inputFilter->add([
+                'name'     => 'endereco',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            //'max' => 500
+                        ],
+                    ],
+                ],
+            ]);
+        
+        //site
+        // Add input for "site" field
+        $inputFilter->add([
+                'name'     => 'site',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 1000
                         ],
                     ],
                 ],
@@ -237,7 +280,105 @@ class EmpresasForm extends Form
         
         
         
-       
+        //facebook
+        // Add input for "facebook" field
+        $inputFilter->add([
+                'name'     => 'facebook',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 1000
+                        ],
+                    ],
+                ],
+            ]);
+   
+        
+                //linkedin
+        // Add input for "linkedin" field
+        $inputFilter->add([
+                'name'     => 'linkedin',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 1000
+                        ],
+                    ],
+                ],
+            ]);
+        
+        
+             
+                //CREATE TABLE `empresas` (
+        //	`id` VARCHAR(255) NOT NULL,
+        //	`designacao` VARCHAR(500) NOT NULL,
+        //	`descricao` TEXT NULL,
+        //	`endereco` TEXT NULL,
+        //	`site` VARCHAR(1000) NOT NULL,
+        //	`facebook` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`linkedin` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`twitter` VARCHAR(1000) NULL DEFAULT NULL,
+        //	`telefone` VARCHAR(500) NULL DEFAULT NULL,
+        //	`email` VARCHAR(500) NOT NULL,
+        //	`fax` VARCHAR(500) NULL DEFAULT NULL,
+        //	`identidade` VARCHAR(255) NOT NULL,
+        //	PRIMARY KEY (`id`)
+        //)
+        //COLLATE='utf8_general_ci'
+        //ENGINE=InnoDB
+        //;
+        
+        
+                
+                //twitter
+        // Add input for "twitter" field
+        $inputFilter->add([
+                'name'     => 'twitter',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 1000
+                        ],
+                    ],
+                ],
+            ]);
+        
+        //telefone
+        // Add input for "telefone" field
+        $inputFilter->add([
+                'name'     => 'telefone',
+                'required' => true,
+                'filters'  => [                    
+                    ['name' => 'StringTrim'],
+                ],                
+                'validators' => [
+                    [
+                        'name'    => 'StringLength',
+                        'options' => [
+                            'min' => 1,
+                            'max' => 500
+                        ],
+                    ],
+                ],
+            ]);
     }  
     
 }
