@@ -101,6 +101,11 @@ class Empresas
     protected $identidade;
     
     
+     /**
+     * @ORM\Column(name="date_created")  
+     */
+    protected $dateCreated;
+    
     /**
      * Returns user ID.
      * @return string
@@ -310,6 +315,24 @@ class Empresas
     public function setIdentidade($identidade) 
     {
         $this->identidade = $identidade;
+    }
+    
+        /**
+     * Returns the date of user creation.
+     * @return string     
+     */
+    public function getDateCreated() 
+    {
+        return $this->dateCreated;
+    }
+    
+    /**
+     * Sets the date when this user was created.
+     * @param string $dateCreated     
+     */
+    public function setDateCreated($dateCreated) 
+    {
+        $this->dateCreated = $dateCreated;
     }
     
     

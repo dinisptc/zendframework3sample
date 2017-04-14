@@ -8,7 +8,7 @@ namespace User\Service;
  * The image manager service. Responsible for getting the list of uploaded
  * files and resizing the images.
  */
-class ImageManager 
+class EmpresaImageManager 
 {
     
         /**
@@ -31,7 +31,7 @@ class ImageManager
      * The directory where we save image files.
      * @var string
      */
-    private $saveToDir = './public/files/utilizadores/';
+    private $saveToDir = './public/files/empresas/';
         
     /**
      * Returns path to the directory where we save the image files.
