@@ -135,7 +135,20 @@ return [
                 ],
             ],
             
-      
+            'empresas' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/empresas[/:action[/:id]]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        //'id' => '[a-zA-Z0-9_-]*',
+                    ],
+                    'defaults' => [
+                        'controller'    => Controller\EmpresaController::class,
+                        'action'        => 'index',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
