@@ -1,5 +1,5 @@
 <?php
-namespace Empresas\Form;
+namespace User\Form;
 
 use Zend\Form\Form;
 use Zend\Form\Fieldset;

@@ -8,8 +8,8 @@ use Zend\Mail\Message;
 use Zend\Mime\Message as MimeMessage;
 use Zend\Mime\Part as MimePart;
 
-use User\Entity\User;
-use User\Form\UserForm;
+use User\Entity\Empresas;
+use User\Form\EmpresasForm;
 use User\Form\RegisterForm;
 use User\Form\PasswordChangeForm;
 use User\Form\PasswordResetForm;
@@ -22,7 +22,7 @@ use Zend\Paginator\Paginator;
  * This controller is responsible for user management (adding, editing, 
  * viewing users and changing user's password).
  */
-class UserController extends AbstractActionController 
+class EmpresaController extends AbstractActionController 
 {
     /**
      * Entity manager.
