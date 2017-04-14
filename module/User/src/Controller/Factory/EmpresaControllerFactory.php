@@ -5,7 +5,7 @@ use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
 use User\Controller\EmpresaController;
 use User\Service\EmpresaManager;
-use User\Service\EmpresaimageManager;
+use User\Service\EmpresaImageManager;
 
 /**
  * This is the factory for UserController. Its purpose is to instantiate the
@@ -17,7 +17,7 @@ class EmpresaControllerFactory implements FactoryInterface
     {
         $entityManager = $container->get('doctrine.entitymanager.orm_default');
         $userManager = $container->get(EmpresaManager::class);
-        $userImageManager = $container->get(EmpresaimageManager::class);
+        $userImageManager = $container->get(EmpresaImageManager::class);
         
         $mailtransport = $container->get('mail.transport');
            $translator = $container->get('translator');
