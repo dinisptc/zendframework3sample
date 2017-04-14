@@ -31,7 +31,7 @@ class EmpresaimageManager
      * The directory where we save image files.
      * @var string
      */
-    private $saveToDir = './public/files/utilizadores/';
+    private $saveToDir = './public/files/empresas/';
         
     /**
      * Returns path to the directory where we save the image files.
