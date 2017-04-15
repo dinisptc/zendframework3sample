@@ -96,6 +96,30 @@ if(isset($flash))
                     </td>
             
             </tr>
+            
+            
+            <tr>
+                <?php
+              
+                             // Find a user with such ID.
+                  $empresa = $this->entityManager->getRepository(User\Entity\Empresas::class)->getIdentidade($user->getId());
+                  
+                  if(!isset($empresa)){
+                      
+                      return;
+                      
+                  }
+                  
+        
+  
+                           
+                ?>
+                     <a class="btn btn-info" href="<?= $this->url('empresas', 
+                    ['action'=>'index', 'id'=>$empresa->getId()]); ?>">
+                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Create Company'); ?>
+            </a>
+                
+            </tr>
         </table>
     </div>
 </div>

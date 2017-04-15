@@ -189,6 +189,8 @@ return [
             Service\UserManager::class => Service\Factory\UserManagerFactory::class,
              \Zend\I18n\Translator\TranslatorInterface::class => \Zend\I18n\Translator\TranslatorServiceFactory::class,
             Service\ImageManager::class => Service\Factory\ImageManagerFactory::class,
+            Service\EmpresaManager::class => Service\Factory\EmpresaManagerFactory::class,
+            Service\EmpresaImageManager::class => Service\Factory\EmpresaImageManagerFactory::class,
         ],
         'aliases' => [
      

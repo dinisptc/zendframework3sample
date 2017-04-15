@@ -66,7 +66,7 @@ class EmpresaController extends AbstractActionController
         $page = $this->params()->fromQuery('page', 1);
 
         
-        $users = $this->entityManager->createQuery("SELECT u FROM User\Entity\Empresas u order by u.id ASC");
+        $users = $this->entityManager->createQuery("SELECT u FROM User\Entity\Empresas u order by u.dateCreated DESC");
         
         $adapter = new DoctrineAdapter(new ORMPaginator($users, false));
         $paginator = new Paginator($adapter);

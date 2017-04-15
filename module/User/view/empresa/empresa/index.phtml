@@ -5,7 +5,7 @@ $this->mainMenu()->setActiveItemId('users');
 
 $this->pageBreadcrumbs()->setItems([
              $this->translate('Home')=>$this->url('home'),
-            $this->translate('Manage Companies')=>$this->url('users'),
+            $this->translate('Manage Companies')=>$this->url('empresas'),
             ]);
 ?>
 
@@ -13,8 +13,8 @@ $this->pageBreadcrumbs()->setItems([
 
 <p>
 <a class="btn btn-default" href="
-    <?= $this->url('users', ['action'=>'add']); ?>">
-    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <?php echo $this->translate('New User'); ?>
+    <?= $this->url('empresas', ['action'=>'add']); ?>">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <?php echo $this->translate('New Company'); ?>
 </a>
 </p>
 
@@ -47,26 +47,18 @@ $this->pageBreadcrumbs()->setItems([
     ?>
     <tr>
         <td><?= $this->escapeHtml($user->getId()); ?></td>
-        <td><?= $this->escapeHtml($conta); ?></td>
-        <td>
-            <a href="<?= $this->url('users', ['action'=>'view', 'id'=>$user->getId()]); ?>">
-                <?= $this->escapeHtml($user->getEmail()); ?>
-            </a> 
-        </td>
-        <td><?= $this->escapeHtml($user->getFullName()); ?></a> 
+       
+       
+        <td><?= $this->escapeHtml($user->getDesignacao()); ?></a> 
         </td>
         <td><?= $this->escapeHtml($user->getDateCreated()); ?></td>        
-        <td><?= $this->escapeHtml($user->getStatusAsString()); ?></td>
-        <td><?= $this->escapeHtml($user->getPerfilAsString()); ?></td>
+   
         <td>
-            <a class="btn btn-info" href="<?= $this->url('users', 
+            <a class="btn btn-info" href="<?= $this->url('empresas', 
                     ['action'=>'edit', 'id'=>$user->getId()]); ?>">
                 <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Edit'); ?>
             </a>
-            <a class="btn btn-default" href="<?= $this->url('users',
-                    ['action'=>'change-passwordadmin', 'id'=>$user->getId()]); ?>">
-                <span class="glyphicon glyphicon-asterisk"></span> <?php echo $this->translate('Change Password'); ?>
-            </a>
+          
         </td>    
     </tr>
         
@@ -77,4 +69,4 @@ $this->pageBreadcrumbs()->setItems([
   <?= $this->paginationControl($this->users,
             'Sliding',
             'paginator.phtml', 
-            ['route' => 'users']); ?>
+            ['route' => 'empresas']); ?>

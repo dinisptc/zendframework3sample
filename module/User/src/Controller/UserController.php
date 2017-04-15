@@ -42,16 +42,19 @@ class UserController extends AbstractActionController
     
     private $userImageManager;
     
+    private $empresaManager;
+    
     /**
      * Constructor. 
      */
-    public function __construct($entityManager, $userManager, $mailtransport,$translator,$userImageManager)
+    public function __construct($entityManager, $userManager, $mailtransport,$translator,$userImageManager,$empresaManager)
     {
         $this->entityManager = $entityManager;
         $this->userManager = $userManager;
         $this->mailtransport = $mailtransport;
          $this->translator = $translator;
         $this->userImageManager = $userImageManager;
+        $this->empresaManager = $empresaManager;
     }
     
     /**
@@ -66,7 +69,7 @@ class UserController extends AbstractActionController
         $page = $this->params()->fromQuery('page', 1);
 
         
-        $users = $this->entityManager->createQuery("SELECT u FROM User\Entity\User u order by u.id ASC");
+        $users = $this->entityManager->createQuery("SELECT u FROM User\Entity\User u order by u.dateCreated DESC");
         
         $adapter = new DoctrineAdapter(new ORMPaginator($users, false));
         $paginator = new Paginator($adapter);
@@ -144,8 +147,9 @@ class UserController extends AbstractActionController
                 
         return new ViewModel([
             'user' => $user,
-           'flash'=>$this->flashMessenger()->getMessages(),
-                  'userImageManager'=>$this->userImageManager,
+            'flash'=>$this->flashMessenger()->getMessages(),
+            'userImageManager'=>$this->userImageManager,
+            'empresaManager'=>$this->empresaManager,
             
             
         ]);
