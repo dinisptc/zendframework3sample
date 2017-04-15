@@ -150,8 +150,7 @@ class UserController extends AbstractActionController
             'flash'=>$this->flashMessenger()->getMessages(),
             'userImageManager'=>$this->userImageManager,
             'empresaManager'=>$this->empresaManager,
-            
-            
+            'entityManager'=>$this->entityManager,                        
         ]);
     }
     
