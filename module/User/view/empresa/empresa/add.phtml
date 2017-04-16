@@ -1,0 +1,214 @@
+<?php
+$this->headTitle('Add User');
+
+$this->mainMenu()->setActiveItemId('users');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Home')=>$this->url('home'),
+            $this->translate('Manage Companies')=>$this->url('empresas'),
+            $this->translate('Add Company')=>$this->url('empresas', ['action'=>'add'])
+            ]);
+
+
+
+// // Add "email" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'email',
+//            'options' => [
+//                'label' => _('E-mail'),
+//            ],
+//        ]);
+//        
+//        
+//        // Add "designacao" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'designacao',            
+//            'options' => [
+//                'label' => _('Company Name'),
+//            ],
+//        ]);
+//        
+//        // Add "endereco" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'endereco',            
+//            'options' => [
+//                'label' => _('Company Address'),
+//            ],
+//        ]);
+//        
+//        // Add "site" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'site',            
+//            'options' => [
+//                'label' => _('Company URL'),
+//            ],
+//        ]);
+//        
+//        // Add "facebook" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'facebook',            
+//            'options' => [
+//                'label' => _('Company Facebook'),
+//            ],
+//        ]);
+//        
+//        
+//        // Add "linkedin" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'linkedin',            
+//            'options' => [
+//                'label' => _('Company Linkedin'),
+//            ],
+//        ]);
+//        
+//        // Add "twitter" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'twitter',            
+//            'options' => [
+//                'label' => _('Company Twitter'),
+//            ],
+//        ]);
+//        
+//        // Add "telefone" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'telefone',            
+//            'options' => [
+//                'label' => _('Company Telefone'),
+//            ],
+//        ]);
+//        
+//        //email
+//        // Add "fax" field
+//        $this->add([            
+//            'type'  => 'text',
+//            'name' => 'fax',            
+//            'options' => [
+//                'label' => _('Company Fax'),
+//            ],
+//        ]);
+//        
+//        
+//        
+//        // Add the Submit button
+//        $this->add([
+//            'type'  => 'submit',
+//            'name' => 'submit',          
+//            'attributes' => [                
+//                'value' => 'Create'
+//            ],
+//        ]);
+
+$form->get('email')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('name@example.com')
+    ]);
+
+$form->get('designacao')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('company example')
+    ]);
+
+$form->get('endereco')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('street nº5 at example city')
+    ]);
+
+
+$form->get('site')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('www.companyexample.com')
+    ]);
+
+
+$form->get('facebook')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('facebook company page')
+    ]);
+
+$form->get('linkedin')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('linkedin company profile')
+    ]);
+
+$form->get('twitter')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('twitter company profile')
+    ]);
+
+
+$form->get('telefone')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('company phone')
+    ]);
+
+$form->get('fax')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('company fax')
+    ]);
+
+$form->get('submit')->setAttributes(['class'=>'btn btn-primary']);
+
+$form->prepare();
+?>
+
+<h1><?php echo $this->translate('Add company'); ?></h1>
+
+<p>
+    <?php echo $this->translate('Please fill out the following form and click the'); ?> <i><?php echo $this->translate('Create'); ?></i> <?php echo $this->translate('button'); ?> . 
+     
+</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('email'))); ?>
+            <?= $this->formElement($form->get('email')); ?>
+            <?= $this->formElementErrors($form->get('email')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('designacao'))); ?>
+            <?= $this->formElement($form->get('designacao')); ?>
+            <?= $this->formElementErrors($form->get('designacao')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('endereco'))); ?>
+            <?= $this->formElement($form->get('endereco')); ?>
+            <?= $this->formElementErrors($form->get('endereco')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('site'))); ?>
+            <?= $this->formElement($form->get('site')); ?>
+            <?= $this->formElementErrors($form->get('site')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('facebook'))); ?>
+            <?= $this->formElement($form->get('facebook')); ?>
+            <?= $this->formElementErrors($form->get('facebook')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('linkedin'))); ?>
+            <?= $this->formElement($form->get('linkedin')); ?>
+            <?= $this->formElementErrors($form->get('linkedin')); ?>                  
+        </div>
+    
+        <?php echo $this->translate($this->formElement($form->get('submit'))); ?>
+        
+        <?= $this->form()->closeTag(); ?>
+    </div>    
+</div>   
+

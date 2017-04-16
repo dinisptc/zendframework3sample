@@ -86,7 +86,7 @@ class EmpresaController extends AbstractActionController
     {
            $this->traduz();
         // Create user form
-        $form = new UserForm('create', $this->entityManager);
+        $form = new EmpresasForm('create', $this->entityManager);
         
         // Check if user has submitted the form
         if ($this->getRequest()->isPost()) {
@@ -102,7 +102,7 @@ class EmpresaController extends AbstractActionController
                 // Get filtered and validated data
                 $data = $form->getData();
                 
-                // Add user.
+                // Add company.
                 $user = $this->userManager->addUser($data);
                 
                 // $this->flashMessenger()->addMessage('Added user successfully.');
@@ -110,7 +110,7 @@ class EmpresaController extends AbstractActionController
                  
                 
                 // Redirect to "view" page
-                return $this->redirect()->toRoute('users', 
+                return $this->redirect()->toRoute('empresas', 
                         ['action'=>'view', 'id'=>$user->getId()]);                
             }               
         } 

@@ -38,12 +38,12 @@ class EmpresaManager
     {
         // Do not allow several users with the same email address.
         if($this->checkUserExists($data['email'])) {
-            throw new \Exception("User with email address " . $data['$email'] . " already exists");
+            throw new \Exception("Company with email address " . $data['email'] . " already exists");
         }
         
         // Create new User entity.
-        $user = new User();
-        $user->setId(uniqid('user_'));
+        $user = new Empresas();
+        $user->setId(uniqid('empresa_'));
         $user->setEmail($data['email']);
         $user->setFullName($data['full_name']);        
 
