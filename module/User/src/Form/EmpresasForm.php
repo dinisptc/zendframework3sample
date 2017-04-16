@@ -4,7 +4,7 @@ namespace User\Form;
 use Zend\Form\Form;
 use Zend\Form\Fieldset;
 use Zend\InputFilter\InputFilter;
-//use User\Validator\UserExistsValidator;
+use User\Validator\UserExistsValidator;
 
 /**
  * This form is used to collect user's email, full name, password and status. The form 
@@ -101,7 +101,7 @@ class EmpresasForm extends Form
         
         // Add "endereco" field
         $this->add([            
-            'type'  => 'text',
+            'type'  => 'textarea',
             'name' => 'endereco',            
             'options' => [
                 'label' => _('Company Address'),
@@ -211,7 +211,7 @@ class EmpresasForm extends Form
                         'name' => UserExistsValidator::class,
                         'options' => [
                             'entityManager' => $this->entityManager,
-                            'user' => $this->user
+                            'user' => $this->empresas
                         ],
                     ],                    
                 ],
