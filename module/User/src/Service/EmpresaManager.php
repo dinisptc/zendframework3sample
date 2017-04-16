@@ -4,6 +4,7 @@ namespace User\Service;
 
 
 use User\Entity\Empresas;
+use User\Entity\User;
 use Zend\Crypt\Password\Bcrypt;
 use Zend\Math\Rand;
 
@@ -22,13 +23,20 @@ class EmpresaManager
     
     private $email;
     
+            /**
+     * Authentication service.
+     * @var \Zend\Authentication\AuthenticationService
+     */
+    private $authService;
+    
     /**
      * Constructs the service.
      */
-    public function __construct($entityManager,$mailtransport) 
+    public function __construct($entityManager,$mailtransport,$authService) 
     {
         $this->entityManager = $entityManager;
         $this->email = $mailtransport;
+          $this->authService = $authService;
     }
     
     /**
@@ -122,7 +130,7 @@ class EmpresaManager
      */
     public function checkUserExists($email) {
         
-        $user = $this->entityManager->getRepository(User::class)
+        $user = $this->entityManager->getRepository(Empresas::class)
                 ->findOneByEmail($email);
         
         return $user !== null;

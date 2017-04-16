@@ -31,8 +31,8 @@ class EmpresaController extends AbstractActionController
     private $entityManager;
     
     /**
-     * User manager.
-     * @var User\Service\UserManager 
+     * Empresa manager.
+     * @var User\Service\EmpresaManager 
      */
     private $userManager;
     
