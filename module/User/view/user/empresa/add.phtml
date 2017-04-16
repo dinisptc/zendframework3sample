@@ -138,6 +138,12 @@ $form->get('designacao')->setAttributes([
     'placeholder'=>$this->translate('company example')
     ]);
 
+$form->get('descricao')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('company example develops software'),
+    'rows'=>6
+    ]);
+
 $form->get('endereco')->setAttributes([
     'class'=>'form-control',
     'placeholder'=>$this->translate('street nº5 at example city'),
@@ -205,17 +211,25 @@ $form->prepare();
             <?= $this->formElementErrors($form->get('designacao')); ?>                  
         </div>
         
-        <div class="form-group">
-            <?php echo $this->translate($this->formLabel($form->get('endereco'))); ?>
-            <?= $this->formElement($form->get('endereco')); ?>
-            <?= $this->formElementErrors($form->get('endereco')); ?>                  
-        </div>
-        
+                
         <div class="form-group">
             <?php echo $this->translate($this->formLabel($form->get('site'))); ?>
             <?= $this->formElement($form->get('site')); ?>
             <?= $this->formElementErrors($form->get('site')); ?>                  
         </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('descricao'))); ?>
+            <?= $this->formElement($form->get('descricao')); ?>
+            <?= $this->formElementErrors($form->get('descricao')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('endereco'))); ?>
+            <?= $this->formElement($form->get('endereco')); ?>
+            <?= $this->formElementErrors($form->get('endereco')); ?>                  
+        </div>
+
         
         <div class="form-group">
             <?php echo $this->translate($this->formLabel($form->get('facebook'))); ?>

@@ -45,7 +45,7 @@ class EmpresaManager
         $user = new Empresas();
         $user->setId(uniqid('empresa_'));
         $user->setEmail($data['email']);
-        $user->setFullName($data['full_name']);        
+        $user->setDesignacao($data['designacao']);        
 
         // Encrypt password and store the password in encrypted state.
         $bcrypt = new Bcrypt();
