@@ -199,6 +199,24 @@ class Empresas
     {
         $this->site = $site;
     }
+    
+     /**
+     * Returns facebook.
+     * @return string 
+     */
+    public function getFacebook() 
+    {
+        return $this->facebook;
+    }
+
+    /**
+     * Sets facebook. 
+     * @param string $facebook   
+     */
+    public function setFacebook($facebook) 
+    {
+        $this->facebook = $facebook;
+    }
    
             
     /**

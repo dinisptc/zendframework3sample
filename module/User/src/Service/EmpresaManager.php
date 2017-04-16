@@ -42,29 +42,34 @@ class EmpresaManager
         }
         
         // Create new User entity.
-        $user = new Empresas();
-        $user->setId(uniqid('empresa_'));
-        $user->setEmail($data['email']);
-        $user->setDesignacao($data['designacao']);        
-
-        // Encrypt password and store the password in encrypted state.
-        $bcrypt = new Bcrypt();
-        $passwordHash = $bcrypt->create($data['password']);        
-        $user->setPassword($passwordHash);
-        
-        $user->setStatus($data['status']);
-        $user->setPerfil($data['perfil']); 
+        $empresa = new Empresas();
+        $empresa->setId(uniqid('empresa_'));
+        $empresa->setEmail($data['email']);
+        $empresa->setDesignacao($data['designacao']); 
+        $empresa->setDescricao($data['descricao']);
+        $empresa->setEndereco($data['endereco']);
+        $empresa->setSite($data['site']);
+        $empresa->setFacebook($data['facebook']);
+        $empresa->setLinkedin($data['linkedin']);
+        $empresa->setTwitter($data['twitter']);
+        $empresa->setTelefone($data['telefone']);
+        $empresa->setFax($data['fax']);
+        $user = $this->entityManager->getRepository(User::class)
+                        ->findOneByEmail($this->authService->getIdentity());
+        $ident=$user->getId();                 
+        $empresa->setIdentidade($user->getId());
+       
         
         $currentDate = date('Y-m-d H:i:s');
-        $user->setDateCreated($currentDate);        
+        $empresa->setDateCreated($currentDate);        
                 
         // Add the entity to the entity manager.
-        $this->entityManager->persist($user);
+        $this->entityManager->persist($empresa);
         
         // Apply changes to database.
         $this->entityManager->flush();
         
-        return $user;
+        return $empresa;
     }
     
     /**
