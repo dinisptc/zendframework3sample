@@ -126,7 +126,7 @@ if(isset($flash))
                   }else
                   {?>
                    
-                        <a class="btn btn-info" href="<?= $this->url('empresas',['action'=>'index', 'id'=>$empresa->getId()]); ?>">
+                        <a class="btn btn-info" href="<?= $this->url('empresas',['action'=>'view', 'id'=>$empresa->getId()]); ?>">
                            <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Your Company'); ?>
                         </a>
                 
