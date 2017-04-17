@@ -59,26 +59,26 @@ class EmpresaController extends AbstractActionController
      * list of users.
      */
     //ja esta
-    public function indexAction() 
-    {
-       
-        $this->traduz();
-           
-        $page = $this->params()->fromQuery('page', 1);
-
-        
-        $users = $this->entityManager->createQuery("SELECT u FROM User\Entity\Empresas u order by u.dateCreated DESC");
-        
-        $adapter = new DoctrineAdapter(new ORMPaginator($users, false));
-        $paginator = new Paginator($adapter);
-        $paginator->setDefaultItemCountPerPage(10);        
-        $paginator->setCurrentPageNumber($page);
-        
-        return new ViewModel([
-            'users' => $paginator,
-            'entitymanager'=>$this->entityManager,
-        ]);
-    } 
+//    public function indexAction() 
+//    {
+//       
+//        $this->traduz();
+//           
+//        $page = $this->params()->fromQuery('page', 1);
+//
+//        
+//        $users = $this->entityManager->createQuery("SELECT u FROM User\Entity\Empresas u order by u.dateCreated DESC");
+//        
+//        $adapter = new DoctrineAdapter(new ORMPaginator($users, false));
+//        $paginator = new Paginator($adapter);
+//        $paginator->setDefaultItemCountPerPage(10);        
+//        $paginator->setCurrentPageNumber($page);
+//        
+//        return new ViewModel([
+//            'users' => $paginator,
+//            'entitymanager'=>$this->entityManager,
+//        ]);
+//    } 
     
     /**
      * This action displays a page allowing to add a new user.
