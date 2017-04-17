@@ -83,17 +83,25 @@ class EmpresaManager
     /**
      * This method updates data of an existing user.
      */
-    public function updateUser($user, $data) 
+    public function updateUser($empresa, $data) 
     {
         // Do not allow to change user email if another user with such email already exits.
-        if($user->getEmail()!=$data['email'] && $this->checkUserExists($data['email'])) {
-            throw new \Exception("Another user with email address " . $data['email'] . " already exists");
+        if($empresa->getEmail()!=$data['email'] && $this->checkUserExists($data['email'])) {
+            throw new \Exception("Another company with email address " . $data['email'] . " already exists");
         }
         
-        $user->setEmail($data['email']);
-        $user->setFullName($data['full_name']);        
-        $user->setStatus($data['status']);   
-        $user->setPerfil($data['perfil']); 
+        $empresa->setEmail($data['email']);
+        $empresa->setDesignacao($data['designacao']); 
+        $empresa->setDescricao($data['descricao']);
+        $empresa->setEndereco($data['endereco']);
+        $empresa->setSite($data['site']);
+        $empresa->setFacebook($data['facebook']);
+        $empresa->setLinkedin($data['linkedin']);
+        $empresa->setTwitter($data['twitter']);
+        $empresa->setTelefone($data['telefone']);
+        $empresa->setFax($data['fax']);
+        
+        
         
         // Apply changes to database.
         $this->entityManager->flush();

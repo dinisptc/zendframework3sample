@@ -1,0 +1,174 @@
+<script type="text/javascript" src="/js/tinymce/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "textarea",
+    theme: "modern",
+    plugins: [
+        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        "searchreplace wordcount visualblocks visualchars code fullscreen",
+        "insertdatetime media nonbreaking save table contextmenu directionality",
+        "emoticons template paste textcolor colorpicker textpattern"
+    ],
+    toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+    toolbar2: "print preview media | forecolor backcolor emoticons",
+    image_advtab: true,
+    templates: [
+        {title: 'Test template 1', content: 'Test 1'},
+        {title: 'Test template 2', content: 'Test 2'}
+    ]
+});
+</script>
+
+
+<?php
+$this->headTitle('Edit Company');
+
+$this->mainMenu()->setActiveItemId('users');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Home')=>$this->url('home'),
+            //$this->translate('Manage Companies')=>$this->url('empresas'),
+            $this->translate('Add Company')=>$this->url('empresas', ['action'=>'add'])
+            ]);
+
+
+
+$form->get('email')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('name@example.com')
+    ]);
+
+$form->get('designacao')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('company example')
+    ]);
+
+$form->get('descricao')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('company example develops software'),
+    'rows'=>6
+    ]);
+
+$form->get('endereco')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('street nº5 at example city'),
+    'rows'=>6
+    ]);
+
+
+$form->get('site')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('www.companyexample.com')
+    ]);
+
+
+$form->get('facebook')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('facebook company page')
+    ]);
+
+$form->get('linkedin')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('linkedin company profile')
+    ]);
+
+$form->get('twitter')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('twitter company profile')
+    ]);
+
+
+$form->get('telefone')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('company phone')
+    ]);
+
+$form->get('fax')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>$this->translate('company fax')
+    ]);
+
+$form->get('submit')
+        ->setAttributes(['class'=>'btn btn-primary'])
+        ->setValue(_('Save'));
+
+$form->prepare();
+?>
+
+<h1><?php echo $this->translate('Edit Company'); ?> <?= $this->escapeHtml($empresa->getEmail()) ?></h1>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('email'))); ?>
+            <?= $this->formElement($form->get('email')); ?>
+            <?= $this->formElementErrors($form->get('email')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('designacao'))); ?>
+            <?= $this->formElement($form->get('designacao')); ?>
+            <?= $this->formElementErrors($form->get('designacao')); ?>                  
+        </div>
+        
+                
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('site'))); ?>
+            <?= $this->formElement($form->get('site')); ?>
+            <?= $this->formElementErrors($form->get('site')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('descricao'))); ?>
+            <?= $this->formElement($form->get('descricao')); ?>
+            <?= $this->formElementErrors($form->get('descricao')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('endereco'))); ?>
+            <?= $this->formElement($form->get('endereco')); ?>
+            <?= $this->formElementErrors($form->get('endereco')); ?>                  
+        </div>
+
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('facebook'))); ?>
+            <?= $this->formElement($form->get('facebook')); ?>
+            <?= $this->formElementErrors($form->get('facebook')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('linkedin'))); ?>
+            <?= $this->formElement($form->get('linkedin')); ?>
+            <?= $this->formElementErrors($form->get('linkedin')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('twitter'))); ?>
+            <?= $this->formElement($form->get('twitter')); ?>
+            <?= $this->formElementErrors($form->get('twitter')); ?>                  
+        </div>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('telefone'))); ?>
+            <?= $this->formElement($form->get('telefone')); ?>
+            <?= $this->formElementErrors($form->get('telefone')); ?>                  
+        </div>
+    
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('fax'))); ?>
+            <?= $this->formElement($form->get('fax')); ?>
+            <?= $this->formElementErrors($form->get('fax')); ?>                  
+        </div>
+        
+        
+        <?php echo $this->translate($this->formElement($form->get('submit'))); ?>
+        
+        <?= $this->form()->closeTag(); ?>
+    </div>    
+</div>   
+
+

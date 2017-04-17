@@ -165,16 +165,16 @@ class EmpresaController extends AbstractActionController
             return;
         }
         
-        $user = $this->entityManager->getRepository(User::class)
+        $empresa = $this->entityManager->getRepository(Empresas::class)
                 ->find($id);
         
-        if ($user == null) {
+        if ($empresa == null) {
             $this->getResponse()->setStatusCode(404);
             return;
         }
         
         // Create user form
-        $form = new UserForm('update', $this->entityManager, $user);
+        $form = new EmpresasForm('update', $this->entityManager, $empresa);
         
         // Check if user has submitted the form
         if ($this->getRequest()->isPost()) {
@@ -190,23 +190,30 @@ class EmpresaController extends AbstractActionController
                 // Get filtered and validated data
                 $data = $form->getData();
                 
-                // Update the user.
-                $this->userManager->updateUser($user, $data);
+                // Update the empresa.
+                $this->userManager->updateUser($empresa, $data);
                 
                 // Redirect to "view" page
-                return $this->redirect()->toRoute('users', 
-                        ['action'=>'view', 'id'=>$user->getId()]);                
+                return $this->redirect()->toRoute('empresas', 
+                        ['action'=>'view', 'id'=>$empresa->getId()]);                
             }               
         } else {
             $form->setData(array(
-                    'full_name'=>$user->getFullName(),
-                    'email'=>$user->getEmail(),
-                    'status'=>$user->getStatus(),                    
+                'email'=>$empresa->getEmail(),
+                'designacao'=>$empresa->getDesignacao(),
+                'descricao'=>$empresa->getDescricao(),
+                'endereco'=>$empresa->getEndereco(),
+                'site'=>$empresa->getSite(),
+                'facebook'=>$empresa->getFacebook(),
+                'linkedin'=>$empresa->getLinkedin(),
+                'twitter'=>$empresa->getTwitter(),
+                'telefone'=>$empresa->getTelefone(),
+                'fax'=>$empresa->getFax(),    
                 ));
         }
         
         return new ViewModel(array(
-            'user' => $user,
+            'empresa' => $empresa,
             'form' => $form
         ));
     }

@@ -179,6 +179,11 @@ return [
                 ['actions' => ['index','upload'], 'allow' => 'm'],
                
             ],
+            
+            Controller\EmpresaController::class => [
+              
+                ['actions' => ['add', 'edit', 'view'], 'allow' => 'm']
+            ],
         ]
     ],
     'service_manager' => [
