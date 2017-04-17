@@ -6,7 +6,7 @@ $this->mainMenu()->setActiveItemId('users');
 $this->pageBreadcrumbs()->setItems([
             $this->translate('Home')=>$this->url('home'),
             $this->translate('Manage Companies')=>$this->url('empresas'),
-            $this->translate('View Company')=>$this->url('empresas', ['action'=>'view', 'id'=>$user->getId()])
+            $this->translate('View Company')=>$this->url('empresas', ['action'=>'view', 'id'=>$empresa->getId()])
             ]);
 
 
