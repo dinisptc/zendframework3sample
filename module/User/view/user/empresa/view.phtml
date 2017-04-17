@@ -42,11 +42,43 @@ if(isset($flash))
                 <th>ID:</th>
                 <td><?= $this->escapeHtml($empresa->getId()) ?></th>
             </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Company name:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getDesignacao()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Company description:'); ?></th>
+                <td><?= $empresa->getDescricao() ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Company Address:'); ?></th>
+                <td><?= $empresa->getEndereco() ?></th>
+            </tr>
+            
             <tr>
                 <th><?php echo $this->translate('E-mail:'); ?></th>
                 <td><?= $this->escapeHtml($empresa->getEmail()) ?></th>
             </tr>
         
+            <tr>
+                <th><?php echo $this->translate('WebSite:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getSite()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Facebook:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getFacebook()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Linkedin:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getLinkedin()) ?></th>
+            </tr>
+            
+            
             <tr>
                 <th><?php echo $this->translate('Date Created:'); ?></th>
                 <td><?= $this->escapeHtml($empresa->getDateCreated()) ?></th>
