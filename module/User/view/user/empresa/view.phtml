@@ -1,0 +1,59 @@
+<?php
+$this->headTitle('View Company');
+
+$this->mainMenu()->setActiveItemId('users');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Home')=>$this->url('home'),
+            $this->translate('Manage Companies')=>$this->url('empresas'),
+            $this->translate('View Company')=>$this->url('empresas', ['action'=>'view', 'id'=>$user->getId()])
+            ]);
+
+
+    //$flashMessenger = $this->flashMessenger();
+    //if ($flashMessenger->hasMessages()) {
+     //   echo $flashMessenger->getMessages();
+   // }
+
+
+if(isset($flash))
+{
+   foreach ($flash as $message)
+   {
+       
+       echo $message;
+   }   
+}
+
+//echo $flash['messages'];
+?>
+
+
+<?php // $this->flashMessenger()->render('error', ['alert', 'alert-warning']); ?>
+<?php //$this->flashMessenger()->render('success', ['alert', 'alert-success']); ?>
+<?php //$this->flashMessenger()->render('info', ['alert', 'alert-info']); ?>
+
+<h1><?php echo $this->translate('View Company'); ?></h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-striped table-bordered">
+             <tr>
+                <th>ID:</th>
+                <td><?= $this->escapeHtml($empresa->getId()) ?></th>
+            </tr>
+            <tr>
+                <th><?php echo $this->translate('E-mail:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getEmail()) ?></th>
+            </tr>
+        
+            <tr>
+                <th><?php echo $this->translate('Date Created:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getDateCreated()) ?></th>
+            </tr>
+ 
+            
+
+        </table>
+    </div>
+</div>

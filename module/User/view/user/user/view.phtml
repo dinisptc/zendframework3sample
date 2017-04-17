@@ -104,8 +104,12 @@ if(isset($flash))
                 <?php
               
             
-                $empresa = $entityManager->createQuery("SELECT u FROM User\Entity\Empresas u where u.identidade='".$user->getId()."'");
-                $empresa=$empresa->getResult();
+               // $empresa = $entityManager->createQuery("SELECT u FROM User\Entity\Empresas u where u.identidade='".$user->getId()."'");
+                //$empresa=$empresa->getResult();
+                
+                         // Look for the user with such email.
+                $empresa = $this->entityManager->getRepository(User\Entity\Empresas::class)
+                        ->findOneByIdentidade($user->getId()); 
                 if($empresa==null){
                       
                   ?>

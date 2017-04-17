@@ -58,6 +58,7 @@ class EmpresaController extends AbstractActionController
      * This is the default "index" action of the controller. It displays the 
      * list of users.
      */
+    //ja esta
     public function indexAction() 
     {
        
@@ -82,6 +83,7 @@ class EmpresaController extends AbstractActionController
     /**
      * This action displays a page allowing to add a new user.
      */
+    //ja esta
     public function addAction()
     {
            $this->traduz();
@@ -133,17 +135,17 @@ class EmpresaController extends AbstractActionController
         }
         
         // Find a user with such ID.
-        $user = $this->entityManager->getRepository(User::class)
+        $empresa = $this->entityManager->getRepository(Empresas::class)
                 ->find($id);
         
-        if ($user == null) {
+        if ($empresa == null) {
             $this->getResponse()->setStatusCode(404);
             return;
         }
 
                 
         return new ViewModel([
-            'user' => $user,
+            'empresa' => $empresa,
            'flash'=>$this->flashMessenger()->getMessages(),
                   'userImageManager'=>$this->userImageManager,
             
