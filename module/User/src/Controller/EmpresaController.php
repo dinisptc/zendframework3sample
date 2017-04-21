@@ -9,6 +9,7 @@ use Zend\Mime\Message as MimeMessage;
 use Zend\Mime\Part as MimePart;
 
 use User\Entity\Empresas;
+use User\Entity\User;
 use User\Form\EmpresasForm;
 use User\Form\RegisterForm;
 use User\Form\PasswordChangeForm;
@@ -42,16 +43,23 @@ class EmpresaController extends AbstractActionController
     
     private $userImageManager;
     
+    
+                /**
+     * Authentication service.
+     * @var \Zend\Authentication\AuthenticationService
+     */
+    private $authService;
     /**
      * Constructor. 
      */
-    public function __construct($entityManager, $userManager, $mailtransport,$translator,$userImageManager)
+    public function __construct($entityManager, $userManager, $mailtransport,$translator,$userImageManager,$authenticationService)
     {
         $this->entityManager = $entityManager;
         $this->userManager = $userManager;
         $this->mailtransport = $mailtransport;
          $this->translator = $translator;
         $this->userImageManager = $userImageManager;
+        $this->authService = $authenticationService;
     }
     
 

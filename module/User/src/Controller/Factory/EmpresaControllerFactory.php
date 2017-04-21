@@ -20,8 +20,12 @@ class EmpresaControllerFactory implements FactoryInterface
         $userImageManager = $container->get(EmpresaImageManager::class);
         
         $mailtransport = $container->get('mail.transport');
-           $translator = $container->get('translator');
+        $translator = $container->get('translator');
+           
+        $authenticationService = $container->get(\Zend\Authentication\AuthenticationService::class);
+        
+        
         // Instantiate the controller and inject dependencies
-        return new EmpresaController($entityManager, $userManager, $mailtransport,$translator,$userImageManager);
+        return new EmpresaController($entityManager, $userManager, $mailtransport,$translator,$userImageManager,$authenticationService);
     }
 }
