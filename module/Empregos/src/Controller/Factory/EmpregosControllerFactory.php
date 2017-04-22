@@ -5,7 +5,7 @@ use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
 use Empregos\Service\AutoManager;
 use Empregos\Controller\EmpregosController;
-use Empregos\Service\ImageManager;
+
 
 
 use User\Service\UserManager;
@@ -31,12 +31,12 @@ class EmpregosControllerFactory implements FactoryInterface
             
         $mailtransport = $container->get('mail.transport');
                
-        $imageManager = $container->get(ImageManager::class);
+  
         
         $userManager = $container->get(UserManager::class);
         $userImageManager = $container->get(ImageManager::class);
         
         // Instantiate the controller and inject dependencies
-        return new EmpregosController($entityManager, $postManager, $authenticationService, $mailtransport, $translator, $imageManager, $userManager, $userImageManager);
+        return new EmpregosController($entityManager, $postManager, $authenticationService, $mailtransport, $translator, $userManager, $userImageManager);
     }
 }

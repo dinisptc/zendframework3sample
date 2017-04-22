@@ -49,23 +49,25 @@ class EmpregosController extends AbstractActionController
         
     private $translator;
     
-        /**
-     * Image manager.
-     * @var Application\Service\ImageManager;
-     */
-    private $imageManager;
+
+    
+    private $userManager;
+    
+    private $userImageManager;
     
     /**
      * Constructor is used for injecting dependencies into the controller.
      */
-    public function __construct($entityManager, $postManager, $authService, $mailtransport,$translator, $imageManager) 
+    public function __construct($entityManager, $postManager, $authService, $mailtransport,$translator,$userManager, $userImageManager) 
     {
         $this->entityManager = $entityManager;
         $this->autoManager = $postManager;
         $this->authService = $authService;
         $this->mailtransport = $mailtransport;
-          $this->translator = $translator;
-          $this->imageManager = $imageManager;
+        $this->translator = $translator;
+    
+        $this->userManager =$userManager;
+        $this->userImageManager =$userImageManager;
     }
     
     
@@ -491,11 +493,11 @@ class EmpregosController extends AbstractActionController
         // Render the view template.
         return new ViewModel([
             'post' => $post,
-            'imageManager'=>$this->imageManager,
             'postManager' => $this->autoManager,
             'authService'=>$this->authService,
             'entityManager'=>$this->entityManager,
-      
+            'userManager'=>$this->userManager,
+            'userImageManager'=>$this->userImageManager,      
         ]);
     } 
     

@@ -132,30 +132,8 @@ button.onclick = function() {
                 <th><?php echo $this->translate('Full Name:'); ?></th>
                 <td><?= $this->escapeHtml($user->getFullName()) ?></th>
             </tr>
-            <tr>
-                <th><?php echo $this->translate('Date Created:'); ?></th>
-                <td><?= $this->escapeHtml($user->getDateCreated()) ?></th>
-            </tr>
-            <tr>
-                <th><?php echo $this->translate('Status:'); ?></th>
-                <td><?= $this->escapeHtml($user->getStatusAsString()) ?></th>
-            </tr>
-            <tr>
-                <th><?php echo $this->translate('Change Password:'); ?></th>
-                <td>   <a class="btn btn-default" href="<?= $this->url('users',
-                    ['action'=>'change-passwordadmin', 'id'=>$user->getId()]); ?>">
-                <span class="glyphicon glyphicon-asterisk"></span> <?php echo $this->translate('Change Password'); ?></td>
-            </tr>
-            <tr>
-                <th><?php echo $this->translate('Profile:'); ?></th>
-                <td><?= $this->escapeHtml($user->getPerfilAsString()) ?></th>
-            </tr>
-            <?php if($user->getPerfil()==2) { ?>
-            <tr>
-            <th><?php echo $this->translate('PRO account will expire at:'); ?></th>
-            <td><?= $this->escapeHtml($user->getProexpiredate()) ?></td>
-            </tr>
-            <?php } ?>
+      
+       
               <tr>
 <?php
         
@@ -164,18 +142,14 @@ button.onclick = function() {
                                 
             foreach($files as $file)
             { 
-                ?>    <th>
+                ?>   
+                        <th><?php echo $this->translate('Photo:'); ?></th>
+                  <td>
               <img class="imagedropshadow" src="<?= $this->url('userimages', ['action'=>'file','id'=>$user->getId()],['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
-                 </th>
+                 </td>
             <?php } ?>
                         
-                      <td>   
-            <a class="btn btn-info" href="<?= $this->url('userimages', 
-                    ['action'=>'index', 'id'=>$user->getId()]); ?>">
-                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('User Photo'); ?>
-            </a>
-                    
-                    </td>
+
             
             </tr>
             
