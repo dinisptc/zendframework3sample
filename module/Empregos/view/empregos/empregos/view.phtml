@@ -112,48 +112,14 @@ button.onclick = function() {
     
 </p>
 
-
+<hr>
   
 
+<br>
 
 
 
- <script> 
- $(document).ready(function(){
-//  $('.bxslidercv').bxSlider({
-//  mode: 'fade',
-//  captions: true,
-////  slideMargin: '200',
-//});
-$('.bxslidercv').bxSlider({
-  adaptiveHeight: true,
-  mode: 'fade'
-});
-});
-
-
-
- </script>    
- 
- <ul class="bxslidercv">
-          <?php    
-        $files = $imageManager->getSavedFiles($post->getId());
-        ?> 
-                 <?php
-      foreach($files as $file)
-  { ?>
-
-   
-     <li>  <img src="<?= $this->url('empregosimages', ['action'=>'file','id'=>$post->getId()], 
-                    ['query'=>['name'=>$file, 'thumbnail'=>false]]); ?>"> </li>
-                    		     		       
-
-         
-<?php     
-        }//for each images
- ?>
-
-</ul>
+<hr>
 
  <br>
 <table>
