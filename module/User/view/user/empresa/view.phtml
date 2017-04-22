@@ -53,6 +53,28 @@ if(isset($flash))
           
                 </td>  
             </tr>
+                          <tr>
+<?php
+        
+           $files = $empresaImageManager->getSavedFiles($user->getId());
+               
+                                
+            foreach($files as $file)
+            { 
+                ?>    <th>
+              <img class="imagedropshadow" src="<?= $this->url('empresaimages', ['action'=>'file','id'=>$user->getId()],['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
+                 </th>
+            <?php } ?>
+                        
+                      <td>   
+            <a class="btn btn-info" href="<?= $this->url('empresaimages', 
+                    ['action'=>'index', 'id'=>$user->getId()]); ?>">
+                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Company Logo'); ?>
+            </a>
+                    
+                    </td>
+            
+            </tr>
              <tr>
                 <th>ID:</th>
                 <td><?= $this->escapeHtml($empresa->getId()) ?></th>
