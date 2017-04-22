@@ -56,19 +56,19 @@ if(isset($flash))
                           <tr>
 <?php
         
-           $files = $empresaImageManager->getSavedFiles($user->getId());
+           $files = $userImageManager->getSavedFiles($empresa->getId());
                
                                 
             foreach($files as $file)
             { 
                 ?>    <th>
-              <img class="imagedropshadow" src="<?= $this->url('empresaimages', ['action'=>'file','id'=>$user->getId()],['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
+              <img class="imagedropshadow" src="<?= $this->url('empresaimages', ['action'=>'file','id'=>$empresa->getId()],['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
                  </th>
             <?php } ?>
                         
                       <td>   
             <a class="btn btn-info" href="<?= $this->url('empresaimages', 
-                    ['action'=>'index', 'id'=>$user->getId()]); ?>">
+                    ['action'=>'index', 'id'=>$empresa->getId()]); ?>">
                 <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Company Logo'); ?>
             </a>
                     
