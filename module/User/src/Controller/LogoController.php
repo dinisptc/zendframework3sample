@@ -3,7 +3,7 @@ namespace User\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use User\Form\ImageForm;
+use User\Form\LogoForm;
 use User\Entity\Empresas;
 /**
  * This controller is designed for managing image file uploads.
