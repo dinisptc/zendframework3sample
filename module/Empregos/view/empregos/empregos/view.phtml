@@ -163,6 +163,105 @@ button.onclick = function() {
 
 
 <hr>
+<?php
+
+    $empresa = $this->entityManager->getRepository(User\Entity\Empresas::class)->findOneByIdentidade($user->getId());
+
+    if($empresa!=null)
+    {
+    ?>
+<h1><?php echo $this->translate('View Company'); ?></h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-striped table-bordered">
+            
+                          <tr>
+<?php
+        
+           $files = $empresaImageManager->getSavedFiles($empresa->getId());
+               
+                                
+            foreach($files as $file)
+            { 
+                ?>    
+               <th>
+                   Logo :
+               </th>
+            <?php } ?>
+                        
+                      <td>   
+            <img class="imagedropshadow" src="<?= $this->url('empresaimages', ['action'=>'file','id'=>$empresa->getId()],['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
+                
+                    </td>
+            
+            </tr>
+             <tr>
+                <th>ID:</th>
+                <td><?= $this->escapeHtml($empresa->getId()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Company name:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getDesignacao()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Company description:'); ?></th>
+                <td><?= $empresa->getDescricao() ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Company Address:'); ?></th>
+                <td><?= $empresa->getEndereco() ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('E-mail:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getEmail()) ?></th>
+            </tr>
+        
+            <tr>
+                <th><?php echo $this->translate('WebSite:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getSite()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Facebook:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getFacebook()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Linkedin:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getLinkedin()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Twitter:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getTwitter()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Telefone:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getTelefone()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Fax:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getFax()) ?></th>
+            </tr>
+            
+            <tr>
+                <th><?php echo $this->translate('Date Created:'); ?></th>
+                <td><?= $this->escapeHtml($empresa->getDateCreated()) ?></th>
+            </tr>
+ 
+            
+
+        </table>
+    </div>
+</div>
+    <?php }?>
 
  <br>
 <table>

@@ -11,6 +11,7 @@ use Empregos\Controller\EmpregosController;
 use User\Service\UserManager;
 use User\Service\ImageManager;
 use User\Service\EmpresaManager;
+use User\Service\EmpresaImageManager;
 
 
 
@@ -36,7 +37,9 @@ class EmpregosControllerFactory implements FactoryInterface
         $userManager = $container->get(UserManager::class);
         $userImageManager = $container->get(ImageManager::class);
         
+        $empresaImageManager = $container->get(EmpresaImageManager::class);
+        
         // Instantiate the controller and inject dependencies
-        return new EmpregosController($entityManager, $postManager, $authenticationService, $mailtransport, $translator, $userManager, $userImageManager);
+        return new EmpregosController($entityManager, $postManager, $authenticationService, $mailtransport, $translator, $userManager, $userImageManager,$empresaImageManager);
     }
 }

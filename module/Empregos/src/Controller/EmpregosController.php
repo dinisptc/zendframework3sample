@@ -55,10 +55,12 @@ class EmpregosController extends AbstractActionController
     
     private $userImageManager;
     
+    private $empresaImageManager;
+    
     /**
      * Constructor is used for injecting dependencies into the controller.
      */
-    public function __construct($entityManager, $postManager, $authService, $mailtransport,$translator,$userManager, $userImageManager) 
+    public function __construct($entityManager, $postManager, $authService, $mailtransport,$translator,$userManager, $userImageManager, $empresaImageManager) 
     {
         $this->entityManager = $entityManager;
         $this->autoManager = $postManager;
@@ -68,6 +70,8 @@ class EmpregosController extends AbstractActionController
     
         $this->userManager =$userManager;
         $this->userImageManager =$userImageManager;
+        $this->empresaImageManager =$empresaImageManager;
+        
     }
     
     
@@ -497,7 +501,9 @@ class EmpregosController extends AbstractActionController
             'authService'=>$this->authService,
             'entityManager'=>$this->entityManager,
             'userManager'=>$this->userManager,
-            'userImageManager'=>$this->userImageManager,      
+            'userImageManager'=>$this->userImageManager,   
+            'empresaImageManager'=>$this->empresaImageManager,
+      
         ]);
     } 
     
