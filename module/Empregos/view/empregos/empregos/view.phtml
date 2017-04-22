@@ -87,27 +87,28 @@ $this->pageBreadcrumbs()->setItems([
     <?php echo $this->translate('Visits : ').$post->getNumvisits(); ?>
 </p>
 <p>
-    
+        <div id="newpost" style="display:none">
+  <?php echo $post->getContact(); ?>
+</div>
+
+<button id='botao'>Click</button>
 
 
 <script>
-    document.getElementById('togglee').style.visibility = 'hidden';
-    var hidden = false;
-    function action() {
-       
-        
-       hidden = !hidden;
-        if(hidden) {
-            document.getElementById('togglee').style.visibility = 'hidden';
-        } else {
-            document.getElementById('togglee').style.visibility = 'visible';
-        }
+  var button = document.getElementById('botao');
+
+button.onclick = function() {
+    var div = document.getElementById('newpost');
+    if (div.style.display == 'none') {
+        div.style.display = 'block';
     }
+    else {
+        div.style.display = 'none';
+    }
+};
 </script>
-        <input type="button" id="toggler" value="Show Link or Email" onClick="action();" />
-<!--<input type="button" id="togglee" value="Togglee" />-->
-<div id="togglee"><?php echo $post->getContact(); ?></div>
-    
+       
+
     
 </p>
 
