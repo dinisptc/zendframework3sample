@@ -88,9 +88,22 @@ $this->pageBreadcrumbs()->setItems([
 </p>
 <p>
     
-    
-    
-<?php echo $post->getContact(); ?>
+
+
+<script>
+    var hidden = false;
+    function action() {
+        hidden = !hidden;
+        if(hidden) {
+            document.getElementById('togglee').style.visibility = 'hidden';
+        } else {
+            document.getElementById('togglee').style.visibility = 'visible';
+        }
+    }
+</script>
+        <input type="button" id="toggler" value="Show Link or Email" onClick="action();" />
+<!--<input type="button" id="togglee" value="Togglee" />-->
+<div id="togglee"><?php echo $post->getContact(); ?></div>
     
     
 </p>
