@@ -8,7 +8,7 @@ use Zend\InputFilter\FileInput;
 /**
  * The ImageForm form model is used for uploading an image file.
  */
-class EmpresaImageForm extends Form
+class LogoForm extends Form
 {
     /**
      * Constructor.     

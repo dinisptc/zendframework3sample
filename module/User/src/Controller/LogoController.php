@@ -82,7 +82,7 @@ class LogoController extends AbstractActionController
         
         
                 // Create the form model
-        $form = new ImageForm($postId);
+        $form = new LogoForm($postId);
         
         $files = $this->imageManager->getSavedFiles($postId);
         
