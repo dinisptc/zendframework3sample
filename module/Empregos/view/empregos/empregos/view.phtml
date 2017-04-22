@@ -87,11 +87,9 @@ $this->pageBreadcrumbs()->setItems([
     <?php echo $this->translate('Visits : ').$post->getNumvisits(); ?>
 </p>
 <p>
-        <div id="newpost" style="display:none">
-  <?php echo $post->getContact(); ?>
-</div>
 
-<button id='botao'>Click</button>
+
+<button id='botao' class="btn btn-success"><?php echo $this->translate('Show Contact Link/Email'); ?></button>
 
 
 <script>
@@ -108,7 +106,9 @@ button.onclick = function() {
 };
 </script>
        
-
+<div id="newpost" style="display:none">
+  <?php echo $post->getContact(); ?>
+</div>
     
 </p>
 
