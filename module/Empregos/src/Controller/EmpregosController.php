@@ -439,11 +439,13 @@ class EmpregosController extends AbstractActionController
             return;
         }
         
+
+        
         // Find the post by ID
         $post = $this->entityManager->getRepository(Empregos::class)
                 ->findOneById($postId);
         
-        
+
         
         if ($post == null) {
             $this->getResponse()->setStatusCode(404);
@@ -493,6 +495,7 @@ class EmpregosController extends AbstractActionController
             'postManager' => $this->autoManager,
             'authService'=>$this->authService,
             'entityManager'=>$this->entityManager,
+      
         ]);
     } 
     
