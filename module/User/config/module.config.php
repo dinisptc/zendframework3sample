@@ -194,6 +194,12 @@ return [
                 ['actions' => ['index','upload'], 'allow' => 'm'],
                
             ],
+            Controller\LogoController::class => [
+                // Allow anyone to visit "index" and "about" actions
+                ['actions' => ['file'], 'allow' => '*'],
+                ['actions' => ['index','upload'], 'allow' => 'm'],
+               
+            ],
             
             Controller\EmpresaController::class => [
               
