@@ -8,7 +8,7 @@ use Zend\InputFilter\FileInput;
 /**
  * The ImageForm form model is used for uploading an image file.
  */
-class ImageForm extends Form
+class EmpresaImageForm extends Form
 {
     /**
      * Constructor.     
@@ -87,7 +87,7 @@ class ImageForm extends Form
                     [
                         'name' => 'FileRenameUpload',
                         'options' => [  
-                            'target'=>'./public/files/utilizadores/'.$postId,
+                            'target'=>'./public/files/empresas/'.$postId,
                             'useUploadName'=>true,
                             'useUploadExtension'=>true,
                             'overwrite'=>true,
