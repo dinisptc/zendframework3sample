@@ -8,7 +8,7 @@ use User\Entity\Empresas;
 /**
  * This controller is designed for managing image file uploads.
  */
-class EmpresaImageController extends AbstractActionController 
+class LogoController extends AbstractActionController 
 {
     /**
      * Image manager.
@@ -135,7 +135,7 @@ class EmpresaImageController extends AbstractActionController
 //                $this->autoManager->updateAprovarPost($post);
                 
                 // Redirect the user to "Image Gallery" page
-                return $this->redirect()->toRoute('userimages', ['action'=>'index', 'id'=>$postId]);
+                return $this->redirect()->toRoute('empresaimages', ['action'=>'index', 'id'=>$postId]);
             }                        
         } 
         

@@ -159,7 +159,7 @@ return [
                         //'id' => '[0-9]*'
                     ],
                     'defaults' => [
-                        'controller'    => Controller\EmpresaImageController::class,
+                        'controller'    => Controller\LogoController::class,
                         'action'        => 'index',
                     ],
                 ],
@@ -172,7 +172,7 @@ return [
             Controller\UserController::class => Controller\Factory\UserControllerFactory::class,   
             Controller\ImageController::class => Controller\Factory\ImageControllerFactory::class,
             Controller\EmpresaController::class => Controller\Factory\EmpresaControllerFactory::class,   
-            Controller\EmpresaImageController::class => Controller\Factory\EmpresaImageControllerFactory::class,
+            Controller\LogoController::class => Controller\Factory\LogoControllerFactory::class,
         ],
     ],
     // The 'access_filter' key is used by the User module to restrict or permit
