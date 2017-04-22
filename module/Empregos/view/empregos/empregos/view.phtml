@@ -91,9 +91,12 @@ $this->pageBreadcrumbs()->setItems([
 
 
 <script>
-    var hidden = true;
+    document.getElementById('togglee').style.visibility = 'hidden';
+    var hidden = false;
     function action() {
-        hidden = !hidden;
+       
+        
+       hidden = !hidden;
         if(hidden) {
             document.getElementById('togglee').style.visibility = 'hidden';
         } else {
