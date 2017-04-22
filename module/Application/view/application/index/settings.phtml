@@ -111,7 +111,51 @@ if(isset($flash))
                     </td>
             
             </tr>
+            <tr>
+                <th><?php echo $this->translate('Company:'); ?></th>
+                <td>
+                <?php
+              
             
+               // $empresa = $entityManager->createQuery("SELECT u FROM User\Entity\Empresas u where u.identidade='".$user->getId()."'");
+                //$empresa=$empresa->getResult();
+                
+                         // Look for the user with such email.
+                $empresa = $entitymanager->getRepository(User\Entity\Empresas::class)
+                        ->findOneByIdentidade($user->getId()); 
+                if($empresa==null){
+                      
+                  ?>
+                  <p>
+                        <a class="btn btn-default" href="
+                            <?= $this->url('empresas', ['action'=>'add']); ?>">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <?php echo $this->translate('New Company'); ?>
+                        </a>
+                   </p>
+                        
+                   <?php
+                   
+                      
+                  }else
+                  {?>
+                   
+                        <a class="btn btn-info" href="<?= $this->url('empresas',['action'=>'view', 'id'=>$empresa->getId()]); ?>">
+                           <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Your Company'); ?>
+                        </a>
+                
+                      <?php
+                      
+                  } 
+                      
+                  
+        
+  
+                           
+                ?>
+                
+</td>
+    
+            </tr>
             
             
         </table>

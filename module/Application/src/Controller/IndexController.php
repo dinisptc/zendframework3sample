@@ -6,7 +6,7 @@ use Zend\View\Model\ViewModel;
 use Zend\Barcode\Barcode;
 use Zend\Mvc\MvcEvent;
 use User\Entity\User;
-
+use User\Entity\Empresas;
 use Zend\Session\Container; // We need this when using sessions
 use Zend\Mail\Message;
 use Zend\Mime\Message as MimeMessage;
@@ -116,6 +116,7 @@ class IndexController extends AbstractActionController
             'user' => $user,
             'flash'=>$this->flashMessenger()->getMessages(),
             'userImageManager'=>$this->userImageManager,
+            'entitymanager'=>$this->entityManager,
         ]);
     }
     
