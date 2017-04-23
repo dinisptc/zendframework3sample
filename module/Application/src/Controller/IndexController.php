@@ -362,7 +362,7 @@ class IndexController extends AbstractActionController
     $request = $this->getRequest();
     if ($request->isPost()) {
         
-        $itemname="Become RPO one year etiju";
+        $itemname="Become PRO one year etiju";
         $itemnumber=$userID;
         $itemdesc="pagamento um ano PRO etiju";
         
