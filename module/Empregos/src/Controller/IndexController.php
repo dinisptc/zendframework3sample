@@ -91,7 +91,9 @@ class IndexController extends AbstractActionController
             $contaexpirados = $q->getSingleScalarResult();
             
             
-            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_PUBLISHED."' and p.identidade='".$identidade."'";
+          //  $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_PUBLISHED."' and p.identidade='".$identidade."'";
+              $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Empregos::STATUS_PUBLISHED."' or p.status='".Empregos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+            
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
             
@@ -193,6 +195,12 @@ class IndexController extends AbstractActionController
         {
             $identidade=$user->getId();
             $perfil=$user->getPerfil();
+            
+            //  $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_PUBLISHED."' and p.identidade='".$identidade."'";
+            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Empregos::STATUS_PUBLISHED."' or p.status='".Empregos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+            
+            $q1 = $this->entityManager->createQuery($dqlmemb);
+            $contaparamember = $q1->getSingleScalarResult();
         }else
         {
             $identidade=null;
@@ -210,6 +218,7 @@ class IndexController extends AbstractActionController
             'search_by'  => $search_by,
             'entityManager'=>$this->entityManager,
             'perfil'=>$perfil,
+              'contaparamember'=>$contaparamember,
         ]);
     }   
     

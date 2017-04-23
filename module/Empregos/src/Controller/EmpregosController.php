@@ -184,10 +184,33 @@ class EmpregosController extends AbstractActionController
         $paginator->setDefaultItemCountPerPage(10);        
         $paginator->setCurrentPageNumber($page);
         
+        $contaparamember=0;
+        
+        
+    
+        if(isset($user))
+        {
+       
+            $perfil=$user->getPerfil();
+        
+            
+            
+            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Empregos::STATUS_PUBLISHED."' or p.status='".Empregos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+            $q1 = $this->entityManager->createQuery($dqlmemb);
+            $contaparamember = $q1->getSingleScalarResult();
+            
+        }else
+        {
+            $identidade=null;
+            $perfil=null;
+        }
+        
         // Render the view template
         return new ViewModel([
             'posts' => $paginator,
-            'postManager' => $this->autoManager
+            'postManager' => $this->autoManager,
+            'perfil'=>$perfil,
+            'contaparamember'=>$contaparamember,
         ]);        
     }
     

@@ -12,11 +12,28 @@ $this->pageBreadcrumbs()->setItems([
 <h1><?php echo $this->translate('Manage Posts'); ?></h1>
 
 <p>
-<a class="btn btn-default" href="
-    <?= $this->url('empregosposts', ['action'=>'add']); ?>">
-    <?php echo $this->translate('New Post'); ?>
     
-</a>
+    
+    
+    
+
+    
+        <?php 
+    if($contaparamember==1 && $perfil== User\Entity\User::PERFIL_MEMBER){
+    ?>
+    <a class="btn btn-primary" href="<?= $this->url('application',
+                    ['action'=>'settings']); ?>">
+                <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('To place more ads go to Settings and become PRO'); ?>
+    </a>
+    <?php } else { ?>
+    
+        <a class="btn btn-default" href="
+            <?= $this->url('empregosposts', ['action'=>'add']); ?>">
+            <?php echo $this->translate('New Post'); ?>
+
+        </a>
+    
+    <?php } ?>
 </p>
 
 <table class="table table-striped">
