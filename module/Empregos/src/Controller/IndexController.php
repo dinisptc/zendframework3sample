@@ -77,6 +77,7 @@ class IndexController extends AbstractActionController
         
         
         $contaexpirados=0;
+        $contaparamember=0;
         
         $user = $this->entityManager->getRepository(\User\Entity\User::class)
                         ->findOneByEmail($this->authService->getIdentity());
@@ -88,6 +89,11 @@ class IndexController extends AbstractActionController
             $dql = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_EXPIRED."' and p.identidade='".$identidade."'";
             $q = $this->entityManager->createQuery($dql);
             $contaexpirados = $q->getSingleScalarResult();
+            
+            
+            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_PUBLISHED."' and p.identidade='".$identidade."'";
+            $q1 = $this->entityManager->createQuery($dqlmemb);
+            $contaparamember = $q1->getSingleScalarResult();
             
         }else
         {

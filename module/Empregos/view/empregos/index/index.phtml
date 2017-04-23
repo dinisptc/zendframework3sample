@@ -36,12 +36,16 @@ if($expirados>0){
     
     
     
+    
     ?>
     
     <a class="btn btn-primary" href="<?= $this->url('empregosposts',
                     ['action'=>'add']); ?>">
                 <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Add New Post'); ?>
     </a>
+    
+    
+    
     <a class="btn btn-primary" href="<?= $this->url('empregosposts',
                     ['action'=>'myadmin']); ?>">
                 <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Manage my Posts'); ?>
