@@ -85,6 +85,27 @@ class EmpregosController extends AbstractActionController
         
         $user = $this->entityManager->getRepository(User::class)
                         ->findOneByEmail($this->authService->getIdentity());
+        
+        if(isset($user))
+        {
+            $identidade=$user->getId();
+            $perfil=$user->getPerfil();
+             $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Empregos::STATUS_PUBLISHED."' or p.status='".Empregos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+            
+            $q1 = $this->entityManager->createQuery($dqlmemb);
+            $contaparamember = $q1->getSingleScalarResult();
+            
+              if($contaparamember==1 && $perfil== User::PERFIL_MEMBER){
+                  
+                  return $this->redirect()->toRoute('application', ['action'=>'settings']);
+              }
+            
+        }else
+        {
+            $identidade=null;
+            $perfil=null;
+        }
+        
     
         if($user->getPerfil()==User::PERFIL_ADMIN)
         {
