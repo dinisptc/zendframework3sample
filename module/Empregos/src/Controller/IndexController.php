@@ -114,6 +114,7 @@ class IndexController extends AbstractActionController
             'entityManager'=>$this->entityManager, 
             'perfil'=>$perfil,
             'expirados'=>$contaexpirados,
+            'contaparamember'=>$contaparamember,
          
         ]);
     }

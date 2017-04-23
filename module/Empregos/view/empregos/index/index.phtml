@@ -33,18 +33,20 @@ if($expirados>0){
 <p>
     
     <?php 
-    
-    
-    
-    
+    if($contaparamember==1 && $perfil== User\Entity\User::PERFIL_MEMBER){
     ?>
+    <a class="btn btn-primary" href="<?= $this->url('application',
+                    ['action'=>'settings']); ?>">
+                <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('To place more ads go to Settings and become PRO'); ?>
+    </a>
+    <?php } else { ?>
     
     <a class="btn btn-primary" href="<?= $this->url('empregosposts',
                     ['action'=>'add']); ?>">
                 <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Add New Post'); ?>
     </a>
     
-    
+    <?php } ?>
     
     <a class="btn btn-primary" href="<?= $this->url('empregosposts',
                     ['action'=>'myadmin']); ?>">
