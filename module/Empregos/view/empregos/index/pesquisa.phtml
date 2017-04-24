@@ -16,7 +16,7 @@ $this->pageBreadcrumbs()->setItems([
 <h1><?php echo $this->translate('Posts'); ?></h1>
 <p>
     <?php 
-    if($contaparamember==1 && $perfil== User\Entity\User::PERFIL_MEMBER){
+    if($contaparamember>=1 && $perfil== User\Entity\User::PERFIL_MEMBER){
     ?>
     <a class="btn btn-primary" href="<?= $this->url('application',
                     ['action'=>'settings']); ?>">

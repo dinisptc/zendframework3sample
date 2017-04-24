@@ -95,7 +95,7 @@ class EmpregosController extends AbstractActionController
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
             
-              if($contaparamember==1 && $perfil== User::PERFIL_MEMBER){
+              if($contaparamember>=1 && $perfil== User::PERFIL_MEMBER){
                   
                   return $this->redirect()->toRoute('application', ['action'=>'settings']);
               }
