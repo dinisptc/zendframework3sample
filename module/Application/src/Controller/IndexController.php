@@ -362,12 +362,12 @@ class IndexController extends AbstractActionController
     $request = $this->getRequest();
     if ($request->isPost()) {
         
-        $itemname="Become PRO one year etiju";
+        $itemname="Become PRO one year thejoboard";
         $itemnumber=$userID;
-        $itemdesc="pagamento um ano PRO etiju";
+        $itemdesc=$user->getEmail();
         
         
-        $price=25.00;
+        $price=1.00;
        
       
         $itemprice=$price;
