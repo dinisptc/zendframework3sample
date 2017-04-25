@@ -89,25 +89,21 @@ if($expirados>0){
         
         ?> 
                   
-          <?php 
-            if(isset($empresa)){
+        <?php 
+        if(isset($empresa)){
+            
+            
           foreach($files as $file): 
            
         ?>
-             <a href="<?php echo $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
-            
-       
-      
-    
-        
-            <img class="img-circle"  src="<?= $this->url('empresaimages', ['action'=>'file','id'=>$empresa->getId()], 
+                 
+                    <img class="imagedropshadow"  src="<?= $this->url('empresaimages', ['action'=>'file','id'=>$empresa->getId()], 
                     ['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
    
-         
-              </a> 
-            
         <?php
         endforeach; 
+        
+        
             }
         ?>
             </td>
