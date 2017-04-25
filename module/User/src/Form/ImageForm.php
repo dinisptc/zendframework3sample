@@ -76,10 +76,10 @@ class ImageForm extends Form
                     [
                         'name'    => 'FileImageSize',                        
                         'options' => [                            
-                            'minWidth'  => 300,
-                            'minHeight' => 300,
-                            'maxWidth'  => 1000,
-                            'maxHeight' => 1000                            
+                            'minWidth'  => 100,
+                            'minHeight' => 100,
+                            'maxWidth'  => 4000,
+                            'maxHeight' => 4000                            
                         ]
                     ],
                 ],

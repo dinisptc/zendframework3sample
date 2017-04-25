@@ -64,8 +64,57 @@ if($expirados>0){
 <div class="row">
     
     <div class="col-md-20">
-
     <?php foreach($posts as $post): ?>
+        <table>
+            
+            <tr>
+        
+                <td>
+                            <?php    
+     
+             
+        $user = $entityManager->getRepository(\User\Entity\User::class)
+                        ->findOneById($post->getIdentidade());
+        
+        if(isset($user))
+        {
+        
+        $empresa = $entityManager->getRepository(\User\Entity\Empresas::class)
+                        ->findOneByIdentidade($user->getId());
+        if(isset($empresa)){
+               $files = $imageManager->getSavedFiles($empresa->getId());
+         }
+        }
+        //echo $empresa->getId();
+        
+        ?> 
+                  
+          <?php 
+            if(isset($empresa)){
+          foreach($files as $file): 
+           
+        ?>
+             <a href="<?php echo $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+            
+       
+      
+    
+        
+            <img class="img-circle"  src="<?= $this->url('empresaimages', ['action'=>'file','id'=>$empresa->getId()], 
+                    ['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
+   
+         
+              </a> 
+            
+        <?php
+        endforeach; 
+            }
+        ?>
+            </td>
+            
+            <td>
+
+   
         
     <h3>
         <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
@@ -73,49 +122,15 @@ if($expirados>0){
         </a>    
     </h3>
         
-     <?php    
-        $files = $imageManager->getSavedFiles($post->getId());
-        ?>  
-        
-        <p>
-   
-         <?php $conta=0; ?>
-       <?php foreach($files as $file): 
-           
-        if($conta==0){ ?>
-             <a href="<?php echo $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
-            
-       <?php }
-           ?>
-    
-        
-            <img class="imagedropshadow" src="<?= $this->url('empregosimages', ['action'=>'file','id'=>$post->getId()], 
-                    ['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
-   
-          <?php    if($conta==0){ ?>
-              </a> 
-            
-       <?php }
-           ?>
-        <?php
-           if($conta==2)
-           {
-            break;
-           }
-        $conta=$conta+1;
-        endforeach; ?>
-    
-   
 
-    </p>
-    <p>
+        
+   
          <?php echo $this->translate('Published:'); ?><?= $this->escapeHtml(date('d-m-Y', strtotime($post->getDateCreated()))); ?> 
         
        
-  
-    </p>    
-        
-
+     </td>
+        </tr>
+</table>
 
     <?php endforeach; ?>
 

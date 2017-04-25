@@ -3,7 +3,8 @@ namespace Empregos\Controller\Factory;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
-use Empregos\Service\ImageManager;
+//use Empregos\Service\ImageManager;
+use User\Service\EmpresaImageManager;
 use Empregos\Service\AutoManager;
 use Empregos\Controller\IndexController;
 
@@ -20,7 +21,7 @@ class IndexControllerFactory implements FactoryInterface
         // Instantiate dependencies.
         $authenticationService = $container->get(\Zend\Authentication\AuthenticationService::class);
         
-        $imageManager = $container->get(ImageManager::class);
+        $imageManager = $container->get(EmpresaImageManager::class);
         
         // Instantiate the controller and inject dependencies
         return new IndexController($entityManager, $postManager, $authenticationService, $imageManager);

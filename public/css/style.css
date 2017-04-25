@@ -224,7 +224,11 @@ footer .wrapper .column h4
                          
 .imagedropshadow { padding: 5px; border: solid 10px #EFEFEF; } a:hover img.imagedropshadow { border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; }
 
-
+.img-circle {
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+}
 /*.navbar-custom {
     background-color: whitesmoke;
     border-color: #337ab7;
