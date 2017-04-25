@@ -2,41 +2,7 @@
 
 
 
-<?php
 
-
- $this->headScript()->appendFile($this->basePath() . '/js/box/jquery.bxslider.min.js');
- $this->headLink()->appendStylesheet($this->basePath() . '/js/box/jquery.bxslider.min.css');
- 
- ?>
-
-
-<script> 
-     $(document).ready(function(){
- 
-
- $('.bxslider').bxSlider({
-    
-  minSlides: 5,
-  maxSlides: 10,
-  slideWidth: 1900,
-  slideMargin: 5,
-  ticker: true,
-  speed: 10000
-});
-
-
-
-});
- </script> 
-
-
- <ul class="bxslider">
-
-<li><img src="<?php echo $this->basePath('img/logo.png') ?>" style="background:no-repeat; background-size:contain; background-position: center;" alt="www.etiju.com" ></li>
-
-
-</ul>
  <div class="row">
 
     <div class="col-md-4">
