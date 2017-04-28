@@ -366,9 +366,9 @@ class IndexController extends AbstractActionController
         $itemnumber=$userID;
         $itemdesc=$user->getEmail();
         
-        
-        $price=1.00;
-       
+        //sandbox
+       // $price=1.00;
+       $price=25.00;
       
         $itemprice=$price;
         $itemQty=1;
