@@ -5,7 +5,7 @@
          //if(session_id() == '') { session_start(); } //uncomment this line if PHP < 5.4.0 and comment out line above
 
 	// sandbox or live
-	define('PPL_MODE', 'sandbox');
+	define('PPL_MODE', 'live');
 
 	if(PPL_MODE=='sandbox'){
 		
@@ -22,15 +22,16 @@
 	
 	define('PPL_LANG', 'EN');
         
-        define('PPL_LOGO_IMG', 'http://totalemprego:82/img/thejoblogo5.png');
+        define('PPL_LOGO_IMG', 'http://www.thejoboard.com/img/thejoblogo5.png');
         
-        define('PPL_RETURN_URL', 'http://totalemprego:82/paypalone');
-        define('PPL_CANCEL_URL', 'http://totalemprego:82');
-//	
-//	define('PPL_LOGO_IMG', 'http://www.etiju.com/img/logo.png');
-//        
-//
-//        define('PPL_RETURN_URL', 'http://www.etiju.com/paypalone');
-//        define('PPL_CANCEL_URL', 'http://www.etiju.com');
+        define('PPL_RETURN_URL', 'http://www.thejoboard.com/paypalone');
+        define('PPL_CANCEL_URL', 'http://www.thejoboard.com');
+        
+        //sandbox
+        //define('PPL_LOGO_IMG', 'http://totalemprego:82/img/thejoblogo5.png');
+        
+        //define('PPL_RETURN_URL', 'http://totalemprego:82/paypalone');
+        //define('PPL_CANCEL_URL', 'http://totalemprego:82');
+
 
 	define('PPL_CURRENCY_CODE', 'EUR');
