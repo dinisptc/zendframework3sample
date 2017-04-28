@@ -179,7 +179,7 @@ class ImageController extends AbstractActionController
             $fileName = $this->imageManager->resizeImage($fileName);
         }else{
             
-            $fileName = $this->imageManager->watermainImage($fileName);                        
+           // $fileName = $this->imageManager->watermainImage($fileName);                        
         }
         
         
