@@ -62,10 +62,7 @@ $this->pageBreadcrumbs()->setItems([
                     ['action'=>'edit', 'id'=>$post->getId()]); ?>">
                 <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Edit'); ?>
             </a>
-                 <a class="btn btn-info" href="<?= $this->url('empregosimages', 
-                    ['action'=>'index', 'id'=>$post->getId()]); ?>">
-                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Photos'); ?>
-            </a>
+        
          
             <a class="btn btn-danger" href="<?= $this->url('empregosposts',
                     ['action'=>'delete', 'id'=>$post->getId()]); ?>" onclick="return confirm('Do you realy want to delete the record;')">

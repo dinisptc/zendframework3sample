@@ -126,20 +126,7 @@ return [
                 ],
             ],
             
-            'empregosimages' => [
-                'type'    => Segment::class,
-                'options' => [
-                    'route'    => '/empregosimages[/:action[/:id]]',
-                    'constraints' => [
-                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                        //'id' => '[0-9]*'
-                    ],
-                    'defaults' => [
-                        'controller'    => Controller\ImageController::class,
-                        'action'        => 'index',
-                    ],
-                ],
-            ],
+
             
             'empregosdeleteMessage' => [
                 'type'    => Segment::class,
@@ -226,7 +213,7 @@ return [
         'factories' => [
             Controller\IndexController::class => Controller\Factory\IndexControllerFactory::class,      
             Controller\EmpregosController::class => Controller\Factory\EmpregosControllerFactory::class,
-            Controller\ImageController::class => Controller\Factory\ImageControllerFactory::class,
+           
         ],
     ],
         // The 'access_filter' key is used by the User module to restrict or permit
@@ -254,13 +241,7 @@ return [
                 ['actions' => ['seemessages'], 'allow' => 'p'],
                 ['actions' => ['admin','deletecomment','adminaprovar','adminexpired','apagarexpirados'], 'allow' => '@'],
             ],
-            
-            Controller\ImageController::class => [
-                // Allow anyone to visit "index" and "about" actions
-                ['actions' => ['file'], 'allow' => '*'],
-                ['actions' => ['index','upload'], 'allow' => 'm'],
-               
-            ],
+ 
             
         ]
     ],
@@ -269,7 +250,7 @@ return [
      
             Service\AutoManager::class => Service\Factory\AutoManagerFactory::class,
             \Zend\I18n\Translator\TranslatorInterface::class => \Zend\I18n\Translator\TranslatorServiceFactory::class,
-             Service\ImageManager::class => InvokableFactory::class,
+        
         ],
         'aliases' => [
      
