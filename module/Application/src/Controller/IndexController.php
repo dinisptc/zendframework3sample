@@ -233,7 +233,7 @@ class IndexController extends AbstractActionController
                 $body->setParts(array($html));
 		$message->addTo($usr_email)
 				->addFrom($email)
-				->setSubject('O/A : '.$name.' enviou uma mensagem atraves do site www.etiju.com')
+				->setSubject('O/A : '.$name.' enviou uma mensagem atraves do site www.thejoboard.com')
 				->setBody($body);
                 
                 //Send it!

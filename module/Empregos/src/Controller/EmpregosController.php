@@ -665,8 +665,8 @@ class EmpregosController extends AbstractActionController
                 $body = new MimeMessage();
                 $body->setParts(array($html));
 		$message->addTo($sendemail)
-				->addFrom('no_reply@etiju.com')
-				->setSubject('Someone replied to your ad at www.etiju.com')
+				->addFrom('no_reply@thejoboard.com')
+				->setSubject('Someone replied to your ad at www.thejoboard.com')
 				->setBody($body);
                 
                 //Send it!

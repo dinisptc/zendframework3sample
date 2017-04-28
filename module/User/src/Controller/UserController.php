@@ -412,7 +412,7 @@ class UserController extends AbstractActionController
     
     
       
-        $subject = 'Password Reset - www.etiju.com';
+        $subject = 'Password Reset - www.thejoboard.com';
             
         $httpHost = isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'localhost';
         $passwordResetUrl = 'http://' . $httpHost . '/set-password/' . $token;
@@ -557,7 +557,7 @@ class UserController extends AbstractActionController
     
     
       
-        $subject = 'Register - www.etiju.com';
+        $subject = 'Register - www.thejoboard.com';
             
         $httpHost = isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'localhost';
         $passwordResetUrl = 'http://' . $httpHost . '/set-register/' . $token;
