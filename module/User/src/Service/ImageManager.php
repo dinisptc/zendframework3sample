@@ -145,7 +145,11 @@ class ImageManager
 
         // Resize the image
         $resultingImage = imagecreatetruecolor($desiredWidth, $desiredHeight);
-        $originalImage = imagecreatefromjpeg($filePath);
+        //$originalImage = imagecreatefromjpeg($filePath);
+        
+        $originalImage = imagecreatefromstring(file_get_contents($filePath));
+        
+        
         imagecopyresampled($resultingImage, $originalImage, 0, 0, 0, 0, 
                 $desiredWidth, $desiredHeight, $originalWidth, $originalHeight);
 
