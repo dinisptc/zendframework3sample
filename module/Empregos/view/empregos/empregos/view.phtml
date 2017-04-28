@@ -107,6 +107,11 @@ button.onclick = function() {
 <?php
 
     $user = $this->entityManager->getRepository(User\Entity\User::class)->findOneById($post->getIdentidade());
+    
+    if($user->getPerfil()!=User\Entity\User::PERFIL_ADMIN)
+    {
+        
+  
 ?>
 <div class="row">
     <div class="col-md-6">
@@ -252,7 +257,7 @@ button.onclick = function() {
         </table>
     </div>
 </div>
-    <?php }?>
+    <?php }   }?>
 
  <br>
 <table>
