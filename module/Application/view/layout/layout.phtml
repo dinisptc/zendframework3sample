@@ -5,21 +5,18 @@
         <meta charset="utf-8">
         <meta name="rating" content="general"/>
         <meta name="robots" content="index,follow"/>
-        <meta name="google-site-verification" content="GMzJxkPVOrIZcN3_CE3eVkg8vH4KjWIcynXMOGjXc4M" />
-    
-        <meta name="norton-safeweb-site-verification" content="tsdxzj9qsv8n40xpf91ks0zk-uxt5bvpazrz907p3hy0-62h598-rl5v96--j8foijkr5tn6modtob2di-rtgwtj7hssvzt7-4my4-sa446o08ltg23wjc8kpszj8rs4" />
-        
+       
         <?php echo $this->headTitle('thejoboard.com '. $this->translate('Jobs ads Website',__NAMESPACE__,'en_US'))->setSeparator(' - ')->setAutoEscape(false) ?>
   
         
                         <?php 
-         $this->placeholder('description')->append($this->translate('thejoboard.com'));
+         $this->placeholder('description')->append($this->translate('thejoboard.com is a job board website for jobs arround the world'));
         echo $this->headMeta()
             ->appendName('viewport', 'width=device-width, initial-scale=1.0')
             ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')         
             ->appendName('description',$this->placeholder('description'))
-            ->appendName('keywords',$this->translate('etiju.com,motorbikes,auto,computers,stuff,phones,cellphones,agriculture,services,properties,real estate,jobs,itjobs,tecnojobs,totaljobs,jobboard'))
-            ->appendProperty('og:image','http://www.etiju.com/img/etiju.png')
+            ->appendName('keywords',$this->translate('jobs,itjobs,tecnojobs,board,jobboard,'))
+            ->appendProperty('og:image','http://www.thejoboard.com/img/thejoboard.png')
             //->appendProperty('og:url','http://www.etiju.com')
             //->appendProperty('og:title','etiju website')
             ->appendProperty('og:description',$this->placeholder('description'))
