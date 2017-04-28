@@ -35,7 +35,7 @@ $this->pageBreadcrumbs()->setItems([
     
 </a>
 <a class="btn btn-danger" href="
-    <?= $this->url('empregosposts', ['action'=>'apagarexpirados']); ?>">
+    <?= $this->url('empregosposts', ['action'=>'apagarexpirados']); ?>" onclick="return confirm('Do you realy want to delete the record;')">
     <?php echo $this->translate('Delete Expired'); ?>
     
 </a>
@@ -78,7 +78,7 @@ $this->pageBreadcrumbs()->setItems([
                 <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Photos'); ?>
             </a>
             <a class="btn btn-danger" href="<?= $this->url('empregosposts',
-                    ['action'=>'delete', 'id'=>$post->getId()]); ?>">
+                    ['action'=>'delete', 'id'=>$post->getId()]); ?>" onclick="return confirm('Do you realy want to delete the record;')">
                 <span class="glyphicon glyphicon-remove"></span> <?php echo $this->translate('Delete'); ?>
             </a>
         </td>    
