@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 14:15+0000\n"
-"PO-Revision-Date: 2017-02-14 14:15+0000\n"
+"POT-Creation-Date: 2017-04-29 14:21+0100\n"
+"PO-Revision-Date: 2017-04-29 14:21+0100\n"
 "Last-Translator: Diogo Melo <dmelo87@gmail.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: pt\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../src/Controller/IndexController.php:106
+#: ../src/Controller/IndexController.php:114
 msgid "Change process."
 msgstr "Processo de alteração."
 
@@ -40,7 +40,7 @@ msgstr "Enviar"
 #: ../view/application/index/localizacao.phtml:7
 #: ../view/application/index/paypalone.phtml:12
 #: ../view/application/index/precos.phtml:7
-#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:111
+#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:99
 msgid "Home"
 msgstr "Início"
 
@@ -69,131 +69,60 @@ msgstr "Preços"
 msgid "Ads"
 msgstr "Anuncios"
 
-#: ../src/Service/NavManager.php:95 ../view/application/index/index.phtml:86
-#: ../view/layout/layout.phtml:112
-msgid "Auto"
-msgstr "Auto"
-
-#: ../src/Service/NavManager.php:101 ../view/application/index/index.phtml:117
-#: ../view/layout/layout.phtml:113
-msgid "Motorbikes"
-msgstr "Motas"
-
-#: ../src/Service/NavManager.php:108 ../view/application/index/index.phtml:169
-#: ../view/layout/layout.phtml:115
-msgid "Computers"
-msgstr "Computadores"
-
-#: ../src/Service/NavManager.php:114 ../view/application/index/index.phtml:252
-#: ../view/layout/layout.phtml:118
-msgid "Phones"
-msgstr "Telemoveis"
-
-#: ../src/Service/NavManager.php:120 ../view/application/index/index.phtml:142
-#: ../view/layout/layout.phtml:114
-msgid "Properties"
-msgstr "Imoveis"
-
-#: ../src/Service/NavManager.php:126 ../view/application/index/index.phtml:200
-#: ../view/layout/layout.phtml:116
+#: ../src/Service/NavManager.php:96 ../view/application/index/index.phtml:86
+#: ../view/layout/layout.phtml:101
 msgid "Jobs"
 msgstr "Empregos"
 
-#: ../src/Service/NavManager.php:132 ../view/application/index/index.phtml:308
-#: ../view/layout/layout.phtml:120
-msgid "Services"
-msgstr "Serviços"
-
-#: ../src/Service/NavManager.php:138 ../view/application/index/index.phtml:225
-#: ../view/layout/layout.phtml:117
-msgid "Agriculture"
-msgstr "Agricultura"
-
-#: ../src/Service/NavManager.php:144 ../view/application/index/index.phtml:283
-#: ../view/layout/layout.phtml:119
-msgid "Stuff"
-msgstr "Coisas"
-
-#: ../src/Service/NavManager.php:153
+#: ../src/Service/NavManager.php:106
 msgid "Language"
 msgstr "Linguagem"
 
-#: ../src/Service/NavManager.php:158
+#: ../src/Service/NavManager.php:111
 msgid "English"
 msgstr "Inglês"
 
-#: ../src/Service/NavManager.php:163
+#: ../src/Service/NavManager.php:116
 msgid "Portuguese"
 msgstr "Português"
 
-#: ../src/Service/NavManager.php:174 ../view/layout/layout.phtml:127
+#: ../src/Service/NavManager.php:127 ../view/layout/layout.phtml:109
 msgid "Users"
 msgstr "Utilizadores"
 
-#: ../src/Service/NavManager.php:179
+#: ../src/Service/NavManager.php:132
 msgid "Sign in"
 msgstr "Entrar"
 
-#: ../src/Service/NavManager.php:184 ../view/layout/layout.phtml:131
+#: ../src/Service/NavManager.php:137 ../view/application/index/index.phtml:34
+#: ../view/layout/layout.phtml:113
 msgid "Register Free"
 msgstr "Registo Grátis"
 
-#: ../src/Service/NavManager.php:198
+#: ../src/Service/NavManager.php:151
 msgid "Admin"
 msgstr "Admin"
 
-#: ../src/Service/NavManager.php:202
+#: ../src/Service/NavManager.php:155
 msgid "Manage Users"
 msgstr "Gerir Utilizadores"
 
-#: ../src/Service/NavManager.php:207
-msgid "Manage Auto Posts"
-msgstr "Gerir Anúncios Auto"
-
-#: ../src/Service/NavManager.php:212
-msgid "Manage Motorbikes Posts"
-msgstr "Gerir Anúncios Motas "
-
-#: ../src/Service/NavManager.php:217
-msgid "Manage Computer Posts"
-msgstr "Gerir Anúncios Computadores"
-
-#: ../src/Service/NavManager.php:222
-msgid "Manage Phones Posts"
-msgstr "Gerir Anúncios de Telemóveis"
-
-#: ../src/Service/NavManager.php:227
-msgid "Manage Properties Posts"
-msgstr "Gerir Anúncios de Imoveis"
-
-#: ../src/Service/NavManager.php:232
+#: ../src/Service/NavManager.php:163
 msgid "Manage Jobs Posts"
 msgstr "Gerir Anúncios de Empregos"
 
-#: ../src/Service/NavManager.php:237
-msgid "Manage Services Posts"
-msgstr "Gerir Anúncios de Serviços"
-
-#: ../src/Service/NavManager.php:242
-msgid "Manage Agriculture Posts"
-msgstr "Gerir Anúncios de Agricultura"
-
-#: ../src/Service/NavManager.php:247
-msgid "Manage Stuff Posts"
-msgstr "Gerir Anúncios de Coisas"
-
-#: ../src/Service/NavManager.php:260 ../view/application/index/settings.phtml:8
+#: ../src/Service/NavManager.php:177 ../view/application/index/settings.phtml:8
 #: ../view/application/index/settings.phtml:21
 msgid "Settings"
 msgstr "Configurações"
 
-#: ../src/Service/NavManager.php:265
+#: ../src/Service/NavManager.php:182
 msgid "Sign out"
 msgstr "Sair"
 
 #: ../view/application/index/contactos.phtml:2
-msgid "Contacts by email to inquire about etiju.com"
-msgstr "Contactar por email para saber sobre etiju.com"
+msgid "Contacts by email to inquire about thejoboard.com"
+msgstr "Contactar por email para saber sobre thejoboard.com"
 
 #: ../view/application/index/contactos.phtml:7
 msgid "Please, Contact me trough the form i will reply in due time, thanks"
@@ -265,62 +194,38 @@ msgid "PRO user"
 msgstr "Utilizador PRO"
 
 #: ../view/application/index/precos.phtml:23
-msgid "Add new ads for free"
-msgstr "Adiciona novos anúncios gratis "
+msgid "Unlimited ads"
+msgstr "Anúncios ilimitados"
 
 #: ../view/application/index/precos.phtml:24
+msgid "NO - Only one ad for free"
+msgstr "Não - Só um anuncio é grátis"
+
 #: ../view/application/index/precos.phtml:25
-#: ../view/application/index/precos.phtml:29
-#: ../view/application/index/precos.phtml:30
-#: ../view/application/index/precos.phtml:34
-#: ../view/application/index/precos.phtml:35
-#: ../view/application/index/precos.phtml:40
-#: ../view/application/index/precos.phtml:45
-msgid "YES"
-msgstr "SIM"
+msgid "Yes"
+msgstr "Sim"
 
 #: ../view/application/index/precos.phtml:28
-msgid "Can add and see photos for free"
-msgstr "Podes adicionar e ver fotos gratis "
-
-#: ../view/application/index/precos.phtml:33
-msgid "Can send messages to advertisers for free"
-msgstr "Podes enviar mensagens aos editores gratis "
-
-#: ../view/application/index/precos.phtml:38
-msgid "Can open messages from users"
-msgstr "Podes abrir mensagens dos utilizadores"
-
-#: ../view/application/index/precos.phtml:39
-#: ../view/application/index/precos.phtml:44
-msgid "NO"
-msgstr "NÃO"
-
-#: ../view/application/index/precos.phtml:43
-msgid "Have access to the full post/ad with emails and links"
-msgstr "Tens acesso ao anuncio completo com email e links "
-
-#: ../view/application/index/precos.phtml:48
 msgid "Price by the year"
 msgstr "Preço por ano"
 
-#: ../view/application/index/precos.phtml:49
+#: ../view/application/index/precos.phtml:29
 msgid "0 Euros"
 msgstr "0 Euros"
 
-#: ../view/application/index/precos.phtml:50
+#: ../view/application/index/precos.phtml:30
 msgid "25 Euros"
 msgstr "25 Euros"
 
-#: ../view/application/index/precos.phtml:53
+#: ../view/application/index/precos.phtml:33
 msgid "Ad Life"
 msgstr "Vida do Anuncio"
 
-#: ../view/application/index/precos.phtml:54
+#: ../view/application/index/precos.phtml:34
 msgid "3 Months"
 msgstr "3 Meses"
 
-#: ../view/application/index/precos.phtml:55
+#: ../view/application/index/precos.phtml:35
 msgid "1 Year"
 msgstr "1 Ano"
 
@@ -377,49 +282,143 @@ msgstr "Torna-te PRO por 25 Euros por Ano"
 msgid "Your PRO account will expire at:"
 msgstr "A tua conta PRO vai expirar em:"
 
-#: ../view/layout/layout.phtml:12
-msgid "Free ads Website"
-msgstr "Website de Anúncios Gratuitos"
+#: ../view/application/index/settings.phtml:108
+msgid "User Photo"
+msgstr "Foto do Utilizador"
 
-#: ../view/layout/layout.phtml:16
+#: ../view/application/index/settings.phtml:115
+msgid "Company:"
+msgstr "Empresa:"
+
+#: ../view/application/index/settings.phtml:132
+msgid "New Company"
+msgstr "Nova Empresa"
+
+#: ../view/application/index/settings.phtml:143
+msgid "Your Company"
+msgstr "A Tua Empresa"
+
+#: ../view/layout/layout.phtml:9
+msgid "Jobs ads Website"
+msgstr "Website de Anúncios de Emprego"
+
+#: ../view/layout/layout.phtml:13
+msgid "thejoboard.com is a job board website for jobs arround the world"
+msgstr "thejoboard.com é um site de anúncios de emprego para todo o mundo"
+
+#: ../view/layout/layout.phtml:18
 msgid ""
-"etiju.com is a free ads website you only pay if you get clients/messages for "
-"your ads"
+"jobs,itjobs,tecnojobs,board,job,alljobs,europe,usa,asia,america,remote,"
+"programming,programmer,civil,engineer,medical,nurses,trucks,transport,diesel,"
+"electric"
 msgstr ""
-"etiju.com é um site de classificados gratis so pagas quando tiveres "
-"mensagens para os teus anúncios e a quiseres ver"
+"jobs,itjobs,tecnojobs,board,job,alljobs,europe,usa,asia,america,remote,"
+"programming,programmer,civil,engineer,medical,nurses,trucks,transport,diesel,"
+"electric"
 
-#: ../view/layout/layout.phtml:21
-msgid ""
-"etiju.com,motorbikes,auto,computers,stuff,phones,cellphones,agriculture,"
-"services,properties,real estate,jobs,itjobs,tecnojobs,totaljobs,jobboard"
-msgstr ""
-"etiju.com,motas,auto,computadores,coisas,telemoveis,telefones,agricultura,"
-"serviços,propriedades,imoveis,empregos,itjobs,tecnojobs,totaljobs,jobboard"
-
-#: ../view/layout/layout.phtml:109
+#: ../view/layout/layout.phtml:97
 msgid "Links"
 msgstr "Menu"
 
-#: ../view/layout/layout.phtml:127
+#: ../view/layout/layout.phtml:109
 msgid "Languages"
 msgstr "Linguagens"
 
-#: ../view/layout/layout.phtml:129
+#: ../view/layout/layout.phtml:111
 msgid "Module Users"
 msgstr "Modulo Utilizadores"
 
-#: ../view/layout/layout.phtml:130
+#: ../view/layout/layout.phtml:112
 msgid "Login"
 msgstr "Entrar"
 
-#: ../view/layout/layout.phtml:139
+#: ../view/layout/layout.phtml:121
 msgid "Social"
 msgstr "Social"
 
-#: ../view/layout/layout.phtml:161
+#: ../view/layout/layout.phtml:143
 msgid "All rights reserved."
 msgstr "Todos os direitos reservados."
+
+#~ msgid "Auto"
+#~ msgstr "Auto"
+
+#~ msgid "Motorbikes"
+#~ msgstr "Motas"
+
+#~ msgid "Computers"
+#~ msgstr "Computadores"
+
+#~ msgid "Phones"
+#~ msgstr "Telemoveis"
+
+#~ msgid "Properties"
+#~ msgstr "Imoveis"
+
+#~ msgid "Services"
+#~ msgstr "Serviços"
+
+#~ msgid "Agriculture"
+#~ msgstr "Agricultura"
+
+#~ msgid "Stuff"
+#~ msgstr "Coisas"
+
+#~ msgid "Manage Auto Posts"
+#~ msgstr "Gerir Anúncios Auto"
+
+#~ msgid "Manage Motorbikes Posts"
+#~ msgstr "Gerir Anúncios Motas "
+
+#~ msgid "Manage Computer Posts"
+#~ msgstr "Gerir Anúncios Computadores"
+
+#~ msgid "Manage Phones Posts"
+#~ msgstr "Gerir Anúncios de Telemóveis"
+
+#~ msgid "Manage Properties Posts"
+#~ msgstr "Gerir Anúncios de Imoveis"
+
+#~ msgid "Manage Services Posts"
+#~ msgstr "Gerir Anúncios de Serviços"
+
+#~ msgid "Manage Agriculture Posts"
+#~ msgstr "Gerir Anúncios de Agricultura"
+
+#~ msgid "Manage Stuff Posts"
+#~ msgstr "Gerir Anúncios de Coisas"
+
+#~ msgid "YES"
+#~ msgstr "SIM"
+
+#~ msgid "Can add and see photos for free"
+#~ msgstr "Podes adicionar e ver fotos gratis "
+
+#~ msgid "Can send messages to advertisers for free"
+#~ msgstr "Podes enviar mensagens aos editores gratis "
+
+#~ msgid "Can open messages from users"
+#~ msgstr "Podes abrir mensagens dos utilizadores"
+
+#~ msgid "NO"
+#~ msgstr "NÃO"
+
+#~ msgid "Have access to the full post/ad with emails and links"
+#~ msgstr "Tens acesso ao anuncio completo com email e links "
+
+#~ msgid ""
+#~ "etiju.com is a free ads website you only pay if you get clients/messages "
+#~ "for your ads"
+#~ msgstr ""
+#~ "etiju.com é um site de classificados gratis so pagas quando tiveres "
+#~ "mensagens para os teus anúncios e a quiseres ver"
+
+#~ msgid ""
+#~ "etiju.com,motorbikes,auto,computers,stuff,phones,cellphones,agriculture,"
+#~ "services,properties,real estate,jobs,itjobs,tecnojobs,totaljobs,jobboard"
+#~ msgstr ""
+#~ "etiju.com,motas,auto,computadores,coisas,telemoveis,telefones,agricultura,"
+#~ "serviços,propriedades,imoveis,empregos,itjobs,tecnojobs,totaljobs,jobboard"
 
 #~ msgid "History"
 #~ msgstr "Histórico"
@@ -721,9 +720,6 @@ msgstr "Todos os direitos reservados."
 
 #~ msgid "With professional account you can post your job offers"
 #~ msgstr "Com a conta profissional podes anunciar as tuas ofertas de emprego"
-
-#~ msgid "Unlimited ads"
-#~ msgstr "Anúncios ilimitados"
 
 #~ msgid "Each ad expires after 6 months"
 #~ msgstr "Cada anuncio expira em 6 meses "

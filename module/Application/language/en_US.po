@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 14:15+0000\n"
-"PO-Revision-Date: 2017-02-14 14:15+0000\n"
+"POT-Creation-Date: 2017-04-29 14:18+0100\n"
+"PO-Revision-Date: 2017-04-29 14:18+0100\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: en_US\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../src/Controller/IndexController.php:106
+#: ../src/Controller/IndexController.php:114
 msgid "Change process."
 msgstr ""
 
@@ -40,7 +40,7 @@ msgstr ""
 #: ../view/application/index/localizacao.phtml:7
 #: ../view/application/index/paypalone.phtml:12
 #: ../view/application/index/precos.phtml:7
-#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:111
+#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:99
 msgid "Home"
 msgstr ""
 
@@ -69,130 +69,59 @@ msgstr ""
 msgid "Ads"
 msgstr ""
 
-#: ../src/Service/NavManager.php:95 ../view/application/index/index.phtml:86
-#: ../view/layout/layout.phtml:112
-msgid "Auto"
-msgstr ""
-
-#: ../src/Service/NavManager.php:101 ../view/application/index/index.phtml:117
-#: ../view/layout/layout.phtml:113
-msgid "Motorbikes"
-msgstr ""
-
-#: ../src/Service/NavManager.php:108 ../view/application/index/index.phtml:169
-#: ../view/layout/layout.phtml:115
-msgid "Computers"
-msgstr ""
-
-#: ../src/Service/NavManager.php:114 ../view/application/index/index.phtml:252
-#: ../view/layout/layout.phtml:118
-msgid "Phones"
-msgstr ""
-
-#: ../src/Service/NavManager.php:120 ../view/application/index/index.phtml:142
-#: ../view/layout/layout.phtml:114
-msgid "Properties"
-msgstr ""
-
-#: ../src/Service/NavManager.php:126 ../view/application/index/index.phtml:200
-#: ../view/layout/layout.phtml:116
+#: ../src/Service/NavManager.php:96 ../view/application/index/index.phtml:86
+#: ../view/layout/layout.phtml:101
 msgid "Jobs"
 msgstr ""
 
-#: ../src/Service/NavManager.php:132 ../view/application/index/index.phtml:308
-#: ../view/layout/layout.phtml:120
-msgid "Services"
-msgstr ""
-
-#: ../src/Service/NavManager.php:138 ../view/application/index/index.phtml:225
-#: ../view/layout/layout.phtml:117
-msgid "Agriculture"
-msgstr ""
-
-#: ../src/Service/NavManager.php:144 ../view/application/index/index.phtml:283
-#: ../view/layout/layout.phtml:119
-msgid "Stuff"
-msgstr ""
-
-#: ../src/Service/NavManager.php:153
+#: ../src/Service/NavManager.php:106
 msgid "Language"
 msgstr ""
 
-#: ../src/Service/NavManager.php:158
+#: ../src/Service/NavManager.php:111
 msgid "English"
 msgstr ""
 
-#: ../src/Service/NavManager.php:163
+#: ../src/Service/NavManager.php:116
 msgid "Portuguese"
 msgstr ""
 
-#: ../src/Service/NavManager.php:174 ../view/layout/layout.phtml:127
+#: ../src/Service/NavManager.php:127 ../view/layout/layout.phtml:109
 msgid "Users"
 msgstr ""
 
-#: ../src/Service/NavManager.php:179
+#: ../src/Service/NavManager.php:132
 msgid "Sign in"
 msgstr ""
 
-#: ../src/Service/NavManager.php:184 ../view/layout/layout.phtml:131
+#: ../src/Service/NavManager.php:137 ../view/application/index/index.phtml:34
+#: ../view/layout/layout.phtml:113
 msgid "Register Free"
 msgstr ""
 
-#: ../src/Service/NavManager.php:198
+#: ../src/Service/NavManager.php:151
 msgid "Admin"
 msgstr ""
 
-#: ../src/Service/NavManager.php:202
+#: ../src/Service/NavManager.php:155
 msgid "Manage Users"
 msgstr ""
 
-#: ../src/Service/NavManager.php:207
-msgid "Manage Auto Posts"
-msgstr ""
-
-#: ../src/Service/NavManager.php:212
-msgid "Manage Motorbikes Posts"
-msgstr ""
-
-#: ../src/Service/NavManager.php:217
-msgid "Manage Computer Posts"
-msgstr ""
-
-#: ../src/Service/NavManager.php:222
-msgid "Manage Phones Posts"
-msgstr ""
-
-#: ../src/Service/NavManager.php:227
-msgid "Manage Properties Posts"
-msgstr ""
-
-#: ../src/Service/NavManager.php:232
+#: ../src/Service/NavManager.php:163
 msgid "Manage Jobs Posts"
 msgstr ""
 
-#: ../src/Service/NavManager.php:237
-msgid "Manage Services Posts"
-msgstr ""
-
-#: ../src/Service/NavManager.php:242
-msgid "Manage Agriculture Posts"
-msgstr ""
-
-#: ../src/Service/NavManager.php:247
-msgid "Manage Stuff Posts"
-msgstr ""
-
-#: ../src/Service/NavManager.php:260 ../view/application/index/settings.phtml:8
+#: ../src/Service/NavManager.php:177 ../view/application/index/settings.phtml:8
 #: ../view/application/index/settings.phtml:21
 msgid "Settings"
 msgstr ""
 
-#: ../src/Service/NavManager.php:265
+#: ../src/Service/NavManager.php:182
 msgid "Sign out"
 msgstr ""
 
 #: ../view/application/index/contactos.phtml:2
-msgid "Contacts by email to inquire about etiju.com"
+msgid "Contacts by email to inquire about thejoboard.com"
 msgstr ""
 
 #: ../view/application/index/contactos.phtml:7
@@ -263,62 +192,38 @@ msgid "PRO user"
 msgstr ""
 
 #: ../view/application/index/precos.phtml:23
-msgid "Add new ads for free"
+msgid "Unlimited ads"
 msgstr ""
 
 #: ../view/application/index/precos.phtml:24
+msgid "NO - Only one ad for free"
+msgstr ""
+
 #: ../view/application/index/precos.phtml:25
-#: ../view/application/index/precos.phtml:29
-#: ../view/application/index/precos.phtml:30
-#: ../view/application/index/precos.phtml:34
-#: ../view/application/index/precos.phtml:35
-#: ../view/application/index/precos.phtml:40
-#: ../view/application/index/precos.phtml:45
-msgid "YES"
+msgid "Yes"
 msgstr ""
 
 #: ../view/application/index/precos.phtml:28
-msgid "Can add and see photos for free"
-msgstr ""
-
-#: ../view/application/index/precos.phtml:33
-msgid "Can send messages to advertisers for free"
-msgstr ""
-
-#: ../view/application/index/precos.phtml:38
-msgid "Can open messages from users"
-msgstr ""
-
-#: ../view/application/index/precos.phtml:39
-#: ../view/application/index/precos.phtml:44
-msgid "NO"
-msgstr ""
-
-#: ../view/application/index/precos.phtml:43
-msgid "Have access to the full post/ad with emails and links"
-msgstr ""
-
-#: ../view/application/index/precos.phtml:48
 msgid "Price by the year"
 msgstr ""
 
-#: ../view/application/index/precos.phtml:49
+#: ../view/application/index/precos.phtml:29
 msgid "0 Euros"
 msgstr ""
 
-#: ../view/application/index/precos.phtml:50
+#: ../view/application/index/precos.phtml:30
 msgid "25 Euros"
 msgstr ""
 
-#: ../view/application/index/precos.phtml:53
+#: ../view/application/index/precos.phtml:33
 msgid "Ad Life"
 msgstr ""
 
-#: ../view/application/index/precos.phtml:54
+#: ../view/application/index/precos.phtml:34
 msgid "3 Months"
 msgstr ""
 
-#: ../view/application/index/precos.phtml:55
+#: ../view/application/index/precos.phtml:35
 msgid "1 Year"
 msgstr ""
 
@@ -375,43 +280,58 @@ msgstr ""
 msgid "Your PRO account will expire at:"
 msgstr ""
 
-#: ../view/layout/layout.phtml:12
-msgid "Free ads Website"
+#: ../view/application/index/settings.phtml:108
+msgid "User Photo"
 msgstr ""
 
-#: ../view/layout/layout.phtml:16
+#: ../view/application/index/settings.phtml:115
+msgid "Company:"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:132
+msgid "New Company"
+msgstr ""
+
+#: ../view/application/index/settings.phtml:143
+msgid "Your Company"
+msgstr ""
+
+#: ../view/layout/layout.phtml:9
+msgid "Jobs ads Website"
+msgstr ""
+
+#: ../view/layout/layout.phtml:13
+msgid "thejoboard.com is a job board website for jobs arround the world"
+msgstr ""
+
+#: ../view/layout/layout.phtml:18
 msgid ""
-"etiju.com is a free ads website you only pay if you get clients/messages for "
-"your ads"
+"jobs,itjobs,tecnojobs,board,job,alljobs,europe,usa,asia,america,remote,"
+"programming,programmer,civil,engineer,medical,nurses,trucks,transport,diesel,"
+"electric"
 msgstr ""
 
-#: ../view/layout/layout.phtml:21
-msgid ""
-"etiju.com,motorbikes,auto,computers,stuff,phones,cellphones,agriculture,"
-"services,properties,real estate,jobs,itjobs,tecnojobs,totaljobs,jobboard"
-msgstr ""
-
-#: ../view/layout/layout.phtml:109
+#: ../view/layout/layout.phtml:97
 msgid "Links"
 msgstr ""
 
-#: ../view/layout/layout.phtml:127
+#: ../view/layout/layout.phtml:109
 msgid "Languages"
 msgstr ""
 
-#: ../view/layout/layout.phtml:129
+#: ../view/layout/layout.phtml:111
 msgid "Module Users"
 msgstr ""
 
-#: ../view/layout/layout.phtml:130
+#: ../view/layout/layout.phtml:112
 msgid "Login"
 msgstr ""
 
-#: ../view/layout/layout.phtml:139
+#: ../view/layout/layout.phtml:121
 msgid "Social"
 msgstr ""
 
-#: ../view/layout/layout.phtml:161
+#: ../view/layout/layout.phtml:143
 msgid "All rights reserved."
 msgstr "All rights reserved."
 

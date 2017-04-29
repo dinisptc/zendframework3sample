@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 14:20+0000\n"
-"PO-Revision-Date: 2017-02-14 14:21+0000\n"
+"POT-Creation-Date: 2017-04-29 14:17+0100\n"
+"PO-Revision-Date: 2017-04-29 14:18+0100\n"
 "Last-Translator: Diogo Melo <dmelo87@gmail.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: pt\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../src/Form/AutoForm.php:56 ../src/Form/PostForm.php:56
@@ -29,23 +29,26 @@ msgstr "Contacto "
 
 #: ../src/Form/AutoForm.php:96 ../src/Form/AutoForm.php:116
 #: ../src/Form/PostForm.php:96 ../src/Form/PostForm.php:115
-#: ../src/Service/AutoManager.php:178 ../view/empregos/empregos/admin.phtml:22
-#: ../view/empregos/empregos/adminexpired.phtml:22
+#: ../src/Service/AutoManager.php:180 ../view/empregos/empregos/admin.phtml:28
+#: ../view/empregos/empregos/adminaprovar.phtml:27
+#: ../view/empregos/empregos/adminexpired.phtml:28
 msgid "Pending Approval"
 msgstr "Em Aprovação"
 
 #: ../src/Form/AutoForm.php:97 ../src/Form/PostForm.php:97
-#: ../src/Service/AutoManager.php:177
+#: ../src/Service/AutoManager.php:179
 msgid "Published"
 msgstr "Publicado"
 
 #: ../src/Form/AutoForm.php:98 ../src/Form/AutoForm.php:117
-#: ../src/Form/PostForm.php:98 ../src/Service/AutoManager.php:176
+#: ../src/Form/PostForm.php:98 ../src/Service/AutoManager.php:178
 msgid "Draft"
 msgstr "Rascunho"
 
-#: ../src/Form/AutoForm.php:99 ../src/Service/AutoManager.php:179
-#: ../view/empregos/empregos/admin.phtml:28
+#: ../src/Form/AutoForm.php:99 ../src/Service/AutoManager.php:181
+#: ../view/empregos/empregos/admin.phtml:34
+#: ../view/empregos/empregos/adminaprovar.phtml:33
+#: ../view/empregos/empregos/adminexpired.phtml:34
 msgid "Expired"
 msgstr "Expirado"
 
@@ -87,10 +90,10 @@ msgid "Tags"
 msgstr "Tags"
 
 #: ../src/Form/SearchForm.php:56 ../src/Form/SearchForm.php:67
-#: ../view/empregos/index/index.phtml:44
+#: ../view/empregos/index/index.phtml:49
 #: ../view/empregos/index/pesquisa.phtml:10
-#: ../view/empregos/index/pesquisa.phtml:29
-#: ../view/empregos/index/pesquisa.phtml:53
+#: ../view/empregos/index/pesquisa.phtml:40
+#: ../view/empregos/index/pesquisa.phtml:64
 msgid "Search"
 msgstr "Pesquisa"
 
@@ -128,19 +131,19 @@ msgstr "Insira o seu email ou link"
 
 #: ../view/empregos/empregos/add.phtml:55
 #: ../view/empregos/empregos/seemessages.phtml:16
-#: ../view/empregos/index/index.phtml:36
-#: ../view/empregos/index/pesquisa.phtml:20
+#: ../view/empregos/index/index.phtml:38
+#: ../view/empregos/index/pesquisa.phtml:29
 msgid "Add New Post"
 msgstr "Adicionar Novo Artigo"
 
 #: ../view/empregos/empregos/add.phtml:58
-#: ../view/empregos/index/pesquisa.phtml:52
+#: ../view/empregos/index/pesquisa.phtml:63
 msgid "Please fill out the following form and click the "
 msgstr "Por favor preencha o formulário e clique o"
 
 #: ../view/empregos/empregos/add.phtml:59
 #: ../view/empregos/image/upload.phtml:19
-#: ../view/empregos/index/pesquisa.phtml:53
+#: ../view/empregos/index/pesquisa.phtml:64
 msgid "button"
 msgstr "botão"
 
@@ -154,67 +157,66 @@ msgstr "Gerir Artigos"
 #: ../view/empregos/empregos/admin.phtml:16
 #: ../view/empregos/empregos/adminaprovar.phtml:16
 #: ../view/empregos/empregos/adminexpired.phtml:16
-#: ../view/empregos/empregos/myadmin.phtml:17
+#: ../view/empregos/empregos/myadmin.phtml:32
 msgid "New Post"
 msgstr "Novo Artigo"
 
-#: ../view/empregos/empregos/admin.phtml:37
-#: ../view/empregos/empregos/adminaprovar.phtml:25
-#: ../view/empregos/empregos/adminexpired.phtml:36
-#: ../view/empregos/empregos/myadmin.phtml:26
+#: ../view/empregos/empregos/admin.phtml:22
+#: ../view/empregos/empregos/adminaprovar.phtml:21
+#: ../view/empregos/empregos/adminexpired.phtml:22
+msgid "Admin"
+msgstr "Admin"
+
+#: ../view/empregos/empregos/admin.phtml:44
+#: ../view/empregos/empregos/adminaprovar.phtml:43
+#: ../view/empregos/empregos/adminexpired.phtml:49
+#: ../view/empregos/empregos/myadmin.phtml:43
 msgid "Post Title"
 msgstr "Titulo do Artigo"
 
-#: ../view/empregos/empregos/admin.phtml:38
-#: ../view/empregos/empregos/adminaprovar.phtml:26
-#: ../view/empregos/empregos/adminexpired.phtml:37
-#: ../view/empregos/empregos/myadmin.phtml:27
+#: ../view/empregos/empregos/admin.phtml:45
+#: ../view/empregos/empregos/adminaprovar.phtml:44
+#: ../view/empregos/empregos/adminexpired.phtml:50
+#: ../view/empregos/empregos/myadmin.phtml:44
 msgid "Date Created"
 msgstr "Data de Criação"
 
-#: ../view/empregos/empregos/admin.phtml:39
-#: ../view/empregos/empregos/adminaprovar.phtml:27
-#: ../view/empregos/empregos/adminexpired.phtml:38
-#: ../view/empregos/empregos/myadmin.phtml:28
+#: ../view/empregos/empregos/admin.phtml:46
+#: ../view/empregos/empregos/adminaprovar.phtml:45
+#: ../view/empregos/empregos/adminexpired.phtml:51
+#: ../view/empregos/empregos/myadmin.phtml:45
 msgid "Status"
 msgstr "Status"
 
-#: ../view/empregos/empregos/admin.phtml:40
-#: ../view/empregos/empregos/adminaprovar.phtml:28
-#: ../view/empregos/empregos/adminexpired.phtml:39
-#: ../view/empregos/empregos/myadmin.phtml:29
+#: ../view/empregos/empregos/admin.phtml:47
+#: ../view/empregos/empregos/adminaprovar.phtml:46
+#: ../view/empregos/empregos/adminexpired.phtml:52
+#: ../view/empregos/empregos/myadmin.phtml:46
 #: ../view/empregos/empregos/seemessages.phtml:31
 msgid "Actions"
 msgstr "Ações "
 
-#: ../view/empregos/empregos/admin.phtml:57
-#: ../view/empregos/empregos/adminaprovar.phtml:45
-#: ../view/empregos/empregos/adminexpired.phtml:56
-#: ../view/empregos/empregos/myadmin.phtml:46
+#: ../view/empregos/empregos/admin.phtml:69
+#: ../view/empregos/empregos/adminaprovar.phtml:68
+#: ../view/empregos/empregos/adminexpired.phtml:74
+#: ../view/empregos/empregos/myadmin.phtml:63
 msgid "Edit"
 msgstr "Editar"
 
-#: ../view/empregos/empregos/admin.phtml:61
-#: ../view/empregos/empregos/adminaprovar.phtml:49
-#: ../view/empregos/empregos/adminexpired.phtml:60
-#: ../view/empregos/empregos/myadmin.phtml:50
-msgid "Photos"
-msgstr "Fotos"
-
-#: ../view/empregos/empregos/admin.phtml:65
-#: ../view/empregos/empregos/adminaprovar.phtml:53
-#: ../view/empregos/empregos/adminexpired.phtml:64
-#: ../view/empregos/empregos/myadmin.phtml:55
+#: ../view/empregos/empregos/admin.phtml:74
+#: ../view/empregos/empregos/adminaprovar.phtml:73
+#: ../view/empregos/empregos/adminexpired.phtml:79
+#: ../view/empregos/empregos/myadmin.phtml:69
 msgid "Delete"
 msgstr "Apagar"
 
-#: ../view/empregos/empregos/adminexpired.phtml:27
+#: ../view/empregos/empregos/adminexpired.phtml:39
 msgid "Delete Expired"
 msgstr "Apagar Expirados"
 
 #: ../view/empregos/empregos/contactos.phtml:2
-msgid "Contacts by email to inquire about etiju.com"
-msgstr "Contactos por email para saber sobre etiju.com"
+msgid "Contacts by email to inquire about thejoboard.com"
+msgstr "Contactos por email para saber sobre thejoboard.com"
 
 #: ../view/empregos/empregos/contactos.phtml:7
 msgid "Please, Contact me trough the form i will reply in due time, thanks"
@@ -267,20 +269,26 @@ msgstr "Por favor preencha o formulário e clique no botão *Salvar*"
 msgid "Manage My Posts"
 msgstr "Gerir os meus Artigos"
 
+#: ../view/empregos/empregos/myadmin.phtml:26
+#: ../view/empregos/index/index.phtml:32
+#: ../view/empregos/index/pesquisa.phtml:23
+msgid "To place more ads go to Settings and become PRO"
+msgstr "Para colocar mais anúncios va as Configurações e torna-te PRO"
+
 #: ../view/empregos/empregos/seemessages.phtml:8
 #: ../view/empregos/empregos/viewmessage.phtml:36
 msgid "Messages"
 msgstr "Mensagens"
 
 #: ../view/empregos/empregos/seemessages.phtml:12
-#: ../view/empregos/index/index.phtml:23
+#: ../view/empregos/index/index.phtml:15
 #: ../view/empregos/index/pesquisa.phtml:16
 msgid "Posts"
 msgstr "Artigos"
 
 #: ../view/empregos/empregos/seemessages.phtml:20
-#: ../view/empregos/index/index.phtml:40
-#: ../view/empregos/index/pesquisa.phtml:24
+#: ../view/empregos/index/index.phtml:45
+#: ../view/empregos/index/pesquisa.phtml:35
 msgid "Manage my Posts"
 msgstr "Gerir os meus anuncios"
 
@@ -297,38 +305,75 @@ msgid "Back to list of posts"
 msgstr "Volta para a Lista de Artigos"
 
 #: ../view/empregos/empregos/view.phtml:68
-#: ../view/empregos/index/index.phtml:99
-#: ../view/empregos/index/pesquisa.phtml:129
+#: ../view/empregos/index/index.phtml:124
+#: ../view/empregos/index/pesquisa.phtml:161
 msgid "Published:"
 msgstr "Publicado:"
 
-#: ../view/empregos/empregos/view.phtml:76
+#: ../view/empregos/empregos/view.phtml:78
 msgid "Visits : "
 msgstr "Visitas :"
 
-#: ../view/empregos/empregos/view.phtml:91
-msgid "You have to become PRO to this the Contact"
-msgstr "Tens de te tornar pro para ver este Contacto"
+#: ../view/empregos/empregos/view.phtml:83
+msgid "Show Contact Link/Email"
+msgstr "Mostra Contacto Link/Email"
 
-#: ../view/empregos/empregos/view.phtml:96
-msgid "You have to register and become PRO to this the Contact"
-msgstr "Tens de te registar e tornar PRO para ver este Contacto"
-
-#: ../view/empregos/empregos/view.phtml:121
-#: ../view/empregos/index/index.phtml:115
-#: ../view/empregos/index/pesquisa.phtml:145
-msgid "You have "
-msgstr "Tu tens "
-
-#: ../view/empregos/empregos/view.phtml:121
-#: ../view/empregos/index/index.phtml:115
-#: ../view/empregos/index/pesquisa.phtml:145
-msgid " Messages"
-msgstr " Mensagens"
+#: ../view/empregos/empregos/view.phtml:124
+#: ../view/empregos/empregos/view.phtml:216
+msgid "E-mail:"
+msgstr "Email:"
 
 #: ../view/empregos/empregos/view.phtml:128
-msgid "Free Contact"
-msgstr "Contacto Gratis "
+msgid "Full Name:"
+msgstr "O teu nome:"
+
+#: ../view/empregos/empregos/view.phtml:142
+msgid "Photo:"
+msgstr "Foto:"
+
+#: ../view/empregos/empregos/view.phtml:169
+msgid "View Company"
+msgstr "Ver Empresa"
+
+#: ../view/empregos/empregos/view.phtml:201
+msgid "Company name:"
+msgstr "Nome da Empresa"
+
+#: ../view/empregos/empregos/view.phtml:206
+msgid "Company description:"
+msgstr "Descrição da Empresa:"
+
+#: ../view/empregos/empregos/view.phtml:211
+msgid "Company Address:"
+msgstr "Endereço Postal da Empresa:"
+
+#: ../view/empregos/empregos/view.phtml:221
+msgid "WebSite:"
+msgstr "Site:"
+
+#: ../view/empregos/empregos/view.phtml:226
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: ../view/empregos/empregos/view.phtml:231
+msgid "Linkedin:"
+msgstr "Linkedin:"
+
+#: ../view/empregos/empregos/view.phtml:236
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: ../view/empregos/empregos/view.phtml:241
+msgid "Phone:"
+msgstr "Telefone:"
+
+#: ../view/empregos/empregos/view.phtml:246
+msgid "Fax:"
+msgstr "Fax:"
+
+#: ../view/empregos/empregos/view.phtml:251
+msgid "Date Created:"
+msgstr "Data de Criação:"
 
 #: ../view/empregos/empregos/viewmessage.phtml:37
 msgid "View Messages"
@@ -386,11 +431,11 @@ msgstr "Por favor preencha o formulário seguinte e clique no "
 msgid "Upload"
 msgstr "Transferir"
 
-#: ../view/empregos/index/index.phtml:29
+#: ../view/empregos/index/index.phtml:21
 msgid "You have :"
 msgstr "Tu tens :"
 
-#: ../view/empregos/index/index.phtml:29
+#: ../view/empregos/index/index.phtml:21
 msgid ""
 " posts expired, to prevent them from being deleted, edit each expired post "
 "and set status to pending approval"
@@ -398,13 +443,28 @@ msgstr ""
 "anúncios expirados, para evitar que sejam apagados, edita cada anuncio "
 "expirado e altera o status para em aprovação"
 
-#: ../view/empregos/index/pesquisa.phtml:42
+#: ../view/empregos/index/pesquisa.phtml:53
 msgid "Enter you search here"
 msgstr "Insira a sua pesquisa aqui"
 
-#: ../view/empregos/index/pesquisa.phtml:171
+#: ../view/empregos/index/pesquisa.phtml:184
 msgid "No results found"
 msgstr "Não foram encontrados resultados "
+
+#~ msgid "You have to become PRO to this the Contact"
+#~ msgstr "Tens de te tornar pro para ver este Contacto"
+
+#~ msgid "You have to register and become PRO to this the Contact"
+#~ msgstr "Tens de te registar e tornar PRO para ver este Contacto"
+
+#~ msgid "You have "
+#~ msgstr "Tu tens "
+
+#~ msgid " Messages"
+#~ msgstr " Mensagens"
+
+#~ msgid "Free Contact"
+#~ msgstr "Contacto Gratis "
 
 #~ msgid "Auto"
 #~ msgstr "Auto"
@@ -470,9 +530,6 @@ msgstr "Não foram encontrados resultados "
 
 #~ msgid "Sign in"
 #~ msgstr "Entrar"
-
-#~ msgid "Admin"
-#~ msgstr "Admin"
 
 #~ msgid "Manage Users"
 #~ msgstr "Gerir Utilizadores"

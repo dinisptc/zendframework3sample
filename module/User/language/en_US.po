@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-06 16:18+0100\n"
-"PO-Revision-Date: 2017-04-06 16:18+0100\n"
+"POT-Creation-Date: 2017-04-29 13:49+0100\n"
+"PO-Revision-Date: 2017-04-29 13:50+0100\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: en_US\n"
@@ -12,20 +12,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.0.1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../src/Controller/ImageController.php:93
+#: ../src/Controller/ImageController.php:97
+#: ../src/Controller/LogoController.php:97
 msgid "Only can upload one personal picture"
 msgstr ""
 
-#: ../src/Controller/UserController.php:253
+#: ../src/Controller/UserController.php:256
 msgid "Sorry, the old password is incorrect. Could not set the new password."
 msgstr ""
 
-#: ../src/Controller/UserController.php:256
-#: ../src/Controller/UserController.php:796
+#: ../src/Controller/UserController.php:259
+#: ../src/Controller/UserController.php:799
 msgid "Changed the password successfully."
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:88 ../src/Form/RegisterForm.php:64
+#: ../src/Form/UserForm.php:64 ../view/user/user/index.phtml:26
+msgid "E-mail"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:98
+msgid "Company Name"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:107
+msgid "Company Description"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:116
+msgid "Company Address"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:125
+msgid "Company URL"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:134
+msgid "Company Facebook"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:144
+msgid "Company Linkedin"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:153
+msgid "Company Twitter"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:162
+msgid "Company Telefone"
+msgstr ""
+
+#: ../src/Form/EmpresasForm.php:172
+msgid "Company Fax"
 msgstr ""
 
 #: ../src/Form/LoginForm.php:46 ../src/Form/PasswordResetForm.php:38
@@ -70,11 +112,6 @@ msgstr ""
 #: ../src/Form/PasswordResetForm.php:108 ../view/user/user/message.phtml:7
 #: ../view/user/user/reset-password.phtml:20
 msgid "Reset Password"
-msgstr ""
-
-#: ../src/Form/RegisterForm.php:64 ../src/Form/UserForm.php:64
-#: ../view/user/user/index.phtml:26
-msgid "E-mail"
 msgstr ""
 
 #: ../src/Form/RegisterForm.php:73 ../src/Form/UserForm.php:73
@@ -130,37 +167,9 @@ msgstr ""
 msgid "Forgot password?"
 msgstr ""
 
-#: ../view/user/image/deletefile.phtml:7 ../view/user/image/index.phtml:7
-msgid "Jobs"
-msgstr ""
-
-#: ../view/user/image/deletefile.phtml:8 ../view/user/image/deletefile.phtml:12
-#: ../view/user/image/index.phtml:8 ../view/user/image/index.phtml:12
-#: ../view/user/image/upload.phtml:8
-msgid "Image Gallery"
-msgstr ""
-
-#: ../view/user/image/deletefile.phtml:16 ../view/user/image/index.phtml:16
-msgid "This page displays the list of uploaded images."
-msgstr ""
-
-#: ../view/user/image/deletefile.phtml:21 ../view/user/image/index.phtml:21
-msgid "Upload More"
-msgstr ""
-
-#: ../view/user/image/deletefile.phtml:29 ../view/user/image/index.phtml:29
-msgid "There are no files to display."
-msgstr ""
-
-#: ../view/user/image/deletefile.phtml:49 ../view/user/image/index.phtml:49
-msgid "Show in Natural Size"
-msgstr ""
-
-#: ../view/user/image/deletefile.phtml:54 ../view/user/image/index.phtml:54
-msgid "Delete File"
-msgstr ""
-
-#: ../view/user/image/upload.phtml:7 ../view/user/user/add.phtml:7
+#: ../view/user/empresa/add.phtml:29 ../view/user/empresa/edit.phtml:29
+#: ../view/user/empresa/view.phtml:7 ../view/user/image/upload.phtml:7
+#: ../view/user/logo/upload.phtml:7 ../view/user/user/add.phtml:7
 #: ../view/user/user/change-password.phtml:7
 #: ../view/user/user/change-passwordadmin.phtml:7
 #: ../view/user/user/edit.phtml:7 ../view/user/user/index.phtml:7
@@ -169,21 +178,205 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: ../view/user/image/upload.phtml:16
-msgid "Upload a New Image"
+#: ../view/user/empresa/add.phtml:31 ../view/user/empresa/edit.phtml:31
+msgid "Add Company"
 msgstr ""
 
-#: ../view/user/image/upload.phtml:19
+#: ../view/user/empresa/add.phtml:133 ../view/user/empresa/edit.phtml:38
+#: ../view/user/user/add.phtml:14 ../view/user/user/edit.phtml:14
+#: ../view/user/user/register.phtml:13
+msgid "name@example.com"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:138 ../view/user/empresa/edit.phtml:43
+msgid "company example"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:143 ../view/user/empresa/edit.phtml:48
+msgid "company example develops software"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:149 ../view/user/empresa/edit.phtml:54
+msgid "street nº5 at example city"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:156 ../view/user/empresa/edit.phtml:61
+msgid "www.companyexample.com"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:162 ../view/user/empresa/edit.phtml:67
+msgid "facebook company page"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:167 ../view/user/empresa/edit.phtml:72
+msgid "linkedin company profile"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:172 ../view/user/empresa/edit.phtml:77
+msgid "twitter company profile"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:178 ../view/user/empresa/edit.phtml:83
+msgid "company phone"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:183 ../view/user/empresa/edit.phtml:88
+msgid "company fax"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:191
+msgid "Add company"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:194 ../view/user/user/add.phtml:46
+#: ../view/user/user/register.phtml:42
+msgid "Please fill out the following form and click the"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:194 ../view/user/user/add.phtml:46
+#: ../view/user/user/register.phtml:42
+msgid "Create"
+msgstr ""
+
+#: ../view/user/empresa/add.phtml:194 ../view/user/image/upload.phtml:27
+#: ../view/user/logo/upload.phtml:27 ../view/user/user/add.phtml:46
+#: ../view/user/user/register.phtml:42
+msgid "button"
+msgstr ""
+
+#: ../view/user/empresa/edit.phtml:93 ../view/user/user/edit.phtml:32
+msgid "Save"
+msgstr ""
+
+#: ../view/user/empresa/edit.phtml:98
+msgid "Edit Company"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:9 ../view/user/empresa/view.phtml:36
+msgid "View Company"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:42
+msgid "Edit/Delete:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:46 ../view/user/user/index.phtml:64
+msgid "Edit"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:51
+msgid "Delete"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:72
+msgid "Company Logo"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:84
+msgid "Company name:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:89
+msgid "Company description:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:94
+msgid "Company Address:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:99 ../view/user/user/view.phtml:46
+msgid "E-mail:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:104
+msgid "WebSite:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:109
+msgid "Facebook:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:114
+msgid "Linkedin:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:119
+msgid "Twitter:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:124
+msgid "Telefone:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:129
+msgid "Fax:"
+msgstr ""
+
+#: ../view/user/empresa/view.phtml:134 ../view/user/user/view.phtml:54
+msgid "Date Created:"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:7 ../view/user/logo/deletefile.phtml:7
+#: ../view/user/logo/index.phtml:7
+msgid "Users"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:8 ../view/user/image/deletefile.phtml:12
+#: ../view/user/image/index.phtml:8 ../view/user/image/index.phtml:12
+#: ../view/user/image/upload.phtml:8
+msgid "User Image Gallery"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:16 ../view/user/image/index.phtml:16
+#: ../view/user/logo/deletefile.phtml:16 ../view/user/logo/index.phtml:16
+msgid "This page displays the list of uploaded images."
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:21 ../view/user/image/index.phtml:21
+#: ../view/user/logo/deletefile.phtml:21 ../view/user/logo/index.phtml:21
+msgid "Upload More"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:29 ../view/user/image/index.phtml:29
+#: ../view/user/logo/deletefile.phtml:29 ../view/user/logo/index.phtml:29
+msgid "There are no files to display."
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:49 ../view/user/image/index.phtml:49
+#: ../view/user/logo/deletefile.phtml:49 ../view/user/logo/index.phtml:49
+msgid "Show in Natural Size"
+msgstr ""
+
+#: ../view/user/image/deletefile.phtml:54 ../view/user/image/index.phtml:54
+#: ../view/user/logo/deletefile.phtml:54 ../view/user/logo/index.phtml:54
+msgid "Delete File"
+msgstr ""
+
+#: ../view/user/image/index.phtml:7 ../view/user/user/subscribe.phtml:20
+#: ../view/user/user/unsubscribe.phtml:20
+msgid "Jobs"
+msgstr ""
+
+#: ../view/user/image/upload.phtml:24
+msgid "Upload a New User Image"
+msgstr ""
+
+#: ../view/user/image/upload.phtml:27 ../view/user/logo/upload.phtml:27
 msgid "Please fill out the following form and press the"
 msgstr ""
 
-#: ../view/user/image/upload.phtml:19
+#: ../view/user/image/upload.phtml:27 ../view/user/logo/upload.phtml:27
 msgid "Upload"
 msgstr ""
 
-#: ../view/user/image/upload.phtml:19 ../view/user/user/add.phtml:46
-#: ../view/user/user/register.phtml:42
-msgid "button"
+#: ../view/user/logo/deletefile.phtml:8 ../view/user/logo/deletefile.phtml:12
+#: ../view/user/logo/index.phtml:8 ../view/user/logo/index.phtml:12
+#: ../view/user/logo/upload.phtml:8
+msgid "Company Logo Image Gallery"
+msgstr ""
+
+#: ../view/user/logo/upload.phtml:24
+msgid "Upload a New Logo Image"
 msgstr ""
 
 #: ../view/user/user/add.phtml:8 ../view/user/user/change-password.phtml:8
@@ -199,22 +392,9 @@ msgstr ""
 msgid "Add User"
 msgstr ""
 
-#: ../view/user/user/add.phtml:14 ../view/user/user/edit.phtml:14
-#: ../view/user/user/register.phtml:13
-msgid "name@example.com"
-msgstr ""
-
 #: ../view/user/user/add.phtml:19 ../view/user/user/edit.phtml:19
 #: ../view/user/user/register.phtml:18
 msgid "John Doe"
-msgstr ""
-
-#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
-msgid "Please fill out the following form and click the"
-msgstr ""
-
-#: ../view/user/user/add.phtml:46 ../view/user/user/register.phtml:42
-msgid "Create"
 msgstr ""
 
 #: ../view/user/user/change-password.phtml:14
@@ -242,10 +422,6 @@ msgstr ""
 msgid "Edit User"
 msgstr ""
 
-#: ../view/user/user/edit.phtml:32
-msgid "Save"
-msgstr ""
-
 #: ../view/user/user/index.phtml:17
 msgid "New User"
 msgstr ""
@@ -256,10 +432,6 @@ msgstr ""
 
 #: ../view/user/user/index.phtml:31
 msgid "Actions"
-msgstr ""
-
-#: ../view/user/user/index.phtml:64
-msgid "Edit"
 msgstr ""
 
 #: ../view/user/user/message.phtml:11
@@ -347,10 +519,6 @@ msgstr ""
 msgid "Subscribe"
 msgstr ""
 
-#: ../view/user/user/subscribe.phtml:20 ../view/user/user/unsubscribe.phtml:20
-msgid "Auto"
-msgstr ""
-
 #: ../view/user/user/subscribe.phtml:33
 msgid "You subscribed successfully"
 msgstr ""
@@ -368,16 +536,8 @@ msgstr ""
 msgid "View User"
 msgstr ""
 
-#: ../view/user/user/view.phtml:46
-msgid "E-mail:"
-msgstr ""
-
 #: ../view/user/user/view.phtml:50
 msgid "Full Name:"
-msgstr ""
-
-#: ../view/user/user/view.phtml:54
-msgid "Date Created:"
 msgstr ""
 
 #: ../view/user/user/view.phtml:58
@@ -398,6 +558,18 @@ msgstr ""
 
 #: ../view/user/user/view.phtml:93
 msgid "User Photo"
+msgstr ""
+
+#: ../view/user/user/view.phtml:102
+msgid "Company:"
+msgstr ""
+
+#: ../view/user/user/view.phtml:119
+msgid "New Company"
+msgstr ""
+
+#: ../view/user/user/view.phtml:130
+msgid "Your Company"
 msgstr ""
 
 #~ msgid "All rights reserved."

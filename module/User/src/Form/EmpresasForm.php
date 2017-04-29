@@ -159,7 +159,7 @@ class EmpresasForm extends Form
             'type'  => 'text',
             'name' => 'telefone',            
             'options' => [
-                'label' => _('Company Telefone'),
+                'label' => _('Company Phone'),
             ],
         ]);
         
