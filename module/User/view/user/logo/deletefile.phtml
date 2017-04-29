@@ -1,15 +1,15 @@
 <?php
-$this->headTitle('Image Gallery');
+$this->headTitle('Company Logo Image Gallery');
 
 $this->mainMenu()->setActiveItemId('ads');
 
 $this->pageBreadcrumbs()->setItems([
             $this->translate('Users')=>$this->url('users'),
-            $this->translate('Image Gallery') => $this->url('empresaimages')
+            $this->translate('Company Logo Image Gallery') => $this->url('empresaimages')
             ]);
 ?>
 
-<h1> <?php echo $this->translate('Image Gallery'); ?></h1>
+<h1> <?php echo $this->translate('Company Logo Image Gallery'); ?></h1>
 
 <p>
     
@@ -49,7 +49,7 @@ $this->pageBreadcrumbs()->setItems([
                             class="btn btn-default" role="button"><?php echo $this->translate('Show in Natural Size'); ?></a>
                 </p>
                 <p>
-                    <a target="_blank" href="<?= $this->url('empresaimages',  
+                    <a href="<?= $this->url('empresaimages',  
                             ['action'=>'deletefile','id'=>$postId], ['query'=>['name'=>$file]]); ?>" 
                             class="btn btn-default" role="button"><?php echo $this->translate('Delete File'); ?></a>
                 </p>

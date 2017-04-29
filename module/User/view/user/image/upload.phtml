@@ -1,11 +1,11 @@
 <?php
-$this->headTitle('Upload a New Image');
+$this->headTitle('Upload a New User Image');
 
 $this->mainMenu()->setActiveItemId('home');
 
 $this->pageBreadcrumbs()->setItems([
             $this->translate('Home') => $this->url('home'),
-            $this->translate('Image Gallery') => $this->url('userimages')
+            $this->translate('User Image Gallery') => $this->url('userimages')
             ]);
 
 $form = $this->form;
@@ -21,7 +21,7 @@ if($message!='')
 }
 ?>
 
-<h1><?php echo $this->translate('Upload a New Image'); ?></h1>
+<h1><?php echo $this->translate('Upload a New User Image'); ?></h1>
 
 <p>
     <?php echo $this->translate('Please fill out the following form and press the') ?> <i><?php echo $this->translate('Upload'); ?></i> <?php echo $this->translate('button'); ?>.

@@ -249,12 +249,20 @@ class ImageController extends AbstractActionController
         // Get path to image file
         $fileName = $this->imageManager->getImagePathByName($fileName,$postId);
         
-        
-        unlink($fileName);
+
+ 
         
            // Get the list of already saved files.
         $files = $this->imageManager->getSavedFiles($postId);
+        
+        if (count($files)>0)
+        {
+           unlink($fileName);
+        }
      
+        $files = $this->imageManager->getSavedFiles($postId);
+         
+         
                // Render the page
         return new ViewModel([
             'files'=>$files,

@@ -250,11 +250,20 @@ class LogoController extends AbstractActionController
         $fileName = $this->imageManager->getImagePathByName($fileName,$postId);
         
         
-        unlink($fileName);
+      // unlink($fileName);
         
            // Get the list of already saved files.
         $files = $this->imageManager->getSavedFiles($postId);
-     
+        
+        
+        if (count($files)>0)
+        {
+           unlink($fileName);
+        }
+        
+        $files = $this->imageManager->getSavedFiles($postId);
+        
+        
                // Render the page
         return new ViewModel([
             'files'=>$files,
