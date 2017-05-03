@@ -58,7 +58,23 @@ if($expirados>0){
     <div class="col-md-20">
     <?php foreach($posts as $post): ?>
         <table>
-            
+            <tr>
+                <td>
+                                         <h3>
+        <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+            <?= $this->escapeHtml($post->getTitle()); ?>
+        </a>    
+    </h3>   
+                    
+                </td>
+                <td>
+
+                    
+                    
+                </td>
+
+                
+            </tr>
             <tr>
         
                 <td>
@@ -100,23 +116,20 @@ if($expirados>0){
                 
             { ?>
                 
-                <img style="width: 280px;" src=<?php echo $this->basePath() .'/img/thejoblogo5.png'?>
+                <img style="width: 280px;" src=<?php echo $this->basePath() .'/img/thejoblogo5.png'?>>
                      
                      
                 <?php
             }
         ?>
             </td>
-            
+             </tr>
+             <tr>
             <td>
 
    
         
-    <h3>
-        <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
-            <?= $this->escapeHtml($post->getTitle()); ?>
-        </a>    
-    </h3>
+
         
 
         
@@ -126,6 +139,8 @@ if($expirados>0){
        
      </td>
         </tr>
+        
+        <hr>
 </table>
 
     <?php endforeach; ?>

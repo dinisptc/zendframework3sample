@@ -95,7 +95,23 @@ $form->prepare();
     
      foreach($posts as $post): ?>
         <table>
-            
+                        <tr>
+                <td>
+                                         <h3>
+        <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+            <?= $this->escapeHtml($post->getTitle()); ?>
+        </a>    
+    </h3>   
+                    
+                </td>
+                <td>
+
+                    
+                    
+                </td>
+
+                
+            </tr>
             <tr>
         
                 <td>
@@ -137,7 +153,7 @@ $form->prepare();
                 
             { ?>
                 
-                    <img style="width: 280px;" src=<?php echo $this->basePath() .'/img/thejoblogo5.png'?>
+                    <img style="width: 280px;" src=<?php echo $this->basePath() .'/img/thejoblogo5.png'?>>
                      
                      
                 <?php
@@ -145,15 +161,13 @@ $form->prepare();
         ?>
             </td>
             
+               </tr>
+             <tr>
             <td>
 
    
         
-    <h3>
-        <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
-            <?= $this->escapeHtml($post->getTitle()); ?>
-        </a>    
-    </h3>
+
         
 
         
@@ -163,6 +177,8 @@ $form->prepare();
        
      </td>
         </tr>
+        
+        <hr>
 </table>
 
     <?php endforeach; ?>
