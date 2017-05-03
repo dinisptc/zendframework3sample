@@ -1,0 +1,48 @@
+<?php
+$this->headTitle('Users');
+
+$this->mainMenu()->setActiveItemId('users');
+
+$this->pageBreadcrumbs()->setItems([
+             $this->translate('Home')=>$this->url('home'),
+            $this->translate('Manage Users')=>$this->url('users'),
+            ]);
+?>
+
+<h1><?php echo $this->translate('Search Users'); ?></h1>
+
+<p>
+<a class="btn btn-default" href="
+    <?= $this->url('users', ['action'=>'add']); ?>">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <?php echo $this->translate('New User'); ?>
+</a>
+
+<a class="btn btn-default" href="
+    <?= $this->url('users', ['action'=>'pesquisauserid']); ?>">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <?php echo $this->translate('Search User ID'); ?>
+</a>
+</p>
+
+
+<p>
+    <?php echo $this->translate('Please fill out the following form and click the '); ?>
+     <i><?php echo $this->translate('Search'); ?></i> <?php echo $this->translate('button'); ?>.
+</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+        
+        <div class="form-group">
+            <?php echo $this->translate($this->formLabel($form->get('id'))); ?>
+            <?= $this->formElement($form->get('id')); ?>
+            <?= $this->formElementErrors($form->get('id')); ?>                  
+        </div>
+        
+  
+        
+        <?php echo $this->translate($this->formElement($form->get('submit'))); ?>
+        
+        <?= $this->form()->closeTag(); ?>
+    </div>    
+</div> 

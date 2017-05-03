@@ -186,7 +186,7 @@ return [
                 // Give access to "index", "add", "edit", "view", "changePassword" actions to authorized users only.
                 ['actions' => ['changePassword'], 'allow' => 'm'],
                  ['actions' => ['changePassword'], 'allow' => 'p'],
-                ['actions' => ['index', 'add', 'edit', 'view', 'changePasswordadmin'], 'allow' => '@']
+                ['actions' => ['index', 'add', 'edit', 'view', 'changePasswordadmin','pesquisauserid'], 'allow' => '@']
             ],
             Controller\ImageController::class => [
                 // Allow anyone to visit "index" and "about" actions

@@ -16,8 +16,12 @@ $this->pageBreadcrumbs()->setItems([
     <?= $this->url('users', ['action'=>'add']); ?>">
     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <?php echo $this->translate('New User'); ?>
 </a>
-</p>
 
+<a class="btn btn-default" href="
+    <?= $this->url('users', ['action'=>'pesquisauserid']); ?>">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <?php echo $this->translate('Search User ID'); ?>
+</a>
+</p>
 <table class="table table-striped">
 
    <tr>

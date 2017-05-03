@@ -13,6 +13,8 @@ use User\Form\UserForm;
 use User\Form\RegisterForm;
 use User\Form\PasswordChangeForm;
 use User\Form\PasswordResetForm;
+use User\Form\PesquisaUserForm;
+
 
 use Zend\Session\Container; // We need this when using sessions
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator as DoctrineAdapter;
@@ -810,6 +812,53 @@ class UserController extends AbstractActionController
             'form' => $form
         ]);
     }
+    
+    
+    
+    public function pesquisauseridAction() 
+    {
+        
+           $this->traduz();
 
+        
+        // Create "change password" form
+        $form = new PesquisaUserForm();
+        
+        // Check if user has submitted the form
+        if ($this->getRequest()->isPost()) {
+            
+            // Fill in the form with POST data
+            $data = $this->params()->fromPost();            
+            
+            $form->setData($data);
+            
+            // Validate form
+            if($form->isValid()) {
+                
+                // Get filtered and validated data
+                $data = $form->getData();
+                
+     
+        
+        $user = $this->entityManager->getRepository(User::class)
+                ->find($data['id']);
+        
+        if ($user == null) {
+            $this->getResponse()->setStatusCode(404);
+            return;
+        }
+                
+                // Redirect to "view" page
+                return $this->redirect()->toRoute('users', 
+                        ['action'=>'view', 'id'=>$user->getId(), 'flash'=>$this->flashMessenger()->getMessages()]);                
+            }               
+        } 
+        
+        return new ViewModel([
+         
+            'form' => $form
+        ]);
+    }
+    
 }
 
