@@ -137,6 +137,7 @@ $form->prepare();
         <?php 
         if(isset($empresa)){
             
+        if(isset($files) && !empty($files)){
             
           foreach($files as $file): 
            
@@ -147,7 +148,16 @@ $form->prepare();
    
         <?php
         endforeach; 
+            
         
+        }else
+             {
+                 
+                           ?>
+              <img style="width: 280px;" src=<?php echo $this->basePath() .'/img/thejoblogo5.png'?>>
+            
+              <?php  
+             }
         
             }else
                 
