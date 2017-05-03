@@ -100,7 +100,7 @@ if($expirados>0){
         <?php 
         if(isset($empresa)){
             
-            
+        if(isset($files) && !empty($files)){    
           foreach($files as $file): 
            
         ?>
@@ -110,7 +110,14 @@ if($expirados>0){
    
         <?php
         endforeach; 
-        
+        }
+        else {
+            
+            ?>
+              <img style="width: 280px;" src=<?php echo $this->basePath() .'/img/thejoblogo5.png'?>>
+            
+              <?php
+        }
         
             }else
                 
