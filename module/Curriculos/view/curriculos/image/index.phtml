@@ -4,8 +4,8 @@ $this->headTitle('Image Gallery');
 $this->mainMenu()->setActiveItemId('ads');
 
 $this->pageBreadcrumbs()->setItems([
-            $this->translate('Jobs')=>$this->url('empregos'),
-            $this->translate('Image Gallery') => $this->url('empregosimages')
+            $this->translate('Curricula')=>$this->url('curriculos'),
+            $this->translate('CV Gallery') => $this->url('curriculosimages')
             ]);
 ?>
 
@@ -17,7 +17,7 @@ $this->pageBreadcrumbs()->setItems([
 </p>
 
 <p>
-    <a href="<?= $this->url('empregosimages', ['action'=>'upload','id'=>$postId]); ?>" 
+    <a href="<?= $this->url('curriculosimages', ['action'=>'upload','id'=>$postId]); ?>" 
        class="btn btn-primary" role="button"><?php echo $this->translate('Upload More'); ?></a>
 </p>
 
@@ -38,18 +38,18 @@ $this->pageBreadcrumbs()->setItems([
 
         <div class="img-thumbnail">
             
-            <img src="<?= $this->url('empregosimages', ['action'=>'file','id'=>$postId], 
+            <img src="<?= $this->url('curriculosimages', ['action'=>'file','id'=>$postId], 
                     ['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
             
             <div class="caption">
                 <h3><?php echo $file; ?></h3>                    
                 <p>
-                    <a target="_blank" href="<?= $this->url('empregosimages',  
+                    <a target="_blank" href="<?= $this->url('curriculosimages',  
                             ['action'=>'file','id'=>$postId], ['query'=>['name'=>$file]]); ?>" 
                             class="btn btn-default" role="button"><?php echo $this->translate('Show in Natural Size'); ?></a>
                 </p>
                 <p>
-                    <a target="_blank" href="<?= $this->url('empregosimages',  
+                    <a target="_blank" href="<?= $this->url('curriculosimages',  
                             ['action'=>'deletefile','id'=>$postId], ['query'=>['name'=>$file]]); ?>" 
                             class="btn btn-default" role="button"><?php echo $this->translate('Delete File'); ?></a>
                 </p>

@@ -14,7 +14,7 @@ class ImageManager
      * The directory where we save image files.
      * @var string
      */
-    private $saveToDir = './public/files/empregos/';
+    private $saveToDir = './public/files/curriculos/';
         
     /**
      * Returns path to the directory where we save the image files.

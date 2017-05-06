@@ -12,30 +12,30 @@ $this->pageBreadcrumbs()->setItems([
 
 <p>
 <a class="btn btn-default" href="
-    <?= $this->url('empregosposts', ['action'=>'add']); ?>">
+    <?= $this->url('curriculosposts', ['action'=>'add']); ?>">
     <?php echo $this->translate('New Post'); ?>
     
 </a>
     
 <a class="btn btn-default" href="
-    <?= $this->url('empregosposts', ['action'=>'admin']); ?>">
+    <?= $this->url('curriculosposts', ['action'=>'admin']); ?>">
     <?php echo $this->translate('Admin'); ?>
     
 </a>
     
 <a class="btn btn-default" href="
-    <?= $this->url('empregosposts', ['action'=>'adminaprovar']); ?>">
+    <?= $this->url('curriculosposts', ['action'=>'adminaprovar']); ?>">
     <?php echo $this->translate('Pending Approval'); ?>
     
 </a>
     
 <a class="btn btn-default" href="
-    <?= $this->url('empregosposts', ['action'=>'adminexpired']); ?>">
+    <?= $this->url('curriculosposts', ['action'=>'adminexpired']); ?>">
     <?php echo $this->translate('Expired'); ?>
     
 </a>
 <a class="btn btn-danger" href="
-    <?= $this->url('empregosposts', ['action'=>'apagarexpirados']); ?>" onclick="return confirm('Do you realy want to delete the record;')">
+    <?= $this->url('curriculosposts', ['action'=>'apagarexpirados']); ?>" onclick="return confirm('Do you realy want to delete the record;')">
     <?php echo $this->translate('Delete Expired'); ?>
     
 </a>
@@ -62,19 +62,19 @@ $this->pageBreadcrumbs()->setItems([
             </a> 
         </td>
         <td>
-            <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+            <a href="<?= $this->url('curriculosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
                 <?= $this->escapeHtml($post->getTitle()); ?>
             </a> 
         </td>
         <td><?= $this->escapeHtml($post->getDateCreated()); ?></td>        
         <td><?php echo $this->translate($this->escapeHtml($postManager->getPostStatusAsString($post))); ?></td>
         <td>
-            <a class="btn btn-info" href="<?= $this->url('empregosposts', 
+            <a class="btn btn-info" href="<?= $this->url('curriculosposts', 
                     ['action'=>'edit', 'id'=>$post->getId()]); ?>">
                 <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Edit'); ?>
             </a>
             
-            <a class="btn btn-danger" href="<?= $this->url('empregosposts',
+            <a class="btn btn-danger" href="<?= $this->url('curriculosposts',
                     ['action'=>'delete', 'id'=>$post->getId()]); ?>" onclick="return confirm('Do you realy want to delete the record;')">
                 <span class="glyphicon glyphicon-remove"></span> <?php echo $this->translate('Delete'); ?>
             </a>
@@ -87,4 +87,4 @@ $this->pageBreadcrumbs()->setItems([
 
   <?= $this->paginationControl($this->posts,
             'Sliding',
-            'paginator.phtml',['route'=>'empregosadminexpired']); ?>
+            'paginator.phtml',['route'=>'curriculosadminexpired']); ?>

@@ -4,7 +4,7 @@ namespace Curriculos\Controller\Factory;
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
 use Curriculos\Service\AutoManager;
-use Curriculos\Controller\EmpregosController;
+use Curriculos\Controller\CurriculosController;
 
 
 

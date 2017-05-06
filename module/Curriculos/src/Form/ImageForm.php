@@ -1,5 +1,5 @@
 <?php
-namespace Empregos\Form;
+namespace Curriculos\Form;
 
 use Zend\Form\Form;
 use Zend\InputFilter\InputFilter;
@@ -87,7 +87,7 @@ class ImageForm extends Form
                     [
                         'name' => 'FileRenameUpload',
                         'options' => [  
-                            'target'=>'./public/files/empregos/'.$postId,
+                            'target'=>'./public/files/curriculos/'.$postId,
                             'useUploadName'=>true,
                             'useUploadExtension'=>true,
                             'overwrite'=>true,

@@ -139,12 +139,12 @@ class CurriculosController extends AbstractActionController
                 {
              
                     // Redirect the user to "admin" page.
-                    return $this->redirect()->toRoute('empregosposts', ['action'=>'admin']);  
+                    return $this->redirect()->toRoute('curriculosposts', ['action'=>'admin']);  
                 }else
                 {
              
                 // Redirect the user to "admin" page.
-                return $this->redirect()->toRoute('empregosposts', ['action'=>'myadmin']);
+                return $this->redirect()->toRoute('curriculosposts', ['action'=>'myadmin']);
              
                 }
             }
@@ -380,7 +380,7 @@ class CurriculosController extends AbstractActionController
 
         }
         
-        return $this->redirect()->toRoute('empregosposts', ['action'=>'adminexpired']);        
+        return $this->redirect()->toRoute('curriculosposts', ['action'=>'adminexpired']);        
     }
     
     
@@ -446,12 +446,12 @@ class CurriculosController extends AbstractActionController
                 {
              
                     // Redirect the user to "admin" page.
-                    return $this->redirect()->toRoute('empregosposts', ['action'=>'admin']);  
+                    return $this->redirect()->toRoute('curriculosposts', ['action'=>'admin']);  
                 }else
                 {
              
                 // Redirect the user to "admin" page.
-                return $this->redirect()->toRoute('empregosposts', ['action'=>'myadmin']);
+                return $this->redirect()->toRoute('curriculosposts', ['action'=>'myadmin']);
              
                 }
                 
@@ -639,7 +639,7 @@ class CurriculosController extends AbstractActionController
                 
             
                 $httpHost = isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'localhost';
-                $adURL = 'http://' . $httpHost . '/empregosposts/view/' . $postId;
+                $adURL = 'http://' . $httpHost . '/curriculosposts/view/' . $postId;
                 
                 $post = $this->entityManager->getRepository(Curriculos::class)
                 ->findOneById($postId);
@@ -695,76 +695,6 @@ class CurriculosController extends AbstractActionController
 }
     
 
-     /**
-     * This action displays the "View Post" page allowing to see the post title
-     * and content. The page also contains a form allowing
-     * to add a comment to post. 
-     */
-    public function seemessagesAction() 
-    {   
-        
-        $page = $this->params()->fromQuery('page', 1);
-        $postId = (int)$this->params()->fromRoute('id', -1);
-        
-        // Validate input parameter
-        if ($postId<0) {
-            $this->getResponse()->setStatusCode(404);
-            return;
-        }
-        
-        $user = $this->entityManager->getRepository(\User\Entity\User::class)
-                        ->findOneByEmail($this->authService->getIdentity());
-    
-        if(isset($user))
-        {
-            $identidade=$user->getId();
-            $perfil=$user->getPerfil();
-        }else
-        {
-            $identidade=null;
-             $perfil=null;
-        }
-        
-              // Find the post by ID
-        $post = $this->entityManager->getRepository(Curriculos::class)
-                ->findOneById($postId);
-        
-        if ($post == null) {
-            $this->getResponse()->setStatusCode(404);
-            return;                        
-        }   
-        
-        if(($identidade!=$post->getIdentidade()) && ($perfil!=\User\Entity\User::PERFIL_ADMIN))
-        {
-            $this->getResponse()->setStatusCode(404);
-            return;     
-        }
-
-                
-        $msg = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Msgempregos u where u.iddoanuncioauto='".$postId."' order by u.id DESC");
-        
-        
-        
-        if ($msg == null) {
-            $this->getResponse()->setStatusCode(404);
-            return;                        
-        }        
-        
-    
-        $adapter = new DoctrineAdapter(new ORMPaginator($msg, false));
-        $paginator = new Paginator($adapter);
-        $paginator->setDefaultItemCountPerPage(10);        
-        $paginator->setCurrentPageNumber($page);
-        
-        
-        
-        // Render the view template.
-        return new ViewModel([
-            'posts' => $paginator,
-            'iddoanuncio'=>$postId,           
-        ]);
-    } 
-
   
     
     
@@ -797,12 +727,12 @@ class CurriculosController extends AbstractActionController
         {
 
             // Redirect the user to "admin" page.
-            return $this->redirect()->toRoute('empregosposts', ['action'=>'admin']);  
+            return $this->redirect()->toRoute('curriculosposts', ['action'=>'admin']);  
         }else
         {
 
         // Redirect the user to "admin" page.
-        return $this->redirect()->toRoute('empregosposts', ['action'=>'myadmin']);
+        return $this->redirect()->toRoute('curriculosposts', ['action'=>'myadmin']);
 
         }      
                 

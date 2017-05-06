@@ -2,7 +2,7 @@
 namespace Curriculos\Service;
 use Zend\ServiceManager\ServiceManager;
 use Zend\ServiceManager\ServiceManagerAwareInterface;
-use Curriculos\Entity\Empregos;
+use Curriculos\Entity\Curriculos;
 
 use Zend\Filter\StaticFilter;
 use User\Entity\User;
@@ -40,9 +40,9 @@ class AutoManager
     public function addNewPost($data) 
     {
         // Create new Post entity.
-        $post = new Empregos();
+        $post = new Curriculos();
         
-        $post->setId(uniqid('job_'));
+        $post->setId(uniqid('cv_'));
         $post->setTitle($data['title']);
         $post->setContent($data['content']);
        
@@ -247,7 +247,7 @@ class AutoManager
         
         $postid=$post->getId();
         
-        $this->rrmdir('./public/files/empregos/'.$postid.'/');
+        $this->rrmdir('./public/files/curriculos/'.$postid.'/');
         
         //apagar as mensagens
         
@@ -324,33 +324,7 @@ class AutoManager
         $this->entityManager->flush();
     }
     
-    
-        /**
-     * This method adds a new post.
-     */
-    public function addNewMsg($data,$postId) 
-    {
-        // Create new Post entity.
-        $post = new Msgempregos();
-        
-        
-        $post->setEmail($data['email']);
-        $post->setMensagem($data['mensagem']);
-        $post->setName($data['name']);
-        
-        $post->setIddoanuncioauto($postId);
-        
-        
-        
-        
-        // Add the entity to entity manager.
-        $this->entityManager->persist($post);
-        
-  
-        
-        // Apply changes to database.
-        $this->entityManager->flush();
-    }
+
     
           /**
      * This method allows to update data of a single post.

@@ -6,8 +6,8 @@ $this->headTitle('Posts');
 $this->mainMenu()->setActiveItemId('ads');
 
 $this->pageBreadcrumbs()->setItems([
-        $this->translate('Jobs')=>$this->url('empregos'), 
-        $this->translate('Search')=>$this->url('empregosposts', ['action'=>'pesquisa'])
+        $this->translate('Curricula')=>$this->url('curriculos'), 
+        $this->translate('Search')=>$this->url('curriculosposts', ['action'=>'pesquisa'])
             ]);
 
 
@@ -24,18 +24,18 @@ $this->pageBreadcrumbs()->setItems([
     </a>
     <?php } else { ?>
     
-    <a class="btn btn-primary" href="<?= $this->url('empregosposts',
+    <a class="btn btn-primary" href="<?= $this->url('curriculosposts',
                     ['action'=>'add']); ?>">
                 <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Add New Post'); ?>
     </a>
     
     <?php } ?>
-    <a class="btn btn-primary" href="<?= $this->url('empregosposts',
+    <a class="btn btn-primary" href="<?= $this->url('curriculosposts',
                     ['action'=>'myadmin']); ?>">
                 <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Manage my Posts'); ?>
     </a>
     
-            <a class="btn btn-primary" href="<?= $this->url('empregospesquisa',
+            <a class="btn btn-primary" href="<?= $this->url('curriculospesquisa',
                     ['action'=>'pesquisa']); ?>">
                 <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Search'); ?>
     </a>
@@ -98,7 +98,7 @@ $form->prepare();
                         <tr>
                 <td>
                                          <h3>
-        <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+        <a href="<?= $this->url('curriculosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
             <?= $this->escapeHtml($post->getTitle()); ?>
         </a>    
     </h3>   
@@ -202,7 +202,7 @@ $form->prepare();
   echo $this->paginationControl($this->posts,
             'Sliding',
             'paginators.phtml', 
-            ['route' => 'empregospaginator-search','search_by' => $search_by]);
+            ['route' => 'curriculospaginator-search','search_by' => $search_by]);
   
           //ERR_CACHE_MISS isto resolve
       header('Cache-Control: no cache');

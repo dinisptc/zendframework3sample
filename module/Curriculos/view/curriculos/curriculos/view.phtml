@@ -47,14 +47,14 @@ $this->placeholder('description')->append($des);
 $this->mainMenu()->setActiveItemId('ads');
 
 $this->pageBreadcrumbs()->setItems([
-            $this->translate('Jobs')=>$this->url('empregos')
+            $this->translate('Curricula')=>$this->url('curriculos')
             ]);
         
        
 ?>
 
 <a href="
-    <?= $this->url('empregos', ['action'=>'index']); ?>">
+    <?= $this->url('curriculos', ['action'=>'index']); ?>">
     &lt;&lt; <?php echo $this->translate('Back to list of posts'); ?>
 </a>
 
@@ -272,7 +272,7 @@ button.onclick = function() {
 <table>
 <tr>
     <td>
-    <div class="fb-share-button" data-href="http://www.thejoboard.com/empregosposts/view/<?php echo $post->getId(); ?>" data-layout="button_count"></div>
+    <div class="fb-share-button" data-href="http://www.thejoboard.com/curriculosposts/view/<?php echo $post->getId(); ?>" data-layout="button_count"></div>
     
 
     </td>
@@ -285,7 +285,7 @@ button.onclick = function() {
 </script>
 
 
-<script type="IN/Share" data-url="http://www.thejoboard.com/empregosposts/view/<?php echo $post->getId(); ?>" data-counter="right"></script>
+<script type="IN/Share" data-url="http://www.thejoboard.com/curriculosposts/view/<?php echo $post->getId(); ?>" data-counter="right"></script>
 
 
 
