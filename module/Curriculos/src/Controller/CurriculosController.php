@@ -1,11 +1,11 @@
 <?php
-namespace Empregos\Controller;
+namespace Curriculos\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Empregos\Form\AutoForm;
-use Empregos\Entity\Empregos;
-use Empregos\Entity\Msgempregos;
+use Curriculos\Form\AutoForm;
+use Curriculos\Entity\Curriculos;
+use Curriculos\Entity\MsgCurriculos;
 
 
 use User\Entity\User;
@@ -23,7 +23,7 @@ use Zend\Mime\Part as MimePart;
  * This is the Post controller class of the Blog application. 
  * This controller is used for managing posts (adding/editing/viewing/deleting).
  */
-class EmpregosController extends AbstractActionController 
+class CurriculosController extends AbstractActionController 
 {
     /**
      * Entity manager.

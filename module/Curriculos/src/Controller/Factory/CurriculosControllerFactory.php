@@ -1,10 +1,10 @@
 <?php
-namespace Empregos\Controller\Factory;
+namespace Curriculos\Controller\Factory;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
-use Empregos\Service\AutoManager;
-use Empregos\Controller\EmpregosController;
+use Curriculos\Service\AutoManager;
+use Curriculos\Controller\EmpregosController;
 
 
 
@@ -19,7 +19,7 @@ use User\Service\EmpresaImageManager;
  * This is the factory for PostController. Its purpose is to instantiate the
  * controller.
  */
-class EmpregosControllerFactory implements FactoryInterface
+class CurriculosControllerFactory implements FactoryInterface
 {
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
@@ -40,6 +40,6 @@ class EmpregosControllerFactory implements FactoryInterface
         $empresaImageManager = $container->get(EmpresaImageManager::class);
         
         // Instantiate the controller and inject dependencies
-        return new EmpregosController($entityManager, $postManager, $authenticationService, $mailtransport, $translator, $userManager, $userImageManager,$empresaImageManager);
+        return new CurriculosController($entityManager, $postManager, $authenticationService, $mailtransport, $translator, $userManager, $userImageManager,$empresaImageManager);
     }
 }
