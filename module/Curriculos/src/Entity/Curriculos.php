@@ -1,5 +1,5 @@
 <?php
-namespace Empregos\Entity;
+namespace Curriculos\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -13,7 +13,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * @ORM\Entity(repositoryClass="\Empregos\Repository\EmpregosRepository")
  * @ORM\Table(name="empregos")
  */
-class Empregos 
+class Curriculos 
 {
     
     // Post status constants.

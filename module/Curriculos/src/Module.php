@@ -5,7 +5,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Empregos;
+namespace Curriculos;
 
 class Module
 {
