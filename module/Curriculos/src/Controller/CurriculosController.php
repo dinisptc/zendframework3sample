@@ -90,7 +90,7 @@ class CurriculosController extends AbstractActionController
         {
             $identidade=$user->getId();
             $perfil=$user->getPerfil();
-             $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='". Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+             $dqlmemb = "SELECT COUNT(p) FROM Curriculos\Entity\Curriculos p where (p.status='". Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
             
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
