@@ -10,8 +10,8 @@ use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * This class represents a single post in a blog.
- * @ORM\Entity(repositoryClass="\Empregos\Repository\EmpregosRepository")
- * @ORM\Table(name="empregos")
+ * @ORM\Entity(repositoryClass="\Curriculos\Repository\EmpregosRepository")
+ * @ORM\Table(name="curriculos")
  */
 class Curriculos 
 {
