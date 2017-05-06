@@ -97,7 +97,12 @@ class NavManager
                         
                         'link' => $url('empregos')
                     ],
-      
+                    [
+                        'id' => 'curriculos',
+                        'label' => $traduzir->translate('Curricula'),
+                        
+                        'link' => $url('curriculos')
+                    ],
              
                     ],
         ];
