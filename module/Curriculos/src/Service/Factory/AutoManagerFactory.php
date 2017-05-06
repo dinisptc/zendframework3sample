@@ -1,10 +1,10 @@
 <?php
-namespace Empregos\Service\Factory;
+namespace Curriculos\Service\Factory;
 
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
-use Empregos\Service\AutoManager;
+use Curriculos\Service\AutoManager;
 
 /**
  * This is the factory for PostManager. Its purpose is to instantiate the

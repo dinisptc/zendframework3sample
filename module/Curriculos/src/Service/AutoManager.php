@@ -1,9 +1,9 @@
 <?php
-namespace Empregos\Service;
+namespace Curriculos\Service;
 use Zend\ServiceManager\ServiceManager;
 use Zend\ServiceManager\ServiceManagerAwareInterface;
-use Empregos\Entity\Empregos;
-use Empregos\Entity\Msgempregos;
+use Curriculos\Entity\Empregos;
+
 use Zend\Filter\StaticFilter;
 use User\Entity\User;
 

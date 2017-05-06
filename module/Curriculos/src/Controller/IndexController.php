@@ -1,14 +1,14 @@
 <?php
-namespace Empregos\Controller;
+namespace Curriculos\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Empregos\Service\MailSender;
-use Empregos\Entity\Empregos;
+use Curriculos\Service\MailSender;
+use Curriculos\Entity\Empregos;
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator as DoctrineAdapter;
 use Doctrine\ORM\Tools\Pagination\Paginator as ORMPaginator;
 use Zend\Paginator\Paginator;
-use Empregos\Form\SearchForm;
+use Curriculos\Form\SearchForm;
 
 /**
  * This is the main controller class of the Blog application. The 

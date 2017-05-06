@@ -2,7 +2,7 @@
 /**
  * A service model class encapsulating the functionality for image management.
  */
-namespace Empregos\Service;
+namespace Curriculos\Service;
 
 /**
  * The image manager service. Responsible for getting the list of uploaded

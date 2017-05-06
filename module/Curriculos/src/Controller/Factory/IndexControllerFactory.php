@@ -1,12 +1,12 @@
 <?php
-namespace Empregos\Controller\Factory;
+namespace Curriculos\Controller\Factory;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
 //use Empregos\Service\ImageManager;
 use User\Service\EmpresaImageManager;
-use Empregos\Service\AutoManager;
-use Empregos\Controller\IndexController;
+use Curriculos\Service\AutoManager;
+use Curriculos\Controller\IndexController;
 
 /**
  * This is the factory for IndexController. Its purpose is to instantiate the
