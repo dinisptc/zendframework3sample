@@ -61,13 +61,13 @@ class AutoManager
          {
             //$post->setStatus(Auto::STATUS_APROVAR);
              
-             if($data['status']==Empregos::STATUS_DRAFT)
+             if($data['status']==Curriculos::STATUS_DRAFT)
              {
-                $post->setStatus(Empregos::STATUS_DRAFT);
+                $post->setStatus(Curriculos::STATUS_DRAFT);
                  
              }else
              {
-                $post->setStatus(Empregos::STATUS_APROVAR);
+                $post->setStatus(Curriculos::STATUS_APROVAR);
              }
              
          }
@@ -101,29 +101,29 @@ class AutoManager
         {
              
              $post->setStatus($data['status']);  
-              if($data['status']==Empregos::STATUS_PUBLISHED)
+              if($data['status']==Curriculos::STATUS_PUBLISHED)
              {                             
                 $currentDate = date('Y-m-d H:i:s');                
                 $post->setDateCreated($currentDate);
              } 
              
-             if($data['status']==Empregos::STATUS_APROVAR)
+             if($data['status']==Curriculos::STATUS_APROVAR)
              {                             
                 $currentDate = date('Y-m-d H:i:s');                
                 $post->setDateCreated($currentDate);
              }
          }else
          {
-             if($data['status']==Empregos::STATUS_DRAFT)
+             if($data['status']==Curriculos::STATUS_DRAFT)
              {
-                $post->setStatus(Empregos::STATUS_DRAFT);
+                $post->setStatus(Curriculos::STATUS_DRAFT);
                  
-             }elseif($data['status']==Empregos::STATUS_EXPIRED)
+             }elseif($data['status']==Curriculos::STATUS_EXPIRED)
              {
-                $post->setStatus(Empregos::STATUS_EXPIRED);
+                $post->setStatus(Curriculos::STATUS_EXPIRED);
                  
              }else{
-                $post->setStatus(Empregos::STATUS_APROVAR);
+                $post->setStatus(Curriculos::STATUS_APROVAR);
                 $currentDate = date('Y-m-d H:i:s');                
                 $post->setDateCreated($currentDate);
              }
@@ -175,10 +175,10 @@ class AutoManager
     public function getPostStatusAsString($post) 
     {
         switch ($post->getStatus()) {
-            case Empregos::STATUS_DRAFT: return _('Draft');
-            case Empregos::STATUS_PUBLISHED: return _('Published');
-            case Empregos::STATUS_APROVAR: return _('Pending Approval');
-            case Empregos::STATUS_EXPIRED: return _('Expired');
+            case Curriculos::STATUS_DRAFT: return _('Draft');
+            case Curriculos::STATUS_PUBLISHED: return _('Published');
+            case Curriculos::STATUS_APROVAR: return _('Pending Approval');
+            case Curriculos::STATUS_EXPIRED: return _('Expired');
         }
         
         return 'Unknown';
@@ -389,7 +389,7 @@ class AutoManager
     public function updateAprovarPost($post) 
     {
 
-        $post->setStatus(Empregos::STATUS_APROVAR);
+        $post->setStatus(Curriculos::STATUS_APROVAR);
 
         // Apply changes to database.
         $this->entityManager->flush();
@@ -401,7 +401,7 @@ class AutoManager
     public function expirepost($post) 
     {
 
-        $post->setStatus(Empregos::STATUS_EXPIRED);
+        $post->setStatus(Curriculos::STATUS_EXPIRED);
 
         // Apply changes to database.
         $this->entityManager->flush();
