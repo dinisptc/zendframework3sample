@@ -1,0 +1,58 @@
+<?php
+$this->headTitle('Posts');
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Jobs')=>$this->url('empregos'),
+            $this->translate('Messages')=>$this->url('empregosposts',['action'=>'seemessages'])
+            ]);
+?>
+
+<h1><?php echo $this->translate('Posts'); ?></h1>
+<p>
+    <a class="btn btn-primary" href="<?= $this->url('empregosposts',
+                    ['action'=>'add']); ?>">
+                <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Add New Post'); ?>
+    </a>
+    <a class="btn btn-primary" href="<?= $this->url('empregosposts',
+                    ['action'=>'myadmin']); ?>">
+                <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('Manage my Posts'); ?>
+    </a>
+
+</p>
+
+
+<table class="table table-striped">
+
+   <tr>
+        <th>ID</th>
+        <th><?php echo $this->translate('Email'); ?></th>      
+        <th><?php echo $this->translate('Actions'); ?></th>        
+    </tr>
+    
+    <?php foreach ($posts as $post): ?>
+    
+    <tr>
+        <td><?= $this->escapeHtml($post->getId()); ?></td>
+        <td>
+           <a href="<?= $this->url('empregosviewmessage', ['action'=>'viewmessage', 'id'=>$post->getId(),'idanuncio'=>$iddoanuncio]); ?>">
+            <?= $this->escapeHtml($post->getEmail()); ?>
+           </a> 
+        </td>
+        <td>
+           <a class="btn btn-danger" href="<?= $this->url('empregosdeleteMessage', ['action'=>'deleteMessage', 'id'=>$post->getId(),'idanuncio'=>$iddoanuncio]); ?>">
+            <span class="glyphicon glyphicon-remove"></span> <?php echo $this->translate('Delete Message'); ?>
+           </a>         
+        </td>        
+    
+    </tr>
+        
+    <?php endforeach; ?>   
+    
+</table>
+
+  <?= $this->paginationControl($this->posts,
+            'Sliding',
+            'paginatorsee.phtml', 
+            ['route' => 'empregossee','id'=>$iddoanuncio]); ?>

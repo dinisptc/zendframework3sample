@@ -1,0 +1,65 @@
+<script type="text/javascript" src="/js/tinymce/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "textarea",
+    theme: "modern",
+    plugins: [
+        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        "searchreplace wordcount visualblocks visualchars code fullscreen",
+        "insertdatetime media nonbreaking save table contextmenu directionality",
+        "emoticons template paste textcolor colorpicker textpattern"
+    ],
+    toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+    toolbar2: "print preview media | forecolor backcolor emoticons",
+    image_advtab: true,
+    templates: [
+        {title: 'Test template 1', content: 'Test 1'},
+        {title: 'Test template 2', content: 'Test 2'}
+    ]
+});
+</script>
+
+<?php
+//$this->headTitle('View Post - ' . $post->getTitle());
+ 
+$title =$this->escapeHtml($post->getEmail());
+$this->headTitle($title);
+
+  
+
+
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Jobs')=>$this->url('empregos'),
+            $this->translate('Messages')=>$this->url('empregosposts',['action'=>'seemessages','id'=>$post->getIddoanuncioauto()]),
+            $this->translate('View Messages')=>$this->url('empregosposts',['action'=>'viewmessage','id'=>$post->getId()])
+            ]);
+        
+       
+?>
+
+<a href="
+    <?= $this->url('empregosposts', ['action'=>'seemessages','id'=>$post->getIddoanuncioauto()]); ?>">
+    &lt;&lt; <?php echo $this->translate('Back to list of Messages'); ?>
+</a>
+
+<h1>
+    <?= $this->escapeHtml($post->getEmail()); ?>    
+</h1>
+
+
+<p>
+   <?= $this->escapeHtml($post->getName()); ?>    
+</p>
+<p>
+   <?= $this->escapeHtml($post->getId()); ?>    
+</p>
+
+<p>    
+    <?= $post->getMensagem(); ?>
+</p>
+
+
+

@@ -1,0 +1,65 @@
+<?php
+$this->headTitle('Image Gallery');
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Jobs')=>$this->url('empregos'),
+            $this->translate('Image Gallery') => $this->url('empregosimages')
+            ]);
+?>
+
+<h1> <?php echo $this->translate('Image Gallery'); ?></h1>
+
+<p>
+    
+    <?php echo $this->translate('This page displays the list of uploaded images.'); ?>
+</p>
+
+<p>
+    <a href="<?= $this->url('empregosimages', ['action'=>'upload','id'=>$postId]); ?>" 
+       class="btn btn-primary" role="button"><?php echo $this->translate('Upload More'); ?></a>
+</p>
+
+<hr/>
+
+<?php if(count($files)==0): ?>
+
+<p>
+    <i><?php echo $this->translate('There are no files to display.'); ?></i>
+</p>
+
+<?php else: ?>
+
+<div class="row">
+    <div class="col-sm-6 col-md-12">
+
+        <?php foreach($files as $file): ?>  
+
+        <div class="img-thumbnail">
+            
+            <img src="<?= $this->url('empregosimages', ['action'=>'file','id'=>$postId], 
+                    ['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
+            
+            <div class="caption">
+                <h3><?php echo $file; ?></h3>                    
+                <p>
+                    <a target="_blank" href="<?= $this->url('empregosimages',  
+                            ['action'=>'file','id'=>$postId], ['query'=>['name'=>$file]]); ?>" 
+                            class="btn btn-default" role="button"><?php echo $this->translate('Show in Natural Size'); ?></a>
+                </p>
+                <p>
+                    <a target="_blank" href="<?= $this->url('empregosimages',  
+                            ['action'=>'deletefile','id'=>$postId], ['query'=>['name'=>$file]]); ?>" 
+                            class="btn btn-default" role="button"><?php echo $this->translate('Delete File'); ?></a>
+                </p>
+            </div>
+        </div>
+
+        <?php endforeach; ?>
+    </div>
+</div>
+
+<hr/>
+
+<?php endif; ?>

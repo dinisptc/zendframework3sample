@@ -1,0 +1,100 @@
+<?php		
+$title = $this->translate('Contacts by email to inquire about thejoboard.com');
+$this->headTitle($title);
+
+
+
+$des = $this->translate('Please, Contact me trough the form i will reply in due time, thanks');
+     
+   
+$this->placeholder('description')->append($des);
+
+?>
+
+<?php
+
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+            $this->translate('Jobs')=>$this->url('empregos'),
+            $this->translate('Contacts')=>$this->url('contactos')
+            ]);
+
+$form->get('name')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('Enter your name')
+    ]);
+$form->get('email')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('Email address'),
+    'required' => true,
+    'autofocus' => true
+    ]);
+
+$form->get('mensagem')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>$this->translate('Type Message here'),
+    'rows'=>6
+    ]);
+
+$form->get('submit')->setAttributes(['class'=>'btn btn-primary']);
+$form->prepare();
+
+?>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+        <div class="form-group">
+<?php 
+ echo $this->translate($this->formLabel($form->get('name')));
+    echo $this->formElement($form->get('name'));
+    echo $this->formElementErrors($form->get('name'));
+?></div>
+
+
+    
+    
+
+<div class="form-group">
+
+<?php 
+
+    echo $this->translate($this->formLabel($form->get('email'))); 
+    echo $this->formElement($form->get('email'));
+    echo $this->formElementErrors($form->get('email'));
+?>
+</div>
+<div class="form-group">
+<?php 
+    echo $this->translate($this->formLabel($form->get('mensagem'))); 
+    echo $this->formElement($form->get('mensagem'));
+    echo $this->formElementErrors($form->get('mensagem'));
+?></div>
+
+ <?php echo $this->translate($this->formElement($form->get('submit'))); ?>
+   <?= $this->form()->closeTag(); ?>
+<?php
+
+if($this->mensagemerro==1)
+{
+    echo $this->translate('Email sent successfully');
+    
+}elseif($this->mensagemerro==0)
+{
+    echo $this->translate('Email not sent');
+    
+}elseif($this->mensagemerro==-2)
+{
+    echo $this->translate('Email not sent - the user is unsubscribed - become professional to see the contact');
+    
+}
+
+
+
+
+?>
+    </div>    
+</div>  
+

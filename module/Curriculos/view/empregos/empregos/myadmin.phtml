@@ -1,0 +1,82 @@
+<?php
+$this->headTitle('Manage My Posts');
+
+$this->mainMenu()->setActiveItemId('ads');
+
+$this->pageBreadcrumbs()->setItems([
+             $this->translate('Jobs')=>$this->url('empregos'),
+             $this->translate('Manage My Posts')=>$this->url('empregosposts', ['action'=>'myadmin'])
+            ]);
+?>
+
+<h1><?php echo $this->translate('Manage Posts'); ?></h1>
+
+<p>
+    
+    
+    
+    
+
+    
+        <?php 
+    if($contaparamember>=1 && $perfil== User\Entity\User::PERFIL_MEMBER){
+    ?>
+    <a class="btn btn-primary" href="<?= $this->url('application',
+                    ['action'=>'settings']); ?>">
+                <span class="glyphicon glyphicon-plus"></span> <?php echo $this->translate('To place more ads go to Settings and become PRO'); ?>
+    </a>
+    <?php } else { ?>
+    
+        <a class="btn btn-default" href="
+            <?= $this->url('empregosposts', ['action'=>'add']); ?>">
+            <?php echo $this->translate('New Post'); ?>
+
+        </a>
+    
+    <?php } ?>
+</p>
+
+<table class="table table-striped">
+
+   <tr>
+        <th>ID</th>
+        <th><?php echo $this->translate('Post Title'); ?></th>
+        <th><?php echo $this->translate('Date Created'); ?></th>
+        <th><?php echo $this->translate('Status'); ?></th>        
+        <th><?php echo $this->translate('Actions'); ?></th>        
+    </tr>
+    
+    <?php foreach ($posts as $post): ?>
+    
+    <tr>
+        <td><?= $this->escapeHtml($post->getId()); ?></td>
+        <td>
+            <a href="<?= $this->url('empregosposts', ['action'=>'view', 'id'=>$post->getId()]); ?>">
+                <?= $this->escapeHtml($post->getTitle()); ?>
+            </a> 
+        </td>
+        <td><?= $this->escapeHtml($post->getDateCreated()); ?></td>        
+        <td><?php echo $this->translate($this->escapeHtml($postManager->getPostStatusAsString($post))); ?></td>
+        <td>
+            <a class="btn btn-info" href="<?= $this->url('empregosposts', 
+                    ['action'=>'edit', 'id'=>$post->getId()]); ?>">
+                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Edit'); ?>
+            </a>
+        
+         
+            <a class="btn btn-danger" href="<?= $this->url('empregosposts',
+                    ['action'=>'delete', 'id'=>$post->getId()]); ?>" onclick="return confirm('Do you realy want to delete the record;')">
+                <span class="glyphicon glyphicon-remove"></span> <?php echo $this->translate('Delete'); ?>
+            </a>
+            
+            
+        </td>    
+    </tr>
+        
+    <?php endforeach; ?>   
+    
+</table>
+
+ <?= $this->paginationControl($this->posts,
+            'Sliding',
+            'paginator.phtml',['route'=>'empregosmyadmin']); ?>
