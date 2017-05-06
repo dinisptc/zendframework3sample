@@ -166,7 +166,7 @@ class CurriculosController extends AbstractActionController
         
 
         
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Curriculos\Entity\Curriculos u order by u.dateCreated DESC");
         
         $adapter = new DoctrineAdapter(new ORMPaginator($posts, false));
         $paginator = new Paginator($adapter);
@@ -198,7 +198,7 @@ class CurriculosController extends AbstractActionController
         $page = $this->params()->fromQuery('page', 1);
         
         
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.identidade='".$identidade."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Curriculos\Entity\Curriculos u where u.identidade='".$identidade."' order by u.dateCreated DESC");
         
         $adapter = new DoctrineAdapter(new ORMPaginator($posts, false));
         $paginator = new Paginator($adapter);
@@ -216,7 +216,7 @@ class CurriculosController extends AbstractActionController
         
             
             
-            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+            $dqlmemb = "SELECT COUNT(p) FROM Curriculos\Entity\Curriculos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
             
@@ -246,7 +246,7 @@ class CurriculosController extends AbstractActionController
         
 
         
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Curriculos::STATUS_APROVAR."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Curriculos\Entity\Curriculos u where u.status='".Curriculos::STATUS_APROVAR."' order by u.dateCreated DESC");
         
    
         $adapter = new DoctrineAdapter(new ORMPaginator($posts, false));
@@ -273,7 +273,7 @@ class CurriculosController extends AbstractActionController
         $page = $this->params()->fromQuery('page', 1);
               
         //get de todos published
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Curriculos::STATUS_PUBLISHED."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Curriculos\Entity\Curriculos u where u.status='".Curriculos::STATUS_PUBLISHED."' order by u.dateCreated DESC");
         $posts = $posts->getResult();
         
         
@@ -310,7 +310,7 @@ class CurriculosController extends AbstractActionController
         }
         
         
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Curriculos::STATUS_EXPIRED."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Curriculos\Entity\Curriculos u where u.status='".Curriculos::STATUS_EXPIRED."' order by u.dateCreated DESC");
       
         
         $adapter = new DoctrineAdapter(new ORMPaginator($posts, false));
@@ -336,7 +336,7 @@ class CurriculosController extends AbstractActionController
         $page = $this->params()->fromQuery('page', 1);
               
         //get de todos published
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Curriculos::STATUS_EXPIRED."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Curriculos\Entity\Curriculos u where u.status='".Curriculos::STATUS_EXPIRED."' order by u.dateCreated DESC");
         $posts = $posts->getResult();
         
         

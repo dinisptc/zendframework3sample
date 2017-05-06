@@ -65,7 +65,7 @@ class IndexController extends AbstractActionController
         $page = $this->params()->fromQuery('page', 1);
        
            
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status=2 order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Curriculos\Entity\Curriculos u where u.status=2 order by u.dateCreated DESC");
             
 
         
@@ -86,13 +86,13 @@ class IndexController extends AbstractActionController
         {
             $identidade=$user->getId();
             $perfil=$user->getPerfil();
-            $dql = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Curriculos::STATUS_EXPIRED."' and p.identidade='".$identidade."'";
+            $dql = "SELECT COUNT(p) FROM Curriculos\Entity\Curriculos p where p.status='".Curriculos::STATUS_EXPIRED."' and p.identidade='".$identidade."'";
             $q = $this->entityManager->createQuery($dql);
             $contaexpirados = $q->getSingleScalarResult();
             
             
           //  $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_PUBLISHED."' and p.identidade='".$identidade."'";
-              $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+              $dqlmemb = "SELECT COUNT(p) FROM Curriculos\Entity\Curriculos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
             
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
@@ -165,7 +165,7 @@ class IndexController extends AbstractActionController
              if(empty($formdata['search'])) { $formdata['search']=''; }
   
                      
-                $posts = $entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u WHERE "                                   
+                $posts = $entityManager->createQuery("SELECT u FROM Curriculos\Entity\Curriculos u WHERE "                                   
                 . "(u.title LIKE '%".$formdata['search']."%'"
                 . "OR u.content LIKE '%".$formdata['search']."%')"
                 . "AND u.status='".Curriculos::STATUS_PUBLISHED."'"
@@ -197,7 +197,7 @@ class IndexController extends AbstractActionController
             $perfil=$user->getPerfil();
             
             //  $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_PUBLISHED."' and p.identidade='".$identidade."'";
-            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+            $dqlmemb = "SELECT COUNT(p) FROM Curriculos\Entity\Curriculos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
             
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();

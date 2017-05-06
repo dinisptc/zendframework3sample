@@ -1,8 +1,8 @@
 <?php
-namespace Empregos\Repository;
+namespace Curriculos\Repository;
 
 use Doctrine\ORM\EntityRepository;
-use Empregos\Entity\Empregos;
+use Curriculos\Entity\Curriculos;
 
 /**
  * This is the custom repository class for Post entity.

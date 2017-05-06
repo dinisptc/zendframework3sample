@@ -1,10 +1,10 @@
 <?php
 
-namespace Empregos\Form;
+namespace Curriculos\Form;
 
 use Zend\Form\Form;
 use Zend\InputFilter\InputFilter;
-use Empregos\Entity\Empregos;
+use Curriculos\Entity\Curriculos;
 
 /**
  * This form is used to collect post data.
