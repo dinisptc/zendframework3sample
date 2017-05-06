@@ -39,6 +39,7 @@ return [
     'Application',
     'User',
     'Empregos',
+    'Curriculos'
 
     
 ];

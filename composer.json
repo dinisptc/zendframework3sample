@@ -41,15 +41,8 @@
         "psr-4": {
             "Application\\": "module/Application/src/",
             "User\\": "module/User/src/",       
-            "Auto\\": "module/Auto/src/",
-            "Motas\\": "module/Motas/src/",
-            "Computadores\\": "module/Computadores/src/",
-            "Telemoveis\\": "module/Telemoveis/src/",
-            "Imoveis\\": "module/Imoveis/src/",
             "Empregos\\": "module/Empregos/src/",
-            "Servicos\\": "module/Servicos/src/",
-            "Agricultura\\": "module/Agricultura/src/",
-            "Coisas\\": "module/Coisas/src/"
+            "Curriculos\\": "module/Curriculos/src/"
         }
     },
     "autoload-dev": {
