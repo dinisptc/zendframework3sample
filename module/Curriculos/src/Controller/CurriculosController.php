@@ -90,7 +90,7 @@ class CurriculosController extends AbstractActionController
         {
             $identidade=$user->getId();
             $perfil=$user->getPerfil();
-             $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Empregos::STATUS_PUBLISHED."' or p.status='".Empregos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+             $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='". Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
             
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
@@ -216,7 +216,7 @@ class CurriculosController extends AbstractActionController
         
             
             
-            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Empregos::STATUS_PUBLISHED."' or p.status='".Empregos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
             
@@ -246,7 +246,7 @@ class CurriculosController extends AbstractActionController
         
 
         
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Empregos::STATUS_APROVAR."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Curriculos::STATUS_APROVAR."' order by u.dateCreated DESC");
         
    
         $adapter = new DoctrineAdapter(new ORMPaginator($posts, false));
@@ -273,7 +273,7 @@ class CurriculosController extends AbstractActionController
         $page = $this->params()->fromQuery('page', 1);
               
         //get de todos published
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Empregos::STATUS_PUBLISHED."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Curriculos::STATUS_PUBLISHED."' order by u.dateCreated DESC");
         $posts = $posts->getResult();
         
         
@@ -310,7 +310,7 @@ class CurriculosController extends AbstractActionController
         }
         
         
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Empregos::STATUS_EXPIRED."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Curriculos::STATUS_EXPIRED."' order by u.dateCreated DESC");
       
         
         $adapter = new DoctrineAdapter(new ORMPaginator($posts, false));
@@ -336,7 +336,7 @@ class CurriculosController extends AbstractActionController
         $page = $this->params()->fromQuery('page', 1);
               
         //get de todos published
-        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Empregos::STATUS_EXPIRED."' order by u.dateCreated DESC");
+        $posts = $this->entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u where u.status='".Curriculos::STATUS_EXPIRED."' order by u.dateCreated DESC");
         $posts = $posts->getResult();
         
         
@@ -417,7 +417,7 @@ class CurriculosController extends AbstractActionController
         }
         
         // Find the existing post in the database.
-        $post = $this->entityManager->getRepository(Empregos::class)
+        $post = $this->entityManager->getRepository(Curriculos::class)
                 ->findOneById($postId);     
         
         if ($post == null) {
@@ -492,7 +492,7 @@ class CurriculosController extends AbstractActionController
 
         
         // Find the post by ID
-        $post = $this->entityManager->getRepository(Empregos::class)
+        $post = $this->entityManager->getRepository(Curriculos::class)
                 ->findOneById($postId);
         
 
@@ -502,7 +502,7 @@ class CurriculosController extends AbstractActionController
             return;                        
         }        
         
-        if($post->getStatus()== Empregos::STATUS_APROVAR || $post->getStatus()== Empregos::STATUS_DRAFT)
+        if($post->getStatus()== Curriculos::STATUS_APROVAR || $post->getStatus()== Curriculos::STATUS_DRAFT)
         {
                  $user = $this->entityManager->getRepository(User::class)
                         ->findOneByEmail($this->authService->getIdentity());
@@ -641,7 +641,7 @@ class CurriculosController extends AbstractActionController
                 $httpHost = isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'localhost';
                 $adURL = 'http://' . $httpHost . '/empregosposts/view/' . $postId;
                 
-                $post = $this->entityManager->getRepository(Empregos::class)
+                $post = $this->entityManager->getRepository(Curriculos::class)
                 ->findOneById($postId);
                 
                 $user = $this->entityManager->getRepository(User::class)
@@ -726,7 +726,7 @@ class CurriculosController extends AbstractActionController
         }
         
               // Find the post by ID
-        $post = $this->entityManager->getRepository(Empregos::class)
+        $post = $this->entityManager->getRepository(Curriculos::class)
                 ->findOneById($postId);
         
         if ($post == null) {
@@ -765,86 +765,7 @@ class CurriculosController extends AbstractActionController
         ]);
     } 
 
-  /**
-     * This action displays the "View Post" page allowing to see the post title
-     * and content. The page also contains a form allowing
-     * to add a comment to post. 
-     */
-    public function viewmessageAction() 
-    {       
-        $postId = (int)$this->params()->fromRoute('id', -1);
-        $anuncioId = (int)$this->params()->fromRoute('idanuncio', -1);
-        
-        
-        // Validate input parameter
-        if (($postId<0)||($anuncioId<0)) {
-            $this->getResponse()->setStatusCode(404);
-            return;
-        }
-        
-        
-        
-        $user = $this->entityManager->getRepository(\User\Entity\User::class)
-                        ->findOneByEmail($this->authService->getIdentity());
-        
-        if ($user == null) {
-            $this->getResponse()->setStatusCode(404);
-            return;                        
-        } 
-    
-        if(isset($user))
-        {
-            $identidade=$user->getId();
-            $perfil=$user->getPerfil();
-        }else
-        {
-            $identidade=null;
-             $perfil=null;
-        }
-        
   
-        
-        // Find the post by ID
-        $post = $this->entityManager->getRepository(Empregos::class)
-                ->findOneById($anuncioId);
-        
-        
-        if ($post == null) {
-            $this->getResponse()->setStatusCode(404);
-            return;                        
-        }     
-        
-        if(($identidade!=$post->getIdentidade()) && ($perfil!=\User\Entity\User::PERFIL_ADMIN))
-        {
-            $this->getResponse()->setStatusCode(404);
-            return;     
-        }
-
-        
-                
-        //$msg = $this->entityManager->createQuery("SELECT u FROM Motas\Entity\Msgmotas u where u.iddoanuncioauto='".$postId."' order by u.id DESC");
-        
-           // Find the post by ID
-        $msg = $this->entityManager->getRepository(Msgempregos::class)
-                ->findOneById($postId);
-        
-        
-        if ($msg == null) {
-            $this->getResponse()->setStatusCode(404);
-            return;                        
-        }        
-        
-    
-          
-       
-        // Render the view template.
-        return new ViewModel([
-            'post' => $msg, 
-           
-        
-        ]);
-    }
-    
     
     
         /**
@@ -862,7 +783,7 @@ class CurriculosController extends AbstractActionController
             return;
         }
         
-        $post = $this->entityManager->getRepository(Empregos::class)
+        $post = $this->entityManager->getRepository(Curriculos::class)
                 ->findOneById($postId);        
         if ($post == null) {
             $this->getResponse()->setStatusCode(404);
@@ -888,42 +809,5 @@ class CurriculosController extends AbstractActionController
     }
     
     
-    
-    
-    
-            /**
-     * This "delete" action deletes the given post.
-     */
-    public function deleteMessageAction()
-    {
-        
-        $postId = (int)$this->params()->fromRoute('idanuncio', -1);
-        $msgId = (int)$this->params()->fromRoute('id', -1);
-        
-        // Validate input parameter
-        if (($msgId<0) || ($postId<0)) {
-            $this->getResponse()->setStatusCode(404);
-            return;
-        }
-        
-        $post = $this->entityManager->getRepository(Msgempregos::class)
-                ->findOneById($msgId); 
-        
-        
-         if ($post == null) {
-            $this->getResponse()->setStatusCode(404);
-            return;                        
-        }        
-        
-        $this->autoManager->removeMessagePost($post);
-        
-        
-      
-
-            // Redirect the user to "admin" page.
-            return $this->redirect()->toRoute('empregosposts', ['action'=>'seemessages','id'=>$postId]);  
-          
-                
-    }
 
 }

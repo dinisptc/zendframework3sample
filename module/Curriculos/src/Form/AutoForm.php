@@ -93,10 +93,10 @@ class AutoForm extends Form
             'options' => [
                 'label' => 'Status',
                 'value_options' => [
-                    Empregos::STATUS_APROVAR => _('Pending Approval'),
-                    Empregos::STATUS_PUBLISHED => _('Published'),
-                    Empregos::STATUS_DRAFT => _('Draft'),
-                    Empregos::STATUS_EXPIRED => _('Expired'),
+                    Curriculos::STATUS_APROVAR => _('Pending Approval'),
+                    Curriculos::STATUS_PUBLISHED => _('Published'),
+                    Curriculos::STATUS_DRAFT => _('Draft'),
+                    Curriculos::STATUS_EXPIRED => _('Expired'),
                 ]
             ],
         ]);
@@ -113,8 +113,8 @@ class AutoForm extends Form
             'options' => [
                 'label' => 'Status',
                 'value_options' => [
-                    Empregos::STATUS_APROVAR => _('Pending Approval'),
-                    Empregos::STATUS_DRAFT => _('Draft'),
+                    Curriculos::STATUS_APROVAR => _('Pending Approval'),
+                    Curriculos::STATUS_DRAFT => _('Draft'),
                 ]
             ],
         ]); 

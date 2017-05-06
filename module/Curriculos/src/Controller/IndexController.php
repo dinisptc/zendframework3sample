@@ -4,7 +4,7 @@ namespace Curriculos\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Curriculos\Service\MailSender;
-use Curriculos\Entity\Empregos;
+use Curriculos\Entity\Curriculos;
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator as DoctrineAdapter;
 use Doctrine\ORM\Tools\Pagination\Paginator as ORMPaginator;
 use Zend\Paginator\Paginator;
@@ -86,13 +86,13 @@ class IndexController extends AbstractActionController
         {
             $identidade=$user->getId();
             $perfil=$user->getPerfil();
-            $dql = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_EXPIRED."' and p.identidade='".$identidade."'";
+            $dql = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Curriculos::STATUS_EXPIRED."' and p.identidade='".$identidade."'";
             $q = $this->entityManager->createQuery($dql);
             $contaexpirados = $q->getSingleScalarResult();
             
             
           //  $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_PUBLISHED."' and p.identidade='".$identidade."'";
-              $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Empregos::STATUS_PUBLISHED."' or p.status='".Empregos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+              $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
             
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
@@ -168,7 +168,7 @@ class IndexController extends AbstractActionController
                 $posts = $entityManager->createQuery("SELECT u FROM Empregos\Entity\Empregos u WHERE "                                   
                 . "(u.title LIKE '%".$formdata['search']."%'"
                 . "OR u.content LIKE '%".$formdata['search']."%')"
-                . "AND u.status='".Empregos::STATUS_PUBLISHED."'"
+                . "AND u.status='".Curriculos::STATUS_PUBLISHED."'"
                 . "order by u.dateCreated DESC");//->setHydrationMode(\Doctrine\ORM\AbstractQuery::HYDRATE_ARRAY); 
        
          }
@@ -197,7 +197,7 @@ class IndexController extends AbstractActionController
             $perfil=$user->getPerfil();
             
             //  $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.status='".Empregos::STATUS_PUBLISHED."' and p.identidade='".$identidade."'";
-            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Empregos::STATUS_PUBLISHED."' or p.status='".Empregos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
+            $dqlmemb = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where (p.status='".Curriculos::STATUS_PUBLISHED."' or p.status='".Curriculos::STATUS_APROVAR."') and p.identidade='".$identidade."'";
             
             $q1 = $this->entityManager->createQuery($dqlmemb);
             $contaparamember = $q1->getSingleScalarResult();
