@@ -81,7 +81,7 @@ class Curriculos
     
      /**
      * Returns ID of this post.
-     * @return integer
+     * @return string
      */
     public function getId() 
     {
@@ -90,7 +90,7 @@ class Curriculos
 
     /**
      * Sets ID of this post.
-     * @param int $id
+     * @param string $id
      */
     public function setId($id) 
     {
