@@ -110,9 +110,13 @@ button.onclick = function() {
   <?php echo $post->getContact(); ?>
 </div>
  
+<?php
+$filespdf = $pdfManager->getSavedFiles($post->getId());
+                    
+            foreach($filespdf as $pdf)
+            { 
 
-$files = $userImageManager->getSavedFiles($user->getId());
-
+?>
 
 <button id='botaocv' class="btn btn-success"><?php echo $this->translate('Show Full CV File'); ?></button>
 <script>
@@ -135,9 +139,11 @@ button1.onclick = function() {
     
     
     <a  href="<?= $this->url('curriculospdf', ['action'=>'file','id'=>$post->getId()], 
-                    ['query'=>['name'=>$file]]); ?>"><?php echo $file; ?></a>
+                    ['query'=>['name'=>$pdf]]); ?>"><?php echo $pdf; ?></a>
     
-</div>    
+</div> 
+
+            <?php } ?>
 </p>
    
 <hr>

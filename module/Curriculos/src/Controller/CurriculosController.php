@@ -57,10 +57,12 @@ class CurriculosController extends AbstractActionController
     
     private $empresaImageManager;
     
+    private $pdfManager;
+    
     /**
      * Constructor is used for injecting dependencies into the controller.
      */
-    public function __construct($entityManager, $postManager, $authService, $mailtransport,$translator,$userManager, $userImageManager, $empresaImageManager) 
+    public function __construct($entityManager, $postManager, $authService, $mailtransport,$translator,$userManager, $userImageManager, $empresaImageManager, $pdfManager) 
     {
         $this->entityManager = $entityManager;
         $this->autoManager = $postManager;
@@ -71,6 +73,8 @@ class CurriculosController extends AbstractActionController
         $this->userManager =$userManager;
         $this->userImageManager =$userImageManager;
         $this->empresaImageManager =$empresaImageManager;
+        
+        $this->pdfManager=$pdfManager;
         
     }
     
@@ -547,7 +551,7 @@ class CurriculosController extends AbstractActionController
             'userManager'=>$this->userManager,
             'userImageManager'=>$this->userImageManager,   
             'empresaImageManager'=>$this->empresaImageManager,
-      
+            'pdfManager'=>$this->pdfManager,
         ]);
     } 
     

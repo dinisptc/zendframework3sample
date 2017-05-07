@@ -32,6 +32,7 @@ class CurriculosControllerFactory implements FactoryInterface
             
         $mailtransport = $container->get('mail.transport');
                
+        $pdfManager = $container->get(PdfManager::class);
   
         
         $userManager = $container->get(UserManager::class);
@@ -40,6 +41,6 @@ class CurriculosControllerFactory implements FactoryInterface
         $empresaImageManager = $container->get(EmpresaImageManager::class);
         
         // Instantiate the controller and inject dependencies
-        return new CurriculosController($entityManager, $postManager, $authenticationService, $mailtransport, $translator, $userManager, $userImageManager,$empresaImageManager);
+        return new CurriculosController($entityManager, $postManager, $authenticationService, $mailtransport, $translator, $userManager, $userImageManager,$empresaImageManager,$pdfManager);
     }
 }
