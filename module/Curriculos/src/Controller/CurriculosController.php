@@ -556,7 +556,7 @@ class CurriculosController extends AbstractActionController
     {             
 
           // Get post ID.
-        $postId = (int)$this->params()->fromRoute('id', -1);
+        $postId = $this->params()->fromRoute('id', -1);
         
         // Validate input parameter
         if ($postId<0) {
