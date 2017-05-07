@@ -5,7 +5,7 @@ use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
 use Curriculos\Service\AutoManager;
 use Curriculos\Controller\CurriculosController;
-
+use Curriculos\Service\PdfManager;
 
 
 use User\Service\UserManager;

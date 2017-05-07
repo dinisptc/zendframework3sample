@@ -270,7 +270,7 @@ return [
      
             Service\AutoManager::class => Service\Factory\AutoManagerFactory::class,
             \Zend\I18n\Translator\TranslatorInterface::class => \Zend\I18n\Translator\TranslatorServiceFactory::class,
-            Service\ImageManager::class => InvokableFactory::class,
+            Service\PdfManager::class => InvokableFactory::class,
         ],
         'aliases' => [
      

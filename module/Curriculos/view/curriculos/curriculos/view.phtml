@@ -109,9 +109,37 @@ button.onclick = function() {
 <div id="newpost" style="display:none">
   <?php echo $post->getContact(); ?>
 </div>
-    
-</p>
+ 
 
+$files = $userImageManager->getSavedFiles($user->getId());
+
+
+<button id='botaocv' class="btn btn-success"><?php echo $this->translate('Show Full CV File'); ?></button>
+<script>
+  var button1 = document.getElementById('botaocv');
+
+button1.onclick = function() {
+    var div = document.getElementById('newcv');
+    if (div.style.display == 'none') {
+        div.style.display = 'block';
+    }
+    else {
+        div.style.display = 'none';
+    }
+};
+</script>
+
+
+
+<div id="newcv" style="display:none">
+    
+    
+    <a  href="<?= $this->url('curriculospdf', ['action'=>'file','id'=>$post->getId()], 
+                    ['query'=>['name'=>$file]]); ?>"><?php echo $file; ?></a>
+    
+</div>    
+</p>
+   
 <hr>
 <?php
 

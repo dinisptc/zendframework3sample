@@ -8,7 +8,7 @@ namespace Curriculos\Service;
  * The image manager service. Responsible for getting the list of uploaded
  * files and resizing the images.
  */
-class ImageManager 
+class PdfManager 
 {
     /**
      * The directory where we save image files.

@@ -3,7 +3,7 @@ namespace Curriculos\Controller\Factory;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
-use Curriculos\Service\ImageManager;
+use Curriculos\Service\PdfManager;
 use Curriculos\Controller\PdfController;
 use Curriculos\Service\AutoManager;
 /**
@@ -14,7 +14,7 @@ class PdfControllerFactory implements FactoryInterface
 {
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        $imageManager = $container->get(ImageManager::class);
+        $imageManager = $container->get(PdfManager::class);
         $entityManager = $container->get('doctrine.entitymanager.orm_default');
         $postManager = $container->get(AutoManager::class);
         // Instantiate the controller and inject dependencies
