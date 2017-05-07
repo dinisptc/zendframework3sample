@@ -58,6 +58,12 @@ $this->pageBreadcrumbs()->setItems([
         <td><?= $this->escapeHtml($post->getDateCreated()); ?></td>        
         <td><?php echo $this->translate($this->escapeHtml($postManager->getPostStatusAsString($post))); ?></td>
         <td>
+            
+            <a class="btn btn-info" href="<?= $this->url('curriculosposts', 
+                    ['action'=>'addcv', 'id'=>$post->getId()]); ?>">
+                <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('PDF CV'); ?>
+            </a>
+            
             <a class="btn btn-info" href="<?= $this->url('curriculosposts', 
                     ['action'=>'edit', 'id'=>$post->getId()]); ?>">
                 <span class="glyphicon glyphicon-pencil" ></span> <?php echo $this->translate('Edit'); ?>
