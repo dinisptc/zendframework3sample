@@ -1,15 +1,15 @@
 <?php
-$this->headTitle('Company Logo Image Gallery');
+$this->headTitle('CV Gallery');
 
 $this->mainMenu()->setActiveItemId('ads');
 
 $this->pageBreadcrumbs()->setItems([
             $this->translate('Users')=>$this->url('users'),
-            $this->translate('Company Logo Image Gallery') => $this->url('empresaimages')
+                $this->translate('CV Gallery') => $this->url('curriculospdf')
             ]);
 ?>
 
-<h1> <?php echo $this->translate('Company Logo Image Gallery'); ?></h1>
+<h1> <?php echo $this->translate('CV Gallery'); ?></h1>
 
 <p>
     
@@ -17,7 +17,7 @@ $this->pageBreadcrumbs()->setItems([
 </p>
 
 <p>
-    <a href="<?= $this->url('empresaimages', ['action'=>'upload','id'=>$postId]); ?>" 
+    <a href="<?= $this->url('curriculospdf', ['action'=>'upload','id'=>$postId]); ?>" 
        class="btn btn-primary" role="button"><?php echo $this->translate('Upload More'); ?></a>
 </p>
 
@@ -38,18 +38,18 @@ $this->pageBreadcrumbs()->setItems([
 
         <div class="img-thumbnail">
             
-            <img src="<?= $this->url('empresaimages', ['action'=>'file','id'=>$postId], 
-                    ['query'=>['name'=>$file, 'thumbnail'=>true]]); ?>">
+            <img src="<?= $this->url('curriculospdf', ['action'=>'file','id'=>$postId], 
+                    ['query'=>['name'=>$file]]); ?>">
             
             <div class="caption">
                 <h3><?php echo $file; ?></h3>                    
                 <p>
-                    <a target="_blank" href="<?= $this->url('empresaimages',  
+                    <a target="_blank" href="<?= $this->url('curriculospdf',  
                             ['action'=>'file','id'=>$postId], ['query'=>['name'=>$file]]); ?>" 
                             class="btn btn-default" role="button"><?php echo $this->translate('Show in Natural Size'); ?></a>
                 </p>
                 <p>
-                    <a href="<?= $this->url('empresaimages',  
+                    <a href="<?= $this->url('curriculospdf',  
                             ['action'=>'deletefile','id'=>$postId], ['query'=>['name'=>$file]]); ?>" 
                             class="btn btn-default" role="button"><?php echo $this->translate('Delete File'); ?></a>
                 </p>

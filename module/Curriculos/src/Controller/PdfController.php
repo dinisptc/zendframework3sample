@@ -134,13 +134,13 @@ class PdfController extends AbstractActionController
                 
                           
                 // Find the existing post in the database.
-                $post = $this->entityManager->getRepository(Empregos::class)
+                $post = $this->entityManager->getRepository(Curriculos::class)
                 ->findOneById($postId);
                 
                 
                 
                 //fazer update com aprovacao
-                  // Use post manager service update existing post.                
+                // Use post manager service update existing post.                
                 $this->autoManager->updateAprovarPost($post);
                 
                 // Redirect the user to "Image Gallery" page
@@ -174,7 +174,7 @@ class PdfController extends AbstractActionController
         $fileName = $this->params()->fromQuery('name', '');
                 
         // Check whether the user needs a thumbnail or a full-size image
-        $isThumbnail = (bool)$this->params()->fromQuery('thumbnail', false);
+//        $isThumbnail = (bool)$this->params()->fromQuery('thumbnail', false);
         
         // Validate input parameters
         if (empty($fileName) || strlen($fileName)>128) {
@@ -184,13 +184,13 @@ class PdfController extends AbstractActionController
         // Get path to image file
         $fileName = $this->imageManager->getImagePathByName($fileName,$postId);
                 
-        if($isThumbnail) {        
-            // Resize the image
-            $fileName = $this->imageManager->resizeImage($fileName);
-        }else{
-            
-            $fileName = $this->imageManager->watermainImage($fileName);                        
-        }
+//        if($isThumbnail) {        
+//            // Resize the image
+//            $fileName = $this->imageManager->resizeImage($fileName);
+//        }else{
+//            
+//            $fileName = $this->imageManager->watermainImage($fileName);                        
+//        }
         
         
         
@@ -219,10 +219,10 @@ class PdfController extends AbstractActionController
             return;
         }
         
-        if($isThumbnail) {
-            // Remove temporary thumbnail image file.
-            unlink($fileName);
-        }
+//        if($isThumbnail) {
+//            // Remove temporary thumbnail image file.
+//            unlink($fileName);
+//        }
         
         // Return Response to avoid default view rendering.
         return $this->getResponse();

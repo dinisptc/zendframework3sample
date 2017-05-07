@@ -72,14 +72,15 @@ class ImageForm extends Form
                 'required' => true,                           
                 'validators' => [
                     ['name'    => 'FileUploadFile'],
-                    ['name'    => 'FileIsImage'],                          
+                    //['name'    => 'FileIsPDF'],                          
                     [
-                        'name'    => 'FileImageSize',                        
-                        'options' => [                            
-                            'minWidth'  => 300,
-                            'minHeight' => 300,
-                            'maxWidth'  => 1000,
-                            'maxHeight' => 1000                            
+                        'name'    => 'FileSize',                        
+                        'options' => [  
+                              'max' => 2000000,
+//                            'minWidth'  => 300,
+//                            'minHeight' => 300,
+//                            'maxWidth'  => 1000,
+//                            'maxHeight' => 1000                            
                         ]
                     ],
                 ],
