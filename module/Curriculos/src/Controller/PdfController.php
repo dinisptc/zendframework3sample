@@ -84,6 +84,35 @@ class PdfController extends AbstractActionController
         // Create the form model
         $form = new ImageForm($postId);
         
+        
+        
+        
+        
+         $files = $this->imageManager->getSavedFiles($postId);
+        
+        
+        $conta=0;
+        foreach($files as $file)
+        {
+            $conta++;
+        }
+        if($conta>0){ 
+            
+        $mensagem=_('Only can upload one personal picture');
+                    // Render the page
+        return new ViewModel([
+            'form' => $form,
+            'message'=>$mensagem,
+        ]);
+            
+        }
+        
+        
+        
+        
+        
+        
+        
         // Check if user has submitted the form
         if($this->getRequest()->isPost()) {
             
@@ -115,13 +144,15 @@ class PdfController extends AbstractActionController
                 $this->autoManager->updateAprovarPost($post);
                 
                 // Redirect the user to "Image Gallery" page
-                return $this->redirect()->toRoute('empregosimages', ['action'=>'index', 'id'=>$postId]);
+                return $this->redirect()->toRoute('curriculospdf', ['action'=>'index', 'id'=>$postId]);
             }                        
         } 
         
         // Render the page
         return new ViewModel([
-            'form' => $form
+            'form' => $form,
+            'message'=>'',
+            
         ]);
     }
     
