@@ -43,7 +43,7 @@ class PdfController extends AbstractActionController
     public function indexAction() 
     {
         
-        $postId = (int)$this->params()->fromRoute('id', -1);
+        $postId = $this->params()->fromRoute('id', -1);
         
         // Validate input parameter
         if ($postId<0) {
@@ -72,7 +72,7 @@ class PdfController extends AbstractActionController
     {
         
                 
-        $postId = (int)$this->params()->fromRoute('id', -1);
+        $postId = $this->params()->fromRoute('id', -1);
         
         // Validate input parameter
         if ($postId<0) {
@@ -132,7 +132,7 @@ class PdfController extends AbstractActionController
     public function fileAction() 
     {
         
-        $postId = (int)$this->params()->fromRoute('id', -1);
+        $postId = $this->params()->fromRoute('id', -1);
         
         // Validate input parameter
         if ($postId<0) {
@@ -207,7 +207,7 @@ class PdfController extends AbstractActionController
     public function deletefileAction() 
     {
         
-        $postId = (int)$this->params()->fromRoute('id', -1);
+        $postId = $this->params()->fromRoute('id', -1);
         
         // Validate input parameter
         if ($postId<0) {

@@ -226,7 +226,7 @@ return [
         'factories' => [
             Controller\IndexController::class => Controller\Factory\IndexControllerFactory::class,      
             Controller\CurriculosController::class => Controller\Factory\CurriculosControllerFactory::class,
-           
+            Controller\PdfController::class => Controller\Factory\PdfControllerFactory::class,
         ],
     ],
         // The 'access_filter' key is used by the User module to restrict or permit
@@ -254,6 +254,13 @@ return [
                 ['actions' => ['seemessages'], 'allow' => 'p'],
                 ['actions' => ['admin','deletecomment','adminaprovar','adminexpired','apagarexpirados'], 'allow' => '@'],
             ],
+            
+            Controller\PdfController::class => [
+                // Allow anyone to visit "index" and "about" actions
+                ['actions' => ['file'], 'allow' => '*'],
+                ['actions' => ['index','upload'], 'allow' => 'm'],
+               
+            ],
  
             
         ]
@@ -263,7 +270,7 @@ return [
      
             Service\AutoManager::class => Service\Factory\AutoManagerFactory::class,
             \Zend\I18n\Translator\TranslatorInterface::class => \Zend\I18n\Translator\TranslatorServiceFactory::class,
-        
+            Service\ImageManager::class => InvokableFactory::class,
         ],
         'aliases' => [
      
