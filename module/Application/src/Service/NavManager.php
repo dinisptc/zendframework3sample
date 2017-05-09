@@ -99,7 +99,7 @@ class NavManager
                     ],
                     [
                         'id' => 'curriculos',
-                        'label' => $traduzir->translate('Curricula'),
+                        'label' => $traduzir->translate('CV Profiles'),
                         
                         'link' => $url('curriculos')
                     ],
@@ -167,6 +167,13 @@ class NavManager
                         'id' => 'empregospostsmanage',
                         'label' => $traduzir->translate('Manage Jobs Posts'),
                         'link' => $url('empregosposts', ['action'=>'admin'])
+                    ],
+                    
+                    
+                                        [
+                        'id' => 'curriculospostsmanage',
+                        'label' => $traduzir->translate('Manage CV Posts'),
+                        'link' => $url('curriculosposts', ['action'=>'admin'])
                     ],
       
                 ]

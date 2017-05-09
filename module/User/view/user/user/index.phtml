@@ -26,7 +26,8 @@ $this->pageBreadcrumbs()->setItems([
 
    <tr>
         <th>ID</th>
-        <th>ADS NUM</th>
+        <th>Jobnum</th>
+        <th>Cvnum</th>
         <th><?php echo $this->translate('E-mail'); ?></th>
         <th><?php echo $this->translate('Full Name'); ?></th>
         <th><?php echo $this->translate('Date Created'); ?></th>
@@ -39,19 +40,22 @@ $this->pageBreadcrumbs()->setItems([
     <?php          
     
         $conta=0; 
-        
+        $contacv=0;
 
         
         $dql = "SELECT COUNT(p) FROM Empregos\Entity\Empregos p where p.identidade='".$user->getId()."'";
         $q4 =$entitymanager->createQuery($dql);
         $conta = $conta + $q4->getSingleScalarResult();
 
-        
+        $dqlcv = "SELECT COUNT(p) FROM Curriculos\Entity\Curriculos p where p.identidade='".$user->getId()."'";
+        $q4cv =$entitymanager->createQuery($dqlcv);
+        $contacv = $contacv + $q4cv->getSingleScalarResult();
         
     ?>
     <tr>
         <td><?= $this->escapeHtml($user->getId()); ?></td>
         <td><?= $this->escapeHtml($conta); ?></td>
+        <td><?= $this->escapeHtml($contacv); ?></td>
         <td>
             <a href="<?= $this->url('users', ['action'=>'view', 'id'=>$user->getId()]); ?>">
                 <?= $this->escapeHtml($user->getEmail()); ?>
