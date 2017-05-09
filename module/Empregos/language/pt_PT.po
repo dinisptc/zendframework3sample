@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-29 14:17+0100\n"
-"PO-Revision-Date: 2017-04-29 14:18+0100\n"
+"POT-Creation-Date: 2017-05-09 15:33+0100\n"
+"PO-Revision-Date: 2017-05-09 15:33+0100\n"
 "Last-Translator: Diogo Melo <dmelo87@gmail.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: pt\n"
@@ -305,73 +305,73 @@ msgid "Back to list of posts"
 msgstr "Volta para a Lista de Artigos"
 
 #: ../view/empregos/empregos/view.phtml:68
-#: ../view/empregos/index/index.phtml:124
-#: ../view/empregos/index/pesquisa.phtml:161
+#: ../view/empregos/index/index.phtml:144
+#: ../view/empregos/index/pesquisa.phtml:185
 msgid "Published:"
 msgstr "Publicado:"
 
-#: ../view/empregos/empregos/view.phtml:78
+#: ../view/empregos/empregos/view.phtml:87
 msgid "Visits : "
 msgstr "Visitas :"
 
-#: ../view/empregos/empregos/view.phtml:83
+#: ../view/empregos/empregos/view.phtml:92
 msgid "Show Contact Link/Email"
 msgstr "Mostra Contacto Link/Email"
 
-#: ../view/empregos/empregos/view.phtml:124
-#: ../view/empregos/empregos/view.phtml:216
+#: ../view/empregos/empregos/view.phtml:133
+#: ../view/empregos/empregos/view.phtml:225
 msgid "E-mail:"
 msgstr "Email:"
 
-#: ../view/empregos/empregos/view.phtml:128
+#: ../view/empregos/empregos/view.phtml:137
 msgid "Full Name:"
 msgstr "O teu nome:"
 
-#: ../view/empregos/empregos/view.phtml:142
+#: ../view/empregos/empregos/view.phtml:151
 msgid "Photo:"
 msgstr "Foto:"
 
-#: ../view/empregos/empregos/view.phtml:169
+#: ../view/empregos/empregos/view.phtml:178
 msgid "View Company"
 msgstr "Ver Empresa"
 
-#: ../view/empregos/empregos/view.phtml:201
+#: ../view/empregos/empregos/view.phtml:210
 msgid "Company name:"
 msgstr "Nome da Empresa"
 
-#: ../view/empregos/empregos/view.phtml:206
+#: ../view/empregos/empregos/view.phtml:215
 msgid "Company description:"
 msgstr "Descrição da Empresa:"
 
-#: ../view/empregos/empregos/view.phtml:211
+#: ../view/empregos/empregos/view.phtml:220
 msgid "Company Address:"
 msgstr "Endereço Postal da Empresa:"
 
-#: ../view/empregos/empregos/view.phtml:221
+#: ../view/empregos/empregos/view.phtml:230
 msgid "WebSite:"
 msgstr "Site:"
 
-#: ../view/empregos/empregos/view.phtml:226
+#: ../view/empregos/empregos/view.phtml:235
 msgid "Facebook:"
 msgstr "Facebook:"
 
-#: ../view/empregos/empregos/view.phtml:231
+#: ../view/empregos/empregos/view.phtml:240
 msgid "Linkedin:"
 msgstr "Linkedin:"
 
-#: ../view/empregos/empregos/view.phtml:236
+#: ../view/empregos/empregos/view.phtml:245
 msgid "Twitter:"
 msgstr "Twitter:"
 
-#: ../view/empregos/empregos/view.phtml:241
+#: ../view/empregos/empregos/view.phtml:250
 msgid "Phone:"
 msgstr "Telefone:"
 
-#: ../view/empregos/empregos/view.phtml:246
+#: ../view/empregos/empregos/view.phtml:255
 msgid "Fax:"
 msgstr "Fax:"
 
-#: ../view/empregos/empregos/view.phtml:251
+#: ../view/empregos/empregos/view.phtml:260
 msgid "Date Created:"
 msgstr "Data de Criação:"
 
@@ -447,7 +447,7 @@ msgstr ""
 msgid "Enter you search here"
 msgstr "Insira a sua pesquisa aqui"
 
-#: ../view/empregos/index/pesquisa.phtml:184
+#: ../view/empregos/index/pesquisa.phtml:210
 msgid "No results found"
 msgstr "Não foram encontrados resultados "
 

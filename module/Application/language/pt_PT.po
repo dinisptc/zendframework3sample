@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-29 14:21+0100\n"
-"PO-Revision-Date: 2017-04-29 14:21+0100\n"
+"POT-Creation-Date: 2017-05-09 15:26+0100\n"
+"PO-Revision-Date: 2017-05-09 15:26+0100\n"
 "Last-Translator: Diogo Melo <dmelo87@gmail.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: pt\n"
@@ -40,7 +40,7 @@ msgstr "Enviar"
 #: ../view/application/index/localizacao.phtml:7
 #: ../view/application/index/paypalone.phtml:12
 #: ../view/application/index/precos.phtml:7
-#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:99
+#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:110
 msgid "Home"
 msgstr "Início"
 
@@ -69,54 +69,62 @@ msgstr "Preços"
 msgid "Ads"
 msgstr "Anuncios"
 
-#: ../src/Service/NavManager.php:96 ../view/application/index/index.phtml:86
-#: ../view/layout/layout.phtml:101
+#: ../src/Service/NavManager.php:96 ../view/application/index/index.phtml:47
+#: ../view/layout/layout.phtml:112
 msgid "Jobs"
 msgstr "Empregos"
 
-#: ../src/Service/NavManager.php:106
+#: ../src/Service/NavManager.php:102
+msgid "CV Profiles"
+msgstr "Curriculos"
+
+#: ../src/Service/NavManager.php:111
 msgid "Language"
 msgstr "Linguagem"
 
-#: ../src/Service/NavManager.php:111
+#: ../src/Service/NavManager.php:116
 msgid "English"
 msgstr "Inglês"
 
-#: ../src/Service/NavManager.php:116
+#: ../src/Service/NavManager.php:121
 msgid "Portuguese"
 msgstr "Português"
 
-#: ../src/Service/NavManager.php:127 ../view/layout/layout.phtml:109
+#: ../src/Service/NavManager.php:132 ../view/layout/layout.phtml:120
 msgid "Users"
 msgstr "Utilizadores"
 
-#: ../src/Service/NavManager.php:132
+#: ../src/Service/NavManager.php:137
 msgid "Sign in"
 msgstr "Entrar"
 
-#: ../src/Service/NavManager.php:137 ../view/application/index/index.phtml:34
-#: ../view/layout/layout.phtml:113
+#: ../src/Service/NavManager.php:142 ../view/application/index/index.phtml:43
+#: ../view/layout/layout.phtml:124
 msgid "Register Free"
 msgstr "Registo Grátis"
 
-#: ../src/Service/NavManager.php:151
+#: ../src/Service/NavManager.php:156
 msgid "Admin"
 msgstr "Admin"
 
-#: ../src/Service/NavManager.php:155
+#: ../src/Service/NavManager.php:160
 msgid "Manage Users"
 msgstr "Gerir Utilizadores"
 
-#: ../src/Service/NavManager.php:163
+#: ../src/Service/NavManager.php:168
 msgid "Manage Jobs Posts"
 msgstr "Gerir Anúncios de Empregos"
 
-#: ../src/Service/NavManager.php:177 ../view/application/index/settings.phtml:8
+#: ../src/Service/NavManager.php:175
+msgid "Manage CV Posts"
+msgstr "Gerir Curriculos"
+
+#: ../src/Service/NavManager.php:189 ../view/application/index/settings.phtml:8
 #: ../view/application/index/settings.phtml:21
 msgid "Settings"
 msgstr "Configurações"
 
-#: ../src/Service/NavManager.php:182
+#: ../src/Service/NavManager.php:194
 msgid "Sign out"
 msgstr "Sair"
 
@@ -316,27 +324,27 @@ msgstr ""
 "programming,programmer,civil,engineer,medical,nurses,trucks,transport,diesel,"
 "electric"
 
-#: ../view/layout/layout.phtml:97
+#: ../view/layout/layout.phtml:108
 msgid "Links"
 msgstr "Menu"
 
-#: ../view/layout/layout.phtml:109
+#: ../view/layout/layout.phtml:120
 msgid "Languages"
 msgstr "Linguagens"
 
-#: ../view/layout/layout.phtml:111
+#: ../view/layout/layout.phtml:122
 msgid "Module Users"
 msgstr "Modulo Utilizadores"
 
-#: ../view/layout/layout.phtml:112
+#: ../view/layout/layout.phtml:123
 msgid "Login"
 msgstr "Entrar"
 
-#: ../view/layout/layout.phtml:121
+#: ../view/layout/layout.phtml:132
 msgid "Social"
 msgstr "Social"
 
-#: ../view/layout/layout.phtml:143
+#: ../view/layout/layout.phtml:154
 msgid "All rights reserved."
 msgstr "Todos os direitos reservados."
 
@@ -422,9 +430,6 @@ msgstr "Todos os direitos reservados."
 
 #~ msgid "History"
 #~ msgstr "Histórico"
-
-#~ msgid "Manage Posts"
-#~ msgstr "Gerir Artigos"
 
 #~ msgid ""
 #~ "This my work history after finishing my school degree in computer science"

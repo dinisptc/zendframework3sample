@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-29 14:14+0100\n"
-"PO-Revision-Date: 2017-04-29 14:14+0100\n"
+"POT-Creation-Date: 2017-05-09 15:26+0100\n"
+"PO-Revision-Date: 2017-05-09 15:26+0100\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: en_US\n"
@@ -14,6 +14,10 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Generator: Poedit 2.0.1\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+#: ../src/Controller/PdfController.php:101
+msgid "Only can upload one personal picture"
+msgstr ""
 
 #: ../src/Form/AutoForm.php:56 ../src/Form/PostForm.php:56
 msgid "Title"
@@ -29,9 +33,10 @@ msgstr ""
 
 #: ../src/Form/AutoForm.php:96 ../src/Form/AutoForm.php:116
 #: ../src/Form/PostForm.php:96 ../src/Form/PostForm.php:115
-#: ../src/Service/AutoManager.php:180 ../view/empregos/empregos/admin.phtml:28
-#: ../view/empregos/empregos/adminaprovar.phtml:27
-#: ../view/empregos/empregos/adminexpired.phtml:28
+#: ../src/Service/AutoManager.php:180
+#: ../view/curriculos/curriculos/admin.phtml:28
+#: ../view/curriculos/curriculos/adminaprovar.phtml:27
+#: ../view/curriculos/curriculos/adminexpired.phtml:28
 msgid "Pending Approval"
 msgstr ""
 
@@ -46,14 +51,14 @@ msgid "Draft"
 msgstr ""
 
 #: ../src/Form/AutoForm.php:99 ../src/Service/AutoManager.php:181
-#: ../view/empregos/empregos/admin.phtml:34
-#: ../view/empregos/empregos/adminaprovar.phtml:33
-#: ../view/empregos/empregos/adminexpired.phtml:34
+#: ../view/curriculos/curriculos/admin.phtml:34
+#: ../view/curriculos/curriculos/adminaprovar.phtml:33
+#: ../view/curriculos/curriculos/adminexpired.phtml:34
 msgid "Expired"
 msgstr ""
 
 #: ../src/Form/AutoForm.php:130 ../src/Form/PostForm.php:129
-#: ../view/empregos/empregos/add.phtml:59
+#: ../view/curriculos/curriculos/add.phtml:59
 msgid "Create"
 msgstr ""
 
@@ -69,380 +74,379 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: ../src/Form/MsgForm.php:41
-msgid "Your Name"
-msgstr ""
-
-#: ../src/Form/MsgForm.php:54
-msgid "Your Message"
-msgstr ""
-
-#: ../src/Form/MsgForm.php:68
-msgid "Your Email"
-msgstr ""
-
-#: ../src/Form/MsgForm.php:79
-msgid "Send"
-msgstr ""
-
 #: ../src/Form/PostForm.php:80
 msgid "Tags"
 msgstr ""
 
 #: ../src/Form/SearchForm.php:56 ../src/Form/SearchForm.php:67
-#: ../view/empregos/index/index.phtml:49
-#: ../view/empregos/index/pesquisa.phtml:10
-#: ../view/empregos/index/pesquisa.phtml:40
-#: ../view/empregos/index/pesquisa.phtml:64
+#: ../view/curriculos/index/index.phtml:49
+#: ../view/curriculos/index/pesquisa.phtml:10
+#: ../view/curriculos/index/pesquisa.phtml:40
+#: ../view/curriculos/index/pesquisa.phtml:64
 msgid "Search"
 msgstr ""
 
-#: ../view/empregos/empregos/add.phtml:29
-#: ../view/empregos/empregos/contactos.phtml:20
-#: ../view/empregos/empregos/edit.phtml:29
-#: ../view/empregos/empregos/myadmin.phtml:7
-#: ../view/empregos/empregos/seemessages.phtml:7
-#: ../view/empregos/empregos/view.phtml:50
-#: ../view/empregos/empregos/viewmessage.phtml:35
-#: ../view/empregos/image/deletefile.phtml:7
-#: ../view/empregos/image/index.phtml:7 ../view/empregos/index/index.phtml:9
-#: ../view/empregos/index/pesquisa.phtml:9
-msgid "Jobs"
+#: ../view/curriculos/curriculos/add.phtml:29
+#: ../view/curriculos/curriculos/contactos.phtml:20
+#: ../view/curriculos/curriculos/edit.phtml:29
+#: ../view/curriculos/curriculos/myadmin.phtml:7
+#: ../view/curriculos/curriculos/view.phtml:50
+#: ../view/curriculos/image/deletefile.phtml:7
+#: ../view/curriculos/image/index.phtml:7
+#: ../view/curriculos/index/index.phtml:9
+#: ../view/curriculos/index/pesquisa.phtml:9
+msgid "CV Profiles"
 msgstr ""
 
-#: ../view/empregos/empregos/add.phtml:30
+#: ../view/curriculos/curriculos/add.phtml:30
 msgid "Add Post"
 msgstr ""
 
-#: ../view/empregos/empregos/add.phtml:36
-#: ../view/empregos/empregos/edit.phtml:36
+#: ../view/curriculos/curriculos/add.phtml:36
+#: ../view/curriculos/curriculos/edit.phtml:36
 msgid "Enter post title here"
 msgstr ""
 
-#: ../view/empregos/empregos/add.phtml:40
-#: ../view/empregos/empregos/edit.phtml:40
+#: ../view/curriculos/curriculos/add.phtml:40
+#: ../view/curriculos/curriculos/edit.phtml:40
 msgid "Type content here"
 msgstr ""
 
-#: ../view/empregos/empregos/add.phtml:45
-#: ../view/empregos/empregos/edit.phtml:45
+#: ../view/curriculos/curriculos/add.phtml:45
+#: ../view/curriculos/curriculos/edit.phtml:45
 msgid "Enter you email or link"
 msgstr ""
 
-#: ../view/empregos/empregos/add.phtml:55
-#: ../view/empregos/empregos/seemessages.phtml:16
-#: ../view/empregos/index/index.phtml:38
-#: ../view/empregos/index/pesquisa.phtml:29
+#: ../view/curriculos/curriculos/add.phtml:55
+#: ../view/curriculos/index/index.phtml:38
+#: ../view/curriculos/index/pesquisa.phtml:29
 msgid "Add New Post"
 msgstr ""
 
-#: ../view/empregos/empregos/add.phtml:58
-#: ../view/empregos/index/pesquisa.phtml:63
+#: ../view/curriculos/curriculos/add.phtml:58
+#: ../view/curriculos/index/pesquisa.phtml:63
 msgid "Please fill out the following form and click the "
 msgstr ""
 
-#: ../view/empregos/empregos/add.phtml:59
-#: ../view/empregos/image/upload.phtml:19
-#: ../view/empregos/index/pesquisa.phtml:64
+#: ../view/curriculos/curriculos/add.phtml:59
+#: ../view/curriculos/image/upload.phtml:19
+#: ../view/curriculos/index/pesquisa.phtml:64
+#: ../view/curriculos/pdf/upload.phtml:27
 msgid "button"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:11
-#: ../view/empregos/empregos/adminaprovar.phtml:11
-#: ../view/empregos/empregos/adminexpired.phtml:11
-#: ../view/empregos/empregos/myadmin.phtml:12
+#: ../view/curriculos/curriculos/admin.phtml:11
+#: ../view/curriculos/curriculos/adminaprovar.phtml:11
+#: ../view/curriculos/curriculos/adminexpired.phtml:11
+#: ../view/curriculos/curriculos/myadmin.phtml:12
 msgid "Manage Posts"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:16
-#: ../view/empregos/empregos/adminaprovar.phtml:16
-#: ../view/empregos/empregos/adminexpired.phtml:16
-#: ../view/empregos/empregos/myadmin.phtml:32
+#: ../view/curriculos/curriculos/admin.phtml:16
+#: ../view/curriculos/curriculos/adminaprovar.phtml:16
+#: ../view/curriculos/curriculos/adminexpired.phtml:16
+#: ../view/curriculos/curriculos/myadmin.phtml:32
 msgid "New Post"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:22
-#: ../view/empregos/empregos/adminaprovar.phtml:21
-#: ../view/empregos/empregos/adminexpired.phtml:22
+#: ../view/curriculos/curriculos/admin.phtml:22
+#: ../view/curriculos/curriculos/adminaprovar.phtml:21
+#: ../view/curriculos/curriculos/adminexpired.phtml:22
 msgid "Admin"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:44
-#: ../view/empregos/empregos/adminaprovar.phtml:43
-#: ../view/empregos/empregos/adminexpired.phtml:49
-#: ../view/empregos/empregos/myadmin.phtml:43
+#: ../view/curriculos/curriculos/admin.phtml:44
+#: ../view/curriculos/curriculos/adminaprovar.phtml:43
+#: ../view/curriculos/curriculos/adminexpired.phtml:49
+#: ../view/curriculos/curriculos/myadmin.phtml:43
 msgid "Post Title"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:45
-#: ../view/empregos/empregos/adminaprovar.phtml:44
-#: ../view/empregos/empregos/adminexpired.phtml:50
-#: ../view/empregos/empregos/myadmin.phtml:44
+#: ../view/curriculos/curriculos/admin.phtml:45
+#: ../view/curriculos/curriculos/adminaprovar.phtml:44
+#: ../view/curriculos/curriculos/adminexpired.phtml:50
+#: ../view/curriculos/curriculos/myadmin.phtml:44
 msgid "Date Created"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:46
-#: ../view/empregos/empregos/adminaprovar.phtml:45
-#: ../view/empregos/empregos/adminexpired.phtml:51
-#: ../view/empregos/empregos/myadmin.phtml:45
+#: ../view/curriculos/curriculos/admin.phtml:46
+#: ../view/curriculos/curriculos/adminaprovar.phtml:45
+#: ../view/curriculos/curriculos/adminexpired.phtml:51
+#: ../view/curriculos/curriculos/myadmin.phtml:45
 msgid "Status"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:47
-#: ../view/empregos/empregos/adminaprovar.phtml:46
-#: ../view/empregos/empregos/adminexpired.phtml:52
-#: ../view/empregos/empregos/myadmin.phtml:46
-#: ../view/empregos/empregos/seemessages.phtml:31
+#: ../view/curriculos/curriculos/admin.phtml:47
+#: ../view/curriculos/curriculos/adminaprovar.phtml:46
+#: ../view/curriculos/curriculos/adminexpired.phtml:52
+#: ../view/curriculos/curriculos/myadmin.phtml:46
 msgid "Actions"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:69
-#: ../view/empregos/empregos/adminaprovar.phtml:68
-#: ../view/empregos/empregos/adminexpired.phtml:74
-#: ../view/empregos/empregos/myadmin.phtml:63
+#: ../view/curriculos/curriculos/admin.phtml:70
+#: ../view/curriculos/curriculos/adminaprovar.phtml:69
+#: ../view/curriculos/curriculos/adminexpired.phtml:74
+#: ../view/curriculos/curriculos/myadmin.phtml:64
+msgid "PDF CV"
+msgstr ""
+
+#: ../view/curriculos/curriculos/admin.phtml:74
+#: ../view/curriculos/curriculos/adminaprovar.phtml:73
+#: ../view/curriculos/curriculos/adminexpired.phtml:78
+#: ../view/curriculos/curriculos/myadmin.phtml:69
 msgid "Edit"
 msgstr ""
 
-#: ../view/empregos/empregos/admin.phtml:74
-#: ../view/empregos/empregos/adminaprovar.phtml:73
-#: ../view/empregos/empregos/adminexpired.phtml:79
-#: ../view/empregos/empregos/myadmin.phtml:69
+#: ../view/curriculos/curriculos/admin.phtml:79
+#: ../view/curriculos/curriculos/adminaprovar.phtml:78
+#: ../view/curriculos/curriculos/adminexpired.phtml:83
+#: ../view/curriculos/curriculos/myadmin.phtml:75
 msgid "Delete"
 msgstr ""
 
-#: ../view/empregos/empregos/adminexpired.phtml:39
+#: ../view/curriculos/curriculos/adminexpired.phtml:39
 msgid "Delete Expired"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:2
+#: ../view/curriculos/curriculos/contactos.phtml:2
 msgid "Contacts by email to inquire about thejoboard.com"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:7
+#: ../view/curriculos/curriculos/contactos.phtml:7
 msgid "Please, Contact me trough the form i will reply in due time, thanks"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:21
+#: ../view/curriculos/curriculos/contactos.phtml:21
 msgid "Contacts"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:26
+#: ../view/curriculos/curriculos/contactos.phtml:26
 msgid "Enter your name"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:30
+#: ../view/curriculos/curriculos/contactos.phtml:30
 msgid "Email address"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:37
+#: ../view/curriculos/curriculos/contactos.phtml:37
 msgid "Type Message here"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:82
+#: ../view/curriculos/curriculos/contactos.phtml:82
 msgid "Email sent successfully"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:86
+#: ../view/curriculos/curriculos/contactos.phtml:86
 msgid "Email not sent"
 msgstr ""
 
-#: ../view/empregos/empregos/contactos.phtml:90
+#: ../view/curriculos/curriculos/contactos.phtml:90
 msgid ""
 "Email not sent - the user is unsubscribed - become professional to see the "
 "contact"
 msgstr ""
 
-#: ../view/empregos/empregos/edit.phtml:30
-#: ../view/empregos/empregos/edit.phtml:56
+#: ../view/curriculos/curriculos/edit.phtml:30
+#: ../view/curriculos/curriculos/edit.phtml:56
 msgid "Edit Post"
 msgstr ""
 
-#: ../view/empregos/empregos/edit.phtml:59
+#: ../view/curriculos/curriculos/edit.phtml:59
 msgid "Please fill out the following form and click the *Save* button."
 msgstr ""
 
-#: ../view/empregos/empregos/myadmin.phtml:8
+#: ../view/curriculos/curriculos/myadmin.phtml:8
 msgid "Manage My Posts"
 msgstr ""
 
-#: ../view/empregos/empregos/myadmin.phtml:26
-#: ../view/empregos/index/index.phtml:32
-#: ../view/empregos/index/pesquisa.phtml:23
+#: ../view/curriculos/curriculos/myadmin.phtml:26
+#: ../view/curriculos/index/index.phtml:32
+#: ../view/curriculos/index/pesquisa.phtml:23
 msgid "To place more ads go to Settings and become PRO"
 msgstr ""
 
-#: ../view/empregos/empregos/seemessages.phtml:8
-#: ../view/empregos/empregos/viewmessage.phtml:36
-msgid "Messages"
-msgstr ""
-
-#: ../view/empregos/empregos/seemessages.phtml:12
-#: ../view/empregos/index/index.phtml:15
-#: ../view/empregos/index/pesquisa.phtml:16
-msgid "Posts"
-msgstr ""
-
-#: ../view/empregos/empregos/seemessages.phtml:20
-#: ../view/empregos/index/index.phtml:45
-#: ../view/empregos/index/pesquisa.phtml:35
-msgid "Manage my Posts"
-msgstr ""
-
-#: ../view/empregos/empregos/seemessages.phtml:30
-msgid "Email"
-msgstr ""
-
-#: ../view/empregos/empregos/seemessages.phtml:45
-msgid "Delete Message"
-msgstr ""
-
-#: ../view/empregos/empregos/view.phtml:58
+#: ../view/curriculos/curriculos/view.phtml:58
 msgid "Back to list of posts"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:68
-#: ../view/empregos/index/index.phtml:124
-#: ../view/empregos/index/pesquisa.phtml:161
+#: ../view/curriculos/curriculos/view.phtml:68
+#: ../view/curriculos/index/index.phtml:144
+#: ../view/curriculos/index/pesquisa.phtml:185
 msgid "Published:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:78
+#: ../view/curriculos/curriculos/view.phtml:87
 msgid "Visits : "
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:83
+#: ../view/curriculos/curriculos/view.phtml:92
 msgid "Show Contact Link/Email"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:124
-#: ../view/empregos/empregos/view.phtml:216
+#: ../view/curriculos/curriculos/view.phtml:121
+msgid "Show Full CV File"
+msgstr ""
+
+#: ../view/curriculos/curriculos/view.phtml:167
+#: ../view/curriculos/curriculos/view.phtml:259
 msgid "E-mail:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:128
+#: ../view/curriculos/curriculos/view.phtml:171
 msgid "Full Name:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:142
+#: ../view/curriculos/curriculos/view.phtml:185
 msgid "Photo:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:169
+#: ../view/curriculos/curriculos/view.phtml:212
 msgid "View Company"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:201
+#: ../view/curriculos/curriculos/view.phtml:244
 msgid "Company name:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:206
+#: ../view/curriculos/curriculos/view.phtml:249
 msgid "Company description:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:211
+#: ../view/curriculos/curriculos/view.phtml:254
 msgid "Company Address:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:221
+#: ../view/curriculos/curriculos/view.phtml:264
 msgid "WebSite:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:226
+#: ../view/curriculos/curriculos/view.phtml:269
 msgid "Facebook:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:231
+#: ../view/curriculos/curriculos/view.phtml:274
 msgid "Linkedin:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:236
+#: ../view/curriculos/curriculos/view.phtml:279
 msgid "Twitter:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:241
-msgid "Telefone:"
+#: ../view/curriculos/curriculos/view.phtml:284
+msgid "Phone:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:246
+#: ../view/curriculos/curriculos/view.phtml:289
 msgid "Fax:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:251
+#: ../view/curriculos/curriculos/view.phtml:294
 msgid "Date Created:"
 msgstr ""
 
-#: ../view/empregos/empregos/viewmessage.phtml:37
-msgid "View Messages"
+#: ../view/curriculos/image/deletefile.phtml:8
+#: ../view/curriculos/image/deletefile.phtml:12
+#: ../view/curriculos/image/index.phtml:8
+#: ../view/curriculos/image/upload.phtml:8
+#: ../view/curriculos/pdf/deletefile.phtml:8
+#: ../view/curriculos/pdf/deletefile.phtml:12
+#: ../view/curriculos/pdf/index.phtml:8 ../view/curriculos/pdf/index.phtml:12
+#: ../view/curriculos/pdf/upload.phtml:8
+msgid "CV Gallery"
 msgstr ""
 
-#: ../view/empregos/empregos/viewmessage.phtml:45
-msgid "Back to list of Messages"
-msgstr ""
-
-#: ../view/empregos/image/deletefile.phtml:8
-#: ../view/empregos/image/deletefile.phtml:12
-#: ../view/empregos/image/index.phtml:8 ../view/empregos/image/index.phtml:12
-#: ../view/empregos/image/upload.phtml:8
-msgid "Image Gallery"
-msgstr ""
-
-#: ../view/empregos/image/deletefile.phtml:16
-#: ../view/empregos/image/index.phtml:16
+#: ../view/curriculos/image/deletefile.phtml:16
+#: ../view/curriculos/image/index.phtml:16
+#: ../view/curriculos/pdf/deletefile.phtml:16
+#: ../view/curriculos/pdf/index.phtml:16
 msgid "This page displays the list of uploaded images."
 msgstr ""
 
-#: ../view/empregos/image/deletefile.phtml:21
-#: ../view/empregos/image/index.phtml:21
+#: ../view/curriculos/image/deletefile.phtml:21
+#: ../view/curriculos/image/index.phtml:21
+#: ../view/curriculos/pdf/deletefile.phtml:21
+#: ../view/curriculos/pdf/index.phtml:21
 msgid "Upload More"
 msgstr ""
 
-#: ../view/empregos/image/deletefile.phtml:29
-#: ../view/empregos/image/index.phtml:29
+#: ../view/curriculos/image/deletefile.phtml:29
+#: ../view/curriculos/image/index.phtml:29
+#: ../view/curriculos/pdf/deletefile.phtml:29
+#: ../view/curriculos/pdf/index.phtml:29
 msgid "There are no files to display."
 msgstr ""
 
-#: ../view/empregos/image/deletefile.phtml:49
-#: ../view/empregos/image/index.phtml:49
+#: ../view/curriculos/image/deletefile.phtml:49
+#: ../view/curriculos/image/index.phtml:49
+#: ../view/curriculos/pdf/deletefile.phtml:49
 msgid "Show in Natural Size"
 msgstr ""
 
-#: ../view/empregos/image/deletefile.phtml:54
-#: ../view/empregos/image/index.phtml:54
+#: ../view/curriculos/image/deletefile.phtml:54
+#: ../view/curriculos/image/index.phtml:54
+#: ../view/curriculos/pdf/deletefile.phtml:54
+#: ../view/curriculos/pdf/index.phtml:50
 msgid "Delete File"
 msgstr ""
 
-#: ../view/empregos/image/upload.phtml:7
+#: ../view/curriculos/image/index.phtml:12
+msgid "Image Gallery"
+msgstr ""
+
+#: ../view/curriculos/image/upload.phtml:7
+#: ../view/curriculos/pdf/upload.phtml:7
 msgid "Home"
 msgstr ""
 
-#: ../view/empregos/image/upload.phtml:16
+#: ../view/curriculos/image/upload.phtml:16
 msgid "Upload a New Image"
 msgstr ""
 
-#: ../view/empregos/image/upload.phtml:19
+#: ../view/curriculos/image/upload.phtml:19
+#: ../view/curriculos/pdf/upload.phtml:27
 msgid "Please fill out the following form and press the"
 msgstr ""
 
-#: ../view/empregos/image/upload.phtml:19
+#: ../view/curriculos/image/upload.phtml:19
+#: ../view/curriculos/pdf/upload.phtml:27
 msgid "Upload"
 msgstr ""
 
-#: ../view/empregos/index/index.phtml:21
+#: ../view/curriculos/index/index.phtml:15
+#: ../view/curriculos/index/pesquisa.phtml:16
+msgid "Posts"
+msgstr ""
+
+#: ../view/curriculos/index/index.phtml:21
 msgid "You have :"
 msgstr ""
 
-#: ../view/empregos/index/index.phtml:21
+#: ../view/curriculos/index/index.phtml:21
 msgid ""
 " posts expired, to prevent them from being deleted, edit each expired post "
 "and set status to pending approval"
 msgstr ""
 
-#: ../view/empregos/index/pesquisa.phtml:53
+#: ../view/curriculos/index/index.phtml:45
+#: ../view/curriculos/index/pesquisa.phtml:35
+msgid "Manage my Posts"
+msgstr ""
+
+#: ../view/curriculos/index/pesquisa.phtml:53
 msgid "Enter you search here"
 msgstr ""
 
-#: ../view/empregos/index/pesquisa.phtml:184
+#: ../view/curriculos/index/pesquisa.phtml:210
 msgid "No results found"
+msgstr ""
+
+#: ../view/curriculos/pdf/deletefile.phtml:7
+#: ../view/curriculos/pdf/index.phtml:7
+msgid "Users"
+msgstr ""
+
+#: ../view/curriculos/pdf/upload.phtml:24
+msgid "Upload a New CV"
 msgstr ""
 
 #~ msgid "All rights reserved."

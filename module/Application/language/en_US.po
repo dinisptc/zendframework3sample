@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-29 14:18+0100\n"
-"PO-Revision-Date: 2017-04-29 14:18+0100\n"
+"POT-Creation-Date: 2017-05-09 15:25+0100\n"
+"PO-Revision-Date: 2017-05-09 15:25+0100\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: en_US\n"
@@ -40,7 +40,7 @@ msgstr ""
 #: ../view/application/index/localizacao.phtml:7
 #: ../view/application/index/paypalone.phtml:12
 #: ../view/application/index/precos.phtml:7
-#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:99
+#: ../view/application/index/settings.phtml:7 ../view/layout/layout.phtml:110
 msgid "Home"
 msgstr ""
 
@@ -69,54 +69,62 @@ msgstr ""
 msgid "Ads"
 msgstr ""
 
-#: ../src/Service/NavManager.php:96 ../view/application/index/index.phtml:86
-#: ../view/layout/layout.phtml:101
+#: ../src/Service/NavManager.php:96 ../view/application/index/index.phtml:47
+#: ../view/layout/layout.phtml:112
 msgid "Jobs"
 msgstr ""
 
-#: ../src/Service/NavManager.php:106
-msgid "Language"
+#: ../src/Service/NavManager.php:102
+msgid "CV Profiles"
 msgstr ""
 
 #: ../src/Service/NavManager.php:111
-msgid "English"
+msgid "Language"
 msgstr ""
 
 #: ../src/Service/NavManager.php:116
+msgid "English"
+msgstr ""
+
+#: ../src/Service/NavManager.php:121
 msgid "Portuguese"
 msgstr ""
 
-#: ../src/Service/NavManager.php:127 ../view/layout/layout.phtml:109
+#: ../src/Service/NavManager.php:132 ../view/layout/layout.phtml:120
 msgid "Users"
 msgstr ""
 
-#: ../src/Service/NavManager.php:132
+#: ../src/Service/NavManager.php:137
 msgid "Sign in"
 msgstr ""
 
-#: ../src/Service/NavManager.php:137 ../view/application/index/index.phtml:34
-#: ../view/layout/layout.phtml:113
+#: ../src/Service/NavManager.php:142 ../view/application/index/index.phtml:43
+#: ../view/layout/layout.phtml:124
 msgid "Register Free"
 msgstr ""
 
-#: ../src/Service/NavManager.php:151
+#: ../src/Service/NavManager.php:156
 msgid "Admin"
 msgstr ""
 
-#: ../src/Service/NavManager.php:155
+#: ../src/Service/NavManager.php:160
 msgid "Manage Users"
 msgstr ""
 
-#: ../src/Service/NavManager.php:163
+#: ../src/Service/NavManager.php:168
 msgid "Manage Jobs Posts"
 msgstr ""
 
-#: ../src/Service/NavManager.php:177 ../view/application/index/settings.phtml:8
+#: ../src/Service/NavManager.php:175
+msgid "Manage CV Posts"
+msgstr ""
+
+#: ../src/Service/NavManager.php:189 ../view/application/index/settings.phtml:8
 #: ../view/application/index/settings.phtml:21
 msgid "Settings"
 msgstr ""
 
-#: ../src/Service/NavManager.php:182
+#: ../src/Service/NavManager.php:194
 msgid "Sign out"
 msgstr ""
 
@@ -311,27 +319,27 @@ msgid ""
 "electric"
 msgstr ""
 
-#: ../view/layout/layout.phtml:97
+#: ../view/layout/layout.phtml:108
 msgid "Links"
 msgstr ""
 
-#: ../view/layout/layout.phtml:109
+#: ../view/layout/layout.phtml:120
 msgid "Languages"
 msgstr ""
 
-#: ../view/layout/layout.phtml:111
+#: ../view/layout/layout.phtml:122
 msgid "Module Users"
 msgstr ""
 
-#: ../view/layout/layout.phtml:112
+#: ../view/layout/layout.phtml:123
 msgid "Login"
 msgstr ""
 
-#: ../view/layout/layout.phtml:121
+#: ../view/layout/layout.phtml:132
 msgid "Social"
 msgstr ""
 
-#: ../view/layout/layout.phtml:143
+#: ../view/layout/layout.phtml:154
 msgid "All rights reserved."
 msgstr "All rights reserved."
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-29 14:14+0100\n"
-"PO-Revision-Date: 2017-04-29 14:14+0100\n"
+"POT-Creation-Date: 2017-05-09 15:33+0100\n"
+"PO-Revision-Date: 2017-05-09 15:33+0100\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: en_US\n"
@@ -301,73 +301,73 @@ msgid "Back to list of posts"
 msgstr ""
 
 #: ../view/empregos/empregos/view.phtml:68
-#: ../view/empregos/index/index.phtml:124
-#: ../view/empregos/index/pesquisa.phtml:161
+#: ../view/empregos/index/index.phtml:144
+#: ../view/empregos/index/pesquisa.phtml:185
 msgid "Published:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:78
+#: ../view/empregos/empregos/view.phtml:87
 msgid "Visits : "
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:83
+#: ../view/empregos/empregos/view.phtml:92
 msgid "Show Contact Link/Email"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:124
-#: ../view/empregos/empregos/view.phtml:216
+#: ../view/empregos/empregos/view.phtml:133
+#: ../view/empregos/empregos/view.phtml:225
 msgid "E-mail:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:128
+#: ../view/empregos/empregos/view.phtml:137
 msgid "Full Name:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:142
+#: ../view/empregos/empregos/view.phtml:151
 msgid "Photo:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:169
+#: ../view/empregos/empregos/view.phtml:178
 msgid "View Company"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:201
+#: ../view/empregos/empregos/view.phtml:210
 msgid "Company name:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:206
+#: ../view/empregos/empregos/view.phtml:215
 msgid "Company description:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:211
+#: ../view/empregos/empregos/view.phtml:220
 msgid "Company Address:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:221
+#: ../view/empregos/empregos/view.phtml:230
 msgid "WebSite:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:226
+#: ../view/empregos/empregos/view.phtml:235
 msgid "Facebook:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:231
+#: ../view/empregos/empregos/view.phtml:240
 msgid "Linkedin:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:236
+#: ../view/empregos/empregos/view.phtml:245
 msgid "Twitter:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:241
-msgid "Telefone:"
+#: ../view/empregos/empregos/view.phtml:250
+msgid "Phone:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:246
+#: ../view/empregos/empregos/view.phtml:255
 msgid "Fax:"
 msgstr ""
 
-#: ../view/empregos/empregos/view.phtml:251
+#: ../view/empregos/empregos/view.phtml:260
 msgid "Date Created:"
 msgstr ""
 
@@ -441,7 +441,7 @@ msgstr ""
 msgid "Enter you search here"
 msgstr ""
 
-#: ../view/empregos/index/pesquisa.phtml:184
+#: ../view/empregos/index/pesquisa.phtml:210
 msgid "No results found"
 msgstr ""
 

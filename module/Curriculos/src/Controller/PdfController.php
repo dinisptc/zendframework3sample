@@ -98,7 +98,7 @@ class PdfController extends AbstractActionController
         }
         if($conta>0){ 
             
-        $mensagem=_('Only can upload one personal picture');
+        $mensagem=_('Only can upload one CV File');
                     // Render the page
         return new ViewModel([
             'form' => $form,
