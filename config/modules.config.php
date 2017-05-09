@@ -33,7 +33,7 @@ return [
     'Zend\Form',
     'Zend\Db',
     'Zend\Cache',
-    'ZendDeveloperTools',
+    //'ZendDeveloperTools',
     'Zend\Router',
     'Zend\Validator',    
     'Application',
