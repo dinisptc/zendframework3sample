@@ -30,7 +30,8 @@ $form->get('password')->setAttributes([
             <?php if ($isLoginError): ?>
             <div class="alert alert-warning" role="alert">
                 <?php echo $this->translate(' Incorrect login and/or password. '); ?>
-               
+                <?php echo $this->translate(' If you allready registered please go to your email and follow the link to activate your account.'); ?>
+                <?php echo $this->translate(' Any more problems go to About/Contact and send message to admin we can help you.'); ?>
                 <a href="<?= $this->url('reset-password') ?>"><?php echo $this->translate('Forgot password?'); ?></a>
             </div>
             <?php endif; ?>

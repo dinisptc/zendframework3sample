@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-29 13:49+0100\n"
-"PO-Revision-Date: 2017-04-29 13:50+0100\n"
+"POT-Creation-Date: 2017-05-10 14:29+0100\n"
+"PO-Revision-Date: 2017-05-10 14:29+0100\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
 "Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
 "Language: en_US\n"
@@ -20,17 +20,17 @@ msgstr ""
 msgid "Only can upload one personal picture"
 msgstr ""
 
-#: ../src/Controller/UserController.php:256
+#: ../src/Controller/UserController.php:258
 msgid "Sorry, the old password is incorrect. Could not set the new password."
 msgstr ""
 
-#: ../src/Controller/UserController.php:259
-#: ../src/Controller/UserController.php:799
+#: ../src/Controller/UserController.php:261
+#: ../src/Controller/UserController.php:801
 msgid "Changed the password successfully."
 msgstr ""
 
 #: ../src/Form/EmpresasForm.php:88 ../src/Form/RegisterForm.php:64
-#: ../src/Form/UserForm.php:64 ../view/user/user/index.phtml:26
+#: ../src/Form/UserForm.php:64 ../view/user/user/index.phtml:31
 msgid "E-mail"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgid "Company Twitter"
 msgstr ""
 
 #: ../src/Form/EmpresasForm.php:162
-msgid "Company Telefone"
+msgid "Company Phone"
 msgstr ""
 
 #: ../src/Form/EmpresasForm.php:172
@@ -79,11 +79,11 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: ../src/Form/LoginForm.php:64 ../view/user/auth/login.phtml:43
+#: ../src/Form/LoginForm.php:64 ../view/user/auth/login.phtml:44
 msgid "Remember me"
 msgstr ""
 
-#: ../src/Form/LoginForm.php:90 ../view/user/auth/login.phtml:48
+#: ../src/Form/LoginForm.php:90 ../view/user/auth/login.phtml:49
 msgid "Sign in"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgstr ""
 #: ../view/user/user/change-password.phtml:9
 #: ../view/user/user/change-passwordadmin.phtml:2
 #: ../view/user/user/change-passwordadmin.phtml:9
-#: ../view/user/user/index.phtml:68 ../view/user/user/set-password.phtml:9
+#: ../view/user/user/index.phtml:76 ../view/user/user/set-password.phtml:9
 #: ../view/user/user/view.phtml:65
 msgid "Change Password"
 msgstr ""
@@ -114,8 +114,17 @@ msgstr ""
 msgid "Reset Password"
 msgstr ""
 
+#: ../src/Form/PesquisaUserForm.php:46
+msgid "User ID"
+msgstr ""
+
+#: ../src/Form/PesquisaUserForm.php:56
+#: ../view/user/user/pesquisauserid.phtml:29
+msgid "Search"
+msgstr ""
+
 #: ../src/Form/RegisterForm.php:73 ../src/Form/UserForm.php:73
-#: ../view/user/user/index.phtml:27
+#: ../view/user/user/index.phtml:32
 msgid "Full Name"
 msgstr ""
 
@@ -123,7 +132,7 @@ msgstr ""
 msgid "Confirm password"
 msgstr ""
 
-#: ../src/Form/UserForm.php:106 ../view/user/user/index.phtml:29
+#: ../src/Form/UserForm.php:106 ../view/user/user/index.phtml:34
 msgid "Status"
 msgstr ""
 
@@ -135,7 +144,7 @@ msgstr ""
 msgid "Retired"
 msgstr ""
 
-#: ../src/Form/UserForm.php:119 ../view/user/user/index.phtml:30
+#: ../src/Form/UserForm.php:119 ../view/user/user/index.phtml:35
 msgid "Profile"
 msgstr ""
 
@@ -163,7 +172,19 @@ msgstr ""
 msgid " Incorrect login and/or password. "
 msgstr ""
 
+#: ../view/user/auth/login.phtml:33
+msgid ""
+" If you allready registered please go to your email and follow the link to "
+"activate your account."
+msgstr ""
+
 #: ../view/user/auth/login.phtml:34
+msgid ""
+" Any more problems go to About/Contact and send message to admin we can help "
+"you."
+msgstr ""
+
+#: ../view/user/auth/login.phtml:35
 msgid "Forgot password?"
 msgstr ""
 
@@ -173,8 +194,8 @@ msgstr ""
 #: ../view/user/user/change-password.phtml:7
 #: ../view/user/user/change-passwordadmin.phtml:7
 #: ../view/user/user/edit.phtml:7 ../view/user/user/index.phtml:7
-#: ../view/user/user/register.phtml:7 ../view/user/user/set-password.phtml:7
-#: ../view/user/user/view.phtml:7
+#: ../view/user/user/pesquisauserid.phtml:7 ../view/user/user/register.phtml:7
+#: ../view/user/user/set-password.phtml:7 ../view/user/user/view.phtml:7
 msgid "Home"
 msgstr ""
 
@@ -240,6 +261,7 @@ msgstr ""
 
 #: ../view/user/empresa/add.phtml:194 ../view/user/image/upload.phtml:27
 #: ../view/user/logo/upload.phtml:27 ../view/user/user/add.phtml:46
+#: ../view/user/user/pesquisauserid.phtml:29
 #: ../view/user/user/register.phtml:42
 msgid "button"
 msgstr ""
@@ -260,7 +282,7 @@ msgstr ""
 msgid "Edit/Delete:"
 msgstr ""
 
-#: ../view/user/empresa/view.phtml:46 ../view/user/user/index.phtml:64
+#: ../view/user/empresa/view.phtml:46 ../view/user/user/index.phtml:72
 msgid "Edit"
 msgstr ""
 
@@ -305,7 +327,7 @@ msgid "Twitter:"
 msgstr ""
 
 #: ../view/user/empresa/view.phtml:124
-msgid "Telefone:"
+msgid "Phone:"
 msgstr ""
 
 #: ../view/user/empresa/view.phtml:129
@@ -382,8 +404,8 @@ msgstr ""
 #: ../view/user/user/add.phtml:8 ../view/user/user/change-password.phtml:8
 #: ../view/user/user/change-passwordadmin.phtml:8
 #: ../view/user/user/edit.phtml:8 ../view/user/user/index.phtml:8
-#: ../view/user/user/index.phtml:12 ../view/user/user/set-password.phtml:8
-#: ../view/user/user/view.phtml:8
+#: ../view/user/user/index.phtml:12 ../view/user/user/pesquisauserid.phtml:8
+#: ../view/user/user/set-password.phtml:8 ../view/user/user/view.phtml:8
 msgid "Manage Users"
 msgstr ""
 
@@ -422,15 +444,19 @@ msgstr ""
 msgid "Edit User"
 msgstr ""
 
-#: ../view/user/user/index.phtml:17
+#: ../view/user/user/index.phtml:17 ../view/user/user/pesquisauserid.phtml:17
 msgid "New User"
 msgstr ""
 
-#: ../view/user/user/index.phtml:28
+#: ../view/user/user/index.phtml:22 ../view/user/user/pesquisauserid.phtml:22
+msgid "Search User ID"
+msgstr ""
+
+#: ../view/user/user/index.phtml:33
 msgid "Date Created"
 msgstr ""
 
-#: ../view/user/user/index.phtml:31
+#: ../view/user/user/index.phtml:36
 msgid "Actions"
 msgstr ""
 
@@ -490,6 +516,14 @@ msgstr ""
 
 #: ../view/user/user/messageregistration.phtml:29
 msgid "and try reset your password."
+msgstr ""
+
+#: ../view/user/user/pesquisauserid.phtml:12
+msgid "Search Users"
+msgstr ""
+
+#: ../view/user/user/pesquisauserid.phtml:28
+msgid "Please fill out the following form and click the "
 msgstr ""
 
 #: ../view/user/user/register.phtml:8
